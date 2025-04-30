@@ -37,3 +37,11 @@ Feel free to contribute to the SDMX Technical Documentation by submitting pull r
 ## License
 
 The license will be added.
+
+## Plugins
+
+The following plugins are used:
+
+- `mike`
+- `llmstxt` (https://github.com/jimporter/mike)
+- `exclude` (https://github.com/apenwarr/mkdocs-exclude)
