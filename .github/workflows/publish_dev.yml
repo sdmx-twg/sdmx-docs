@@ -23,7 +23,6 @@ jobs:
           VERSION: v.PR-${{ github.event.number }}
         run: |
           uv run mike deploy $VERSION \
-               --config-file mkdocs.yml \
                --branch gh-pages-preview \
-               --prefix $VERSION \
+               --deploy-prefix $VERSION \
                --push
