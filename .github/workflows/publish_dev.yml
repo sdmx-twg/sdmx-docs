@@ -22,6 +22,9 @@ jobs:
         env:
           VERSION: v.PR-${{ github.event.number }}
         run: |
+          git config user.name jr-hms
+          git config user.email jonas.rieger@analytical-software.de
+          git fetch --no-tags --prune --depth=1 origin +refs/heads/gh-pages-preview:refs/remotes/origin/gh-pages-preview
           uv run mike deploy $VERSION \
                --branch gh-pages-preview \
                --deploy-prefix $VERSION \
