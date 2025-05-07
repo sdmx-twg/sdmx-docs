@@ -1,5 +1,6 @@
 site_name: SDMX Technical Documentation
 site_description: Statistical Data and Metadata eXchange
+site_url: https://HMS-Analytical-Software.github.io/sdmx-technical-documentation
 strict: true
 
 theme:
