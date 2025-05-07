@@ -1,0 +1,33 @@
+name: docs-preview
+permissions:
+  contents: write
+on:
+  pull_request:
+jobs:
+  build-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v6
+        with:
+            enable-cache: true
+
+      - name: Install Python 3.12
+        run: uv python install 3.12
+
+      - name: Install Dependencies
+        run: uv sync
+
+      - name: Build and Deploy Preview
+        env:
+          VERSION: v.PR-${{ github.event.number }}
+        run: |
+          git config user.name jr-hms
+          git config user.email jonas.rieger@analytical-software.de
+          git fetch --no-tags --prune --depth=1 origin +refs/heads/gh-pages-preview:refs/remotes/origin/gh-pages-preview
+          uv run mike deploy $VERSION \
+               --branch gh-pages-preview \
+               --deploy-prefix $VERSION \
+               --push
