@@ -1,17 +1,20 @@
-# Welcome to MkDocs
+# SDMX 3.0 Technical Documentation (draft)
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Welcome to the **Statistical Data and Metadata eXchange (SDMX) 3.0** technical documentation project. SDMX is the global open standard for exchanging statistical data and metadata among organizations, systems, and communities. Version 3.0 represents the most significant revision of the standard since its inception, introducing:
 
-## Commands
+- A simplified, modular information model
+- First‑class support for modern web APIs (REST, JSON, and GraphQL bindings)
+- Extended metadata governance and life‑cycle features
+- Enhanced data validation and constraint mechanisms
+- Alignment with FAIR data principles (Findable, Accessible, Interoperable, Re‑usable)
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+The goal of this site is to provide implementers, data providers, and tool builders with clear, task‑oriented guidance, practical examples, and reference material for adopting SDMX 3.0.
 
-## Project layout
+> **Status of this site**  
+> This documentation is **work in progress**. At the moment it contains only a fraction of the official SDMX 3.0 specification. The material may be incomplete, may contain errors, and is subject to substantial change without notice. For the authoritative text, please refer to the official SDMX 3.0 standard documents published at [sdmx.org](https://sdmx.org).
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Quick links
+
+
+---
+

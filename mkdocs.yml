@@ -1,7 +1,6 @@
-site_name: Pydantic
-site_description: Data validation using Python type hints
+site_name: SDMX Technical Documentation
+site_description: Statistical Data and Metadata eXchange
 strict: true
-site_url: https://docs.pydantic.dev/
 
 theme:
   name: 'material'
@@ -44,11 +43,11 @@ theme:
     - navigation.tracking
     - search.suggest
     - toc.follow
-  logo: 'logo-white.svg'
-  favicon: 'favicon.png'
+  logo: 'media/logos/SDMX-logo.png'
+  favicon: 'media/logos/favicon.png'
 
-repo_name: pydantic/pydantic
-repo_url: https://github.com/pydantic/pydantic
+repo_name: HMS-Analytical-Software/sdmx-technical-documentation
+repo_url: https://github.com/HMS-Analytical-Software/sdmx-technical-documentation
 edit_uri: edit/main/docs/
 extra:
   version:
@@ -76,6 +75,20 @@ validation:
   anchors: warn
 
 nav:
+- Overview:
+  - Welcome to SDMX: index.md
+  - Framework: framework.md
+- Information Models:
+  - Information Model: information_model.md
+- Registry Specification:
+  - Registry Specification: registry_specification_logical_interfaces.md
+- Technical Notes:
+  - Technical Notes: technical_notes.md
+- Transmission Formats:
+  - REST API: rest_api.md
+  - SDMX-ML: sdmx_ml.md
+  - SDMX-JSON: sdmx_json.md
+  - SDMX-CSV: sdmx_csv.md
 # - Get Started:
 #   - Welcome to Pydantic: index.md
 #   - Why use Pydantic: why.md
@@ -223,6 +236,17 @@ plugins:
     - theme/announce.html
     - plugins/*
     - __pycache__/*
+- enumerate-headings:
+    toc_depth: 0
+    strict: true
+    increment_across_pages: true
+    include:
+      - "*"
+    exclude:
+      - index.md
+      # - another_page.md
+    # restart_increment_after:
+      # - second_section.md
 # - mkdocstrings:
 #     handlers:
 #       python:
