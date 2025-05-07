@@ -35,10 +35,10 @@ theme:
     - content.code.copy
     - announce.dismiss
     - navigation.tabs
-    - navigation.instant
-    - navigation.instant.prefetch
-    - navigation.instant.preview
-    - navigation.instant.progress
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.preview
+    # - navigation.instant.progress
     - navigation.path
     - navigation.sections
     - navigation.top
@@ -128,3 +128,14 @@ plugins:
       - "*"
     exclude:
       - index.md
+- i18n:
+    docs_structure: suffix
+    reconfigure_material: true
+    languages:
+      - locale: en
+        name: English
+        build: true
+        default: true
+      - locale: de
+        name: German
+        build: true
