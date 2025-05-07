@@ -1,4 +1,6 @@
 name: docs-preview
+permissions:
+  contents: write
 on:
   pull_request:
 jobs:
