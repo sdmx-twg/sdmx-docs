@@ -27,7 +27,7 @@ jobs:
           git config user.name jr-hms
           git config user.email jonas.rieger@analytical-software.de
           git fetch --no-tags --prune --depth=1 origin +refs/heads/gh-pages-preview:refs/remotes/origin/gh-pages-preview
-          uv run mike deploy $VERSION \
+          uv run mike deploy $VERSION latest \
                --branch gh-pages-preview \
-               --deploy-prefix $VERSION \
+               --update-aliases \
                --push
