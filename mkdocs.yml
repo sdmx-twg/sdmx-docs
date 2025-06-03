@@ -79,7 +79,15 @@ validation:
 nav:
 - Overview:
   - Welcome to SDMX: index.md
-  - Framework: framework.md
+- Framework:
+  - Release History: framework/framework-release-history.md
+  - Introduction: framework/framework-introduction.md
+  - Change History: framework/framework-change-history.md
+  - Processes and Business Scope: framework/framework-processes-and-business-scope.md
+  - The SDMX Information Model: framework/framework-the-sdmx-information-model.md
+  - The SDMX Transmission Formats: framework/framework-the-sdmx-transmission-formats.md
+  - Dependencies on SDMX content-oriented guidelines: framework/framework-dependencies-on-sdmx-content-oriented-guidelines.md
+  - Validation and Transformation Language: framework/framework-validation-and-transformation-language.md
 - Information Models:
   - Information Model: information_model.md
 - Registry Specification:
