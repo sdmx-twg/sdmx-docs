@@ -1,5 +1,4 @@
 
-## Processes and Business Scope
 
 ### Process Patterns
 

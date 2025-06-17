@@ -1,4 +1,3 @@
-## Introduction
 
 The Statistical Data and Metadata Exchange (SDMX) initiative
 (<https://www.sdmx.org>) sets standards that can facilitate the exchange

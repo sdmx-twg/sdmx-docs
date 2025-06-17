@@ -1,30 +1,29 @@
 site_name: SDMX Technical Documentation
-site_description: Statistical Data and Metadata eXchange
+site_description: Statistical Data and Metadata eXchange
 site_url: https://HMS-Analytical-Software.github.io/sdmx-technical-documentation
 strict: true
 copyright: '<a href="https://www.analytical-software.de/en/legal-disclosure/">HMS Analytical Software Imprint</a>'
 
 theme:
   name: 'material'
-  custom_dir: 'docs/theme'
   palette:
   - media: "(prefers-color-scheme)"
     scheme: default
-    primary: blue
+    primary: indigo
     accent: orange
     toggle:
       icon: material/lightbulb
       name: "Switch to light mode"
   - media: "(prefers-color-scheme: light)"
     scheme: default
-    primary: blue
+    primary: indigo
     accent: orange
     toggle:
       icon: material/lightbulb-outline
       name: "Switch to dark mode"
   - media: "(prefers-color-scheme: dark)"
     scheme: slate
-    primary: blue
+    primary: indigo
     accent: orange
     toggle:
       icon: material/lightbulb-auto-outline
@@ -51,23 +50,7 @@ theme:
 repo_name: HMS-Analytical-Software/sdmx-technical-documentation
 repo_url: https://github.com/HMS-Analytical-Software/sdmx-technical-documentation
 edit_uri: edit/main/docs/
-extra:
-  version:
-    provider: mike
-  analytics:
-    feedback:
-      title: Was this page helpful?
-      ratings:
-        - icon: material/thumb-up-outline
-          name: This page was helpful
-          data: 1
-          note: >-
-            Thanks for your feedback!
-        - icon: material/thumb-down-outline
-          name: This page could be improved
-          data: 0
-          note: >-
-            Thanks for your feedback!
+
 
 # https://www.mkdocs.org/user-guide/configuration/#validation
 validation:
@@ -77,7 +60,7 @@ validation:
   anchors: warn
 
 nav:
-- Overview:
+- Getting Started:
   - Welcome to SDMX: index.md
 - Framework:
   - Release History: framework/framework-release-history.md
@@ -88,23 +71,40 @@ nav:
   - The SDMX Transmission Formats: framework/framework-the-sdmx-transmission-formats.md
   - Dependencies on SDMX content-oriented guidelines: framework/framework-dependencies-on-sdmx-content-oriented-guidelines.md
   - Validation and Transformation Language: framework/framework-validation-and-transformation-language.md
-- Information Models:
-  - Information Model: information_model.md
-- Registry Specification:
-  - Registry Specification: registry_specification_logical_interfaces.md
+- Information Model:
+  - Change History: information_model/0_change_history.md
+  - Introduction: information_model/0_Introduction.md
+  - Actors and Use Cases: information_model/1_Actors_and_Use_Cases.md
+  - SDMX Base Package: information_model/2_SDMX_Base_Package.md
+  - Specific Item Schemes: information_model/3_Specific_Item_Schemes.md
+  - Data Structure Definition and Dataset: information_model/4_Data_Structure_Definition_and_Dataset.md
+  - Cube: information_model/5_Cube.md
+  - Metadata Structure Definition and Metadata Set: information_model/6_Metadata_Structure_Definition_and_Metadata_Set.md
+  - Hierarchy: information_model/7_Hierarchy.md
+  - Structure Map: information_model/8_Structure_Map.md
+  - RepresentationMap: information_model/9_RepresentationMap.md
+  - ItemSchemeMap: information_model/10_ItemSchemeMap.md
+  - Constraints: information_model/11_Constraints.md
+  - Data Provisioning: information_model/12_Data_Provisioning.md
+  - Process: information_model/13_Process.md
+  - Validation and Transformation Language: information_model/14_Validation_and_Transformation_Language.md
+  - Appendix 1 A Short Guide to UML in the SDMX Information Model: information_model/15_Appendix_1:_A_Short_Guide_to_UML_in_the_SDMX_Information_Model.md
+- Registry Specification and Logical Interfaces:
+  - Registry Specification: registry_specification_logical_interfaces/registry_specification_logical_interfaces.md
 - Technical Notes:
-  - Technical Notes: technical_notes.md
+  - Technical Notes: technical_notes/technical_notes.md
+- REST API:
+  - REST API: rest_api/rest_api.md
 - Transmission Formats:
-  - REST API: rest_api.md
-  - SDMX-ML: sdmx_ml.md
-  - SDMX-JSON: sdmx_json.md
-  - SDMX-CSV: sdmx_csv.md
+  - SDMX-ML: transmission_formats/sdmx_ml.md
+  - SDMX-JSON: transmission_formats/sdmx_json.md
+  - SDMX-CSV: transmission_formats/sdmx_csv.md
 
 markdown_extensions:
 - tables
 - toc:
     permalink: true
-    title: Page contents
+    title: On this page
 - admonition
 - pymdownx.details
 - pymdownx.superfences
@@ -116,6 +116,8 @@ markdown_extensions:
     emoji_generator: !!python/name:material.extensions.emoji.to_svg
 - pymdownx.tabbed:
     alternate_style: true
+- pymdownx.blocks.caption
+
 
 plugins:
 # - social
@@ -128,14 +130,14 @@ plugins:
     - theme/announce.html
     - plugins/*
     - __pycache__/*
-- enumerate-headings:
-    toc_depth: 0
-    strict: true
-    increment_across_pages: true
-    include:
-      - "*"
-    exclude:
-      - index.md
+# - enumerate-headings:
+#     toc_depth: 0
+#     strict: true
+#     increment_across_pages: true
+#     include:
+#       - "*"
+#     exclude:
+#       - index.md
 - i18n:
     docs_structure: suffix
     reconfigure_material: true

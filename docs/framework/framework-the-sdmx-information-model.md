@@ -1,5 +1,4 @@
 
-## The SDMX Information Model
 
 SDMX provides a way of modelling statistical data, and defines the set
 of metadata constructs used for this purpose. Because SDMX specifies a

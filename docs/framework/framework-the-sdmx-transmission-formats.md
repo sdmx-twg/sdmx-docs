@@ -1,5 +1,4 @@
 
-## The SDMX Transmission Formats
 
 ### SDMX-ML
 

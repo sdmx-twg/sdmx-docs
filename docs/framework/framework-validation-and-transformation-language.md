@@ -1,4 +1,3 @@
-## Validation and Transformation Language
 
 For many years the SDMX initiative has been fostering and supporting the
 development of a standard calculation language, called Validation and

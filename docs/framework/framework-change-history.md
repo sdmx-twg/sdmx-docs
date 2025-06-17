@@ -1,6 +1,4 @@
 
-## Change History
-
 The 2.0 version of this standard represented a significant increase in
 scope, and also provided more complete support in those areas covered in
 the version 1.0 specification. Version 2.0 of this standard is
