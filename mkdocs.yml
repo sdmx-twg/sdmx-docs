@@ -51,6 +51,9 @@ repo_name: HMS-Analytical-Software/sdmx-technical-documentation
 repo_url: https://github.com/HMS-Analytical-Software/sdmx-technical-documentation
 edit_uri: edit/main/docs/
 
+extra:
+  version:
+    provider: mike
 
 # https://www.mkdocs.org/user-guide/configuration/#validation
 validation:
