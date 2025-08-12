@@ -1,0 +1,15 @@
+.copy-link {
+  font-size: 0.8em;
+  color: #888;
+  visibility: hidden;
+}
+
+p:hover .copy-link,
+li:hover .copy-link {
+  visibility: visible;
+}
+
+.highlighted-anchor {
+  background-color: #FF8C00; /* Changed from 'orange' to a more accessible color */
+  transition: background-color 1s ease;
+}

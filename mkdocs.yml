@@ -153,3 +153,9 @@ plugins:
       - locale: de
         name: German
         build: true
+
+extra_javascript:
+  - assets/anchors.js
+
+extra_css:
+  - assets/style.css
