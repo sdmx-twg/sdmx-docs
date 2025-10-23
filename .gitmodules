@@ -1,0 +1,16 @@
+[submodule "components/rest_api"]
+	path = components/rest_api
+	url = https://github.com/HMS-Analytical-Software/sdmx-technical-documentation-rest.git
+	branch = 2.0.x
+[submodule "components/sdmx-csv"]
+	path = components/sdmx_csv
+	url = https://github.com/HMS-Analytical-Software/sdmx-technical-documentation-csv.git
+[submodule "components/sdmx-json"]
+	path = components/sdmx_json
+	url = https://github.com/HMS-Analytical-Software/sdmx-technical-documentation-json.git
+[submodule "components/sdmx_ml"]
+	path = components/sdmx_ml
+	url = https://github.com/HMS-Analytical-Software/sdmx-technical-documentation-ml.git
+[submodule "components/information_model"]
+	path = components/information_model
+	url = https://github.com/HMS-Analytical-Software/sdmx-technical-documentation-im.git

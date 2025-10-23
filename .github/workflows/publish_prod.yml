@@ -46,6 +46,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
 
       - name: Install the latest version of uv
         uses: astral-sh/setup-uv@v6
@@ -78,8 +80,6 @@ jobs:
       - name: Deploy
         if: ${{ env.PH_DOCS_VERSION }} != null
         run: |
-          # Publishing implies creating a git commit on the gh-pages branch, 
-          # We will need to create a user for this at some point
           git config user.name jr-hms
           git config user.email jonas.rieger@analytical-software.de
           git fetch --no-tags --prune --depth=1 origin +refs/heads/gh-pages:refs/remotes/origin/gh-pages

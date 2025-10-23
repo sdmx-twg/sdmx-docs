@@ -173,3 +173,5 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 .github/copilot-instructions.md
+
+node_modules/
