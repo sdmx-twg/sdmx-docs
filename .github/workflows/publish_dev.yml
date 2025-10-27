@@ -1,4 +1,7 @@
 name: docs-preview
+env:
+  ENABLE_PDF_EXPORT: 1
+  PYTHON_VERSION: "3.12"
 permissions:
   contents: write
 on:

@@ -9,7 +9,10 @@ dependencies = [
     "mkdocs>=1.6.1",
     "mkdocs-enumerate-headings-plugin>=0.6.2",
     "mkdocs-exclude>=1.0.2",
+    "mkdocs-glightbox>=0.5.1",
     "mkdocs-llmstxt>=0.2.0",
     "mkdocs-material>=9.6.12",
     "mkdocs-monorepo-plugin>=1.1.2",
+    "mkdocs-to-pdf>=0.10.1",
+    "pillow>=12.0.0",
 ]

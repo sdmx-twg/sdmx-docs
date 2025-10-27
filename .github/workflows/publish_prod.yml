@@ -5,6 +5,7 @@
 name: Deploy Documents 5.5
 
 env:
+  ENABLE_PDF_EXPORT: 1
   PYTHON_VERSION: "3.12"
 
 permissions:

@@ -82,6 +82,7 @@ nav:
 
 markdown_extensions:
 - tables
+- attr_list
 - toc:
     permalink: true
     title: On this page
@@ -101,7 +102,17 @@ markdown_extensions:
 
 
 plugins:
-# - social
+- to-pdf:
+    download_link: header
+    verbose: false
+    debug_html: false
+    cover_title: SDMX Technical Specifications
+    cover_subtitle: Version 3.0
+    cover_logo: media/logos/SDMX-logo.png
+    enabled_if_env: ENABLE_PDF_EXPORT
+    author: SDMX Technical Working Group
+    copyright: Copyright © SDMX TWG 2020
+    toc_level: 3
 - monorepo
 - mike:
     alias_type: symlink
@@ -112,25 +123,6 @@ plugins:
     - theme/announce.html
     - plugins/*
     - __pycache__/*
-# - enumerate-headings:
-#     toc_depth: 0
-#     strict: true
-#     increment_across_pages: true
-#     include:
-#       - "*"
-#     exclude:
-#       - index.md
-# - i18n:
-#     docs_structure: suffix
-#     reconfigure_material: true
-#     languages:
-#       - locale: en
-#         name: English
-#         build: true
-#         default: true
-#       - locale: de
-#         name: German
-#         build: true
 
 extra_javascript:
   - assets/anchors.js

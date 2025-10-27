@@ -1,3 +1,4 @@
+/* Format the copy link buttons and make the selected text being highlighted if a link is entered */
 .copy-link {
   font-size: 0.8em;
   color: #888;
@@ -10,6 +11,16 @@ li:hover .copy-link {
 }
 
 .highlighted-anchor {
-  background-color: #FF8C00; /* Changed from 'orange' to a more accessible color */
+  background-color: #FF8C00;
   transition: background-color 1s ease;
+}
+
+/* Prevent code blocks before figure captions from being centered */
+figure .highlight,
+figure pre,
+figure .highlight pre {
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  display: block !important;
 }
