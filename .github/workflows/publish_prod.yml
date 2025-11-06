@@ -83,10 +83,11 @@ jobs:
         run: |
           git config user.name jr-hms
           git config user.email jonas.rieger@analytical-software.de
-          git fetch --no-tags --prune --depth=1 origin +refs/heads/gh-pages:refs/remotes/origin/gh-pages
+          git fetch --no-tags --prune --depth=1 origin gh-pages
           uv run mike deploy \
             --update-aliases \
             --branch gh-pages \
             --push \
+            --force \ 
             ${{ env.PH_DOCS_VERSION }} \
             ${{ env.PH_DOCS_ALIAS }}

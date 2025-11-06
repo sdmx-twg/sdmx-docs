@@ -71,8 +71,7 @@ nav:
 - Registry Specification and Logical Interfaces:
   - Registry Specification: '!include ./components/rest_api/mkdocs_registry_specification.yml'
   - Logical Interfaces: '!include ./components/information_model/mkdocs_logical_interfaces.yml'
-- Technical Notes:
-  - Technical Notes: '!include ./components/information_model/mkdocs_technical_notes.yml'
+- Technical Notes: '!include ./components/information_model/mkdocs_technical_notes.yml'
 - REST API (v2.0): '!include ./components/rest_api/mkdocs_rest_api.yml'
 - Transmission Formats:
   - SDMX-ML (v3.0): '!include ./components/sdmx_ml/mkdocs.yml'
@@ -99,6 +98,7 @@ markdown_extensions:
     alternate_style: true
 - pymdownx.blocks.caption
 - footnotes
+- smarty
 
 
 plugins:

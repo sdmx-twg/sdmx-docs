@@ -45,3 +45,60 @@ The following plugins are used:
 - `mike`
 - `llmstxt` (https://github.com/jimporter/mike)
 - `exclude` (https://github.com/apenwarr/mkdocs-exclude)
+
+## Folder Structure during build
+
+```sh
+├── assets
+│   ├── anchors.js
+│   └── style.css
+├── framework
+│   ├── framework
+│   ├── information_model
+│   ├── logical_interfaces
+│   └── technical_notes
+├── getting_started
+├── index.md
+├── information_model
+│   ├── framework
+│   ├── information_model
+│   ├── logical_interfaces
+│   └── technical_notes
+├── logical_interfaces
+│   ├── framework
+│   ├── information_model
+│   ├── logical_interfaces
+│   └── technical_notes
+├── media
+│   └── logos
+├── SDMX-CSV
+│   ├── data-message-field-guide.md
+│   ├── index.md
+│   └── metadata-message-field-guide.md
+├── SDMX-JSON
+│   ├── data-message
+│   ├── index.md
+│   ├── metadata-message
+│   └── structure-message
+├── SDMX-ML
+│   ├── common.md
+│   ├── data.md
+│   ├── index.md
+│   ├── message.md
+│   ├── registry.md
+│   ├── samples
+│   ├── samples.md
+│   ├── schemas
+│   └── structure.md
+├── sdmx-registry-specification
+│   ├── registry_specification
+│   └── rest_api
+├── sdmx-rest-api
+│   ├── registry_specification
+│   └── rest_api
+└── technical_notes
+    ├── framework
+    ├── information_model
+    ├── logical_interfaces
+    └── technical_notes
+```
