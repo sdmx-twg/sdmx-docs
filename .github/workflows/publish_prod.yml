@@ -88,6 +88,5 @@ jobs:
             --update-aliases \
             --branch gh-pages \
             --push \
-            --force \ 
             ${{ env.PH_DOCS_VERSION }} \
             ${{ env.PH_DOCS_ALIAS }}
