@@ -1,8 +1,40 @@
 {
     "cSpell.words": [
+        "artefacts",
+        "attachmentconstraint",
+        "categorisation",
+        "categorisations",
+        "categoryscheme",
+        "codelist",
+        "Codelists",
+        "conceptscheme",
+        "contentconstraint",
+        "dataflows",
+        "dataprovision",
+        "datastructure",
+        "ESTAT",
+        "infomodel",
+        "localised",
+        "MDSTRUCTURE",
+        "metadataflow",
+        "metadataflows",
+        "metadataprovision",
+        "metadataset",
+        "metadatasets",
+        "metadatastructure",
+        "metadatastructuredefinition",
+        "organisation",
+        "organisational",
+        "Personalisation",
+        "Personalisations",
+        "provisionagreement",
         "pyproject",
-        "SDMX"
+        "SDMX",
+        "Valeur",
+        "valuelist",
+        "wildcarded"
     ],
+    "cSpell.language": "en-GB,en-US,fr",
     "yaml.schemas": {
         "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
     },
@@ -14,5 +46,7 @@
         "tag:yaml.org,2002:python/name:material.extensions.emoji.twemoji",
         "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format",
         "tag:yaml.org,2002:python/object/apply:pymdownx.slugs.slugify mapping"
-    ]
+    ],
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
 }

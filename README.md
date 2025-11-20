@@ -1,10 +1,14 @@
 # SDMX Technical Documentation
 
-This repository contains the source files for the SDMX Technical Documentation. The documentation is built using [MkDocs](https://www.mkdocs.org/), a static site generator designed for project documentation.
+This repository contains the source files for the SDMX Technical Documentation.
+The documentation is built using [MkDocs](https://www.mkdocs.org/), a static
+site generator designed for project documentation.
 
 ## Getting Started
 
-To build and serve the documentation locally, ensure you have MkDocs installed. The recommended package manager for this project is [uv](https://github.com/uv-py/uv).
+To build and serve the documentation locally, ensure you have MkDocs installed.
+The recommended package manager for this project is
+[uv](https://github.com/uv-py/uv).
 
 ### Install `uv`
 
@@ -18,10 +22,20 @@ pip install uv
 
 Once uv is installed, you can install the project dependencies by running:
 
-Serve the Documentation
+```sh
+uv sync
+```
+
+### Serve the Documentation
+
 To serve the documentation locally, use the following command:
 
-This will start a local development server, and you can view the documentation in your browser at <http://127.0.0.1:8000>.
+```sh
+uv run mkdocs serve
+```
+
+This will start a local development server, and you can view the documentation
+in your browser at <http://127.0.0.1:8000>.
 
 ## Repository Structure
 
@@ -32,7 +46,8 @@ This will start a local development server, and you can view the documentation i
 
 ## Contributing
 
-Feel free to contribute to the SDMX Technical Documentation by submitting pull requests or reporting issues.
+Feel free to contribute to the SDMX Technical Documentation by submitting pull
+requests or reporting issues.
 
 ## License
 
@@ -71,16 +86,16 @@ The following plugins are used:
 │   └── technical_notes
 ├── media
 │   └── logos
-├── SDMX-CSV
-│   ├── data-message-field-guide.md
+├── csv
+│   ├── data_message_field_guide.md
 │   ├── index.md
-│   └── metadata-message-field-guide.md
-├── SDMX-JSON
-│   ├── data-message
+│   └── metadata_message_field_guide.md
+├── json
+│   ├── data_message
 │   ├── index.md
-│   ├── metadata-message
-│   └── structure-message
-├── SDMX-ML
+│   ├── metadata_message
+│   └── structure_message
+├── ml
 │   ├── common.md
 │   ├── data.md
 │   ├── index.md
@@ -90,10 +105,10 @@ The following plugins are used:
 │   ├── samples.md
 │   ├── schemas
 │   └── structure.md
-├── sdmx-registry-specification
+├── registry_specification
 │   ├── registry_specification
 │   └── rest_api
-├── sdmx-rest-api
+├── rest_api
 │   ├── registry_specification
 │   └── rest_api
 └── technical_notes
