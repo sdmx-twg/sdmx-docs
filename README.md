@@ -39,10 +39,24 @@ in your browser at <http://127.0.0.1:8000>.
 
 ## Repository Structure
 
-- pyproject.toml: Configuration file for the project.
-- .github/: Contains GitHub-specific files, including Copilot instructions.
-- .gitignore: Specifies intentionally untracked files to ignore.
-- .python-version: Specifies the Python version used for the project.
+This repository is organized into two main areas:
+
+- **`docs/`**: Contains the main documentation content for the SDMX Technical
+  Documentation site. This folder includes overarching topics like the general
+  index page.
+
+- **`components/`**: Contains individual submodules for each SDMX format and
+  specification. Each component (e.g., `sdmx_csv`, `sdmx_json`, `sdmx_ml`,
+  `rest_api`, `guidelines`, `information_model`) has its own `docs/` folder and
+  `mkdocs.yml` configuration, allowing them to be developed and built
+  independently or integrated into the main site.
+
+When building the full documentation site, MkDocs merges content from both the
+main `docs/` folder and the component submodules to create a unified
+documentation structure.
+For the resulting
+[folder structure see the section below](#folder-structure-during-build), 
+e.g., to create links within the files
 
 ## Contributing
 
@@ -57,9 +71,11 @@ The license will be added.
 
 The following plugins are used:
 
-- `mike`
-- `llmstxt` (https://github.com/jimporter/mike)
-- `exclude` (https://github.com/apenwarr/mkdocs-exclude)
+- `mike` (<https://github.com/jimporter/mike>)
+- `monorepo` (<https://github.com/backstage/mkdocs-monorepo-plugin>)
+- `to-pdf` (<https://github.com/orzih/mkdocs-with-pdf>)
+- `search` (built-in MkDocs plugin)
+- `exclude` (<https://github.com/apenwarr/mkdocs-exclude>)
 
 ## Folder Structure during build
 
