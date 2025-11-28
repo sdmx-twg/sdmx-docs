@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
+        "Annotable",
         "artefacts",
         "attachmentconstraint",
         "categorisation",
@@ -8,6 +9,7 @@
         "codelist",
         "Codelists",
         "conceptscheme",
+        "containerobject",
         "contentconstraint",
         "dataflows",
         "dataprovision",
@@ -30,9 +32,12 @@
         "provisionagreement",
         "pyproject",
         "SDMX",
+        "structuremapping",
         "Valeur",
         "valuelist",
-        "wildcarded"
+        "Versionable",
+        "wildcarded",
+        "wildcarding"
     ],
     "cSpell.language": "en-GB,en-US,fr",
     "yaml.schemas": {
