@@ -6,9 +6,24 @@ site generator designed for project documentation.
 
 ## Getting Started
 
-To build and serve the documentation locally, ensure you have MkDocs installed.
-The recommended package manager for this project is
-[uv](https://github.com/uv-py/uv).
+Follow the steps below to clone the repository and set up a local development
+environment. The recommended package manager for this project is
+[uv](https://github.com/uv-py/uv), which handles all Python dependencies
+including MkDocs itself.
+
+### Clone the Repository
+
+Clone the repository together with all submodules in one step:
+
+```bash
+git clone --recurse-submodules <repository-url>
+```
+
+If you have already cloned without submodules, initialize them afterwards:
+
+```bash
+git submodule update --init --recursive
+```
 
 ### Install `uv`
 
@@ -53,10 +68,63 @@ This repository is organized into two main areas:
 
 When building the full documentation site, MkDocs merges content from both the
 main `docs/` folder and the component submodules to create a unified
-documentation structure.
-For the resulting
-[folder structure see the section below](#folder-structure-during-build), 
-e.g., to create links within the files
+documentation structure. Refer to the
+[Folder Structure during build](#folder-structure-during-build) section for the
+directory layout produced — useful as a reference when creating relative
+cross-links between documentation pages.
+
+## Git Submodules
+
+Git submodules allow a repository to include and track another repository at a
+specific commit. This repository uses submodules so that the documentation
+content for each SDMX specification can live in its own dedicated repository,
+keeping it aligned with the respective Technical Working Group (TWG) workstream.
+Each component under `components/` (e.g. `rest_api`, `sdmx_csv`, `sdmx_json`,
+`sdmx_ml`, `information_model`) is a submodule pointing to a separate upstream
+repository.
+
+The submodules and their tracked branches are declared in
+[`.gitmodules`](.gitmodules). For example:
+
+```ini
+[submodule "components/sdmx_ml"]
+    path = components/sdmx_ml
+    url = https://github.com/sdmx-twg/sdmx-ml.git
+    branch = 3.0.x
+```
+
+> **Important:** Git submodules do not update automatically. The link between a
+> submodule and its tracked branch is intentionally loose — the repository only
+> records the exact commit that was last checked in, not the branch tip. This
+> means changes made upstream in a submodule repository are **not** reflected
+> locally until you explicitly pull them in.
+
+To fetch the latest commits from all tracked branches and update the working
+tree, run:
+
+```bash
+git submodule update --init --recursive --remote
+```
+
+This checks out the current tip of each configured branch for every submodule.
+Any resulting changes to the recorded submodule commits can then be staged,
+committed, and pushed in the usual way.
+
+## MKDocs Plugins
+
+The following MkDocs plugins are used in this project:
+
+- [`mike`](https://github.com/jimporter/mike) — manages multiple versions of the
+  documentation and handles versioned deployments.
+- [`monorepo`](https://github.com/backstage/mkdocs-monorepo-plugin) — merges
+  documentation from multiple repositories (submodules) into a single unified
+  site.
+- [`to-pdf`](https://github.com/orzih/mkdocs-with-pdf) — generates a PDF version
+  of the documentation.
+- `search` (built-in MkDocs plugin) — provides full-text search across the
+  documentation site.
+- [`exclude`](https://github.com/apenwarr/mkdocs-exclude) — excludes specified
+  files or directories from the build output.
 
 ## Contributing
 
@@ -78,6 +146,10 @@ The following plugins are used:
 - `exclude` (<https://github.com/apenwarr/mkdocs-exclude>)
 
 ## Folder Structure during build
+
+The directory tree below shows the virtual file system MkDocs assembles during a
+build. Use it as a reference when writing relative links between pages, since
+the paths here correspond to the URL structure of the built site.
 
 ```sh
 ├── assets
