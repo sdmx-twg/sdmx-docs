@@ -97,8 +97,6 @@ via:
 
 - [GitHub Issues](https://github.com/sdmx-twg)
 - E-Mail: [twg@sdmx.org](mailto:twg@sdmx.org)
-  (during the initial review phase
-  [sdmx@analytical-software.de](mailto:sdmx@analytical-software.de))
 
 ## Matrix of SDMX and REST / Transmission Format Versions
 
@@ -108,7 +106,7 @@ REST-API, SDMX-ML, SDMX-JSON, and SDMX-CSV that were released together with the
 standard:
 
 | SDMX version | REST-API version | SDMX-ML version | SDMX-JSON version | SDMX-CSV version |
-|--------------|----------------|---------------|-----------------|----------------|
+| ------------ | ---------------- | --------------- | ----------------- | ---------------- |
 | 3.1          | 2.2              | 3.1             | 2.1               | 2.1              |
 | 3.0          | 2.0              | 3.0             | 2.0               | 2.0              |
 | 2.1          | 1.5              | 2.1             | 1.0               | 1.0              |

@@ -60,7 +60,7 @@ extra:
 validation:
   omitted_files: ignore
   absolute_links: info
-  unrecognized_links: info
+  unrecognized_links: warn
   anchors: info
 
 nav:
@@ -72,11 +72,11 @@ nav:
   - Registry Specification: '!include ./components/rest_api/mkdocs_registry_specification.yml'
   - Logical Interfaces: '!include ./components/information_model/mkdocs_logical_interfaces.yml'
 - Technical Notes: '!include ./components/information_model/mkdocs_technical_notes.yml'
-- REST API (v2.0): '!include ./components/rest_api/mkdocs_rest_api.yml'
+- REST API (v2.2): '!include ./components/rest_api/mkdocs_rest_api.yml'
 - Transmission Formats:
-  - SDMX-ML (v3.0): '!include ./components/sdmx_ml/mkdocs.yml'
-  - SDMX-JSON (v2.0): '!include ./components/sdmx_json/mkdocs.yml'
-  - SDMX-CSV (v2.0): '!include ./components/sdmx_csv/mkdocs.yml'
+  - SDMX-ML (v3.1): '!include ./components/sdmx_ml/mkdocs.yml'
+  - SDMX-JSON (v2.1): '!include ./components/sdmx_json/mkdocs.yml'
+  - SDMX-CSV (v2.1): '!include ./components/sdmx_csv/mkdocs.yml'
 - Go To sdmx.org: "https://sdmx.org/"
 
 markdown_extensions:
