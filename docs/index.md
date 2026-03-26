@@ -108,7 +108,7 @@ REST-API, SDMX-ML, SDMX-JSON, and SDMX-CSV that were released together with the
 standard:
 
 | SDMX version | REST-API version | SDMX-ML version | SDMX-JSON version | SDMX-CSV version |
-|--------------|----------------|---------------|-----------------|----------------|
+| ------------ | ---------------- | --------------- | ----------------- | ---------------- |
 | 3.1          | 2.2              | 3.1             | 2.1               | 2.1              |
 | 3.0          | 2.0              | 3.0             | 2.0               | 2.0              |
 | 2.1          | 1.5              | 2.1             | 1.0               | 1.0              |

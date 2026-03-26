@@ -79,10 +79,10 @@ jobs:
           echo "PH_DOCS_ALIAS=$ALIAS" >> $GITHUB_ENV
 
       - name: Deploy
-        if: ${{ env.PH_DOCS_VERSION }} != null
+        if: ${{ env.PH_DOCS_VERSION != '' }}
         run: |
-          git config user.name jr-hms
-          git config user.email jonas.rieger@analytical-software.de
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git fetch --no-tags --prune --depth=1 origin gh-pages
           uv run mike deploy \
             --update-aliases \

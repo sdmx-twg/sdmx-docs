@@ -60,7 +60,7 @@ extra:
 validation:
   omitted_files: ignore
   absolute_links: info
-  unrecognized_links: info
+  unrecognized_links: warn
   anchors: info
 
 nav:
