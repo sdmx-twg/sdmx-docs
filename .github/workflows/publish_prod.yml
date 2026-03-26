@@ -2,7 +2,7 @@
 # https://github.com/arduino/arduino-cli/blob/master/.github/workflows/deploy-cobra-mkdocs-versioned-poetry.yml
 # and https://github.com/squidfunk/mkdocs-material/discussions/6546
 
-name: Deploy Documents 5.5
+name: docs-publish
 
 env:
   ENABLE_PDF_EXPORT: 1
@@ -14,8 +14,7 @@ permissions:
 on:
   push:
     branches:
-      # Branch to base "dev" website on. Set in siteversion.py also.
-      - master
+      - dev
       # Release branches have names like 0.8.x, 0.9.x, ...
       - "[0-9]+.[0-9]+.x"
   create:
@@ -69,7 +68,11 @@ jobs:
 
           # Extract version and alias using parameter expansion
           VERSION="${LINE%%|*}"
-          ALIAS="${LINE#*|}"
+          if [[ "$LINE" == *"|"* ]]; then
+              ALIAS="${LINE#*|}"
+          else
+              ALIAS=""
+          fi
 
           # Print the extracted values for verification
           echo "Version: $VERSION"
@@ -84,9 +87,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git fetch --no-tags --prune --depth=1 origin gh-pages
+          DEPLOY_ARGS="${{ env.PH_DOCS_VERSION }}"
+          if [[ -n "${{ env.PH_DOCS_ALIAS }}" ]]; then
+            DEPLOY_ARGS="$DEPLOY_ARGS ${{ env.PH_DOCS_ALIAS }}"
+          fi
           uv run mike deploy \
             --update-aliases \
             --branch gh-pages \
             --push \
-            ${{ env.PH_DOCS_VERSION }} \
-            ${{ env.PH_DOCS_ALIAS }}
+            $DEPLOY_ARGS
