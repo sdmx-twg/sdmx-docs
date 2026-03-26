@@ -97,8 +97,6 @@ via:
 
 - [GitHub Issues](https://github.com/sdmx-twg)
 - E-Mail: [twg@sdmx.org](mailto:twg@sdmx.org)
-  (during the initial review phase
-  [sdmx@analytical-software.de](mailto:sdmx@analytical-software.de))
 
 ## Matrix of SDMX and REST / Transmission Format Versions
 
