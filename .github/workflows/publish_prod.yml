@@ -19,6 +19,10 @@ on:
       - "[0-9]+.[0-9]+.x"
   create:
 
+concurrency:
+  group: gh-pages-deploy
+  cancel-in-progress: false
+
 jobs:
   pre-publish:
     runs-on: ubuntu-latest
@@ -86,7 +90,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git fetch --no-tags --prune --depth=1 origin gh-pages
+          git fetch --no-tags --prune origin gh-pages
           DEPLOY_ARGS="${{ env.PH_DOCS_VERSION }}"
           if [[ -n "${{ env.PH_DOCS_ALIAS }}" ]]; then
             DEPLOY_ARGS="$DEPLOY_ARGS ${{ env.PH_DOCS_ALIAS }}"
