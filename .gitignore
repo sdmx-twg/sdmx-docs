@@ -173,5 +173,3 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 .github/instructions/
-
-node_modules/
