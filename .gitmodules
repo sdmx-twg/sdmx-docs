@@ -1,20 +1,24 @@
 [submodule "components/rest_api"]
 	path = components/rest_api
-	url = https://github.com/HMS-Analytical-Software/sdmx-technical-documentation-rest.git
-	branch = 2.0.x
+	url = https://github.com/sdmx-twg/sdmx-rest.git
+	branch = docs_v2.0
 [submodule "components/sdmx-csv"]
 	path = components/sdmx_csv
-	url = https://github.com/HMS-Analytical-Software/sdmx-technical-documentation-csv.git
-	branch = 2.0.x
+	url = https://github.com/sdmx-twg/sdmx-csv.git
+	branch = docs_v2.0
 [submodule "components/sdmx-json"]
 	path = components/sdmx_json
-	url = https://github.com/HMS-Analytical-Software/sdmx-technical-documentation-json.git
+	url = https://github.com/sdmx-twg/sdmx-json.git
 	branch = 2.0.x
 [submodule "components/sdmx_ml"]
 	path = components/sdmx_ml
-	url = https://github.com/HMS-Analytical-Software/sdmx-technical-documentation-ml.git
-	branch = 3.0.x
+	url = https://github.com/sdmx-twg/sdmx-ml.git
+	branch = docs_v3.0
 [submodule "components/information_model"]
 	path = components/information_model
-	url = https://github.com/HMS-Analytical-Software/sdmx-technical-documentation-im.git
-	branch = 3.0.x
+	url = https://github.com/sdmx-twg/sdmx-im.git
+	branch = docs_v3.0
+[submodule "components/sdmx_registry"]
+	path = components/sdmx_registry
+	url = https://github.com/HMS-Analytical-Software/sdmx-technical-documentation-registry.git
+	branch = feature/create-3.0
