@@ -1,0 +1,10 @@
+{
+  "MD049": {"style": "asterisk"},
+  "MD045": false,
+  "MD007": { "indent": 4 },
+  "MD013": {
+    "line_length": 80,
+    "code_block_line_length": 120,
+    "tables": false
+  }
+}

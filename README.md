@@ -61,8 +61,13 @@ pointer is updated separately.
 | Operation | Command |
 | --------- | ------- |
 | Fetch all submodules after cloning | `git submodule update --init --recursive` |
+| Sync local submodule config with `.gitmodules` | `git submodule sync --recursive` |
 | Update submodules to latest upstream | `git submodule update --init --recursive --remote` |
 | Commit submodule edits | Two-step: commit and push inside the submodule directory, then stage and commit the updated pointer in the parent repo |
+
+Run the sync command after pulling changes that modify `.gitmodules` (for
+example, updated submodule URLs or tracked branches), before running
+`git submodule update --init --recursive --remote`.
 
 > **Important:** changes pushed to a submodule repository do **not**
 > automatically trigger a site rebuild. The parent repository stores a pointer
@@ -185,6 +190,10 @@ The following plugins are used:
 -   `exclude` (<https://github.com/apenwarr/mkdocs-exclude>)
 
 ## Folder Structure during build
+
+The directory tree below shows the virtual file system MkDocs assembles during a
+build. Use it as a reference when writing relative links between pages, since
+the paths here correspond to the URL structure of the built site.
 
 ```sh
 ├── assets

@@ -1,0 +1,131 @@
+site_name: SDMX Technical Documentation
+site_description: Statistical Data and Metadata eXchange
+site_url: https://HMS-Analytical-Software.github.io/sdmx-technical-documentation
+strict: true
+copyright: '<a href="https://www.analytical-software.de/en/legal-disclosure/">HMS Analytical Software Imprint</a>'
+
+theme:
+  name: 'material'
+  palette:
+  - media: "(prefers-color-scheme)"
+    scheme: default
+    primary: indigo
+    accent: orange
+    toggle:
+      icon: material/lightbulb
+      name: "Switch to light mode"
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: indigo
+    accent: orange
+    toggle:
+      icon: material/lightbulb-outline
+      name: "Switch to dark mode"
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: indigo
+    accent: orange
+    toggle:
+      icon: material/lightbulb-auto-outline
+      name: "Switch to system preference"
+  features:
+    - content.tabs.link
+    - content.code.annotate
+    - content.code.copy
+    # - announce.dismiss
+    - navigation.tabs
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.preview
+    # - navigation.instant.progress
+    - navigation.indexes
+    - navigation.path
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.suggest
+    - toc.follow
+  logo: 'media/logos/SDMX-logo.png'
+  favicon: 'media/logos/favicon.png'
+
+repo_name: HMS-Analytical-Software/sdmx-technical-documentation
+repo_url: https://github.com/HMS-Analytical-Software/sdmx-technical-documentation
+edit_uri: edit/main/docs/
+
+extra:
+  version:
+    provider: mike
+
+# https://www.mkdocs.org/user-guide/configuration/#validation
+validation:
+  omitted_files: ignore
+  absolute_links: info
+  unrecognized_links: warn
+  anchors: info
+
+nav:
+- Getting Started:
+  - Welcome to SDMX: index.md
+- Framework: '!include ./components/information_model/mkdocs_framework.yml'
+- Information Model: '!include ./components/information_model/mkdocs_information_model.yml'
+- Registry Specification and Logical Interfaces:
+  - Registry Specification: '!include ./components/sdmx_registry/mkdocs_registry_specification.yml'
+  - Logical Interfaces: '!include ./components/information_model/mkdocs_logical_interfaces.yml'
+- Technical Notes: '!include ./components/information_model/mkdocs_technical_notes.yml'
+- REST API (v2.0): '!include ./components/rest_api/mkdocs_rest_api.yml'
+- Transmission Formats:
+  - SDMX-ML (v3.0): '!include ./components/sdmx_ml/mkdocs.yml'
+  - SDMX-JSON (v2.0): '!include ./components/sdmx_json/mkdocs.yml'
+  - SDMX-CSV (v2.0): '!include ./components/sdmx_csv/mkdocs.yml'
+- Go To sdmx.org: "https://sdmx.org/"
+
+markdown_extensions:
+- tables
+- attr_list
+- toc:
+    permalink: true
+    title: On this page
+- admonition
+- pymdownx.details
+- pymdownx.superfences
+- pymdownx.highlight:
+    pygments_lang_class: true
+- pymdownx.extra
+- pymdownx.emoji:
+    emoji_index: !!python/name:material.extensions.emoji.twemoji
+    emoji_generator: !!python/name:material.extensions.emoji.to_svg
+- pymdownx.tabbed:
+    alternate_style: true
+- pymdownx.blocks.caption
+- footnotes
+- smarty
+
+
+plugins:
+- to-pdf:
+    download_link: header
+    verbose: false
+    debug_html: false
+    cover_title: SDMX Technical Specifications
+    cover_subtitle: Version 3.0
+    cover_logo: media/logos/SDMX-logo.png
+    enabled_if_env: ENABLE_PDF_EXPORT
+    author: SDMX Technical Working Group
+    copyright: Copyright © SDMX TWG 2020
+    toc_level: 3
+- monorepo
+- mike:
+    alias_type: symlink
+    canonical_version: latest
+- search
+- exclude:
+    glob:
+    - theme/announce.html
+    - plugins/*
+    - __pycache__/*
+
+extra_javascript:
+  - assets/anchors.js
+
+extra_css:
+  - assets/style.css
