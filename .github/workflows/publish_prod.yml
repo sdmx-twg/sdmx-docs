@@ -95,6 +95,7 @@ jobs:
           if [[ -n "${{ env.PH_DOCS_ALIAS }}" ]]; then
             DEPLOY_ARGS="$DEPLOY_ARGS ${{ env.PH_DOCS_ALIAS }}"
           fi
+          uv run mike set-default --push latest
           uv run mike deploy \
             --update-aliases \
             --branch gh-pages \
