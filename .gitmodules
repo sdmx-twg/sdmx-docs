@@ -20,5 +20,5 @@
 	branch = docs_v3.0
 [submodule "components/sdmx_registry"]
 	path = components/sdmx_registry
-	url = https://github.com/HMS-Analytical-Software/sdmx-technical-documentation-registry.git
-	branch = feature/create-3.0
+	url = https://github.com/sdmx-twg/sdmx-registry.git
+	branch = docs_v3.0
