@@ -1,0 +1,2712 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Statistical Data and Metadata eXchange" name="description"/>
+<link href="https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/technical_notes/12_Structure_Mapping/" rel="canonical"/>
+<link href="../../../media/logos/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.12" name="generator"/>
+<title>Structure Mapping - SDMX Technical Documentation</title>
+<link href="../../../assets/stylesheets/main.2afb09e1.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../../assets/style.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="orange" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#structure-mapping">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<div data-md-color-scheme="default" data-md-component="outdated" hidden="">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="SDMX Technical Documentation" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="SDMX Technical Documentation">
+<img alt="logo" src="../../../media/logos/SDMX-logo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            SDMX Technical Documentation
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Structure Mapping
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="orange" data-md-color-media="(prefers-color-scheme)" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"></path></svg>
+</label>
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="orange" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"></path></svg>
+</label>
+<input aria-label="Switch to system preference" class="md-option" data-md-color-accent="orange" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to system preference">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 2c3.87 0 7 3.13 7 7 0 2.38-1.19 4.47-3 5.74V17c0 .55-.45 1-1 1H6c-.55 0-1-.45-1-1v-2.26C3.19 13.47 2 11.38 2 9c0-3.87 3.13-7 7-7M6 21v-1h6v1c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1M9 4C6.24 4 4 6.24 4 9c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58 0-2.76-2.24-5-5-5m10 9h-2l-3.2 9h1.9l.7-2h3.2l.7 2h1.9zm-2.15 5.65L18 15l1.15 3.65z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/HMS-Analytical-Software/sdmx-technical-documentation" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    HMS-Analytical-Software/sdmx-technical-documentation
+  </div>
+</a>
+</div>
+<a class="md-header-nav__button md-icon" href="../../../pdf/document.pdf" title="PDF">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,0c-17.6,0-32,14.4-32,32v448c0,17.6,14.4,32,32,32h320c17.6,0,32-14.4,32-32V128L352,0H128z" fill="#E2E5E7"></path>
+<path d="m384 128h96l-128-128v96c0 17.6 14.4 32 32 32z" fill="#B0B7BD"></path>
+<polygon fill="#CAD1D8" points="480 224 384 128 480 128"></polygon>
+<path d="M416,416c0,8.8-7.2,16-16,16H48c-8.8,0-16-7.2-16-16V256c0-8.8,7.2-16,16-16h352c8.8,0,16,7.2,16,16  V416z" fill="#F15642"></path>
+<g fill="#fff">
+<path d="m101.74 303.15c0-4.224 3.328-8.832 8.688-8.832h29.552c16.64 0 31.616 11.136 31.616 32.48 0 20.224-14.976 31.488-31.616 31.488h-21.36v16.896c0 5.632-3.584 8.816-8.192 8.816-4.224 0-8.688-3.184-8.688-8.816v-72.032zm16.88 7.28v31.872h21.36c8.576 0 15.36-7.568 15.36-15.504 0-8.944-6.784-16.368-15.36-16.368h-21.36z"></path>
+<path d="m196.66 384c-4.224 0-8.832-2.304-8.832-7.92v-72.672c0-4.592 4.608-7.936 8.832-7.936h29.296c58.464 0 57.184 88.528 1.152 88.528h-30.448zm8.064-72.912v57.312h21.232c34.544 0 36.08-57.312 0-57.312h-21.232z"></path>
+<path d="m303.87 312.11v20.336h32.624c4.608 0 9.216 4.608 9.216 9.072 0 4.224-4.608 7.68-9.216 7.68h-32.624v26.864c0 4.48-3.184 7.92-7.664 7.92-5.632 0-9.072-3.44-9.072-7.92v-72.672c0-4.592 3.456-7.936 9.072-7.936h44.912c5.632 0 8.96 3.344 8.96 7.936 0 4.096-3.328 8.704-8.96 8.704h-37.248v0.016z"></path>
+</g>
+<path d="m400 432h-304v16h304c8.8 0 16-7.2 16-16v-16c0 8.8-7.2 16-16 16z" fill="#CAD1D8"></path>
+</svg>
+</a></nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../..">
+          
+  
+  
+    
+  
+  Getting Started
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../framework/framework/0_framework-introduction/">
+          
+  
+  
+    
+  
+  Framework
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../information_model/0_Introduction/">
+          
+  
+  
+    
+  
+  Information Model
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../registry_specification/1_Introduction/">
+          
+  
+  
+    
+  
+  Registry Specification and Logical Interfaces
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../technical_notes/technical_notes/0_Purpose_and_Structure/">
+          
+  
+  
+    
+  
+  Technical Notes
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../rest_api/">
+          
+  
+  
+    
+  
+  REST API (v2.0)
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../ml/">
+          
+  
+  
+    
+  
+  Transmission Formats
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="https://sdmx.org/">
+        
+  
+  
+    
+  
+  Go To sdmx.org
+
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="SDMX Technical Documentation" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="SDMX Technical Documentation">
+<img alt="logo" src="../../../media/logos/SDMX-logo.png"/>
+</a>
+    SDMX Technical Documentation
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/HMS-Analytical-Software/sdmx-technical-documentation" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    HMS-Analytical-Software/sdmx-technical-documentation
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_1" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+</a>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_1_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_1">
+<span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Framework
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            Framework
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../framework/framework/0_framework-introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../framework/framework/1_framework-change-history/">
+<span class="md-ellipsis">
+    Change History
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../framework/framework/2_framework-processes-and-business-scope/">
+<span class="md-ellipsis">
+    Processes and Business Scope
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../framework/framework/3_framework-the-sdmx-information-model/">
+<span class="md-ellipsis">
+    The SDMX Information Model
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../framework/framework/4_framework-the-sdmx-transmission-formats/">
+<span class="md-ellipsis">
+    The SDMX Transmission Formats
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../framework/framework/5_framework-dependencies-on-sdmx-content-oriented-guidelines/">
+<span class="md-ellipsis">
+    Dependencies on SDMX content-oriented guidelines
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../framework/framework/6_framework-validation-and-transformation-language/">
+<span class="md-ellipsis">
+    Validation and Transformation Language
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Information Model
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Information Model
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/0_change_history/">
+<span class="md-ellipsis">
+    Change History
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/1_Actors_and_Use_Cases/">
+<span class="md-ellipsis">
+    Actors and Use Cases
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/2_SDMX_Base_Package/">
+<span class="md-ellipsis">
+    SDMX Base Package
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/3_Specific_Item_Schemes/">
+<span class="md-ellipsis">
+    Specific Item Schemes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/4_Data_Structure_Definition_and_Dataset/">
+<span class="md-ellipsis">
+    Data Structure Definition and Dataset
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/5_Cube/">
+<span class="md-ellipsis">
+    Cube
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/6_Metadata_Structure_Definition_and_Metadata_Set/">
+<span class="md-ellipsis">
+    Metadata Structure Definition and Metadata Set
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/7_Hierarchy/">
+<span class="md-ellipsis">
+    Hierarchy
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/8_Structure_Map/">
+<span class="md-ellipsis">
+    Structure Map
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/9_RepresentationMap/">
+<span class="md-ellipsis">
+    RepresentationMap
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/10_ItemSchemeMap/">
+<span class="md-ellipsis">
+    ItemSchemeMap
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/11_Constraints/">
+<span class="md-ellipsis">
+    Constraints
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/12_Data_Provisioning/">
+<span class="md-ellipsis">
+    Data Provisioning
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/13_Process/">
+<span class="md-ellipsis">
+    Process
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/14_Validation_and_Transformation_Language/">
+<span class="md-ellipsis">
+    Validation and Transformation Language
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/15_Appendix_1%3A_A_Short_Guide_to_UML_in_the_SDMX_Information_Model/">
+<span class="md-ellipsis">
+    Appendix 1 A Short Guide to UML in the SDMX Information Model
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Registry Specification and Logical Interfaces
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            Registry Specification and Logical Interfaces
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Registry Specification
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_1">
+<span class="md-nav__icon md-icon"></span>
+            Registry Specification
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../registry_specification/1_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../registry_specification/2_Scope_and_Normative_Status/">
+<span class="md-ellipsis">
+    Scope and Normative Status
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../registry_specification/3_Scope_of_the_SDMX_Registry_Repository/">
+<span class="md-ellipsis">
+    Scope of the SDMX Registry Repository
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../registry_specification/4_SDMX_Registry_Repository_Architecture/">
+<span class="md-ellipsis">
+    SDMX Registry Repository Architecture
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../registry_specification/5_Registry_Interfaces_and_Services/">
+<span class="md-ellipsis">
+    Registry Interfaces and Services
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Logical Interfaces
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+            Logical Interfaces
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../logical_interfaces/logical_interfaces/6_Identification_of_SDMX_Objects/">
+<span class="md-ellipsis">
+    Identification of SDMX Objects
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../logical_interfaces/logical_interfaces/7_Implementation_Notes/">
+<span class="md-ellipsis">
+    Implementation Notes
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Technical Notes
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            Technical Notes
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/0_Purpose_and_Structure/">
+<span class="md-ellipsis">
+    Purpose and Structure
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/1_General_Notes_on_This_Document/">
+<span class="md-ellipsis">
+    General Notes on This Document
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/2_Guide_for_SDMX_Format_Standards/">
+<span class="md-ellipsis">
+    Guide for SDMX Format Standards
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/3_General_Notes_for_Implementers/">
+<span class="md-ellipsis">
+    General Notes for Implementers
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/4_Reference_Metadata/">
+<span class="md-ellipsis">
+    Reference Metadata
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/5_Codelist/">
+<span class="md-ellipsis">
+    Codelist
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/6_Geospatial_information_support/">
+<span class="md-ellipsis">
+    Geospatial Information Support
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/7_Maintenance_Agencies_and_Metadata_Providers/">
+<span class="md-ellipsis">
+    Maintenance Agencies and Metadata Providers
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/8_Concept_Roles/">
+<span class="md-ellipsis">
+    Concept Roles
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/9_Constraints/">
+<span class="md-ellipsis">
+    Constraints
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/10_Transforming_between_versions_of_SDMX/">
+<span class="md-ellipsis">
+    Transforming Between Versions of SDMX
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/11_Validation_and_Transformation_Language__VTL_/">
+<span class="md-ellipsis">
+    Validation and Transformation Language
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/12_Structure_Mapping/">
+<span class="md-ellipsis">
+    Structure Mapping
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/13_ANNEX_Semantic_Versioning/">
+<span class="md-ellipsis">
+    ANNEX Semantic Versioning
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<span class="md-ellipsis">
+    REST API (v2.0)
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            REST API (v2.0)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6_1" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../rest_api/">
+<span class="md-ellipsis">
+    REST API
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_6_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_6_1">
+<span class="md-nav__icon md-icon"></span>
+            REST API
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/data/">
+<span class="md-ellipsis">
+    Data queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/structures/">
+<span class="md-ellipsis">
+    Structure queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/metadata/">
+<span class="md-ellipsis">
+    Reference metadata queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/schema/">
+<span class="md-ellipsis">
+    Schema queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/availability/">
+<span class="md-ellipsis">
+    Availability queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/querying_versions/">
+<span class="md-ellipsis">
+    Query syntax for versions
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/content_negotiation/">
+<span class="md-ellipsis">
+    Content-Negotiation
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/status/">
+<span class="md-ellipsis">
+    Status codes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/maintenance/">
+<span class="md-ellipsis">
+    Structure maintenance
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/tips/">
+<span class="md-ellipsis">
+    Tips for providers and consumers
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/extend/">
+<span class="md-ellipsis">
+    Extending the API
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+<span class="md-ellipsis">
+    Transmission Formats
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+            Transmission Formats
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_1" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../ml/">
+<span class="md-ellipsis">
+    SDMX-ML (v3.0)
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_1" id="__nav_7_1_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_1">
+<span class="md-nav__icon md-icon"></span>
+            SDMX-ML (v3.0)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/message/">
+<span class="md-ellipsis">
+    Message
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/common/">
+<span class="md-ellipsis">
+    Common
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/structure/">
+<span class="md-ellipsis">
+    Structure
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/data/">
+<span class="md-ellipsis">
+    Data
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/registry/">
+<span class="md-ellipsis">
+    Registry
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/samples/">
+<span class="md-ellipsis">
+    Samples
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../json/">
+<span class="md-ellipsis">
+    SDMX-JSON (v2.0)
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_2">
+<span class="md-nav__icon md-icon"></span>
+            SDMX-JSON (v2.0)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../json/structure_message/">
+<span class="md-ellipsis">
+    Structure Message
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2_2" id="__nav_7_2_2_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_2">
+<span class="md-nav__icon md-icon"></span>
+            Structure Message
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/1_field_guide/">
+<span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/2_linking_mechanism/">
+<span class="md-ellipsis">
+    Linking Mechanism
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/4_localised_text_elements/">
+<span class="md-ellipsis">
+    Localised Text Elements
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/5_security_considerations/">
+<span class="md-ellipsis">
+    Security Considerations
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/6_extending_sdmx_json/">
+<span class="md-ellipsis">
+    Extending SDMX-JSON
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/7_references/">
+<span class="md-ellipsis">
+    References
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../json/data_message/">
+<span class="md-ellipsis">
+    Data Message
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2_3" id="__nav_7_2_3_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_3">
+<span class="md-nav__icon md-icon"></span>
+            Data Message
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/1_field_guide/">
+<span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/2_linking_mechanism/">
+<span class="md-ellipsis">
+    Linking Mechanism
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/3_handling_indexes/">
+<span class="md-ellipsis">
+    Handling Indexes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/4_localised_text_elements/">
+<span class="md-ellipsis">
+    Localised Text Elements
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/5_security_considerations/">
+<span class="md-ellipsis">
+    Security Considerations
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/6_extending_sdmx_json/">
+<span class="md-ellipsis">
+    Extending SDMX-JSON
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/7_references/">
+<span class="md-ellipsis">
+    References
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_4" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../json/metadata_message/">
+<span class="md-ellipsis">
+    Metadata Message
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2_4" id="__nav_7_2_4_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_4_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_4">
+<span class="md-nav__icon md-icon"></span>
+            Metadata Message
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/1_field_guide/">
+<span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/2_linking_mechanism/">
+<span class="md-ellipsis">
+    Linking Mechanism
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/4_localised_text_elements/">
+<span class="md-ellipsis">
+    Localised Text Elements
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/5_security_considerations/">
+<span class="md-ellipsis">
+    Security Considerations
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/6_extending_sdmx_json/">
+<span class="md-ellipsis">
+    Extending SDMX-JSON
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../csv/">
+<span class="md-ellipsis">
+    SDMX-CSV (v2.0)
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_3">
+<span class="md-nav__icon md-icon"></span>
+            SDMX-CSV (v2.0)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../csv/data_message_field_guide/">
+<span class="md-ellipsis">
+    Data Message Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../csv/metadata_message_field_guide/">
+<span class="md-ellipsis">
+    Metadata Message Field Guide
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="https://sdmx.org/">
+<span class="md-ellipsis">
+    Go To sdmx.org
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="On this page" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+<span class="md-ellipsis">
+      Introduction
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-1-structure-maps">
+<span class="md-ellipsis">
+      1-1 structure maps
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#n-n-structure-maps">
+<span class="md-ellipsis">
+      N-n structure maps
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ambiguous-mapping-rules">
+<span class="md-ellipsis">
+      Ambiguous mapping rules
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#representation-maps">
+<span class="md-ellipsis">
+      Representation maps
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#regular-expression-and-substring-rules">
+<span class="md-ellipsis">
+      Regular expression and substring rules
+    </span>
+</a>
+<nav aria-label="Regular expression and substring rules" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#regular-expressions">
+<span class="md-ellipsis">
+      Regular expressions
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#substrings">
+<span class="md-ellipsis">
+      Substrings
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mapping-non-sdmx-time-formats-to-sdmx-formats">
+<span class="md-ellipsis">
+      Mapping non-SDMX time formats to SDMX formats
+    </span>
+</a>
+<nav aria-label="Mapping non-SDMX time formats to SDMX formats" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pattern-based-dates">
+<span class="md-ellipsis">
+      Pattern based dates
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#numerical-based-datetime">
+<span class="md-ellipsis">
+      Numerical based datetime
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mapping-more-complex-time-inputs">
+<span class="md-ellipsis">
+      Mapping more complex time inputs
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#using-time_period-in-mapping-rules">
+<span class="md-ellipsis">
+      Using TIME_PERIOD in mapping rules
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#time-span-mapping-rules-using-validity-periods">
+<span class="md-ellipsis">
+      Time span mapping rules using validity periods
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mapping-examples">
+<span class="md-ellipsis">
+      Mapping examples
+    </span>
+</a>
+<nav aria-label="Mapping examples" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#many-to-one-mapping-n-1">
+<span class="md-ellipsis">
+      Many to one mapping (N-1)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mapping-other-data-types-to-code-id">
+<span class="md-ellipsis">
+      Mapping other data types to Code Id
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#observation-attributes-for-time-period">
+<span class="md-ellipsis">
+      Observation Attributes for Time Period
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#time-mapping">
+<span class="md-ellipsis">
+      Time mapping
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="structure-mapping">Structure Mapping<a class="headerlink" href="#structure-mapping" title="Permanent link">¶</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
+<p>The purpose of SDMX structure mapping is to transform datasets from one
+dimensionality to another. In practice, this means that the input and
+output datasets conform to different Data Structure Definition.</p>
+<p>Structure mapping does not alter the observation values and is not
+intended to perform any aggregations or calculations.</p>
+<p>An input series maps to:</p>
+<ol>
+<li>Exactly one output series; or</li>
+<li>Multiple output series with different Series Keys, but the same observation values; or</li>
+<li>Zero output series where no source rule matches the input Component values.</li>
+</ol>
+<p>Typical use cases include:</p>
+<ul>
+<li>Transforming received data into a common internal structure;</li>
+<li>Transforming reported data into the data collector’s preferred
+      structure;</li>
+<li>Transforming unidimensional datasets<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup> to multi-dimensional; and</li>
+<li>Transforming internal datasets with a complex structure to a simpler
+      structure with fewer dimensions suitable for dissemination.</li>
+</ul>
+<h2 id="1-1-structure-maps">1-1 structure maps<a class="headerlink" href="#1-1-structure-maps" title="Permanent link">¶</a></h2>
+<p>1-1 (pronounced ‘one to one’) mappings support the simple use case where
+the value of a Component in the source structure is translated to a
+different value in the target, usually where different classification
+schemes are used for the same Concept.</p>
+<p>In the example below, ISO 2-character country codes are mapped to their
+ISO 3-character equivalent.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Country</th>
+<th style="text-align: left;">Alpha-2 code</th>
+<th style="text-align: left;">Alpha-3 code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Afghanistan</td>
+<td style="text-align: left;">AF</td>
+<td style="text-align: left;">AFG</td>
+</tr>
+<tr>
+<td style="text-align: left;">Albania</td>
+<td style="text-align: left;">AL</td>
+<td style="text-align: left;">ALB</td>
+</tr>
+<tr>
+<td style="text-align: left;">Algeria</td>
+<td style="text-align: left;">DZ</td>
+<td style="text-align: left;">DZA</td>
+</tr>
+<tr>
+<td style="text-align: left;">American Samoa</td>
+<td style="text-align: left;">AS</td>
+<td style="text-align: left;">ASM</td>
+</tr>
+<tr>
+<td style="text-align: left;">Andorra</td>
+<td style="text-align: left;">AD</td>
+<td style="text-align: left;">AND</td>
+</tr>
+<tr>
+<td style="text-align: left;">etc…</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>Different source values can also map to the same target value, for
+example when deriving regions from country codes.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Source Component: <code>REF_AREA</code></th>
+<th style="text-align: left;">Target Component: <code>REGION</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">FR</td>
+<td style="text-align: left;">EUR</td>
+</tr>
+<tr>
+<td style="text-align: left;">DE</td>
+<td style="text-align: left;">EUR</td>
+</tr>
+<tr>
+<td style="text-align: left;">IT</td>
+<td style="text-align: left;">EUR</td>
+</tr>
+<tr>
+<td style="text-align: left;">ES</td>
+<td style="text-align: left;">EUR</td>
+</tr>
+<tr>
+<td style="text-align: left;">BE</td>
+<td style="text-align: left;">EUR</td>
+</tr>
+</tbody>
+</table>
+<h2 id="n-n-structure-maps">N-n structure maps<a class="headerlink" href="#n-n-structure-maps" title="Permanent link">¶</a></h2>
+<p>N-n (pronounced ‘N to N’) mappings describe rules where a specified
+combination of values in multiple source Components map to specified
+values in one or more target Components. For example, when mapping a
+partial Series Key from a highly multidimensional cube (like Balance of
+Payments) to a single ‘Indicator’ Dimension in a target Data Structure.</p>
+<p>Example:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Rule</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">If <code>FREQUENCY=A</code> and <code>ADJUSTMENT=N</code> and <code>MATURITY=L</code></td>
+<td style="text-align: left;">Set <code>INDICATOR=A_N_L</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">If <code>FREQUENCY=M</code> and <code>ADJUSTMENT=S_A1</code> and <code>MATURITY=TY12</code></td>
+<td style="text-align: left;">Set <code>INDICATOR=MON_SAX_12</code></td>
+</tr>
+</tbody>
+</table>
+<p>N-n rules can also set values for multiple source Components.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Rule</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">If <code>FREQUENCY=A</code> and <code>ADJUSTMENT=N</code> and <code>MATURITY=L</code></td>
+<td style="text-align: left;">Set <code>INDICATOR=A_N_L</code>, <code>STATUS=QXR15</code>, <code>NOTE="Unadjusted"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">If <code>FREQUENCY=M</code> and <code>ADJUSTMENT=S_A1</code> and <code>MATURITY=TY12</code></td>
+<td style="text-align: left;">Set <code>INDICATOR=MON_SAX_12</code>, <code>STATUS=MPM12</code>, <code>NOTE="Seasonally Adjusted"</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ambiguous-mapping-rules">Ambiguous mapping rules<a class="headerlink" href="#ambiguous-mapping-rules" title="Permanent link">¶</a></h2>
+<p>A structure map is ambiguous if the rules result in a dataset containing
+multiple series with the same Series Key.</p>
+<p>A simple example mapping a source dataset with a single dimension to one
+with multiple dimensions is shown below:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Target</th>
+<th style="text-align: left;">Output Series Key</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>SERIES_CODE=XMAN_Z_21</code></td>
+<td style="text-align: left;"><code>INDICATOR=XM</code>, <code>FREQ=A</code>, <code>ADJUSTMENT=N</code>, <code>UNIT_MEASURE=_Z</code>, <code>COMP_ORG=21</code></td>
+<td style="text-align: left;"><code>XM:A:N</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SERIES_CODE=XMAN_Z_34</code></td>
+<td style="text-align: left;"><code>INDICATOR=XM</code>, <code>FREQ=A</code>, <code>ADJUSTMENT=N</code>, <code>UNIT_MEASURE=_Z</code>, <code>COMP_ORG=34</code></td>
+<td style="text-align: left;"><code>XM:A:N</code></td>
+</tr>
+</tbody>
+</table>
+<p>The above behaviour can be okay if the series <code>XMAN_Z_21</code> contains
+observations for different periods of time then the series <code>XMAN_Z_34</code>.
+If however both series contain observations for the same point in time,
+the output for this mapping will be two observations with the same
+series key, for the same period in time.</p>
+<h2 id="representation-maps">Representation maps<a class="headerlink" href="#representation-maps" title="Permanent link">¶</a></h2>
+<p>Representation Maps replace the SDMX 2.1 Codelist Maps and are used
+describe explicit mappings between source and target Component values.</p>
+<p>The source and target of a Representation Map can reference any of the
+following:</p>
+<ol>
+<li>Codelist</li>
+<li>Free Text (restricted by type, e.g String, Integer, Boolean)</li>
+<li>Valuelist</li>
+</ol>
+<p>A Representation Map mapping ISO 2-character to ISO 3-character
+Codelists would take the following form:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">CL_ISO_ALPHA2</th>
+<th style="text-align: left;">CL_ISO_ALPHA3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">AF</td>
+<td style="text-align: left;">AFG</td>
+</tr>
+<tr>
+<td style="text-align: left;">AL</td>
+<td style="text-align: left;">ALB</td>
+</tr>
+<tr>
+<td style="text-align: left;">DZ</td>
+<td style="text-align: left;">DZA</td>
+</tr>
+<tr>
+<td style="text-align: left;">AS</td>
+<td style="text-align: left;">ASM</td>
+</tr>
+<tr>
+<td style="text-align: left;">AD</td>
+<td style="text-align: left;">AND</td>
+</tr>
+<tr>
+<td style="text-align: left;">etc…</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>A Representation Map mapping free text country names to an ISO
+2-character Codelist could be similarly described:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Text</th>
+<th style="text-align: left;">CL_ISO_ALPHA2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">“Germany”</td>
+<td style="text-align: left;">DE</td>
+</tr>
+<tr>
+<td style="text-align: left;">“France”</td>
+<td style="text-align: left;">FR</td>
+</tr>
+<tr>
+<td style="text-align: left;">“United Kingdom”</td>
+<td style="text-align: left;">GB</td>
+</tr>
+<tr>
+<td style="text-align: left;">“Great Britain”</td>
+<td style="text-align: left;">GB</td>
+</tr>
+<tr>
+<td style="text-align: left;">“Ireland”</td>
+<td style="text-align: left;">IE</td>
+</tr>
+<tr>
+<td style="text-align: left;">“Eire”</td>
+<td style="text-align: left;">IE</td>
+</tr>
+<tr>
+<td style="text-align: left;">etc…</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>Valuelists, introduced in SDMX 3.0, are equivalent to Codelists but
+allow the maintenance of non-SDMX identifiers. Importantly, their IDs do
+not need to conform to IDType, but as a consequence are not
+Identifiable.</p>
+<p>When used in Representation Maps, Valuelists allow Non-SDMX identifiers
+containing characters like £, $, % to be mapped to Code IDs, or Codes
+mapped to non-SDMX identifiers.</p>
+<p>In common with Codelists, each item in a Valuelist has a multilingual
+name giving it a human-readable label and an optional description. For
+example:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: left;">Locale</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">$</td>
+<td style="text-align: left;">en</td>
+<td style="text-align: left;">United States Dollar</td>
+</tr>
+<tr>
+<td style="text-align: left;">%</td>
+<td style="text-align: left;">En</td>
+<td style="text-align: left;">Percentage</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">fr</td>
+<td style="text-align: left;">Pourcentage</td>
+</tr>
+</tbody>
+</table>
+<p>Other characteristics of Representation Maps:</p>
+<ul>
+<li>
+<p>Support the mapping of multiple source Component values to multiple
+    Target Component values as described in the <a href="#n-n-structure-maps">section on n-to-n mappings</a>; 
+    this covers also the case of mapping an Attribute with
+    an array representation to map combinations of values to a single
+    target value;</p>
+</li>
+<li>
+<p>Allow source or target mappings for an Item to be optional allowing
+    rules such as ‘A maps to nothing’ or ‘nothing maps to A’; and</p>
+</li>
+<li>
+<p>Support for mapping rules where regular expressions or substrings
+    are used to match source Component values. Refer to the Section 
+    <a href="#regular-expression-and-substring-rules">Regular expression and substring rule</a>.</p>
+</li>
+</ul>
+<h2 id="regular-expression-and-substring-rules">Regular expression and substring rules<a class="headerlink" href="#regular-expression-and-substring-rules" title="Permanent link">¶</a></h2>
+<p>It is common for classifications to contain meanings within the
+identifier, for example the code Id <code>'XULADS'</code> may refer to a particular
+seasonality because it starts with the letters <code>XU</code>.</p>
+<p>With SDMX 2.1 each code that starts with <code>XU</code> had to be individually
+mapped to the same seasonality, and additional mappings added when new
+<code>Codes</code> were added to the <code>Codelists</code>. This led to many hundreds or
+thousands of mappings which can be more efficiently summarised in a
+single conceptual rule:</p>
+<div class="language-text highlight"><pre><span></span><code>If starts with 'XU' map to 'Y'
+</code></pre></div>
+<p>These rules are described using either regular expressions, or
+substrings for simpler use cases.</p>
+<h3 id="regular-expressions">Regular expressions<a class="headerlink" href="#regular-expressions" title="Permanent link">¶</a></h3>
+<p>Regular expression mapping rules are defined in the Representation Map.</p>
+<p>Below is an example set of regular expression rules for a particular
+component.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Regex</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>A</code></td>
+<td style="text-align: left;">Rule match if <code>input = 'A'</code></td>
+<td style="text-align: left;"><code>OUT_A</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>^[A-G]</code></td>
+<td style="text-align: left;">Rule match if the input starts with letters A to G</td>
+<td style="text-align: left;"><code>OUT_B</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>A \| B</code></td>
+<td style="text-align: left;">Rule match if input is either ‘A’ or ‘B’</td>
+<td style="text-align: left;"><code>OUT_C</code></td>
+</tr>
+</tbody>
+</table>
+<p>Like all mapping rules, the output is either a Code, a Value or free
+text depending on the representation of the Component in the target Data
+Structure Definition.</p>
+<p>If the regular expression contains capture groups, these can be used in
+the definition of the output value, by specifying <code>\n</code> as an output
+value where <code>n</code> is the number of the capture group starting from 1.
+For example</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Regex</th>
+<th style="text-align: left;">Target output</th>
+<th style="text-align: left;">Example Input</th>
+<th style="text-align: left;">Example Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>([0-9]{4})[0-9]([0-9]{1})</code></td>
+<td style="text-align: left;"><code>\1-Q\2</code></td>
+<td style="text-align: left;">200933</td>
+<td style="text-align: left;">2009-Q3</td>
+</tr>
+</tbody>
+</table>
+<p>As regular expression rules can be used as a general catch-all if
+nothing else matches, the ordering of the rules is important. Rules
+should be tested starting with the highest priority, moving down the
+list until a match is found.</p>
+<p>The following example shows this:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Priority</th>
+<th style="text-align: left;">Regex</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"><code>A</code></td>
+<td style="text-align: left;">Rule match if <code>input = 'A'</code></td>
+<td style="text-align: left;"><code>OUT_A</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;"><code>B</code></td>
+<td style="text-align: left;">Rule match if <code>input = 'B'</code></td>
+<td style="text-align: left;"><code>OUT_B</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;"><code>[A-Z]</code></td>
+<td style="text-align: left;">Any character <code>A-Z</code></td>
+<td style="text-align: left;"><code>OUT_C</code></td>
+</tr>
+</tbody>
+</table>
+<p>The input <code>'A'</code> matches both the first and the last rule, but the first
+takes precedence having the higher priority. The output is <code>OUT_A</code>.</p>
+<p>The input <code>'G'</code> matches on the last rule which is used as a catch-all or
+default in this example.</p>
+<h3 id="substrings">Substrings<a class="headerlink" href="#substrings" title="Permanent link">¶</a></h3>
+<p>Substrings provide an alternative to regular expressions where the
+required section of an input value can be described using the number of
+the starting character, and the length of the substring in characters.
+The first character is at position 1.</p>
+<p>For instance:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Input String</th>
+<th style="text-align: left;">Start</th>
+<th style="text-align: left;">Length</th>
+<th style="text-align: left;">Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>ABC_DEF_XYZ</code></td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;"><code>DEF</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>XULADS</code></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;"><code>XU</code></td>
+</tr>
+</tbody>
+</table>
+<p>Sub-strings can therefore be used for the conceptual rule <code>If starts with 'XU' map to Y</code>
+as shown in the following example:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Start</th>
+<th style="text-align: left;">Length</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;"><code>XU</code></td>
+<td style="text-align: left;"><code>Y</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="mapping-non-sdmx-time-formats-to-sdmx-formats">Mapping non-SDMX time formats to SDMX formats<a class="headerlink" href="#mapping-non-sdmx-time-formats-to-sdmx-formats" title="Permanent link">¶</a></h2>
+<p>Structure mapping allows non-SDMX compliant time values in source
+datasets to be mapped to an SDMX compliant time format.</p>
+<p>Two types of time input are defined:</p>
+<ol>
+<li><strong>Pattern based dates</strong> – a string which can be described using a
+    notation like <code>dd/mm/yyyy</code> or is represented as the number of
+    periods since a point in time, for example: <code>2010M001</code> (first month
+    in 2010), or <code>2014D123</code> (123rd day in 2014); and</li>
+<li><strong>Numerical based datetime</strong> – a number specifying the elapsed
+    periods since a fixed point in time, for example Unix Time is
+    measured by the number of milliseconds since 1970.</li>
+</ol>
+<p>The output of a time-based mapping is derived from the output Frequency,
+which is either explicitly stated in the mapping or defined as the value
+output by a specific Dimension or Attribute in the output mapping. If
+the output frequency is unknown or if the SDMX format is not desired,
+then additional rules can be provided to specify the output date format
+for the given frequency Id. The default rules are:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Frequency</th>
+<th style="text-align: left;">Format</th>
+<th style="text-align: left;">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">A</td>
+<td style="text-align: left;"><code>YYYY</code></td>
+<td style="text-align: left;">2010</td>
+</tr>
+<tr>
+<td style="text-align: left;">D</td>
+<td style="text-align: left;"><code>YYYY-MM-DD</code></td>
+<td style="text-align: left;">2010-01-01</td>
+</tr>
+<tr>
+<td style="text-align: left;">I</td>
+<td style="text-align: left;"><code>YYYY-MM-DD-Thh:mm:ss</code></td>
+<td style="text-align: left;">2010-01T20:22:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">M</td>
+<td style="text-align: left;"><code>YYYY-MM</code></td>
+<td style="text-align: left;">2010-01</td>
+</tr>
+<tr>
+<td style="text-align: left;">Q</td>
+<td style="text-align: left;"><code>YYYY-Qn</code></td>
+<td style="text-align: left;">2010-Q1</td>
+</tr>
+<tr>
+<td style="text-align: left;">S</td>
+<td style="text-align: left;"><code>YYYY-Sn</code></td>
+<td style="text-align: left;">2010-S1</td>
+</tr>
+<tr>
+<td style="text-align: left;">T</td>
+<td style="text-align: left;"><code>YYYY-Tn</code></td>
+<td style="text-align: left;">2010-T1</td>
+</tr>
+<tr>
+<td style="text-align: left;">W</td>
+<td style="text-align: left;"><code>YYYY-Wn</code></td>
+<td style="text-align: left;">YYYY-W53</td>
+</tr>
+</tbody>
+</table>
+<p>In the case where the input frequency is lower than the output
+frequency, the mapping defaults to end of period, but can be explicitly
+set to start, end or mid-period.</p>
+<p>There are two important points to note:</p>
+<ol>
+<li>The output frequency determines the output date format, but the
+    default output can be redefined using a Frequency Format mapping
+    to force explicit rules on how the output time period is
+    formatted.</li>
+<li>To support the use case of changing frequency the structure map can
+    optionally provide a start of year attribute, which defines the
+    year start date in MM-DD format. For example: YearStart=04-01.</li>
+</ol>
+<h3 id="pattern-based-dates">Pattern based dates<a class="headerlink" href="#pattern-based-dates" title="Permanent link">¶</a></h3>
+<p>Date and time formats are specified by date and time pattern strings
+based on Java’s Simple Date Format. Within date and time pattern
+strings, unquoted letters from <code>'A'</code> to <code>'Z'</code> and from <code>'a'</code> to <code>'z'</code> are
+interpreted as pattern letters representing the components of a date or
+time string. Text can be quoted using single quotes <code>(')</code> to avoid
+interpretation. <code>"''"</code> represents a single quote. All other characters are
+not interpreted; they’re simply copied into the output string during
+formatting or matched against the input string during parsing.</p>
+<p>Due to the fact that dates may differ per locale, an optional property,
+defining the locale of the pattern, is provided. This would assist
+processing of source dates, according to the given locale<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. An
+indicative list of examples is presented in the following table:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">English (en)</th>
+<th style="text-align: left;">Australia (AU)</th>
+<th style="text-align: left;">en-AU</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">English (en)</td>
+<td style="text-align: left;">Canada (CA)</td>
+<td style="text-align: left;">en-CA</td>
+</tr>
+<tr>
+<td style="text-align: left;">English (en)</td>
+<td style="text-align: left;">United Kingdom (GB)</td>
+<td style="text-align: left;">en-GB</td>
+</tr>
+<tr>
+<td style="text-align: left;">English (en)</td>
+<td style="text-align: left;">United States (US)</td>
+<td style="text-align: left;">en-US</td>
+</tr>
+<tr>
+<td style="text-align: left;">Estonian (et)</td>
+<td style="text-align: left;">Estonia (EE)</td>
+<td style="text-align: left;">et-EE</td>
+</tr>
+<tr>
+<td style="text-align: left;">Finnish (fi)</td>
+<td style="text-align: left;">Finland (FI)</td>
+<td style="text-align: left;">fi-FI</td>
+</tr>
+<tr>
+<td style="text-align: left;">French (fr)</td>
+<td style="text-align: left;">Belgium (BE)</td>
+<td style="text-align: left;">fr-BE</td>
+</tr>
+<tr>
+<td style="text-align: left;">French (fr)</td>
+<td style="text-align: left;">Canada (CA)</td>
+<td style="text-align: left;">fr-CA</td>
+</tr>
+<tr>
+<td style="text-align: left;">French (fr)</td>
+<td style="text-align: left;">France (FR)</td>
+<td style="text-align: left;">fr-FR</td>
+</tr>
+<tr>
+<td style="text-align: left;">French (fr)</td>
+<td style="text-align: left;">Luxembourg (LU)</td>
+<td style="text-align: left;">fr-LU</td>
+</tr>
+<tr>
+<td style="text-align: left;">French (fr)</td>
+<td style="text-align: left;">Switzerland (CH)</td>
+<td style="text-align: left;">fr-CH</td>
+</tr>
+<tr>
+<td style="text-align: left;">German (de)</td>
+<td style="text-align: left;">Austria (AT)</td>
+<td style="text-align: left;">de-AT</td>
+</tr>
+<tr>
+<td style="text-align: left;">German (de)</td>
+<td style="text-align: left;">Germany (DE)</td>
+<td style="text-align: left;">de-DE</td>
+</tr>
+<tr>
+<td style="text-align: left;">German (de)</td>
+<td style="text-align: left;">Luxembourg (LU)</td>
+<td style="text-align: left;">de-LU</td>
+</tr>
+<tr>
+<td style="text-align: left;">German (de)</td>
+<td style="text-align: left;">Switzerland (CH)</td>
+<td style="text-align: left;">de-CH</td>
+</tr>
+<tr>
+<td style="text-align: left;">Greek (el)</td>
+<td style="text-align: left;">Cyprus (CY)</td>
+<td style="text-align: left;"><a href="https://www.oracle.com/java/technologies/javase/jdk8-jre8-suported-locales.html#cldrlocale">el-CY</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Greek (el)</td>
+<td style="text-align: left;">Greece (GR)</td>
+<td style="text-align: left;">el-GR</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hebrew (iw)</td>
+<td style="text-align: left;">Israel (IL)</td>
+<td style="text-align: left;">iw-IL</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hindi (hi)</td>
+<td style="text-align: left;">India (IN)</td>
+<td style="text-align: left;">hi-IN</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hungarian (hu)</td>
+<td style="text-align: left;">Hungary (HU)</td>
+<td style="text-align: left;">hu-HU</td>
+</tr>
+<tr>
+<td style="text-align: left;">Icelandic (is)</td>
+<td style="text-align: left;">Iceland (IS)</td>
+<td style="text-align: left;">is-IS</td>
+</tr>
+<tr>
+<td style="text-align: left;">Indonesian (in)</td>
+<td style="text-align: left;">Indonesia (ID)</td>
+<td style="text-align: left;"><a href="https://www.oracle.com/java/technologies/javase/jdk8-jre8-suported-locales.html#cldrlocale">in-ID</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Irish (ga)</td>
+<td style="text-align: left;">Ireland (IE)</td>
+<td style="text-align: left;"><a href="https://www.oracle.com/java/technologies/javase/jdk8-jre8-suported-locales.html#cldrlocale">ga-IE</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Italian (it)</td>
+<td style="text-align: left;">Italy (IT)</td>
+<td style="text-align: left;">it-IT</td>
+</tr>
+</tbody>
+</table>
+<p>Examples</p>
+<ul>
+<li><code>22/06/1981</code> would be described as <code>dd/MM/YYYY</code>, with locale <code>en-GB</code></li>
+<li><code>2008-mars-12</code> would be described as <code>YYYY-MMM-DD</code>, with locale <code>fr-FR</code></li>
+<li><code>22 July 1981</code> would be described as <code>dd MMMM YYYY</code>, with locale <code>en-US</code></li>
+<li><code>22 Jul 1981</code> would be described as <code>dd MMM YYYY</code></li>
+<li><code>2010 D62</code> would be described as <code>YYYYDnn</code> (day 62 of the year 2010)</li>
+</ul>
+<p>The following pattern letters are defined (all other characters from <code>'A'</code>
+to <code>'Z'</code> and from <code>'a'</code> to <code>'z'</code> are reserved):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Letter</th>
+<th style="text-align: left;">Date or Time Component</th>
+<th style="text-align: left;">Presentation</th>
+<th style="text-align: left;">Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>G</code></td>
+<td style="text-align: left;">Era designator</td>
+<td style="text-align: left;"><a href="https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html#text">Text</a></td>
+<td style="text-align: left;">AD</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>yy</code></td>
+<td style="text-align: left;">Year short (upper case is Year of Week <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>)</td>
+<td style="text-align: left;"><a href="https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html#year">Year</a></td>
+<td style="text-align: left;">96</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>yyyy</code></td>
+<td style="text-align: left;">Year Full (upper case is Year of Week)</td>
+<td style="text-align: left;">Year</td>
+<td style="text-align: left;">1996</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MM</code></td>
+<td style="text-align: left;">Month number in year starting with 1</td>
+<td style="text-align: left;">Month</td>
+<td style="text-align: left;">07</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MMM</code></td>
+<td style="text-align: left;">Month name short</td>
+<td style="text-align: left;">Month</td>
+<td style="text-align: left;">Jul</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MMMM</code></td>
+<td style="text-align: left;">Month name full</td>
+<td style="text-align: left;">Month</td>
+<td style="text-align: left;">July</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ww</code></td>
+<td style="text-align: left;">Week in year</td>
+<td style="text-align: left;"><a href="https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html#number">Number</a></td>
+<td style="text-align: left;">27</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>W</code></td>
+<td style="text-align: left;">Week in month</td>
+<td style="text-align: left;"><a href="https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html#number">Number</a></td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DD</code></td>
+<td style="text-align: left;">Day in year</td>
+<td style="text-align: left;"><a href="https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html#number">Number</a></td>
+<td style="text-align: left;">189</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>dd</code></td>
+<td style="text-align: left;">Day in month</td>
+<td style="text-align: left;"><a href="https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html#number">Number</a></td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>F</code></td>
+<td style="text-align: left;">Day of week in month</td>
+<td style="text-align: left;"><a href="https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html#number">Number</a></td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>E</code></td>
+<td style="text-align: left;">Day name in week</td>
+<td style="text-align: left;"><a href="https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html#text">Text</a></td>
+<td style="text-align: left;">Tuesday; Tue</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>U</code></td>
+<td style="text-align: left;">Day number of week (1 = Monday, …, 7 = Sunday)</td>
+<td style="text-align: left;"><a href="https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html#number">Number</a></td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>HH</code></td>
+<td style="text-align: left;">Hour in day (0-23)</td>
+<td style="text-align: left;"><a href="https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html#number">Number</a></td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>kk</code></td>
+<td style="text-align: left;">Hour in day (1-24)</td>
+<td style="text-align: left;"><a href="https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html#number">Number</a></td>
+<td style="text-align: left;">24</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>KK</code></td>
+<td style="text-align: left;">Hour in am/pm (0-11)</td>
+<td style="text-align: left;"><a href="https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html#number">Number</a></td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>hh</code></td>
+<td style="text-align: left;">Hour in am/pm (1-12)</td>
+<td style="text-align: left;"><a href="https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html#number">Number</a></td>
+<td style="text-align: left;">12</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>mm</code></td>
+<td style="text-align: left;">Minute in hour</td>
+<td style="text-align: left;"><a href="https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html#number">Number</a></td>
+<td style="text-align: left;">30</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ss</code></td>
+<td style="text-align: left;">Second in minute</td>
+<td style="text-align: left;"><a href="https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html#number">Number</a></td>
+<td style="text-align: left;">55</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>S</code></td>
+<td style="text-align: left;">Millisecond</td>
+<td style="text-align: left;"><a href="https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html#number">Number</a></td>
+<td style="text-align: left;">978</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>n</code></td>
+<td style="text-align: left;">Number of periods, used after a SDMX Frequency Identifier such as M, Q, D (month, quarter, day)</td>
+<td style="text-align: left;"><a href="https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html#number">Number</a></td>
+<td style="text-align: left;">12</td>
+</tr>
+</tbody>
+</table>
+<p>The model is illustrated below:</p>
+<figure id="__figure-caption_24">
+<p><img alt="" src="../media/image18.png"/></p>
+<figcaption>
+<p><span class="caption-prefix">Figure 24.</span> showing the component map mapping the <code>SOURCE_DATE</code> Dimension
+to the <code>TIME_PERIOD</code> dimension with the additional information on the
+component map to describe the time format</p>
+</figcaption>
+</figure>
+<figure id="__figure-caption_25">
+<p><img alt="" src="../media/image19.png"/></p>
+<figcaption>
+<p><span class="caption-prefix">Figure 25.</span> showing an input date format, whose output frequency is
+derived from the output value of the <code>FREQ</code> Dimension</p>
+</figcaption>
+</figure>
+<h3 id="numerical-based-datetime">Numerical based datetime<a class="headerlink" href="#numerical-based-datetime" title="Permanent link">¶</a></h3>
+<p>Where the source datetime input is purely numerical, the mapping rules
+are defined by the <strong>Base</strong> as a valid SDMX Time Period, and the
+<strong>Period</strong> which must take one of the following enumerated values:</p>
+<ul>
+<li>day</li>
+<li>second</li>
+<li>millisecond</li>
+<li>microsecond</li>
+<li>nanosecond</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Numerical datetime systems</th>
+<th style="text-align: left;">Base</th>
+<th style="text-align: left;">Period</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Epoch Time (UNIX): Milliseconds since 01 Jan 1970</td>
+<td style="text-align: left;">1970</td>
+<td style="text-align: left;">millisecond</td>
+</tr>
+<tr>
+<td style="text-align: left;">Windows System Time: Milliseconds since 01 Jan 1601</td>
+<td style="text-align: left;">1601</td>
+<td style="text-align: left;">millisecond</td>
+</tr>
+</tbody>
+</table>
+<p>The example above illustrates numerical based datetime mapping rules for
+two commonly used time standards.</p>
+<p>The model is illustrated below:</p>
+<figure id="__figure-caption_26">
+<p><img alt="" src="../media/image20.png"/></p>
+<figcaption>
+<p><span class="caption-prefix">Figure 26.</span> showing the component map mapping the <code>SOURCE_DATE</code> Dimension
+to the <code>TIME_PERIOD</code> Dimension with the additional information on the
+component map to describe the numerical datetime system in use</p>
+</figcaption>
+</figure>
+<h3 id="mapping-more-complex-time-inputs">Mapping more complex time inputs<a class="headerlink" href="#mapping-more-complex-time-inputs" title="Permanent link">¶</a></h3>
+<p>VTL should be used for more complex time inputs that cannot be
+interpreted using the pattern based on numerical methods.</p>
+<h2 id="using-time_period-in-mapping-rules">Using <code>TIME_PERIOD</code> in mapping rules<a class="headerlink" href="#using-time_period-in-mapping-rules" title="Permanent link">¶</a></h2>
+<p>The source <code>TIME_PERIOD</code> Dimension can be used in conjunction with other
+input Dimensions to create discrete mapping rules where the output is
+conditional on the time period value.</p>
+<p>The main use case is setting the value of Observation Attributes in the
+target dataset.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Rule</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Rule</td>
+<td style="text-align: left;">Source</td>
+<td style="text-align: left;">Target</td>
+</tr>
+<tr>
+<td style="text-align: left;">:—</td>
+<td style="text-align: left;">:—</td>
+<td style="text-align: left;">:—</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">If <code>INDICATOR=XULADS</code> and <code>TIME_PERIOD=2007</code></td>
+<td style="text-align: left;">Set <code>OBS_CONF=F</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">If <code>INDICATOR=XULADS</code> and <code>TIME_PERIOD=2008</code></td>
+<td style="text-align: left;">Set <code>OBS_CONF=F</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">If <code>INDICATOR=XULADS</code> and <code>TIME_PERIOD=2009</code></td>
+<td style="text-align: left;">Set <code>OBS_CONF=F</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">If <code>INDICATOR=XULADS</code> and <code>TIME_PERIOD=2010</code></td>
+<td style="text-align: left;">Set <code>OBS_CONF=C</code></td>
+</tr>
+</tbody>
+</table>
+<p>In the example above, <code>OBS_CONF</code> is an Observation Attribute.</p>
+<h2 id="time-span-mapping-rules-using-validity-periods">Time span mapping rules using validity periods<a class="headerlink" href="#time-span-mapping-rules-using-validity-periods" title="Permanent link">¶</a></h2>
+<p>Creating discrete mapping rules for each <code>TIME_PERIOD</code> is impractical
+where rules need to cover a specific span of time regardless of
+frequency, and for high-frequency data.</p>
+<p>Instead, an optional validity period can be set for each mapping.</p>
+<p>By specifying validity periods, the example from Section 13.8 can be
+re-written using two rules as follows:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Rule</th>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">If <code>INDICATOR=XULADS</code>, validity period: <code>start=2007</code>, <code>end=2009</code></td>
+<td style="text-align: left;">Set <code>OBS_CONF=F</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">If <code>INDICATOR=XULADS</code>, validity period: <code>start=2010</code></td>
+<td style="text-align: left;">Set <code>OBS_CONF=F</code></td>
+</tr>
+</tbody>
+</table>
+<p>In Rule 1, start period resolves to the start of the 2007 period
+(<code>2007-01-01T00:00:00</code>), and the end period resolves to the very end of
+2009 (<code>2009-12-31T23:59:59</code>). The rule will hold true regardless of the
+input data frequency. Any observations reporting data for the Indicator
+<code>XULADS</code> that fall into that time range will have an <code>OBS_CONF</code> value of <code>F</code>.</p>
+<p>In Rule 2, no end period is specified so remains in effect from the
+start of the period (<code>2010-01-01T00:00:00</code>) until the end of time. Any
+observations reporting data for the Indicator <code>XULADS</code> that fall into that
+time range will have an <code>OBS_CONF</code> value of <code>C</code>.</p>
+<h2 id="mapping-examples">Mapping examples<a class="headerlink" href="#mapping-examples" title="Permanent link">¶</a></h2>
+<h3 id="many-to-one-mapping-n-1">Many to one mapping (N-1)<a class="headerlink" href="#many-to-one-mapping-n-1" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Source</th>
+<th style="text-align: left;">Map To</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>FREQ="A", ADJUSTMENT="N", REF_AREA="PL", COUNTERPART_AREA="W0", REF_SECTOR="S1", COUNTERPART_SECTOR="S1", ACCOUNTING_ENTRY="B", STO="B5G"</code></td>
+<td style="text-align: left;"><code>FREQ="A", REF_AREA="PL", COUNTERPART_AREA="W0", INDICATOR="IND_ABC"</code></td>
+</tr>
+</tbody>
+</table>
+<p>The Dimensions <code>FREQ</code>, <code>REF_AREA</code>, and <code>COUNTERPART_AREA</code> map from source to target verbatim. 
+The mapping simply specifies:</p>
+<div class="language-text highlight"><pre><span></span><code>FREQ =&gt; FREQ
+REF_AREA =&gt; REF_AREA
+COUNTERPART_AREA =&gt; COUNTERPART_AREA
+</code></pre></div>
+<p>No Representation Mapping is required. The source value simply copies
+across unmodified.</p>
+<p>The remaining Dimensions all map to the Indicator Dimension. This is an
+example of many Dimensions mapping to one Dimension. In this case a
+Representation Mapping is required, and the mapping first describes the
+input ‘partial key’ and how this maps to the target indicator:</p>
+<div class="language-text highlight"><pre><span></span><code>N:S1:S1:B:B5G =&gt; IND_ABC
+</code></pre></div>
+<p>Where the key sequence is based on the order specified in the mapping
+(i.e <code>ADJUSTMENT</code>, <code>REF_SECTOR</code>, etc will result in the first value <code>N</code> being
+taken from <code>ADJUSTMENT</code> as this was the first item in the source Dimension
+list.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The key order is NOT based on the Dimension order of the DSD,
+as the mapping needs to be resilient to the DSD changing.</p>
+</div>
+<h3 id="mapping-other-data-types-to-code-id">Mapping other data types to Code Id<a class="headerlink" href="#mapping-other-data-types-to-code-id" title="Permanent link">¶</a></h3>
+<p>In the case where the incoming data type is not a string and not a code
+identifier i.e. the source Dimension is of type Integer and the target
+is <code>Codelist</code>. This is supported by the <code>RepresentationMap</code>. The
+<code>RepresentationMap</code> source can reference a <code>Codelist</code>, <code>Valuelist</code>, or be free
+text, the free text can include regular expressions.</p>
+<p>The following representation mapping can be used to explicitly map each
+age to an output code.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Source Input (Free Text)</th>
+<th style="text-align: left;">Desired Output (Code Id)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">A</td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">A</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">A</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">B</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">B</td>
+</tr>
+</tbody>
+</table>
+<p>If this mapping takes advantage of regular expressions it can be
+expressed in two rules:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Regular Expression</th>
+<th style="text-align: left;">Desired Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>[0-2]</code></td>
+<td style="text-align: left;">A</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>[3-4]</code></td>
+<td style="text-align: left;">B</td>
+</tr>
+</tbody>
+</table>
+<h3 id="observation-attributes-for-time-period">Observation Attributes for Time Period<a class="headerlink" href="#observation-attributes-for-time-period" title="Permanent link">¶</a></h3>
+<p>This use case is where a specific observation for a specific time period
+has an attribute value.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Input INDICATOR</th>
+<th style="text-align: left;">Input TIME_PERIOD</th>
+<th style="text-align: left;">Output OBS_CONF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>XULADS</code></td>
+<td style="text-align: left;">2008</td>
+<td style="text-align: left;">C</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>XULADS</code></td>
+<td style="text-align: left;">2009</td>
+<td style="text-align: left;">C</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>XULADS</code></td>
+<td style="text-align: left;">2010</td>
+<td style="text-align: left;">C</td>
+</tr>
+</tbody>
+</table>
+<p>Or using a validity period on the Representation Mapping:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Input INDICATOR</th>
+<th style="text-align: left;">Valid From/ Valid To</th>
+<th style="text-align: left;">Output OBS_CONF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>XULADS</code></td>
+<td style="text-align: left;">2008/2010</td>
+<td style="text-align: left;">C</td>
+</tr>
+</tbody>
+</table>
+<h3 id="time-mapping">Time mapping<a class="headerlink" href="#time-mapping" title="Permanent link">¶</a></h3>
+<p>This use case is to create a time period from an input that does not
+respect SDMX Time Formats.</p>
+<p>The Component Mapping from <code>SYS_TIME</code> to <code>TIME_PERIOD</code> specifies itself as
+a time mapping with the following details:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Source Value</th>
+<th style="text-align: left;">Source Mapping</th>
+<th style="text-align: left;">Target Frequency</th>
+<th style="text-align: left;">Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">18/07/1981</td>
+<td style="text-align: left;"><code>dd/MM/yyyy</code></td>
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">1981</td>
+</tr>
+</tbody>
+</table>
+<p>When the target frequency is based on another target Dimension value, in
+this example the value of the <code>FREQ</code> Dimension in the target DSD.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Source Value</th>
+<th style="text-align: left;">Source Mapping</th>
+<th style="text-align: left;">Target Frequency Dimension</th>
+<th style="text-align: left;">Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">18/07/1981</td>
+<td style="text-align: left;"><code>dd/MM/yyyy</code></td>
+<td style="text-align: left;"><code>FREQ</code></td>
+<td style="text-align: left;">1981-07-18 (when <code>FREQ=D</code>)</td>
+</tr>
+</tbody>
+</table>
+<p>When the source is a numerical format</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Source Value</th>
+<th style="text-align: left;">Start Period</th>
+<th style="text-align: left;">Interval</th>
+<th style="text-align: left;">Target <code>FREQ</code></th>
+<th style="text-align: left;">Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1589808220</td>
+<td style="text-align: left;">1970</td>
+<td style="text-align: left;">millisecond</td>
+<td style="text-align: left;">M</td>
+<td style="text-align: left;">2020-05</td>
+</tr>
+</tbody>
+</table>
+<p>When the source frequency is lower than the target frequency additional
+information can be provided for resolve to start of period, end of
+period, or mid period, as shown in the following example:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Source Value</th>
+<th style="text-align: left;">Source Mapping</th>
+<th style="text-align: left;">Target Frequency Dimension</th>
+<th style="text-align: left;">Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1981</td>
+<td style="text-align: left;"><code>yyyy</code></td>
+<td style="text-align: left;">D – End of Period</td>
+<td style="text-align: left;">1981-12-31</td>
+</tr>
+</tbody>
+</table>
+<p>When the start of year is April 1st the Structure Map has
+<code>YearStart=04-01</code>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Source Value</th>
+<th style="text-align: left;">Source Mapping</th>
+<th style="text-align: left;">Target Frequency Dimension</th>
+<th style="text-align: left;">Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1981</td>
+<td style="text-align: left;"><code>yyyy</code></td>
+<td style="text-align: left;">D – End of Period</td>
+<td style="text-align: left;">1982-03-31</td>
+</tr>
+</tbody>
+</table>
+<div class="footnote">
+<hr/>
+<ol>
+<li id="fn:1">
+<p><code>yyyy</code> represents the calendar year while <code>YYYY</code> represents
+the year of the week, which is only relevant for 53 week years <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>A list of commonly used locales can be found in the <a href="https://www.oracle.com/java/technologies/javase/jdk8-jre8-suported-locales.html">Java supported
+locales</a> <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+<a href="https://www.analytical-software.de/en/legal-disclosure/">HMS Analytical Software Imprint</a>
+</div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["content.tabs.link", "content.code.annotate", "content.code.copy", "navigation.tabs", "navigation.indexes", "navigation.path", "navigation.sections", "navigation.top", "navigation.tracking", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+<script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+<script src="../../../assets/anchors.js"></script>
+</body>
+</html>

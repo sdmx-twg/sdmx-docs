@@ -1,0 +1,1971 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Statistical Data and Metadata eXchange" name="description"/>
+<link href="https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/csv/metadata_message_field_guide/" rel="canonical"/>
+<link href="../data_message_field_guide/" rel="prev"/>
+<link href="../../media/logos/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.12" name="generator"/>
+<title>Metadata Message Field Guide - SDMX Technical Documentation</title>
+<link href="../../assets/stylesheets/main.2afb09e1.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../assets/style.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="orange" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#metadata-message-field-guide">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<div data-md-color-scheme="default" data-md-component="outdated" hidden="">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="SDMX Technical Documentation" class="md-header__button md-logo" data-md-component="logo" href="../.." title="SDMX Technical Documentation">
+<img alt="logo" src="../../media/logos/SDMX-logo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            SDMX Technical Documentation
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Metadata Message Field Guide
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="orange" data-md-color-media="(prefers-color-scheme)" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"></path></svg>
+</label>
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="orange" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"></path></svg>
+</label>
+<input aria-label="Switch to system preference" class="md-option" data-md-color-accent="orange" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to system preference">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 2c3.87 0 7 3.13 7 7 0 2.38-1.19 4.47-3 5.74V17c0 .55-.45 1-1 1H6c-.55 0-1-.45-1-1v-2.26C3.19 13.47 2 11.38 2 9c0-3.87 3.13-7 7-7M6 21v-1h6v1c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1M9 4C6.24 4 4 6.24 4 9c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58 0-2.76-2.24-5-5-5m10 9h-2l-3.2 9h1.9l.7-2h3.2l.7 2h1.9zm-2.15 5.65L18 15l1.15 3.65z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/HMS-Analytical-Software/sdmx-technical-documentation" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    HMS-Analytical-Software/sdmx-technical-documentation
+  </div>
+</a>
+</div>
+<a class="md-header-nav__button md-icon" href="../../pdf/document.pdf" title="PDF">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,0c-17.6,0-32,14.4-32,32v448c0,17.6,14.4,32,32,32h320c17.6,0,32-14.4,32-32V128L352,0H128z" fill="#E2E5E7"></path>
+<path d="m384 128h96l-128-128v96c0 17.6 14.4 32 32 32z" fill="#B0B7BD"></path>
+<polygon fill="#CAD1D8" points="480 224 384 128 480 128"></polygon>
+<path d="M416,416c0,8.8-7.2,16-16,16H48c-8.8,0-16-7.2-16-16V256c0-8.8,7.2-16,16-16h352c8.8,0,16,7.2,16,16  V416z" fill="#F15642"></path>
+<g fill="#fff">
+<path d="m101.74 303.15c0-4.224 3.328-8.832 8.688-8.832h29.552c16.64 0 31.616 11.136 31.616 32.48 0 20.224-14.976 31.488-31.616 31.488h-21.36v16.896c0 5.632-3.584 8.816-8.192 8.816-4.224 0-8.688-3.184-8.688-8.816v-72.032zm16.88 7.28v31.872h21.36c8.576 0 15.36-7.568 15.36-15.504 0-8.944-6.784-16.368-15.36-16.368h-21.36z"></path>
+<path d="m196.66 384c-4.224 0-8.832-2.304-8.832-7.92v-72.672c0-4.592 4.608-7.936 8.832-7.936h29.296c58.464 0 57.184 88.528 1.152 88.528h-30.448zm8.064-72.912v57.312h21.232c34.544 0 36.08-57.312 0-57.312h-21.232z"></path>
+<path d="m303.87 312.11v20.336h32.624c4.608 0 9.216 4.608 9.216 9.072 0 4.224-4.608 7.68-9.216 7.68h-32.624v26.864c0 4.48-3.184 7.92-7.664 7.92-5.632 0-9.072-3.44-9.072-7.92v-72.672c0-4.592 3.456-7.936 9.072-7.936h44.912c5.632 0 8.96 3.344 8.96 7.936 0 4.096-3.328 8.704-8.96 8.704h-37.248v0.016z"></path>
+</g>
+<path d="m400 432h-304v16h304c8.8 0 16-7.2 16-16v-16c0 8.8-7.2 16-16 16z" fill="#CAD1D8"></path>
+</svg>
+</a></nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+          
+  
+  
+    
+  
+  Getting Started
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../framework/framework/0_framework-introduction/">
+          
+  
+  
+    
+  
+  Framework
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../information_model/information_model/0_Introduction/">
+          
+  
+  
+    
+  
+  Information Model
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../registry_specification/1_Introduction/">
+          
+  
+  
+    
+  
+  Registry Specification and Logical Interfaces
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../technical_notes/technical_notes/0_Purpose_and_Structure/">
+          
+  
+  
+    
+  
+  Technical Notes
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../rest_api/">
+          
+  
+  
+    
+  
+  REST API (v2.0)
+
+        </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../../ml/">
+          
+  
+  
+    
+  
+  Transmission Formats
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="https://sdmx.org/">
+        
+  
+  
+    
+  
+  Go To sdmx.org
+
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="SDMX Technical Documentation" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="SDMX Technical Documentation">
+<img alt="logo" src="../../media/logos/SDMX-logo.png"/>
+</a>
+    SDMX Technical Documentation
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/HMS-Analytical-Software/sdmx-technical-documentation" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    HMS-Analytical-Software/sdmx-technical-documentation
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_1" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+</a>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_1_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_1">
+<span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Framework
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            Framework
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../framework/framework/0_framework-introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../framework/framework/1_framework-change-history/">
+<span class="md-ellipsis">
+    Change History
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../framework/framework/2_framework-processes-and-business-scope/">
+<span class="md-ellipsis">
+    Processes and Business Scope
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../framework/framework/3_framework-the-sdmx-information-model/">
+<span class="md-ellipsis">
+    The SDMX Information Model
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../framework/framework/4_framework-the-sdmx-transmission-formats/">
+<span class="md-ellipsis">
+    The SDMX Transmission Formats
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../framework/framework/5_framework-dependencies-on-sdmx-content-oriented-guidelines/">
+<span class="md-ellipsis">
+    Dependencies on SDMX content-oriented guidelines
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../framework/framework/6_framework-validation-and-transformation-language/">
+<span class="md-ellipsis">
+    Validation and Transformation Language
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Information Model
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Information Model
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/0_change_history/">
+<span class="md-ellipsis">
+    Change History
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/1_Actors_and_Use_Cases/">
+<span class="md-ellipsis">
+    Actors and Use Cases
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/2_SDMX_Base_Package/">
+<span class="md-ellipsis">
+    SDMX Base Package
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/3_Specific_Item_Schemes/">
+<span class="md-ellipsis">
+    Specific Item Schemes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/4_Data_Structure_Definition_and_Dataset/">
+<span class="md-ellipsis">
+    Data Structure Definition and Dataset
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/5_Cube/">
+<span class="md-ellipsis">
+    Cube
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/6_Metadata_Structure_Definition_and_Metadata_Set/">
+<span class="md-ellipsis">
+    Metadata Structure Definition and Metadata Set
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/7_Hierarchy/">
+<span class="md-ellipsis">
+    Hierarchy
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/8_Structure_Map/">
+<span class="md-ellipsis">
+    Structure Map
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/9_RepresentationMap/">
+<span class="md-ellipsis">
+    RepresentationMap
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/10_ItemSchemeMap/">
+<span class="md-ellipsis">
+    ItemSchemeMap
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/11_Constraints/">
+<span class="md-ellipsis">
+    Constraints
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/12_Data_Provisioning/">
+<span class="md-ellipsis">
+    Data Provisioning
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/13_Process/">
+<span class="md-ellipsis">
+    Process
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/14_Validation_and_Transformation_Language/">
+<span class="md-ellipsis">
+    Validation and Transformation Language
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/15_Appendix_1%3A_A_Short_Guide_to_UML_in_the_SDMX_Information_Model/">
+<span class="md-ellipsis">
+    Appendix 1 A Short Guide to UML in the SDMX Information Model
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Registry Specification and Logical Interfaces
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            Registry Specification and Logical Interfaces
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Registry Specification
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_1">
+<span class="md-nav__icon md-icon"></span>
+            Registry Specification
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../registry_specification/1_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../registry_specification/2_Scope_and_Normative_Status/">
+<span class="md-ellipsis">
+    Scope and Normative Status
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../registry_specification/3_Scope_of_the_SDMX_Registry_Repository/">
+<span class="md-ellipsis">
+    Scope of the SDMX Registry Repository
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../registry_specification/4_SDMX_Registry_Repository_Architecture/">
+<span class="md-ellipsis">
+    SDMX Registry Repository Architecture
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../registry_specification/5_Registry_Interfaces_and_Services/">
+<span class="md-ellipsis">
+    Registry Interfaces and Services
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Logical Interfaces
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+            Logical Interfaces
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../logical_interfaces/logical_interfaces/6_Identification_of_SDMX_Objects/">
+<span class="md-ellipsis">
+    Identification of SDMX Objects
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../logical_interfaces/logical_interfaces/7_Implementation_Notes/">
+<span class="md-ellipsis">
+    Implementation Notes
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Technical Notes
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            Technical Notes
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/0_Purpose_and_Structure/">
+<span class="md-ellipsis">
+    Purpose and Structure
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/1_General_Notes_on_This_Document/">
+<span class="md-ellipsis">
+    General Notes on This Document
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/2_Guide_for_SDMX_Format_Standards/">
+<span class="md-ellipsis">
+    Guide for SDMX Format Standards
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/3_General_Notes_for_Implementers/">
+<span class="md-ellipsis">
+    General Notes for Implementers
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/4_Reference_Metadata/">
+<span class="md-ellipsis">
+    Reference Metadata
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/5_Codelist/">
+<span class="md-ellipsis">
+    Codelist
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/6_Geospatial_information_support/">
+<span class="md-ellipsis">
+    Geospatial Information Support
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/7_Maintenance_Agencies_and_Metadata_Providers/">
+<span class="md-ellipsis">
+    Maintenance Agencies and Metadata Providers
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/8_Concept_Roles/">
+<span class="md-ellipsis">
+    Concept Roles
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/9_Constraints/">
+<span class="md-ellipsis">
+    Constraints
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/10_Transforming_between_versions_of_SDMX/">
+<span class="md-ellipsis">
+    Transforming Between Versions of SDMX
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/11_Validation_and_Transformation_Language__VTL_/">
+<span class="md-ellipsis">
+    Validation and Transformation Language
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/12_Structure_Mapping/">
+<span class="md-ellipsis">
+    Structure Mapping
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/13_ANNEX_Semantic_Versioning/">
+<span class="md-ellipsis">
+    ANNEX Semantic Versioning
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<span class="md-ellipsis">
+    REST API (v2.0)
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            REST API (v2.0)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6_1" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../rest_api/">
+<span class="md-ellipsis">
+    REST API
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_6_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_6_1">
+<span class="md-nav__icon md-icon"></span>
+            REST API
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rest_api/data/">
+<span class="md-ellipsis">
+    Data queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rest_api/structures/">
+<span class="md-ellipsis">
+    Structure queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rest_api/metadata/">
+<span class="md-ellipsis">
+    Reference metadata queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rest_api/schema/">
+<span class="md-ellipsis">
+    Schema queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rest_api/availability/">
+<span class="md-ellipsis">
+    Availability queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rest_api/querying_versions/">
+<span class="md-ellipsis">
+    Query syntax for versions
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rest_api/content_negotiation/">
+<span class="md-ellipsis">
+    Content-Negotiation
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rest_api/status/">
+<span class="md-ellipsis">
+    Status codes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rest_api/maintenance/">
+<span class="md-ellipsis">
+    Structure maintenance
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rest_api/tips/">
+<span class="md-ellipsis">
+    Tips for providers and consumers
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rest_api/extend/">
+<span class="md-ellipsis">
+    Extending the API
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+<span class="md-ellipsis">
+    Transmission Formats
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+            Transmission Formats
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_1" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../ml/">
+<span class="md-ellipsis">
+    SDMX-ML (v3.0)
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_1" id="__nav_7_1_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_1">
+<span class="md-nav__icon md-icon"></span>
+            SDMX-ML (v3.0)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ml/message/">
+<span class="md-ellipsis">
+    Message
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ml/common/">
+<span class="md-ellipsis">
+    Common
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ml/structure/">
+<span class="md-ellipsis">
+    Structure
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ml/data/">
+<span class="md-ellipsis">
+    Data
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ml/registry/">
+<span class="md-ellipsis">
+    Registry
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ml/samples/">
+<span class="md-ellipsis">
+    Samples
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../json/">
+<span class="md-ellipsis">
+    SDMX-JSON (v2.0)
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_2">
+<span class="md-nav__icon md-icon"></span>
+            SDMX-JSON (v2.0)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../json/structure_message/">
+<span class="md-ellipsis">
+    Structure Message
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2_2" id="__nav_7_2_2_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_2">
+<span class="md-nav__icon md-icon"></span>
+            Structure Message
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/structure_message/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/structure_message/1_field_guide/">
+<span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/structure_message/2_linking_mechanism/">
+<span class="md-ellipsis">
+    Linking Mechanism
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/structure_message/4_localised_text_elements/">
+<span class="md-ellipsis">
+    Localised Text Elements
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/structure_message/5_security_considerations/">
+<span class="md-ellipsis">
+    Security Considerations
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/structure_message/6_extending_sdmx_json/">
+<span class="md-ellipsis">
+    Extending SDMX-JSON
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/structure_message/7_references/">
+<span class="md-ellipsis">
+    References
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../json/data_message/">
+<span class="md-ellipsis">
+    Data Message
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2_3" id="__nav_7_2_3_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_3">
+<span class="md-nav__icon md-icon"></span>
+            Data Message
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/data_message/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/data_message/1_field_guide/">
+<span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/data_message/2_linking_mechanism/">
+<span class="md-ellipsis">
+    Linking Mechanism
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/data_message/3_handling_indexes/">
+<span class="md-ellipsis">
+    Handling Indexes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/data_message/4_localised_text_elements/">
+<span class="md-ellipsis">
+    Localised Text Elements
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/data_message/5_security_considerations/">
+<span class="md-ellipsis">
+    Security Considerations
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/data_message/6_extending_sdmx_json/">
+<span class="md-ellipsis">
+    Extending SDMX-JSON
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/data_message/7_references/">
+<span class="md-ellipsis">
+    References
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_4" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../json/metadata_message/">
+<span class="md-ellipsis">
+    Metadata Message
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2_4" id="__nav_7_2_4_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_4_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_4">
+<span class="md-nav__icon md-icon"></span>
+            Metadata Message
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/metadata_message/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/metadata_message/1_field_guide/">
+<span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/metadata_message/2_linking_mechanism/">
+<span class="md-ellipsis">
+    Linking Mechanism
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/metadata_message/4_localised_text_elements/">
+<span class="md-ellipsis">
+    Localised Text Elements
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/metadata_message/5_security_considerations/">
+<span class="md-ellipsis">
+    Security Considerations
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/metadata_message/6_extending_sdmx_json/">
+<span class="md-ellipsis">
+    Extending SDMX-JSON
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_7_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../">
+<span class="md-ellipsis">
+    SDMX-CSV (v2.0)
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_7_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_3">
+<span class="md-nav__icon md-icon"></span>
+            SDMX-CSV (v2.0)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../data_message_field_guide/">
+<span class="md-ellipsis">
+    Data Message Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Metadata Message Field Guide
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Metadata Message Field Guide
+    
+  </span>
+</a>
+<nav aria-label="On this page" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+<span class="md-ellipsis">
+      Introduction
+    </span>
+</a>
+<nav aria-label="Introduction" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rfc-4180-a-common-format-for-csv-files">
+<span class="md-ellipsis">
+      RFC 4180: A common format for CSV files
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#design-principles-for-sdmx-csv-20-metadata-messages-aligned-with-sdmx-300">
+<span class="md-ellipsis">
+      Design principles for SDMX-CSV 2.0 Metadata Messages (aligned with SDMX 3.0.0)
+    </span>
+</a>
+<nav aria-label="Design principles for SDMX-CSV 2.0 Metadata Messages (aligned with SDMX 3.0.0)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#columns">
+<span class="md-ellipsis">
+      Columns
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#column-headers-first-row">
+<span class="md-ellipsis">
+      Column headers (first row)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#column-content-all-rows-after-header">
+<span class="md-ellipsis">
+      Column content (all rows after header)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#localisation">
+<span class="md-ellipsis">
+      Localisation
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#multi-instance-metadata-attributes">
+<span class="md-ellipsis">
+      Multi-instance metadata attributes
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#non-coded-multi-lingual-metadata-attributes">
+<span class="md-ellipsis">
+      Non-coded multi-lingual metadata attributes
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#non-coded-multi-lingual-multi-instance-metadata-attributes">
+<span class="md-ellipsis">
+      Non-coded multi-lingual multi-instance metadata attributes
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#non-coded-xhtml-valued-components">
+<span class="md-ellipsis">
+      Non-coded XHTML-valued components
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optional-parameters">
+<span class="md-ellipsis">
+      Optional parameters
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#examples">
+<span class="md-ellipsis">
+      Examples
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="https://sdmx.org/">
+<span class="md-ellipsis">
+    Go To sdmx.org
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="On this page" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+<span class="md-ellipsis">
+      Introduction
+    </span>
+</a>
+<nav aria-label="Introduction" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rfc-4180-a-common-format-for-csv-files">
+<span class="md-ellipsis">
+      RFC 4180: A common format for CSV files
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#design-principles-for-sdmx-csv-20-metadata-messages-aligned-with-sdmx-300">
+<span class="md-ellipsis">
+      Design principles for SDMX-CSV 2.0 Metadata Messages (aligned with SDMX 3.0.0)
+    </span>
+</a>
+<nav aria-label="Design principles for SDMX-CSV 2.0 Metadata Messages (aligned with SDMX 3.0.0)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#columns">
+<span class="md-ellipsis">
+      Columns
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#column-headers-first-row">
+<span class="md-ellipsis">
+      Column headers (first row)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#column-content-all-rows-after-header">
+<span class="md-ellipsis">
+      Column content (all rows after header)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#localisation">
+<span class="md-ellipsis">
+      Localisation
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#multi-instance-metadata-attributes">
+<span class="md-ellipsis">
+      Multi-instance metadata attributes
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#non-coded-multi-lingual-metadata-attributes">
+<span class="md-ellipsis">
+      Non-coded multi-lingual metadata attributes
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#non-coded-multi-lingual-multi-instance-metadata-attributes">
+<span class="md-ellipsis">
+      Non-coded multi-lingual multi-instance metadata attributes
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#non-coded-xhtml-valued-components">
+<span class="md-ellipsis">
+      Non-coded XHTML-valued components
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optional-parameters">
+<span class="md-ellipsis">
+      Optional parameters
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#examples">
+<span class="md-ellipsis">
+      Examples
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="metadata-message-field-guide">Metadata Message Field Guide<a class="headerlink" href="#metadata-message-field-guide" title="Permanent link">¶</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
+<p>SDMX-CSV Data Message is an SDMX data exchange format based on the
+<a href="https://tools.ietf.org/html/rfc4180">RFC 4180</a>. CSV is a widely used
+standardised and simple format to exchange data supported by many tools.</p>
+<p>SDMX-CSV integrates with other specifications, i.e.:</p>
+<ul>
+<li>The SDMX API RESTful specification (e.g. content negotiation with mime-type to
+  get SDMX-CSV representations, specific formats for responses, language
+  selection through HTTP content negotiation)</li>
+<li>The <a href="https://tools.ietf.org/html/rfc4180">RFC 4180</a> specification</li>
+</ul>
+<h3 id="rfc-4180-a-common-format-for-csv-files">RFC 4180: A common format for CSV files<a class="headerlink" href="#rfc-4180-a-common-format-for-csv-files" title="Permanent link">¶</a></h3>
+<p>In order to benefit from best practices, SDMX-CSV is based on the rules defined
+in the <a href="https://tools.ietf.org/html/rfc4180">RFC 4180</a>, which defines a common
+format and MIME Type for CSV files. It is advised to read the (very short) RFC
+for a full list of requirements but, in a nutshell, the RFC defines rules such
+as:</p>
+<ul>
+<li>How the CSV file should be structured (the RFC specifies that all records must
+  have an identical structure (determined column number), like when using an
+  SDMX “flat” representation for data);</li>
+<li>When double-quotes should be used and how to escape them when needed;</li>
+<li>How spaces should be handled: Spaces are considered part of a field and should
+  not be ignored;</li>
+<li>Which mime type should be used;</li>
+<li>What is the default character set, etc.</li>
+</ul>
+<h2 id="design-principles-for-sdmx-csv-20-metadata-messages-aligned-with-sdmx-300">Design principles for SDMX-CSV 2.0 Metadata Messages (aligned with SDMX 3.0.0)<a class="headerlink" href="#design-principles-for-sdmx-csv-20-metadata-messages-aligned-with-sdmx-300" title="Permanent link">¶</a></h2>
+<ul>
+<li>In order to ensure the identifiability of the metadata contained in the
+  message, the header row containing the column headers is mandatory and its
+  content is well-defined.</li>
+<li>An SDMX-CSV referential metadata message contains metadata attribute values
+  for one or more metadatasets reported for one or more metadataflows or
+  metadata provision agreements.</li>
+<li>After the mandatory header row, each row contains the information related to
+  one specific metadataset attached to one or more identifiable artefacts
+  (targets).</li>
+<li>In <a href="https://tools.ietf.org/html/rfc4180">RFC 4180</a>, csv stands for
+  “comma-separated values”. However, while SDMX-CSV uses indeed the “comma”
+  (%x2C) as the default field separator, it adopts the wider interpretation of
+  csv as “character-separated values”. It is recommended for implementers to
+  provide SDMX-CSV messages according to the locale of the user (e.g. as
+  indicated in the http Accept-Language header). It means that e.g. the
+  semi-colon ‘;’ (as used typically in specific regions or countries) is
+  acceptable as separator. See also the examples below. Note that the separator
+  used in a message can be determined by retrieving the character that follows
+  the header field of the first column which extended by a squared bracket term
+  (see below).</li>
+</ul>
+<h3 id="columns">Columns<a class="headerlink" href="#columns" title="Permanent link">¶</a></h3>
+<ul>
+<li>The first column is always used for the underlying type of structure by which
+  the metadataset is defined: metadataflow or metadata provision agreement.</li>
+<li>The next one or two columns are always used for the related structure
+  identification.</li>
+<li>The next one or two columns are used for the metadataset identification.</li>
+<li>The next column is used for the action to be performed for the metadataset.</li>
+<li>The next column is used for the structure types of all targets of the
+  metadataset.</li>
+<li>The next one or two columns are used for the identification of all targets of
+  the metadataset.</li>
+<li>Each metadata attribute of the included metadataset(s) is represented in one
+  or two columns. SDMX web services should return the columns in the metadata
+  attribute order as defined in (each of) the underlying Metadata Structure
+  Definition(s), thus in case of data defined by different metadata structures:
+  first the metadata attributes of the first metadata structure, then the
+  remaining metadata attributes of the second metadata structure and so forth.
+  However, any order of these columns is valid for metadata uploads to
+  SDMX-consuming systems.</li>
+<li>Implementers have the possibility to add any other custom columns as required,
+  e.g. publicationPeriod, publicationYear, reportingBegin, reportingEnd,
+  prepared, etc.</li>
+<li>In the context of appending or deleting metadata, certain columns may be
+  omitted, see below.</li>
+</ul>
+<h3 id="column-headers-first-row">Column headers (first row)<a class="headerlink" href="#column-headers-first-row" title="Permanent link">¶</a></h3>
+<ul>
+<li>The header field of the first column always starts with the term
+  <code>MDSTRUCTURE</code>.<ul>
+<li>This field must be extended with a sub-field delimiter encapsulated in
+  squared brackets “[]”, e.g. <code>MDSTRUCTURE[;]</code>, in case the message contains
+  metadatasets with multiple targets or with multi-instance or multi-language
+  metadata attributes.</li>
+</ul>
+</li>
+<li>The header field of the second column always contains the term
+  <code>MDSTRUCTURE_ID</code>.</li>
+<li>If option <code>labels=name</code> (see <em><a href="#optional-parameters">optional parameters</a></em>):
+  An additional column is added right after the structure identification column
+  containing the term <code>MDSTRUCTURE_NAME</code>.</li>
+<li>The header field of the next column always contains the term <code>METADATASET_ID</code>.</li>
+<li>If option <code>labels=name</code> (see <em><a href="#optional-parameters">optional parameters</a></em>):
+  An additional column is added right after the metadataset identification
+  column containing the term <code>METADATASET_NAME</code>.</li>
+<li>The header field of the next column should contain the term <code>ACTION</code>. For
+  convenience, if this column is not present, a default action (“Information”)
+  is assumed for the whole message.</li>
+<li>The header field of the next column contains the term <code>TARGET_TYPES</code>.</li>
+<li>The header field of the next column contains the term <code>TARGET_IDS</code>.</li>
+<li>If option <code>labels=name</code> (see <em><a href="#optional-parameters">optional parameters</a></em>):
+  An additional column is added right after the target identification column
+  containing the term <code>TARGET_NAMES</code>.</li>
+<li>The other columns for components contain:<ul>
+<li>Default: The ID of the metadata attribute reported in that column prefixed
+  by all corresponding nested parent metadata attributes separated by a dot
+  “.” in the form <em>METADATA_ID[.METADATA_ID]+</em>, e.g.
+  <code>ATTRIBUTE_GRANDPARENT_ID.ATTRIBUTE_PARENT_ID.ATTRIBUTE_CHILD_ID</code>.
+  Additional pairs of squared brackets <code>[]</code> are added at the end of the IDs of
+  those metadata attributes that have multiple instances, e.g.
+  <code>CONTACT[].NAME</code>, <code>CONTACT[].PHONE[]</code> or <code>CONTACT.PHONE[]</code>, and/or that
+  contain localised values. In the latter case the brackets encapsulate the
+  ISO 2-letter language codes that can be encountered in that column,
+  separated by the special sub-field separation character, e.g. <code>;</code>, defined
+  in the squared bracket term of the header field of the first column, e.g.
+  <code>MDSTRUCTURE[;]</code>. Example of a localised child attribute:
+  <code>PROCESS.STEP[en;fr]</code>, and for multiple instances: <code>PROCESS.STEP[][en;fr]</code>.</li>
+<li>If option <code>labels=both</code> (see <em><a href="#optional-parameters">optional parameters</a></em>):
+  The full ID (as described above under ‘Default’) and the localised name of
+  the metadata attribute reported in that column separated by the term “: “,
+  e.g. `ATTRIBUTE_ID: ATTRIBUTE_NAME.</li>
+<li>If option <code>labels=name</code> (see <em><a href="#optional-parameters">optional parameters</a></em>):
+  An additional column is added right after the metadata attribute
+  identification column containing the localised name of the metadata
+  attribute reported in the previous column.</li>
+</ul>
+</li>
+<li>Any other custom column contains a custom but unique term, e.g.
+  <code>publicationPeriod</code>.</li>
+</ul>
+<h3 id="column-content-all-rows-after-header">Column content (all rows after header)<a class="headerlink" href="#column-content-all-rows-after-header" title="Permanent link">¶</a></h3>
+<ul>
+<li>The first column contains: <code>metadataflow</code> or <code>metadataprovision</code>, depending on
+  type of artefact for which the metadata contained in the message are defined:
+  metadataflow or metadata provision agreement.</li>
+<li>The second column contains:<ul>
+<li>Default: The structure identification information in the form
+  <em>AGENCY:ARTEFACT_ID(VERSION)</em><sup id="fnref4:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, e.g. <code>ESTAT:MDF(1.6.0)</code>.</li>
+<li>If option <code>labels=both</code> (see <em><a href="#optional-parameters">optional parameters</a></em>):
+  The structure identification information and its localised name separated by
+  the term “: “, e.g. <code>ESTAT:MDF(1.6.0): Metadataflow name</code>.</li>
+</ul>
+</li>
+<li>If option <code>labels=name</code> (see <em><a href="#optional-parameters">optional parameters</a></em>):
+  An additional column is added right after the structure identification column
+  with the structure’s localised name, e.g. <code>Metadataflow name</code>.</li>
+<li>The next column contains the metadataset identification information in the
+  form <em>AGENCY:ARTEFACT_ID(VERSION)</em><sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, e.g. <code>AGENCY:MD_SET(1.0.0)</code>.<ul>
+<li>If option <code>labels=both</code> (see <em><a href="#optional-parameters">optional parameters</a></em>):
+  The ID and the localised name of the metadataset separated by the term “: “,
+  e.g. <code>ESTAT:MD_SET(1.0.0): Metadataset 1</code>.</li>
+</ul>
+</li>
+<li>If option <code>labels=name</code> (see <em><a href="#optional-parameters">optional parameters</a></em>):
+  An additional column is added right after the metadataset identification
+  column with the metadataset’s localised name, e.g. <code>Metadata set name</code>.</li>
+<li>The next column contains one character representing one of the current 4
+  action types:<ul>
+<li>“I”: Information - Metadata is for information purposes. If such metadata
+  messages are loaded into an SDMX database, the action “A” (Append) is
+  assumed.</li>
+<li>“A”: Append - Metadata is intended for an incremental update of existing
+  metadatasets or the provision of new metadatasets formerly absent. This
+  means that only the information provided explicitly in the message should be
+  altered. Any metadata attribute value that is to be added or changed must be
+  provided. However, the absence of a metadata attribute value at any metadata
+  nesting level does not imply deletion; instead it is simply implied that the
+  value is to remain unchanged. Therefore, it is valid and acceptable to send
+  a metadata message with an action of ‘Append’ which (in addition to the
+  required identification columns) contains only the column and value of a
+  parent metadata attribute. In this case, only that value will be updated.
+  The values of the child metadata attributes are not changed or deleted. Note
+  that it is not permissible to update metadata attributes using incomplete
+  identification information, e.g. without the metadataset or without the
+  target identifier. In order to update a metadata attribute, the full
+  identification information (all identification columns listed here) must
+  always be provided. According to the SDMX 3.0 semantic versioning rules, it
+  is not possible to update a semantically versioned metadataset.</li>
+<li>“R”: Replace - Existing metadatasets are to be fully replaced. Metadatasets
+  formally absent will be added. According to the SDMX 3.0 semantic versioning
+  rules, it is not possible to replace a semantically versioned metadataset.</li>
+<li>“D”: Delete - Metadata is to be deleted. ‘Delete’ is assumed to be an
+  incremental deletion. The deletion is to take place at the lowest level of
+  detail provided in the row. Concretely, if a ‘Delete’ row only contains the
+  identification information of the structural artefact (metadataflow or
+  metadata provision agreement) without a metadataset then all metadatasets
+  for the given artefact will be deleted. If a ‘Delete’ row only contains up
+  to the metadataset identification without metadata attributes then the given
+  metadataset is to be deleted. Finally, if a row contains all complete
+  identification information up to a non-versioned metadataset and some values
+  for metadata attributes, then only the metadata attributes with values will
+  be deleted from the non-versioned metadataset. To be deleted attribute
+  values must be non-empty, e.g. marked with the dash character “-“. According
+  to the SDMX 3.0 semantic versioning rules, it is not possible to modify a
+  semantically versioned metadataset.</li>
+<li>For convenience, if this column is absent then the action “Information” is
+  assumed.</li>
+</ul>
+</li>
+<li>The next column contains the types of all the targets of the metadataset
+  according to the resource names defined for Structural Metadata Queries, e.g.
+  <code>dataflow</code>. Multiple targets are separated by the special sub-field separation
+  character, e.g. <code>;</code>, defined in the squared bracket term of the header field
+  of the first column, e.g. <code>MDSTRUCTURE[;]</code>. Example for multiple target types:
+  <code>dataflow;dataflow</code>.</li>
+<li>The next column contains the identification information of all the targets of
+  the metadataset in the form <em>AGENCY:ARTEFACT_ID(VERSION)</em> <sup id="fnref3:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, separated by
+  the sub-field separation character, e.g.
+  <code>AGENCY:DF1(1.0.0);AGENCY:DF2(1.0.0)</code>.<ul>
+<li>If option <code>labels=both</code> (see <em><a href="#optional-parameters">optional parameters</a></em>):
+  The column contains the ID and the localised name of the targets separated
+  by the term “: “, e.g. <code>AGENCY:DF(1.0.0): Dataflow name</code> or
+  <code>AGENCY:DF1(1.0.0): Dataflow 1 name;AGENCY:DF2(1.0.0): Dataflow 2 name</code>.</li>
+</ul>
+</li>
+<li>If option <code>labels=name</code> (see <em><a href="#optional-parameters">optional parameters</a></em>):
+  An additional column is added right after the target identification column
+  with the target’s localised name, e.g. <code>Dataflow name</code> or
+  <code>Dataflow 1 name;Dataflow 2 name</code>.</li>
+<li>The other columns for metadata attributes contain:<ul>
+<li>Default: The ID(s) (if coded) or value(s) (if non-coded) for the metadata
+  attribute reported in that column, e.g. <code>A</code>, <code>A;B</code> or
+  <code>"&lt;p&gt;An XHTML text&lt;/p&gt;"</code>.</li>
+<li>If option <code>labels=both</code> (see <em><a href="#optional-parameters">optional parameters</a></em>):
+  The ID(s) and their localised name(s) for the metadata attribute separated
+  by the term “: ” (if coded) or the value(s) (if non-coded) for the metadata
+  attribute reported in that column, e.g. <code>A: A value name</code>,
+  <code>A: A value name;B: B value name</code> or <code>"&lt;p&gt;An XHTML text&lt;/p&gt;"</code>.</li>
+<li>If option <code>labels=name</code> (see <em><a href="#optional-parameters">optional parameters</a></em>):
+  An additional column is added right after the metadata attribute
+  identification column containing the localised name, e.g. <code>A value name</code> or
+  <code>A value name;B value name</code>, of the metadata attribute value reported in the
+  previous column. It is empty if the value has no localised name.</li>
+<li>All string/textual values (complete string between column-separating
+  characters including ID’s or language codes) should always be encapsulated
+  in quotation marks, they must be if they contain commas or inner quotation
+  marks. Quotation marks in strings/textual values must always be escaped by
+  doubling the quotes.</li>
+<li>When metadata from different metadata structures are present then the
+  columns not related to the attribute’s metadata structure are to be left
+  empty.</li>
+</ul>
+</li>
+<li>The other custom columns contain any potentially localised custom content.</li>
+</ul>
+<h3 id="localisation">Localisation<a class="headerlink" href="#localisation" title="Permanent link">¶</a></h3>
+<ul>
+<li>HTTP content negotiation, see
+  <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html">RFC 2616 - HTTP 1.1 Header Field Definitions</a><ul>
+<li>Always use this mime-type in the Accept header:
+  <code>application/vnd.sdmx.metadata+csv; version=2.0.0</code>.</li>
+<li>The client can indicate preferred languages through the Accept-Language
+  header, e.g. <code>fr, en-gb;q=0.8, en;q=0.7</code>.</li>
+</ul>
+</li>
+<li>Always localise all artefact names according to the preferred language. The
+  first best language match according to the user’s preferred language choices
+  in the http Accept-Language header (or if that is not available than according
+  to the system’s default language order) is to be used for each localisable
+  name element. The message does however not indicate the returned language per
+  localisable name element. In case that there is no such language match for a
+  particular localisable name element, it is optional to return the element in a
+  system-default language or alternatively to not return the name element. <strong>It
+  is recommended to indicate all languages used anywhere in the message for
+  localised name elements through http Content-Language response header
+  (languages of the intended audience).</strong><br/>
+  Note: For multi-language metadata attribute values, all language versions are
+  provided independently from the preferred language (see below).</li>
+</ul>
+<h3 id="multi-instance-metadata-attributes">Multi-instance metadata attributes<a class="headerlink" href="#multi-instance-metadata-attributes" title="Permanent link">¶</a></h3>
+<ul>
+<li>Values from multiple instances of a metadata attribute within a metadataset
+  are separated by the special sub-field separation character, e.g. <code>;</code>, defined
+  in the squared bracket term of the header field of the first column, e.g.
+  <code>MDSTRUCTURE[;]</code>.</li>
+<li>Such metadata attributes are indicated in the column header by having their ID
+  followed by empty squared brackets “[]”, e.g. <code>ATTR[]</code>.</li>
+<li>For coded multi-instance metadata attributes, if option <code>labels=both</code> (see
+  <em><a href="#optional-parameters">optional parameters</a></em>) then each individual value is
+  to be prefixed with its ID and the term “: “, e.g. <code>A: Value A;B: Value B</code>.</li>
+</ul>
+<h3 id="non-coded-multi-lingual-metadata-attributes">Non-coded multi-lingual metadata attributes<a class="headerlink" href="#non-coded-multi-lingual-metadata-attributes" title="Permanent link">¶</a></h3>
+<ul>
+<li>Non-coded metadata attributes allow for multi-lingual values. Those values are
+  separated by the special sub-field separation character, e.g. <code>;</code>, defined in
+  the squared bracket term of the header field of the first column, e.g.
+  <code>MDSTRUCTURE[;]</code>.</li>
+<li>Such metadata attributes are indicated in the column header by having their ID
+  followed by the list of possible 2-letter ISO language codes separated by the
+  sub-field separator and encapsulated squared brackets “[]”, e.g.
+  <code>ATTR[en;fr]</code>.</li>
+<li>Each individual language value is to be prefixed with its 2-letter ISO
+  language code and a colon character “:”, e.g. <code>en:Value;fr:Valeur</code>. Thus, in
+  distinction to the ID prefix for coded values when using the HTTP accept
+  header <code>labels=both</code> (see <em><a href="#optional-parameters">optional parameters</a></em>), the
+  language prefix <code>xx:</code> doesn’t have an extra space character.</li>
+</ul>
+<h3 id="non-coded-multi-lingual-multi-instance-metadata-attributes">Non-coded multi-lingual multi-instance metadata attributes<a class="headerlink" href="#non-coded-multi-lingual-multi-instance-metadata-attributes" title="Permanent link">¶</a></h3>
+<ul>
+<li>When non-coded multi-lingual metadata attributes have multiple instances
+  within a metadataset, then all individual values are included and separated by
+  the special sub-field separation character, e.g. <code>;</code>, defined in the squared
+  bracket term of the header field of the first column, e.g. <code>MDSTRUCTURE[;]</code>.</li>
+<li>Such metadata attributes are indicated in the column header by having their ID
+  followed by squared brackets “[]” as well as by the list of possible language
+  codes separated by the sub-field separator and encapsulated in additional
+  squared brackets “[]”, e.g. <code>ATTR[][en;fr;de]</code>.</li>
+<li>Each individual language value is to prefixed with its 2-letter ISO language
+  code and a colon character “:”, e.g. <code>en:Value1</code>.</li>
+<li>Not each value needs all language versions. In order to allow knowing to which
+  value the different language items belong, each multi-lingual value set is to
+  be encapsulated in double quotes, e.g.
+  <code>"en:Value1;fr:Valeur1";"en:Value2;de:Wert2"</code>. However, note that fields with
+  double quotes must themselves be encapsulated in double quotes and that the
+  inner double quotes need to be doubled, thus the fully complete example is
+  <code>"""en:Value1;fr:Valeur1"";""en:Value2;de:Wert2"""</code>.</li>
+</ul>
+<h3 id="non-coded-xhtml-valued-components">Non-coded XHTML-valued components<a class="headerlink" href="#non-coded-xhtml-valued-components" title="Permanent link">¶</a></h3>
+<ul>
+<li>Some non-coded metadata attributes allow for XHTML values.</li>
+<li>Each XHTML value is to be encapsulated in double quotes, e.g.
+  <code>"&lt;p&gt;This is some ""metadata html""&lt;/p&gt;"</code>. Remember that the inner double
+  quotes need to be doubled.</li>
+<li>The CSV format allows fields to contain line break characters if those fields
+  are enclosed in double quotes. Thus XHTML values can also contain line breaks,
+  although HTML viewers will ignore them.</li>
+</ul>
+<h2 id="optional-parameters">Optional parameters<a class="headerlink" href="#optional-parameters" title="Permanent link">¶</a></h2>
+<p>The following optional parameter can be added to the HTTP Accept header. It
+needs to be separated by the character combination <code>"; "</code>.</p>
+<ul>
+<li>labels (id|name|both; default=id): This parameter applies to all Nameable SDMX
+  Artefacts contained in the header and the body of the message:<ul>
+<li>If the parameter value is <code>id</code> then only the id of the Artefacts is
+  displayed.</li>
+<li>If the parameter value is <code>both</code> then the concatenated id and localised name
+  of the Artefacts (see the section on <a href="#localisation">localised names</a> on how
+  the message deals with languages) separated by <code>": "</code> are displayed. Note
+  that the character combination <code>": "</code> could also be part of the Artefact
+  name and could therefore occur several times within the concatenated string.</li>
+<li>If the parameter value is <code>name</code> then the id/value and the name of the
+  artefacts are displayed in separate columns (see <em><a href="#columns">here</a></em>), the
+  ID/value column always directly preceding its related localised name column.</li>
+</ul>
+</li>
+</ul>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">¶</a></h2>
+<p>Note: All examples assume the minimal HTTP Accept header:
+<code>application/vnd.sdmx.metadata+csv; version=1.0.0</code></p>
+<details class="example">
+<summary>Ordinary case</summary>
+<div class="language-text highlight"><pre><span></span><code>MDSTRUCTURE,MDSTRUCTURE_ID,METADATASET_ID,ACTION,TARGET_TYPES,TARGET_IDS,ATTRIBUTE_1,ATTRIBUTE_1.CHILD,ATTRIBUTE_2
+metadataflow,OECD:MDF(1.0.0),OECD:MDS(1.0.0),I,dataflow,OECD:DF(1.0.0),A STRING VALUE,"&lt;p&gt;An XHTML text with ""quotes""&lt;/p&gt;",123
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The following default parameter settings are automatically applied:</p>
+<ul>
+<li><code>labels=id</code></li>
+</ul>
+</div>
+</details>
+<p>??? example “Metadata attribute with multiple instances and multi-lingual
+values”</p>
+<div class="language-text highlight"><pre><span></span><code>``` csv
+MDSTRUCTURE[;],MDSTRUCTURE_ID,METADATASET_ID,ACTION,TARGET_TYPES,TARGET_IDS,ATTRIBUTE_1,ATTRIBUTE_1.ATTRIBUTE_1_2[][en;fr],ATTRIBUTE_2[],ATTRIBUTE_3[]
+metadataflow,OECD:MDF(1.0.0),OECD:MDS(1.0.0),I,dataflow,OECD:DF(1.0.0),CODE_ID,"""en:""""&lt;p&gt;An XHTML text&lt;/p&gt;"""";fr:""""&lt;p&gt;Un texte XHTML&lt;/p&gt;""""";""en:""""&lt;p&gt;Another XHTML text&lt;/p&gt;"""";fr:""""&lt;p&gt;Un autre texte XHTML&lt;/p&gt;""""""","""Text with """"quotes"""""";""Another text""",123;456
+```
+</code></pre></div>
+<p>??? example “Localisation: HTTP Accept header:
+<code>application/vnd.sdmx.metadata+csv; version=1.0.0; labels=both</code>, HTTP
+Accept-Language header: <code>fr-FR, en;q=0.7</code>, metadata attribute with multiple
+instances, metadata attributes with multi-lingual values”</p>
+<div class="language-text highlight"><pre><span></span><code>``` csv
+MDSTRUCTURE[|],MDSTRUCTURE_ID;METADATASET_ID;ACTION;TARGET_TYPES;TARGET_IDS;ATTRIBUTE_1: Attribut d'exemple 1;ATTRIBUTE_1.ATTRIBUTE_1_2[][en|fr]: Attribut d'exemple 12;ATTRIBUTE_2[]: Attribut d'exemple 2
+metadataflow;OECD:MDF(1.0.0): Metadataflow d'exemple;OECD:MDS(1.0.0): Metadataset d'exemple;I;dataflow;OECD:DF(1.0.0): Dataflow d'exemple;CODE_ID: Nom du code;"""en:""""&lt;p&gt;An XHTML text&lt;/p&gt;""""|fr:""""&lt;p&gt;Un texte XHTML&lt;/p&gt;""""""|""en:""""&lt;p&gt;Another XHTML text&lt;/p&gt;""""|fr:""""&lt;p&gt;Un autre texte XHTML&lt;/p&gt;""""""";123,45|6,789
+```
+
+Note that in this example the client prefers French (fr) language with the France (FR) locale, but will also accept 
+any type of English. Therefore, in the message the French language with the France locale is applied, transforming 
+also the field separator from comma (,) to semicolon (;), and the decimal separator from dot (.) to comma (,).
+</code></pre></div>
+<p>??? example “Localisation: HTTP Accept header:
+<code>application/vnd.sdmx.metadata+csv; version=1.0.0; labels=name</code>, HTTP
+Accept-Language header: <code>en-US</code>, metadata attribute with multiple instances,
+metadata attributes with multi-lingual values, different targets and
+metadatasets”</p>
+<div class="language-text highlight"><pre><span></span><code>``` csv
+MDSTRUCTURE[;],MDSTRUCTURE_ID,MDSTRUCTURE_NAME,METADATASET_ID,METADATASET_NAME,ACTION,TARGET_TYPES,TARGET_IDS,TARGET_NAMES,ATTRIBUTE_1,Attribute 1,ATTRIBUTE_1.ATTRIBUTE_1_2[][en|fr],Attribute 12,ATTRIBUTE_2[],Attribute 2
+metadataflow,OECD:MDF(1.0.0),Metadataflow name,OECD:MDS(1.0.0),Metadataset name,I,dataflow;dataflow,OECD:DF(1.0.0);OECD:DF(1.1.0),Dataflow name 1;Dataflow name 2,CODE_ID,Code name,"""en:""""&lt;p&gt;An XHTML text&lt;/p&gt;"""";fr:""""&lt;p&gt;Un texte XHTML&lt;/p&gt;"""""";""en:""""&lt;p&gt;Another XHTML text&lt;/p&gt;"""";fr:""""&lt;p&gt;Un autre texte XHTML&lt;/p&gt;""""""",123.45;6.789
+metadataflow,OECD:MDF(1.0.0),Metadataflow name,OECD:MDS(1.1.0),Metadataset new name,I,codelist,OECD:CL(1.0.0),Codelist name,CODE_ID,Code name,"""en:""""&lt;p&gt;Text 1&lt;/p&gt;"""";fr:""""&lt;p&gt;Texte 1&lt;/p&gt;"""""";""en:""""&lt;p&gt;Text 2&lt;/p&gt;"""";fr:""""&lt;p&gt;Texte 2&lt;/p&gt;""""""",0
+```
+</code></pre></div>
+<details class="example">
+<summary>Varying metadataflows</summary>
+<div class="language-text highlight"><pre><span></span><code>MDSTRUCTURE[;],MDSTRUCTURE_ID,METADATASET_ID,ACTION,TARGET_TYPES,TARGET_IDS,ATTRIBUTE_1,ATTRIBUTE_2[][en;fr;de]
+metadataflow,OECD:MDF(1.0.0),OECD:MDS(1.0.0),I,dataflow,OECD:DF(1.0.0),CODE_ID,"""en:Value1;fr:Valeur1"";""en:Value2;de:Wert2"""
+metadataflow,OECD:MDF(1.1.0),OECD:MDS(1.1.0),I,dataflow,OECD:DF(1.1.0),CODE_ID,"""en:Value1;fr:Valeur1"";""en:Value2;de:Wert2"""
+</code></pre></div>
+</details>
+<p>??? example “Non-versioned metadataset for a non-versioned<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> data provision
+agreement”</p>
+<div class="language-text highlight"><pre><span></span><code>``` csv
+MDSTRUCTURE[;],MDSTRUCTURE_ID,METADATASET_ID,ACTION,TARGET_TYPES,TARGET_IDS,ATTRIBUTE_1,ATTRIBUTE_2[en;fr]
+metadataprovision,OECD:MDP,OECD:MDS,I,dataflow,OECD:DF(1.0.0),CODE_ID,"en:Value1;fr:Valeur1"
+```
+</code></pre></div>
+<details class="example">
+<summary>Non-coded metadata attribute values with line-breaks</summary>
+<div class="language-text highlight"><pre><span></span><code>MDSTRUCTURE[;],MDSTRUCTURE_ID,METADATASET_ID,ACTION,TARGET_TYPES,TARGET_IDS,ATTRIBUTE_1[]
+metadataflow,OECD:MDF(1.0.0),OECD:MDS(1.0.0),I,dataflow,OECD:DF(1.0.0),"""This text with a line
+break"";""This is some other text&lt;/p&gt;"""
+</code></pre></div>
+</details>
+<p>??? example “Deleting all values of specific metadata attributes from a
+non-versioned metadatset: the values that correspond to the attribute
+identifiers are deleted”</p>
+<div class="language-text highlight"><pre><span></span><code>``` csv
+MDSTRUCTURE[;],MDSTRUCTURE_ID,METADATASET_ID,ACTION,TARGET_TYPES,TARGET_IDS,ATTRIBUTE_1[],ATTRIBUTE_1[].ATTRIBUTE_1_2[],ATTRIBUTE_2
+metadataflow,OECD:MDF(1.0.0),OECD:MDS,D,dataflow,OECD:DF(1.0.0),-,-,-
+```
+</code></pre></div>
+<details class="example">
+<summary>Deleting a whole metadataset</summary>
+<div class="language-text highlight"><pre><span></span><code>MDSTRUCTURE[;],MDSTRUCTURE_ID,METADATASET_ID,ACTION
+metadataflow,OECD:MDF(1.0.0),OECD:MDS(1.0.0),D
+metadataflow,OECD:MDF(1.1.0),OECD:MDS(1.1.0),D
+</code></pre></div>
+</details>
+<details class="example">
+<summary>Deleting all metadatasets defined by a specific metadata artefact</summary>
+<div class="language-text highlight"><pre><span></span><code>MDSTRUCTURE[;],MDSTRUCTURE_ID,METADATASET_ID,ACTION
+metadataflow,OECD:MDF(1.0.0),,D
+metadataflow,OECD:MDF(1.1.0),,D
+</code></pre></div>
+</details>
+<hr/>
+<div class="footnote">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>Note that since SDMX 3.0.0 the syntax <em>AGENCY:ARTEFACT_ID(VERSION)</em> allows
+omitting the version for non-versioned artefacts. In this case using
+<em>AGENCY:ARTEFACT_ID</em> is sufficient, e.g. <code>OECD:MDP</code> <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">↩</a><a class="footnote-backref" href="#fnref3:1" title="Jump back to footnote 1 in the text">↩</a><a class="footnote-backref" href="#fnref4:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+<a href="https://www.analytical-software.de/en/legal-disclosure/">HMS Analytical Software Imprint</a>
+</div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "content.code.annotate", "content.code.copy", "navigation.tabs", "navigation.indexes", "navigation.path", "navigation.sections", "navigation.top", "navigation.tracking", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+<script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+<script src="../../assets/anchors.js"></script>
+</body>
+</html>

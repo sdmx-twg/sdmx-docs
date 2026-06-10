@@ -1,0 +1,2310 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Statistical Data and Metadata eXchange" name="description"/>
+<link href="https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/information_model/2_SDMX_Base_Package/" rel="canonical"/>
+<link href="../../../media/logos/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.12" name="generator"/>
+<title>SDMX Base Package - SDMX Technical Documentation</title>
+<link href="../../../assets/stylesheets/main.2afb09e1.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../../assets/style.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="orange" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#sdmx-base-package">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<div data-md-color-scheme="default" data-md-component="outdated" hidden="">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="SDMX Technical Documentation" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="SDMX Technical Documentation">
+<img alt="logo" src="../../../media/logos/SDMX-logo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            SDMX Technical Documentation
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              SDMX Base Package
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="orange" data-md-color-media="(prefers-color-scheme)" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"></path></svg>
+</label>
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="orange" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"></path></svg>
+</label>
+<input aria-label="Switch to system preference" class="md-option" data-md-color-accent="orange" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to system preference">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 2c3.87 0 7 3.13 7 7 0 2.38-1.19 4.47-3 5.74V17c0 .55-.45 1-1 1H6c-.55 0-1-.45-1-1v-2.26C3.19 13.47 2 11.38 2 9c0-3.87 3.13-7 7-7M6 21v-1h6v1c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1M9 4C6.24 4 4 6.24 4 9c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58 0-2.76-2.24-5-5-5m10 9h-2l-3.2 9h1.9l.7-2h3.2l.7 2h1.9zm-2.15 5.65L18 15l1.15 3.65z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/HMS-Analytical-Software/sdmx-technical-documentation" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    HMS-Analytical-Software/sdmx-technical-documentation
+  </div>
+</a>
+</div>
+<a class="md-header-nav__button md-icon" href="../../../pdf/document.pdf" title="PDF">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,0c-17.6,0-32,14.4-32,32v448c0,17.6,14.4,32,32,32h320c17.6,0,32-14.4,32-32V128L352,0H128z" fill="#E2E5E7"></path>
+<path d="m384 128h96l-128-128v96c0 17.6 14.4 32 32 32z" fill="#B0B7BD"></path>
+<polygon fill="#CAD1D8" points="480 224 384 128 480 128"></polygon>
+<path d="M416,416c0,8.8-7.2,16-16,16H48c-8.8,0-16-7.2-16-16V256c0-8.8,7.2-16,16-16h352c8.8,0,16,7.2,16,16  V416z" fill="#F15642"></path>
+<g fill="#fff">
+<path d="m101.74 303.15c0-4.224 3.328-8.832 8.688-8.832h29.552c16.64 0 31.616 11.136 31.616 32.48 0 20.224-14.976 31.488-31.616 31.488h-21.36v16.896c0 5.632-3.584 8.816-8.192 8.816-4.224 0-8.688-3.184-8.688-8.816v-72.032zm16.88 7.28v31.872h21.36c8.576 0 15.36-7.568 15.36-15.504 0-8.944-6.784-16.368-15.36-16.368h-21.36z"></path>
+<path d="m196.66 384c-4.224 0-8.832-2.304-8.832-7.92v-72.672c0-4.592 4.608-7.936 8.832-7.936h29.296c58.464 0 57.184 88.528 1.152 88.528h-30.448zm8.064-72.912v57.312h21.232c34.544 0 36.08-57.312 0-57.312h-21.232z"></path>
+<path d="m303.87 312.11v20.336h32.624c4.608 0 9.216 4.608 9.216 9.072 0 4.224-4.608 7.68-9.216 7.68h-32.624v26.864c0 4.48-3.184 7.92-7.664 7.92-5.632 0-9.072-3.44-9.072-7.92v-72.672c0-4.592 3.456-7.936 9.072-7.936h44.912c5.632 0 8.96 3.344 8.96 7.936 0 4.096-3.328 8.704-8.96 8.704h-37.248v0.016z"></path>
+</g>
+<path d="m400 432h-304v16h304c8.8 0 16-7.2 16-16v-16c0 8.8-7.2 16-16 16z" fill="#CAD1D8"></path>
+</svg>
+</a></nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../..">
+          
+  
+  
+    
+  
+  Getting Started
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../framework/framework/0_framework-introduction/">
+          
+  
+  
+    
+  
+  Framework
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../information_model/information_model/0_Introduction/">
+          
+  
+  
+    
+  
+  Information Model
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../registry_specification/1_Introduction/">
+          
+  
+  
+    
+  
+  Registry Specification and Logical Interfaces
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../technical_notes/technical_notes/0_Purpose_and_Structure/">
+          
+  
+  
+    
+  
+  Technical Notes
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../rest_api/">
+          
+  
+  
+    
+  
+  REST API (v2.0)
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../ml/">
+          
+  
+  
+    
+  
+  Transmission Formats
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="https://sdmx.org/">
+        
+  
+  
+    
+  
+  Go To sdmx.org
+
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="SDMX Technical Documentation" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="SDMX Technical Documentation">
+<img alt="logo" src="../../../media/logos/SDMX-logo.png"/>
+</a>
+    SDMX Technical Documentation
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/HMS-Analytical-Software/sdmx-technical-documentation" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    HMS-Analytical-Software/sdmx-technical-documentation
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_1" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+</a>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_1_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_1">
+<span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Framework
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            Framework
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../framework/framework/0_framework-introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../framework/framework/1_framework-change-history/">
+<span class="md-ellipsis">
+    Change History
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../framework/framework/2_framework-processes-and-business-scope/">
+<span class="md-ellipsis">
+    Processes and Business Scope
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../framework/framework/3_framework-the-sdmx-information-model/">
+<span class="md-ellipsis">
+    The SDMX Information Model
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../framework/framework/4_framework-the-sdmx-transmission-formats/">
+<span class="md-ellipsis">
+    The SDMX Transmission Formats
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../framework/framework/5_framework-dependencies-on-sdmx-content-oriented-guidelines/">
+<span class="md-ellipsis">
+    Dependencies on SDMX content-oriented guidelines
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../framework/framework/6_framework-validation-and-transformation-language/">
+<span class="md-ellipsis">
+    Validation and Transformation Language
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Information Model
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Information Model
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/0_change_history/">
+<span class="md-ellipsis">
+    Change History
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/1_Actors_and_Use_Cases/">
+<span class="md-ellipsis">
+    Actors and Use Cases
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/2_SDMX_Base_Package/">
+<span class="md-ellipsis">
+    SDMX Base Package
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/3_Specific_Item_Schemes/">
+<span class="md-ellipsis">
+    Specific Item Schemes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/4_Data_Structure_Definition_and_Dataset/">
+<span class="md-ellipsis">
+    Data Structure Definition and Dataset
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/5_Cube/">
+<span class="md-ellipsis">
+    Cube
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/6_Metadata_Structure_Definition_and_Metadata_Set/">
+<span class="md-ellipsis">
+    Metadata Structure Definition and Metadata Set
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/7_Hierarchy/">
+<span class="md-ellipsis">
+    Hierarchy
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/8_Structure_Map/">
+<span class="md-ellipsis">
+    Structure Map
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/9_RepresentationMap/">
+<span class="md-ellipsis">
+    RepresentationMap
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/10_ItemSchemeMap/">
+<span class="md-ellipsis">
+    ItemSchemeMap
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/11_Constraints/">
+<span class="md-ellipsis">
+    Constraints
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/12_Data_Provisioning/">
+<span class="md-ellipsis">
+    Data Provisioning
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/13_Process/">
+<span class="md-ellipsis">
+    Process
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/14_Validation_and_Transformation_Language/">
+<span class="md-ellipsis">
+    Validation and Transformation Language
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/15_Appendix_1%3A_A_Short_Guide_to_UML_in_the_SDMX_Information_Model/">
+<span class="md-ellipsis">
+    Appendix 1 A Short Guide to UML in the SDMX Information Model
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Registry Specification and Logical Interfaces
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            Registry Specification and Logical Interfaces
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Registry Specification
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_1">
+<span class="md-nav__icon md-icon"></span>
+            Registry Specification
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../registry_specification/1_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../registry_specification/2_Scope_and_Normative_Status/">
+<span class="md-ellipsis">
+    Scope and Normative Status
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../registry_specification/3_Scope_of_the_SDMX_Registry_Repository/">
+<span class="md-ellipsis">
+    Scope of the SDMX Registry Repository
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../registry_specification/4_SDMX_Registry_Repository_Architecture/">
+<span class="md-ellipsis">
+    SDMX Registry Repository Architecture
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../registry_specification/5_Registry_Interfaces_and_Services/">
+<span class="md-ellipsis">
+    Registry Interfaces and Services
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Logical Interfaces
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+            Logical Interfaces
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../logical_interfaces/6_Identification_of_SDMX_Objects/">
+<span class="md-ellipsis">
+    Identification of SDMX Objects
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../logical_interfaces/7_Implementation_Notes/">
+<span class="md-ellipsis">
+    Implementation Notes
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Technical Notes
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            Technical Notes
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/0_Purpose_and_Structure/">
+<span class="md-ellipsis">
+    Purpose and Structure
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/1_General_Notes_on_This_Document/">
+<span class="md-ellipsis">
+    General Notes on This Document
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/2_Guide_for_SDMX_Format_Standards/">
+<span class="md-ellipsis">
+    Guide for SDMX Format Standards
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/3_General_Notes_for_Implementers/">
+<span class="md-ellipsis">
+    General Notes for Implementers
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/4_Reference_Metadata/">
+<span class="md-ellipsis">
+    Reference Metadata
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/5_Codelist/">
+<span class="md-ellipsis">
+    Codelist
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/6_Geospatial_information_support/">
+<span class="md-ellipsis">
+    Geospatial Information Support
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/7_Maintenance_Agencies_and_Metadata_Providers/">
+<span class="md-ellipsis">
+    Maintenance Agencies and Metadata Providers
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/8_Concept_Roles/">
+<span class="md-ellipsis">
+    Concept Roles
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/9_Constraints/">
+<span class="md-ellipsis">
+    Constraints
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/10_Transforming_between_versions_of_SDMX/">
+<span class="md-ellipsis">
+    Transforming Between Versions of SDMX
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/11_Validation_and_Transformation_Language__VTL_/">
+<span class="md-ellipsis">
+    Validation and Transformation Language
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/12_Structure_Mapping/">
+<span class="md-ellipsis">
+    Structure Mapping
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/13_ANNEX_Semantic_Versioning/">
+<span class="md-ellipsis">
+    ANNEX Semantic Versioning
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<span class="md-ellipsis">
+    REST API (v2.0)
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            REST API (v2.0)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6_1" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../rest_api/">
+<span class="md-ellipsis">
+    REST API
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_6_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_6_1">
+<span class="md-nav__icon md-icon"></span>
+            REST API
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/data/">
+<span class="md-ellipsis">
+    Data queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/structures/">
+<span class="md-ellipsis">
+    Structure queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/metadata/">
+<span class="md-ellipsis">
+    Reference metadata queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/schema/">
+<span class="md-ellipsis">
+    Schema queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/availability/">
+<span class="md-ellipsis">
+    Availability queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/querying_versions/">
+<span class="md-ellipsis">
+    Query syntax for versions
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/content_negotiation/">
+<span class="md-ellipsis">
+    Content-Negotiation
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/status/">
+<span class="md-ellipsis">
+    Status codes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/maintenance/">
+<span class="md-ellipsis">
+    Structure maintenance
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/tips/">
+<span class="md-ellipsis">
+    Tips for providers and consumers
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/extend/">
+<span class="md-ellipsis">
+    Extending the API
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+<span class="md-ellipsis">
+    Transmission Formats
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+            Transmission Formats
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_1" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../ml/">
+<span class="md-ellipsis">
+    SDMX-ML (v3.0)
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_1" id="__nav_7_1_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_1">
+<span class="md-nav__icon md-icon"></span>
+            SDMX-ML (v3.0)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/message/">
+<span class="md-ellipsis">
+    Message
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/common/">
+<span class="md-ellipsis">
+    Common
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/structure/">
+<span class="md-ellipsis">
+    Structure
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/data/">
+<span class="md-ellipsis">
+    Data
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/registry/">
+<span class="md-ellipsis">
+    Registry
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/samples/">
+<span class="md-ellipsis">
+    Samples
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../json/">
+<span class="md-ellipsis">
+    SDMX-JSON (v2.0)
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_2">
+<span class="md-nav__icon md-icon"></span>
+            SDMX-JSON (v2.0)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../json/structure_message/">
+<span class="md-ellipsis">
+    Structure Message
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2_2" id="__nav_7_2_2_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_2">
+<span class="md-nav__icon md-icon"></span>
+            Structure Message
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/1_field_guide/">
+<span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/2_linking_mechanism/">
+<span class="md-ellipsis">
+    Linking Mechanism
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/4_localised_text_elements/">
+<span class="md-ellipsis">
+    Localised Text Elements
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/5_security_considerations/">
+<span class="md-ellipsis">
+    Security Considerations
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/6_extending_sdmx_json/">
+<span class="md-ellipsis">
+    Extending SDMX-JSON
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/7_references/">
+<span class="md-ellipsis">
+    References
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../json/data_message/">
+<span class="md-ellipsis">
+    Data Message
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2_3" id="__nav_7_2_3_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_3">
+<span class="md-nav__icon md-icon"></span>
+            Data Message
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/1_field_guide/">
+<span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/2_linking_mechanism/">
+<span class="md-ellipsis">
+    Linking Mechanism
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/3_handling_indexes/">
+<span class="md-ellipsis">
+    Handling Indexes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/4_localised_text_elements/">
+<span class="md-ellipsis">
+    Localised Text Elements
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/5_security_considerations/">
+<span class="md-ellipsis">
+    Security Considerations
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/6_extending_sdmx_json/">
+<span class="md-ellipsis">
+    Extending SDMX-JSON
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/7_references/">
+<span class="md-ellipsis">
+    References
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_4" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../json/metadata_message/">
+<span class="md-ellipsis">
+    Metadata Message
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2_4" id="__nav_7_2_4_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_4_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_4">
+<span class="md-nav__icon md-icon"></span>
+            Metadata Message
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/1_field_guide/">
+<span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/2_linking_mechanism/">
+<span class="md-ellipsis">
+    Linking Mechanism
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/4_localised_text_elements/">
+<span class="md-ellipsis">
+    Localised Text Elements
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/5_security_considerations/">
+<span class="md-ellipsis">
+    Security Considerations
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/6_extending_sdmx_json/">
+<span class="md-ellipsis">
+    Extending SDMX-JSON
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../csv/">
+<span class="md-ellipsis">
+    SDMX-CSV (v2.0)
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_3">
+<span class="md-nav__icon md-icon"></span>
+            SDMX-CSV (v2.0)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../csv/data_message_field_guide/">
+<span class="md-ellipsis">
+    Data Message Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../csv/metadata_message_field_guide/">
+<span class="md-ellipsis">
+    Metadata Message Field Guide
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="https://sdmx.org/">
+<span class="md-ellipsis">
+    Go To sdmx.org
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="On this page" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+<span class="md-ellipsis">
+      Introduction
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#base-structures-identification-versioning-and-maintenance">
+<span class="md-ellipsis">
+      Base Structures - Identification, Versioning, and Maintenance
+    </span>
+</a>
+<nav aria-label="Base Structures - Identification, Versioning, and Maintenance" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#class-diagram">
+<span class="md-ellipsis">
+      Class Diagram
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#explanation-of-the-diagram">
+<span class="md-ellipsis">
+      Explanation of the Diagram
+    </span>
+</a>
+<nav aria-label="Explanation of the Diagram" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#narrative">
+<span class="md-ellipsis">
+      Narrative
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#definitions">
+<span class="md-ellipsis">
+      Definitions
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#basic-inheritance">
+<span class="md-ellipsis">
+      Basic Inheritance
+    </span>
+</a>
+<nav aria-label="Basic Inheritance" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#class-diagram-basic-inheritance-from-the-base-inheritance-classes">
+<span class="md-ellipsis">
+      Class Diagram – Basic Inheritance from the Base Inheritance Classes
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#explanation-of-the-diagram_1">
+<span class="md-ellipsis">
+      Explanation of the Diagram
+    </span>
+</a>
+<nav aria-label="Explanation of the Diagram" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#narrative_1">
+<span class="md-ellipsis">
+      Narrative
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#data-types">
+<span class="md-ellipsis">
+      Data Types
+    </span>
+</a>
+<nav aria-label="Data Types" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#class-diagram_1">
+<span class="md-ellipsis">
+      Class Diagram
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#explanation-of-the-diagram_2">
+<span class="md-ellipsis">
+      Explanation of the Diagram
+    </span>
+</a>
+<nav aria-label="Explanation of the Diagram" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#narrative_2">
+<span class="md-ellipsis">
+      Narrative
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-item-scheme-pattern">
+<span class="md-ellipsis">
+      The Item Scheme Pattern
+    </span>
+</a>
+<nav aria-label="The Item Scheme Pattern" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#context">
+<span class="md-ellipsis">
+      Context
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#class-diagram_2">
+<span class="md-ellipsis">
+      Class Diagram
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#explanation-of-the-diagram_3">
+<span class="md-ellipsis">
+      Explanation of the Diagram
+    </span>
+</a>
+<nav aria-label="Explanation of the Diagram" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#narrative_3">
+<span class="md-ellipsis">
+      Narrative
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#definitions_1">
+<span class="md-ellipsis">
+      Definitions
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-structure-pattern">
+<span class="md-ellipsis">
+      The Structure Pattern
+    </span>
+</a>
+<nav aria-label="The Structure Pattern" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#context_1">
+<span class="md-ellipsis">
+      Context
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#class-diagrams">
+<span class="md-ellipsis">
+      Class Diagrams
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#explanation-of-the-diagrams">
+<span class="md-ellipsis">
+      Explanation of the Diagrams
+    </span>
+</a>
+<nav aria-label="Explanation of the Diagrams" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#narrative_4">
+<span class="md-ellipsis">
+      Narrative
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#definitions_2">
+<span class="md-ellipsis">
+      Definitions
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#representation-constructs">
+<span class="md-ellipsis">
+      Representation Constructs
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="sdmx-base-package">SDMX Base Package<a class="headerlink" href="#sdmx-base-package" title="Permanent link">¶</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
+<p>The constructs in the SDMX Base package comprise the fundamental
+building blocks that support many of the other structures in the model.
+For this reason, many of the classes in this package are abstract (i.e.,
+only derived sub-classes can exist in an implementation).</p>
+<p>The motivation for establishing the SDMX Base package is as follows:</p>
+<ul>
+<li>it is accepted “Best Practise” to identify fundamental archetypes
+occurring in a model</li>
+<li>identification of commonly found structures or “patterns” leads to
+    easier understanding</li>
+<li>identification of patterns encourages re-use</li>
+</ul>
+<p>Each of the class diagrams in this section views classes from the SDMX
+Base package from a different perspective. There are detailed views of
+specific patterns, plus overviews showing inheritance between classes,
+and relationships amongst classes.</p>
+<h2 id="base-structures-identification-versioning-and-maintenance">Base Structures - Identification, Versioning, and Maintenance<a class="headerlink" href="#base-structures-identification-versioning-and-maintenance" title="Permanent link">¶</a></h2>
+<h3 id="class-diagram">Class Diagram<a class="headerlink" href="#class-diagram" title="Permanent link">¶</a></h3>
+<figure id="__figure-caption_10">
+<p><img alt="" src="../media/image36.png" width="550"/></p>
+<figcaption>
+<p><span class="caption-prefix">Figure 10.</span> SDMX Identification, Maintenance and Versioning</p>
+</figcaption>
+</figure>
+<h3 id="explanation-of-the-diagram">Explanation of the Diagram<a class="headerlink" href="#explanation-of-the-diagram" title="Permanent link">¶</a></h3>
+<h4 id="narrative">Narrative<a class="headerlink" href="#narrative" title="Permanent link">¶</a></h4>
+<p>This group of classes forms the nucleus of the administration facets of
+SDMX objects. They provide features which are reusable by derived
+classes to support horizontal functionality such as identity, versioning
+etc.</p>
+<p>All classes derived from the abstract class <code>AnnotableArtefact</code> may have
+Annotations (or notes): this supports the need to add notes to all
+SDMX-ML elements. The Annotation is used to convey extra information to
+describe any SDMX construct. This information may be in the form of a
+URL reference and/or a multilingual text (represented by the association
+to <code>InternationalString</code>).</p>
+<p>The <code>IdentifiableArtefact</code> is an abstract class that comprises the basic
+attributes needed for identification. Concrete classes based on
+<code>IdentifiableArtefact</code> all inherit the ability to be uniquely
+identified.</p>
+<p>The <code>NamableArtefact</code> is an abstract class that inherits from
+<code>IdentifiableArtefact</code> and in addition the <code>+description</code> and <code>+name</code> roles
+support multilingual descriptions and names for all objects based on
+<code>NameableArtefact</code>. The <code>InternationalString</code> supports the representation
+of a description in multiple locales (locale is similar to language but
+includes geographic variations such as Canadian French, US English
+etc.). The <code>LocalisedString</code> supports the representation of a
+description in one locale.</p>
+<p><code>VersionableArtefact</code> is an abstract class which inherits from
+<code>NameableArtefact</code> and adds versioning ability to all classes derived
+from it, as explained in the SDMX versioning rules in the Section <a href="../../../technical_notes/technical_notes/3_General_Notes_for_Implementers/#versioning">“Versioning” of the SDMX Technical Notes</a>.</p>
+<p><code>MaintainableArtefact</code> further adds the ability for derived classes to
+be maintained via its association to an <code>Organisation</code>, and adds
+locational information (i.e., from where the object can be retrieved).</p>
+<p>The inheritance chain from <code>AnnotableArtefact</code> through to
+<code>MaintainableArtefact</code> allows SDMX classes to inherit the features they
+need, from simple annotation, through identity, naming, to versioning
+and maintenance.</p>
+<h4 id="definitions">Definitions<a class="headerlink" href="#definitions" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Class</th>
+<th style="text-align: left;">Feature</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>AnnotableArtefact</code></td>
+<td style="text-align: left;">Base inheritance sub classes are: <code>IdentifiableArtefact</code></td>
+<td style="text-align: left;">Objects of classes derived from this can have attached annotations.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Annotation</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Additional descriptive information attached to an object.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>id</code></td>
+<td style="text-align: left;">Identifier for the Annotation. It can be used to disambiguate one Annotation from another where there are several Annotations for the same annotated object.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>title</code></td>
+<td style="text-align: left;">A title used to identify an annotation.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>type</code></td>
+<td style="text-align: left;">Specifies how the annotation is to be processed.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>url</code></td>
+<td style="text-align: left;">A link to external descriptive text.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>value</code></td>
+<td style="text-align: left;">A non-localised version of the Annotation content.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>+url</code></td>
+<td style="text-align: left;">An International URI provides a set of links that are language specific, via this role.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>+text</code></td>
+<td style="text-align: left;">An International String provides the multilingual text content of the annotation via this role.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>InternationalUri</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">The International Uri is a collection of Localised URIs and supports linking to external descriptions in multiple locales.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>LocalisedUri</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">The Localised URI supports the link to an external description in one locale (locale is similar to language but includes geographic variations such as Canadian French, US English etc.).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>IdentifiableArtefact</code></td>
+<td style="text-align: left;">Superclass is <code>AnnotableArtefact</code>. Base inheritance sub classes are: <code>NameableArtefact</code></td>
+<td style="text-align: left;">Provides identity to all derived classes. It also provides annotations to derived classes because it is a subclass of <code>AnnotableArtefact</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>id</code></td>
+<td style="text-align: left;">The unique identifier of the object.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>uri</code></td>
+<td style="text-align: left;">Universal resource identifier that may or may not be resolvable.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>urn</code></td>
+<td style="text-align: left;">Universal resource name – this is for use in registries: all registered objects have a urn.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>NameableArtefact</code></td>
+<td style="text-align: left;">Superclass is <code>IdentifiableArtefact</code>. Base inheritance sub classes are: <code>VersionableArtefact</code></td>
+<td style="text-align: left;">Provides a Name and Description to all derived classes in addition to identification and annotations.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>+description</code></td>
+<td style="text-align: left;">A multi-lingual description is provided by this role via the International String class.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>+name</code></td>
+<td style="text-align: left;">A multi-lingual name is provided by this role via the International String class.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>InternationalString</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">The International String is a collection of Localised Strings and supports the representation of text in multiple locales.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>LocalisedString</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">The Localised String supports the representation of text in one locale (locale is similar to language but includes geographic variations such as Canadian French, US English etc.).</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>label</code></td>
+<td style="text-align: left;">Label of the string.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>locale</code></td>
+<td style="text-align: left;">The geographic locale of the string e.g French, Canadian French.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>VersionableArtefact</code></td>
+<td style="text-align: left;">Superclass is <code>NameableArtefact</code>. Base inheritance sub classes are: <code>MaintainableArtefact</code></td>
+<td style="text-align: left;">Provides versioning information for all derived objects.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>version</code></td>
+<td style="text-align: left;">A version string following SDMX versioning rules.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>validFrom</code></td>
+<td style="text-align: left;">Date from which the version is valid.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>validTo</code></td>
+<td style="text-align: left;">Date from which version is superseded.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MaintainableArtefact</code></td>
+<td style="text-align: left;">Inherits from <code>VersionableArtefact</code></td>
+<td style="text-align: left;">An abstract class to group together primary structural metadata artefacts that are maintained by an Agency.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>isExternalReference</code></td>
+<td style="text-align: left;">If set to “true” it indicates that the content of the object is held externally.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>structureURL</code></td>
+<td style="text-align: left;">The URL of an SDMX-ML document containing the external object.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>serviceURL</code></td>
+<td style="text-align: left;">The URL of an SDMX-compliant web service from which the external object can be retrieved.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>+maintainer</code></td>
+<td style="text-align: left;">Association to the Maintenance Agency responsible for maintaining the artefact.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Agency</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">See section on “Organisations”</td>
+</tr>
+</tbody>
+</table>
+<h2 id="basic-inheritance">Basic Inheritance<a class="headerlink" href="#basic-inheritance" title="Permanent link">¶</a></h2>
+<h3 id="class-diagram-basic-inheritance-from-the-base-inheritance-classes">Class Diagram – Basic Inheritance from the Base Inheritance Classes<a class="headerlink" href="#class-diagram-basic-inheritance-from-the-base-inheritance-classes" title="Permanent link">¶</a></h3>
+<figure id="__figure-caption_11">
+<p><img alt="" src="../media/image37.png" width="550"/></p>
+<figcaption>
+<p><span class="caption-prefix">Figure 11.</span> Basic Inheritance from the Base Structures</p>
+</figcaption>
+</figure>
+<h3 id="explanation-of-the-diagram_1">Explanation of the Diagram<a class="headerlink" href="#explanation-of-the-diagram_1" title="Permanent link">¶</a></h3>
+<h4 id="narrative_1">Narrative<a class="headerlink" href="#narrative_1" title="Permanent link">¶</a></h4>
+<p>The diagram above shows the inheritance within the base structures. The
+concrete classes are introduced and defined in the specific package to
+which they relate.</p>
+<h2 id="data-types">Data Types<a class="headerlink" href="#data-types" title="Permanent link">¶</a></h2>
+<h3 id="class-diagram_1">Class Diagram<a class="headerlink" href="#class-diagram_1" title="Permanent link">¶</a></h3>
+<figure id="__figure-caption_12">
+<p><img alt="" src="../media/image38.png" width="550"/></p>
+<figcaption>
+<p><span class="caption-prefix">Figure 12.</span> Class Diagram of Basic Data Types</p>
+</figcaption>
+</figure>
+<h3 id="explanation-of-the-diagram_2">Explanation of the Diagram<a class="headerlink" href="#explanation-of-the-diagram_2" title="Permanent link">¶</a></h3>
+<h4 id="narrative_2">Narrative<a class="headerlink" href="#narrative_2" title="Permanent link">¶</a></h4>
+<p>The <code>FacetType</code> and <code>FacetValueType</code> enumerations are used to specify the
+valid format of the content of a non-enumerated Concept or the usage of
+a Concept when specified for use on a <code>Component</code> on a <code>Structure</code> (such
+as a Dimension in a <code>DataStructureDefinition</code>). The description of the
+various types can be found in the chapter on <code>ConceptScheme</code> (section
+4.5).</p>
+<p>The <code>ActionType</code> enumeration is used to specify the action that a
+receiving system should take when processing the content that is the
+object of the action. It is enumerated as follows:</p>
+<ul>
+<li><code>Append</code>: Data or metadata is an incremental update for an existing
+    data/metadata set or the provision of new data or documentation
+    (attribute values) formerly absent. If any of the supplied data or
+    metadata is already present, it will not replace that data or
+    metadata. This corresponds to the “Update” value found in version
+    1.0 of the SDMX Technical Standards.</li>
+<li><code>Replace</code>: Data/metadata is to be replaced and may also include
+    additional data/metadata to be appended.</li>
+<li><code>Delete</code>: Data/Metadata is to be deleted.</li>
+<li><code>Information</code>: Data and metadata are for information purposes.</li>
+</ul>
+<p>The <code>ToValueType</code> data type contains the attributes to support
+transformations defined in the <code>StructureMap</code> (see Section 0).</p>
+<p>The <code>ConstraintRoleType</code> data type contains the attributes that identify
+the purpose of a Constraint (<code>allowableContent</code>, <code>actualContent</code>).</p>
+<p>The <code>ComponentRoleType</code> data type contains the predefined Concept roles
+that can be assigned to any Component.</p>
+<p>The <code>CascadeValues</code> data type contains the possible values for a
+<code>MemberValue</code> within a <code>CubeRegion</code>, in order to enable cascading to all
+children Codes of a selected Code, while including/excluding the latter
+in the selection.</p>
+<p>The <code>VersionType</code> data types provides the details for versioning according
+to SDMX versioning rules, as explained in the Section <a href="../../../technical_notes/technical_notes/3_General_Notes_for_Implementers/#versioning">“Versioning” of the SDMX Technical Notes</a>.</p>
+<h2 id="the-item-scheme-pattern">The Item Scheme Pattern<a class="headerlink" href="#the-item-scheme-pattern" title="Permanent link">¶</a></h2>
+<h3 id="context">Context<a class="headerlink" href="#context" title="Permanent link">¶</a></h3>
+<p>The Item Scheme is a basic architectural pattern that allows the
+creation of list schemes for use in simple taxonomies, for example.</p>
+<p>The <code>ItemScheme</code> is the basis for <code>CategoryScheme</code>, <code>Codelist</code>,
+<code>ConceptScheme</code>, <code>ReportingTaxonomy</code>, <code>OrganisationScheme</code>,
+<code>TransformationScheme</code>, <code>CustomTypeScheme</code>, <code>NamePersonalisationScheme</code>,
+<code>RulesetScheme</code>, <code>VtlMappingScheme</code> and <code>UserDefinedOperatorScheme</code>.</p>
+<h3 id="class-diagram_2">Class Diagram<a class="headerlink" href="#class-diagram_2" title="Permanent link">¶</a></h3>
+<figure id="__figure-caption_13">
+<p><img alt="" src="../media/image39.png"/></p>
+<figcaption>
+<p><span class="caption-prefix">Figure 13.</span> The Item Scheme pattern</p>
+</figcaption>
+</figure>
+<h3 id="explanation-of-the-diagram_3">Explanation of the Diagram<a class="headerlink" href="#explanation-of-the-diagram_3" title="Permanent link">¶</a></h3>
+<h4 id="narrative_3">Narrative<a class="headerlink" href="#narrative_3" title="Permanent link">¶</a></h4>
+<p>The <code>ItemScheme</code> is an abstract class which defines a set of <code>Item</code>
+(this class is also abstract). Its main purpose is to define a mechanism
+which can be used to create taxonomies which can classify other parts of
+the SDMX Information Model. It is derived from <code>MaintainableArtefact</code>
+which gives it the ability to be annotated, have identity, naming,
+versioning and be associated with an Agency. An example of a concrete
+class is a <code>ConceptScheme</code>. The associated Concepts are <code>Item</code>s.</p>
+<p>In an exchange environment an <code>ItemScheme</code> is allowed to contain a
+sub-set of the <code>Item</code>s in the maintained <code>ItemScheme</code>. If such an
+<code>ItemScheme</code> is disseminated with a sub-set of the Items then the fact
+that this is a sub-set is denoted by setting the <code>isPartial</code> attribute to
+“true”.</p>
+<p>A “partial” <code>ItemScheme</code> cannot be maintained independently in its
+partial form i.e., it cannot contain <code>Item</code>s that are not present in the
+full <code>ItemScheme</code> and the content of any one <code>Item</code> (e.g., names and
+descriptions) cannot deviate from the content in the full <code>ItemScheme</code>.
+Furthermore, the <code>id</code> of the <code>ItemScheme</code> where <code>isPartial</code> is set to <code>true</code>
+is the same as the <code>id</code> of the full <code>ItemScheme</code> (<code>agencyId</code>, <code>id</code>, <code>version</code>).
+This is important as this is the <code>id</code> that that is referenced in other
+structures (e.g., a Codelist referenced in a DSD) and this <code>id</code> is always
+the same, regardless of whether the disseminated <code>ItemScheme</code> is the
+full <code>ItemScheme</code> or a partial <code>ItemScheme</code>.</p>
+<p>The purpose of a partial <code>ItemScheme</code> is to support the exchange and
+dissemination of a sub-set <code>ItemScheme</code> without the need to maintain
+multiple <code>ItemScheme</code>s which contain the same <code>Item</code>s. For instance,
+when a Codelist is used in a <code>DataStructureDefinition</code> it is sometimes the
+case that only a sub-set of the Codes in a Codelist are relevant. In
+this case a partial Codelist can be constructed using the Constraint
+mechanism explained later in this document.</p>
+<p><code>Item</code> inherits from <code>NameableArtefact</code> which gives it the ability to be
+annotated and have identity, and therefore has id, uri and urn
+attributes, a name and a description in the form of an
+<code>InternationalString</code>. Unlike the parent <code>ItemScheme</code>, the <code>Item</code> itself
+is not a <code>MaintainableArtefact</code> and therefore cannot have an independent
+Agency (i.e., it implicitly has the same <code>agencyId</code> as the <code>ItemScheme</code>).</p>
+<p>The <code>Item</code> can be hierarchic and so one <code>Item</code> can have child <code>Item</code>s.
+The restriction of the hierarchic association is that a child <code>Item</code> can
+have only parent <code>Item</code>.</p>
+<h4 id="definitions_1">Definitions<a class="headerlink" href="#definitions_1" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Class</th>
+<th style="text-align: left;">Feature</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>ItemScheme</code></td>
+<td style="text-align: left;">Inherits from: <code>MaintainableArtefact</code><br/>Direct subclasses: <code>CategoryScheme</code>, <code>ConceptScheme</code>, <code>Codelist</code>, <code>ReportingTaxonomy</code>, <code>OrganisationScheme</code>, <code>TransformationScheme</code>, <code>CustomTypeScheme</code>, <code>NamePersonalisationScheme</code>, <code>RulesetScheme</code>, <code>VtlMappingScheme</code>, <code>UserDefinedOperatorScheme</code></td>
+<td style="text-align: left;">The descriptive information for an arrangement or division of objects into groups based on shared characteristics.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>isPartial</code></td>
+<td style="text-align: left;">Indicates whether the <code>ItemScheme</code> contains a subset of the full set of Items in the maintained scheme.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>/items</code></td>
+<td style="text-align: left;">Association to the Items in the scheme.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Item</code></td>
+<td style="text-align: left;">Inherits from: <code>NameableArtefact</code><br/>Direct subclasses: <code>Category</code>, <code>Concept</code>, <code>Code</code>, <code>ReportingCategory</code>, <code>Organisation</code>, <code>Transformation</code>, <code>CustomType</code>, <code>NamePersonalisation</code>, <code>Ruleset</code>, <code>VtlMapping</code>, <code>UserDefinedOperator</code></td>
+<td style="text-align: left;">An item of content in an <code>ItemScheme</code>. This may be a node in a taxonomy or ontology, a code in a code list, etc.<br/>Note: at the conceptual level, <code>Organisation</code> is not hierarchic.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>hierarchy</code></td>
+<td style="text-align: left;">Allows an <code>Item</code> to optionally have one or more child <code>Item</code>s.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-structure-pattern">The Structure Pattern<a class="headerlink" href="#the-structure-pattern" title="Permanent link">¶</a></h2>
+<h3 id="context_1">Context<a class="headerlink" href="#context_1" title="Permanent link">¶</a></h3>
+<p>The Structure Pattern is a basic architectural pattern which allows the
+specification of complex tabular structures which are often found in
+statistical data (such as Data Structure Definition, and Metadata
+Structure Definition). A Structure is a set of ordered lists. A pattern
+to underpin this tabular structure has been developed, so that
+commonalities between these structure definitions can be supported by
+common software and common syntax structures.</p>
+<h3 id="class-diagrams">Class Diagrams<a class="headerlink" href="#class-diagrams" title="Permanent link">¶</a></h3>
+<figure id="__figure-caption_14">
+<p><img alt="" src="../media/image40.png" width="450"/></p>
+<figcaption>
+<p><span class="caption-prefix">Figure 14.</span> The Structure Pattern</p>
+</figcaption>
+</figure>
+<figure id="__figure-caption_15">
+<p><img alt="" height="550" src="../media/image41.png"/></p>
+<figcaption>
+<p><span class="caption-prefix">Figure 15.</span> Representation within the Structure Pattern</p>
+</figcaption>
+</figure>
+<h3 id="explanation-of-the-diagrams">Explanation of the Diagrams<a class="headerlink" href="#explanation-of-the-diagrams" title="Permanent link">¶</a></h3>
+<h4 id="narrative_4">Narrative<a class="headerlink" href="#narrative_4" title="Permanent link">¶</a></h4>
+<p>The <code>Structure</code> is an abstract class which contains a set of one or more
+<code>ComponentList</code>(s) (this class is also abstract). An example of a
+concrete <code>Structure</code> is <code>DataStructureDefinition</code>.</p>
+<p>The <code>ComponentList</code> is a list of one or more <code>Component</code>(s). The
+<code>ComponentList</code> has several concrete descriptor classes based on it:
+<code>DimensionDescriptor</code>, <code>GroupDimensionDescriptor</code>, <code>MeasureDescriptor</code>, and
+<code>AttributeDescriptor</code> of the <code>DataStructureDefinition</code> and
+<code>MetadataAttributeDescriptor</code> of the <code>MetadataStructureDefinition</code>.</p>
+<p>The <code>Component</code> is contained in a <code>ComponentList</code>. The type of
+<code>Component</code> in a <code>ComponentList</code> is dependent on the concrete class of
+the <code>ComponentList</code> as follows:</p>
+<ul>
+<li><code>DimensionDescriptor</code>: <code>Dimension</code>, <code>TimeDimension</code></li>
+<li><code>GroupDimensionDescriptor</code>: <code>Dimension</code>, <code>TimeDimension</code></li>
+<li><code>MeasureDescriptor</code>: <code>Measure</code></li>
+<li><code>AttributeDescriptor</code>: <code>DataAttribute</code>, <code>MetadataAttributeRef</code></li>
+<li><code>MetadataAttributeDescriptor</code>: <code>MetadataAttribute</code></li>
+</ul>
+<p>Each <code>Component</code> takes its semantic (and possibly also its
+representation) from a Concept in a <code>ConceptScheme</code>. This is represented
+by the <code>conceptIdentity</code> association to Concept.</p>
+<p>The <code>Component</code> may also have a <code>localRepresentation</code>. This allows a
+concrete class, such as Dimension, to specify its representation which
+is local to the <code>Structure</code> in which it is contained (for Dimension this
+will be <code>DataStructureDefinition</code>), and thus overrides any
+<code>coreRepresentation</code> specified for the Concept.</p>
+<p>The Representation can be enumerated or non-enumerated. The valid
+content of an enumerated representation is specified either in an
+<code>ItemScheme</code> which can be one of <code>Codelist</code>, <code>ValueList</code> or <code>GeoCodelist</code>.
+The valid content of a non-enumerated representation is specified as one
+or more Facet(s) (for example, these may specify minimum and maximum
+values). For any Attribute this is achieved by one of more
+<code>ExtendedFacet</code>(s), which allow the additional representation of XHTML.</p>
+<p>The types of representation that are valid for specific components is
+expressed in the model as a constraint on the association:</p>
+<ul>
+<li>The <code>Dimension</code>, <code>DataAttribute</code>, <code>Measure</code>, <code>MetadataAttribute</code> may be
+    enumerated and, if so, use an <code>EnumeratedList</code>.</li>
+<li>The Dimension and Measure may be non-enumerated and, if so, use one
+    or more Facet(s), note that the <code>FacetValueType</code> applicable to the
+    <code>TimeDimension</code> is restricted to those that represent time.</li>
+<li>The <code>MetadataAttribute</code> and <code>DataAttribute</code> may be non-enumerated and,
+    if so, use one or more <code>ExtendedFacet</code>(s).</li>
+</ul>
+<p>The <code>Structure</code> may be used by one or more <code>StructureUsage</code>(s). An
+example of this, in terms of concrete classes, is that a Dataflow (sub
+class of <code>StructureUsage</code>) may use a particular <code>DataStructureDefinition</code>
+(sub class of <code>Structure</code>), and similar constructs apply for the
+Metadataflow (link to <code>MetadataStructureDefinition</code>).</p>
+<h4 id="definitions_2">Definitions<a class="headerlink" href="#definitions_2" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Class</th>
+<th style="text-align: left;">Feature</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>StructureUsage</code></td>
+<td style="text-align: left;">Inherits from: <code>MaintainableArtefact</code><br/>Sub classes are: <code>Dataflow</code>, <code>Metadataflow</code></td>
+<td style="text-align: left;">An artefact whose components are described by a Structure. In concrete terms (sub-classes) an example would be a Dataflow which is linked to a given structure – in this case the Data Structure Definition.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>structure</code></td>
+<td style="text-align: left;">An association to a Structure specifying the structure of the artefact.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Structure</code></td>
+<td style="text-align: left;">Inherits from: <code>MaintainableArtefact</code><br/>Sub classes are: <code>DataStructureDefinition</code>, <code>MetadataStructureDefinition</code></td>
+<td style="text-align: left;">Abstract specification of a list of lists to define a complex tabular structure. A concrete example of this would be statistical concepts, code lists, and their organisation in a data or metadata structure definition, defined by a centre institution, usually for the exchange of statistical information with its partners.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>grouping</code></td>
+<td style="text-align: left;">A composite association to one or more component lists.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ComponentList</code></td>
+<td style="text-align: left;">Inherits from: <code>IdentifiableArtefact</code><br/>Sub classes are: <code>DimensionDescriptor</code>, <code>GroupDimensionDescriptor</code>, <code>MeasureDescriptor</code>, <code>AttributeDescriptor</code>, <code>MetadataAttributeDescriptor</code></td>
+<td style="text-align: left;">An abstract definition of a list of components. A concrete example is a Dimension Descriptor, which defines the list of Dimensions in a Data Structure Definition.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>components</code></td>
+<td style="text-align: left;">An aggregate association to one or more components which make up the list.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Component</code></td>
+<td style="text-align: left;">Inherits from: <code>IdentifiableArtefact</code><br/>Sub classes are: <code>Measure</code>, <code>AttributeComponent</code>, <code>DimensionComponent</code></td>
+<td style="text-align: left;">A Component is an abstract super class used to define qualitative and quantitative data and metadata items that belong to a Component List and hence a Structure. Component is refined through its sub-classes.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>conceptIdentity</code></td>
+<td style="text-align: left;">Association to a Concept in a Concept Scheme that identifies and defines the semantic of the Component.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>localRepresentation</code></td>
+<td style="text-align: left;">Association to the Representation of the Component if this is different from the coreRepresentation of the Concept, which the Component uses (ConceptUsage).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Representation</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">The allowable value or format for Component or Concept</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>+enumerated</code></td>
+<td style="text-align: left;">Association to an enumerated list that contains the allowable content for the Component when reported in a data or metadata set. The type of enumerated list that is allowed for any concrete Component is shown in the constraints on the association.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>+nonEnumerated</code></td>
+<td style="text-align: left;">Association to a set of Facets that define the allowable format for the content of the Component when reported in a data or metadata set.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Facet</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Defines the format for the content of the Component when reported in a data or metadata set.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>facetType</code></td>
+<td style="text-align: left;">A specific content type, which is constrained by the Facet Type enumeration.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>facetValueType</code></td>
+<td style="text-align: left;">The format of the value of a Component when reported in a data or metadata set. This is constrained by the Facet Value Type enumeration.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>+itemSchemeFacet</code></td>
+<td style="text-align: left;">Defines the format of the identifiers in an Item Scheme used by a Component. Typically, this would define the number of characters (length) of the identifier.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ExtendedFacet</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">This has the same function as Facet but allows additionally an XHTML representation. This is constrained for use with a Metadata Attribute and a Data Attribute.</td>
+</tr>
+</tbody>
+</table>
+<p>The specification of the content and use of the sub classes to
+<code>ComponentList</code> and <code>Component</code> can be found in the section in which
+they are used (<code>DataStructureDefinition</code> and <code>MetadataStructureDefinition</code>).
+Moreover, the <code>FacetType</code> <code>SentinelValues</code> is explained in the datastructure
+representation diagram (see <a href="../4_Data_Structure_Definition_and_Dataset/#data-structure-definition-relationship-view">Paragraph Definitions</a>), since it only concerns
+<code>DataStructureDefinitions</code>.</p>
+<h4 id="representation-constructs">Representation Constructs<a class="headerlink" href="#representation-constructs" title="Permanent link">¶</a></h4>
+<p>The majority of SDMX <code>FacetValueTypes</code> are compatible with those found in
+XML Schema, and have equivalents in most current implementation
+platforms:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>SDMX Facet Value Type</strong></th>
+<th style="text-align: left;"><strong>XML Schema Data Type</strong></th>
+<th style="text-align: left;"><strong>JSON Schema Data Type</strong></th>
+<th style="text-align: left;"><strong>.NET Framework Type</strong></th>
+<th style="text-align: left;"><strong>Java Data Type</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>String</code></td>
+<td style="text-align: left;"><code>xsd:string</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;"><code>System.String</code></td>
+<td style="text-align: left;"><code>java.lang.String</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Big Integer</code></td>
+<td style="text-align: left;"><code>xsd:integer</code></td>
+<td style="text-align: left;"><code>integer</code></td>
+<td style="text-align: left;"><code>System.Decimal</code></td>
+<td style="text-align: left;"><code>java.math.BigInteger</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Integer</code></td>
+<td style="text-align: left;"><code>xsd:int</code></td>
+<td style="text-align: left;"><code>integer</code></td>
+<td style="text-align: left;"><code>System.Int32</code></td>
+<td style="text-align: left;"><code>int</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Long</code></td>
+<td style="text-align: left;"><code>xsd:long</code></td>
+<td style="text-align: left;"><code>integer</code></td>
+<td style="text-align: left;"><code>System.Int64</code></td>
+<td style="text-align: left;"><code>long</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Short</code></td>
+<td style="text-align: left;"><code>xsd:short</code></td>
+<td style="text-align: left;"><code>integer</code></td>
+<td style="text-align: left;"><code>System.Int16</code></td>
+<td style="text-align: left;"><code>short</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Decimal</code></td>
+<td style="text-align: left;"><code>xsd:decimal</code></td>
+<td style="text-align: left;"><code>number</code></td>
+<td style="text-align: left;"><code>System.Decimal</code></td>
+<td style="text-align: left;"><code>java.math.BigDecimal</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Float</code></td>
+<td style="text-align: left;"><code>xsd:float</code></td>
+<td style="text-align: left;"><code>number</code></td>
+<td style="text-align: left;"><code>System.Single</code></td>
+<td style="text-align: left;"><code>float</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Double</code></td>
+<td style="text-align: left;"><code>xsd:double</code></td>
+<td style="text-align: left;"><code>number</code></td>
+<td style="text-align: left;"><code>System.Double</code></td>
+<td style="text-align: left;"><code>double</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Boolean</code></td>
+<td style="text-align: left;"><code>xsd:boolean</code></td>
+<td style="text-align: left;"><code>boolean</code></td>
+<td style="text-align: left;"><code>System.Boolean</code></td>
+<td style="text-align: left;"><code>boolean</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>URI</code></td>
+<td style="text-align: left;"><code>xsd:anyURI</code></td>
+<td style="text-align: left;"><code>string:uri</code></td>
+<td style="text-align: left;"><code>System.Uri</code></td>
+<td style="text-align: left;"><code>Java.net.URI</code> or <code>java.lang.String</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DateTime</code></td>
+<td style="text-align: left;"><code>xsd:dateTime</code></td>
+<td style="text-align: left;"><code>string:date-time</code></td>
+<td style="text-align: left;"><code>System.DateTime</code></td>
+<td style="text-align: left;"><code>javax.xml.datatype.XMLGregorianCalendar</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Time</code></td>
+<td style="text-align: left;"><code>xsd:time</code></td>
+<td style="text-align: left;"><code>string:time</code></td>
+<td style="text-align: left;"><code>System.DateTime</code></td>
+<td style="text-align: left;"><code>javax.xml.datatype.XMLGregorianCalendar</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>GregorianYear</code></td>
+<td style="text-align: left;"><code>xsd:gYear</code></td>
+<td style="text-align: left;"><code>string</code><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+<td style="text-align: left;"><code>System.DateTime</code></td>
+<td style="text-align: left;"><code>javax.xml.datatype.XMLGregorianCalendar</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>GregorianMonth</code></td>
+<td style="text-align: left;"><code>xsd:gYearMonth</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;"><code>System.DateTime</code></td>
+<td style="text-align: left;"><code>javax.xml.datatype.XMLGregorianCalendar</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>GregorianDay</code></td>
+<td style="text-align: left;"><code>xsd:date</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;"><code>System.DateTime</code></td>
+<td style="text-align: left;"><code>javax.xml.datatype.XMLGregorianCalendar</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Day, MonthDay, Month</code></td>
+<td style="text-align: left;"><code>xsd:g*</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;"><code>System.DateTime</code></td>
+<td style="text-align: left;"><code>javax.xml.datatype.XMLGregorianCalendar</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Duration</code></td>
+<td style="text-align: left;"><code>xsd:duration</code></td>
+<td style="text-align: left;"><code>string</code></td>
+<td style="text-align: left;"><code>System.TimeSpan</code></td>
+<td style="text-align: left;"><code>javax.xml.datatype.Duration</code></td>
+</tr>
+</tbody>
+</table>
+<p>There are also a number of SDMX data types which do not have these
+direct correspondences, often because they are composite representations
+or restrictions of a broader data type. These are detailed in Section 6
+of the standards.</p>
+<p>The Representation is composed of Facets, each of which conveys
+characteristic information related to the definition of a value domain.
+Often a set of Facets are needed to convey the required semantic. For
+example, a sequence is defined by a minimum of two Facets: one to define
+the start value, and one to define the interval.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Facet Type</th>
+<th style="text-align: left;">Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>isSequence</code></td>
+<td style="text-align: left;">The <code>isSequence</code> facet indicates whether the values are intended to be ordered, and it may work in combination with the <code>interval</code>, <code>startValue</code>, and <code>endValue</code> facet or the <code>timeInterval</code>, <code>startTime</code>, and <code>endTime</code>, facets. If this attribute holds a value of true, a start value or time and a numeric or time interval must be supplied. If an end value is not given, then the sequence continues indefinitely.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>interval</code></td>
+<td style="text-align: left;">The interval attribute specifies the permitted interval (increment) in a sequence. In order for this to be used, the <code>isSequence</code> attribute must have a value of true.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>startValue</code></td>
+<td style="text-align: left;">The <code>startValue</code> facet is used in conjunction with the <code>isSequence</code> and interval facets (which must be set in order to use this facet). This facet is used for a numeric sequence and indicates the starting point of the sequence. This value is mandatory for a numeric sequence to be expressed.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>endValue</code></td>
+<td style="text-align: left;">The <code>endValue</code> facet is used in conjunction with the <code>isSequence</code> and interval facets (which must be set in order to use this facet). This facet is used for a numeric sequence and indicates that ending point (if any) of the sequence.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>timeInterval</code></td>
+<td style="text-align: left;">The <code>timeInterval</code> facet indicates the permitted duration in a time sequence. In order for this to be used, the <code>isSequence</code> facet must have a value of true.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>startTime</code></td>
+<td style="text-align: left;">The <code>startTime</code> facet is used in conjunction with the <code>isSequence</code> and <code>timeInterval</code> facets (which must be set in order to use this facet). This attribute is used for a time sequence and indicates the start time of the sequence. This value is mandatory for a time sequence to be expressed.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>endTime</code></td>
+<td style="text-align: left;">The <code>endTime</code> facet is used in conjunction with the <code>isSequence</code> and <code>timeInterval</code> facets (which must be set in order to use this facet). This facet is used for a time sequence and indicates that ending point (if any) of the sequence.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>minLength</code></td>
+<td style="text-align: left;">The <code>minLength</code> facet specifies the minimum and length of the value in characters.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>maxLength</code></td>
+<td style="text-align: left;">The <code>maxLength</code> facet specifies the maximum length of the value in characters.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>minValue</code></td>
+<td style="text-align: left;">The <code>minValue</code> facet is used for inclusive and exclusive ranges, indicating what the lower bound of the range is. If this is used with an inclusive range, a valid value will be greater than or equal to the value specified here. If the inclusive and exclusive data type is not specified (e.g., this facet is used with an integer data type), the value is assumed to be inclusive.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>maxValue</code></td>
+<td style="text-align: left;">The <code>maxValue</code> facet is used for inclusive and exclusive ranges, indicating what the upper bound of the range is. If this is used with an inclusive range, a valid value will be less than or equal to the value specified here. If the inclusive and exclusive data type is not specified (e.g., this facet is used with an integer data type), the value is assumed to be inclusive.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>decimals</code></td>
+<td style="text-align: left;">The decimals facet indicates the number of characters allowed after the decimal separator.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>pattern</code></td>
+<td style="text-align: left;">The pattern attribute holds any regular expression permitted in the implementation syntax (e.g., W3C XML Schema).</td>
+</tr>
+</tbody>
+</table>
+<div class="footnote">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>In the JSON schemas, more complex data types are
+complemented with regular expressions, whenever no direct mapping to a
+standard type exists. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+<a href="https://www.analytical-software.de/en/legal-disclosure/">HMS Analytical Software Imprint</a>
+</div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["content.tabs.link", "content.code.annotate", "content.code.copy", "navigation.tabs", "navigation.indexes", "navigation.path", "navigation.sections", "navigation.top", "navigation.tracking", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+<script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+<script src="../../../assets/anchors.js"></script>
+</body>
+</html>
