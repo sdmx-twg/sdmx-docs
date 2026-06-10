@@ -14,6 +14,7 @@ permissions:
 on:
   push:
     branches:
+      - main
       - dev
       # Release branches have names like docs_v2.1, docs_v3.0, ...
       - "docs_v*.*"
