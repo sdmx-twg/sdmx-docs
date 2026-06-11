@@ -69,7 +69,7 @@ nav:
 - Framework: '!include ./components/information_model/mkdocs_framework.yml'
 - Information Model: '!include ./components/information_model/mkdocs_information_model.yml'
 - Registry Specification and Logical Interfaces:
-  - Registry Specification: '!include ./components/rest_api/mkdocs_registry_specification.yml'
+  - Registry Specification: '!include ./components/sdmx_registry/mkdocs_registry_specification.yml'
   - Logical Interfaces: '!include ./components/information_model/mkdocs_logical_interfaces.yml'
 - Technical Notes: '!include ./components/information_model/mkdocs_technical_notes.yml'
 - REST API (v2.2): '!include ./components/rest_api/mkdocs_rest_api.yml'
