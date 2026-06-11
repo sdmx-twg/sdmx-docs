@@ -14,10 +14,9 @@ permissions:
 on:
   push:
     branches:
-      - main
       - dev
-      # Release branches have names like docs_v2.1, docs_v3.0, ...
-      - "docs_v*.*"
+      # Release branches have names like 0.8.x, 0.9.x, ...
+      - "[0-9]+.[0-9]+.x"
   create:
 
 concurrency:
@@ -33,7 +32,7 @@ jobs:
       - name: Determine if documentation should be published on this workflow run
         id: determination
         run: |
-          RELEASE_BRANCH_REGEX="^refs/heads/docs_v[0-9]+\.[0-9]+$"
+          RELEASE_BRANCH_REGEX="refs/heads/[0-9]+.[0-9]+.x"
           if [[ "${{ github.event_name }}" == "push" || ( "${{ github.event_name }}" == "create" && "${{ github.ref }}" =~ $RELEASE_BRANCH_REGEX ) ]]; then
             RESULT="true"
           else
@@ -96,7 +95,6 @@ jobs:
           if [[ -n "${{ env.PH_DOCS_ALIAS }}" ]]; then
             DEPLOY_ARGS="$DEPLOY_ARGS ${{ env.PH_DOCS_ALIAS }}"
           fi
-          uv run mike set-default --push latest
           uv run mike deploy \
             --update-aliases \
             --branch gh-pages \
