@@ -1,0 +1,2073 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Statistical Data and Metadata eXchange" name="description"/>
+<link href="https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/information_model/14_Validation_and_Transformation_Language/" rel="canonical"/>
+<link href="../../../media/logos/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.12" name="generator"/>
+<title>Validation and Transformation Language - SDMX Technical Documentation</title>
+<link href="../../../assets/stylesheets/main.2afb09e1.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../../assets/style.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="orange" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#validation-and-transformation-language">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<div data-md-color-scheme="default" data-md-component="outdated" hidden="">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="SDMX Technical Documentation" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="SDMX Technical Documentation">
+<img alt="logo" src="../../../media/logos/SDMX-logo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            SDMX Technical Documentation
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Validation and Transformation Language
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="orange" data-md-color-media="(prefers-color-scheme)" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"></path></svg>
+</label>
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="orange" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"></path></svg>
+</label>
+<input aria-label="Switch to system preference" class="md-option" data-md-color-accent="orange" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to system preference">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 2c3.87 0 7 3.13 7 7 0 2.38-1.19 4.47-3 5.74V17c0 .55-.45 1-1 1H6c-.55 0-1-.45-1-1v-2.26C3.19 13.47 2 11.38 2 9c0-3.87 3.13-7 7-7M6 21v-1h6v1c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1M9 4C6.24 4 4 6.24 4 9c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58 0-2.76-2.24-5-5-5m10 9h-2l-3.2 9h1.9l.7-2h3.2l.7 2h1.9zm-2.15 5.65L18 15l1.15 3.65z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/HMS-Analytical-Software/sdmx-technical-documentation" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    HMS-Analytical-Software/sdmx-technical-documentation
+  </div>
+</a>
+</div>
+<a class="md-header-nav__button md-icon" href="../../../pdf/document.pdf" title="PDF">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,0c-17.6,0-32,14.4-32,32v448c0,17.6,14.4,32,32,32h320c17.6,0,32-14.4,32-32V128L352,0H128z" fill="#E2E5E7"></path>
+<path d="m384 128h96l-128-128v96c0 17.6 14.4 32 32 32z" fill="#B0B7BD"></path>
+<polygon fill="#CAD1D8" points="480 224 384 128 480 128"></polygon>
+<path d="M416,416c0,8.8-7.2,16-16,16H48c-8.8,0-16-7.2-16-16V256c0-8.8,7.2-16,16-16h352c8.8,0,16,7.2,16,16  V416z" fill="#F15642"></path>
+<g fill="#fff">
+<path d="m101.74 303.15c0-4.224 3.328-8.832 8.688-8.832h29.552c16.64 0 31.616 11.136 31.616 32.48 0 20.224-14.976 31.488-31.616 31.488h-21.36v16.896c0 5.632-3.584 8.816-8.192 8.816-4.224 0-8.688-3.184-8.688-8.816v-72.032zm16.88 7.28v31.872h21.36c8.576 0 15.36-7.568 15.36-15.504 0-8.944-6.784-16.368-15.36-16.368h-21.36z"></path>
+<path d="m196.66 384c-4.224 0-8.832-2.304-8.832-7.92v-72.672c0-4.592 4.608-7.936 8.832-7.936h29.296c58.464 0 57.184 88.528 1.152 88.528h-30.448zm8.064-72.912v57.312h21.232c34.544 0 36.08-57.312 0-57.312h-21.232z"></path>
+<path d="m303.87 312.11v20.336h32.624c4.608 0 9.216 4.608 9.216 9.072 0 4.224-4.608 7.68-9.216 7.68h-32.624v26.864c0 4.48-3.184 7.92-7.664 7.92-5.632 0-9.072-3.44-9.072-7.92v-72.672c0-4.592 3.456-7.936 9.072-7.936h44.912c5.632 0 8.96 3.344 8.96 7.936 0 4.096-3.328 8.704-8.96 8.704h-37.248v0.016z"></path>
+</g>
+<path d="m400 432h-304v16h304c8.8 0 16-7.2 16-16v-16c0 8.8-7.2 16-16 16z" fill="#CAD1D8"></path>
+</svg>
+</a></nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../..">
+          
+  
+  
+    
+  
+  Getting Started
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../framework/framework/0_framework-introduction/">
+          
+  
+  
+    
+  
+  Framework
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../information_model/information_model/0_Introduction/">
+          
+  
+  
+    
+  
+  Information Model
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../registry_specification/1_Introduction/">
+          
+  
+  
+    
+  
+  Registry Specification and Logical Interfaces
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../technical_notes/0_Purpose_and_Structure/">
+          
+  
+  
+    
+  
+  Technical Notes
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../rest_api/">
+          
+  
+  
+    
+  
+  REST API (v2.2)
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../ml/">
+          
+  
+  
+    
+  
+  Transmission Formats
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="https://sdmx.org/">
+        
+  
+  
+    
+  
+  Go To sdmx.org
+
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="SDMX Technical Documentation" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="SDMX Technical Documentation">
+<img alt="logo" src="../../../media/logos/SDMX-logo.png"/>
+</a>
+    SDMX Technical Documentation
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/HMS-Analytical-Software/sdmx-technical-documentation" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    HMS-Analytical-Software/sdmx-technical-documentation
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_1" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+</a>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_1_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_1">
+<span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Framework
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            Framework
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../framework/framework/0_framework-introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../framework/framework/1_framework-change-history/">
+<span class="md-ellipsis">
+    Change History
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../framework/framework/2_framework-processes-and-business-scope/">
+<span class="md-ellipsis">
+    Processes and Business Scope
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../framework/framework/3_framework-the-sdmx-information-model/">
+<span class="md-ellipsis">
+    The SDMX Information Model
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../framework/framework/4_framework-the-sdmx-transmission-formats/">
+<span class="md-ellipsis">
+    The SDMX Transmission Formats
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../framework/framework/5_framework-dependencies-on-sdmx-content-oriented-guidelines/">
+<span class="md-ellipsis">
+    Dependencies on SDMX content-oriented guidelines
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../framework/framework/6_framework-validation-and-transformation-language/">
+<span class="md-ellipsis">
+    Validation and Transformation Language
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Information Model
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Information Model
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/0_change_history/">
+<span class="md-ellipsis">
+    Change History
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/1_Actors_and_Use_Cases/">
+<span class="md-ellipsis">
+    Actors and Use Cases
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/2_SDMX_Base_Package/">
+<span class="md-ellipsis">
+    SDMX Base Package
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/3_Specific_Item_Schemes/">
+<span class="md-ellipsis">
+    Specific Item Schemes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/4_Data_Structure_Definition_and_Dataset/">
+<span class="md-ellipsis">
+    Data Structure Definition and Dataset
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/5_Cube/">
+<span class="md-ellipsis">
+    Cube
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/6_Metadata_Structure_Definition_and_Metadata_Set/">
+<span class="md-ellipsis">
+    Metadata Structure Definition and Metadata Set
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/7_Hierarchy/">
+<span class="md-ellipsis">
+    Hierarchy
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/8_Structure_Map/">
+<span class="md-ellipsis">
+    Structure Map
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/9_RepresentationMap/">
+<span class="md-ellipsis">
+    RepresentationMap
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/10_ItemSchemeMap/">
+<span class="md-ellipsis">
+    ItemSchemeMap
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/11_Constraints/">
+<span class="md-ellipsis">
+    Constraints
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/12_Data_Provisioning/">
+<span class="md-ellipsis">
+    Data Provisioning
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/13_Process/">
+<span class="md-ellipsis">
+    Process
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/14_Validation_and_Transformation_Language/">
+<span class="md-ellipsis">
+    Validation and Transformation Language
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/15_Appendix_1%3A_A_Short_Guide_to_UML_in_the_SDMX_Information_Model/">
+<span class="md-ellipsis">
+    Appendix 1 A Short Guide to UML in the SDMX Information Model
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Registry Specification and Logical Interfaces
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            Registry Specification and Logical Interfaces
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Registry Specification
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_1">
+<span class="md-nav__icon md-icon"></span>
+            Registry Specification
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../registry_specification/1_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../registry_specification/2_Scope_and_Normative_Status/">
+<span class="md-ellipsis">
+    Scope and Normative Status
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../registry_specification/3_Scope_of_the_SDMX_Registry_Repository/">
+<span class="md-ellipsis">
+    Scope of the SDMX Registry Repository
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../registry_specification/4_SDMX_Registry_Repository_Architecture/">
+<span class="md-ellipsis">
+    SDMX Registry Repository Architecture
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../registry_specification/5_Registry_Interfaces_and_Services/">
+<span class="md-ellipsis">
+    Registry Interfaces and Services
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Logical Interfaces
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+            Logical Interfaces
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../logical_interfaces/logical_interfaces/6_Identification_of_SDMX_Objects/">
+<span class="md-ellipsis">
+    Identification of SDMX Objects
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../logical_interfaces/logical_interfaces/7_Implementation_Notes/">
+<span class="md-ellipsis">
+    Implementation Notes
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Technical Notes
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            Technical Notes
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/0_Purpose_and_Structure/">
+<span class="md-ellipsis">
+    Purpose and Structure
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/1_General_Notes_on_This_Document/">
+<span class="md-ellipsis">
+    General Notes on This Document
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/2_Guide_for_SDMX_Format_Standards/">
+<span class="md-ellipsis">
+    Guide for SDMX Format Standards
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/3_General_Notes_for_Implementers/">
+<span class="md-ellipsis">
+    General Notes for Implementers
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/4_Reference_Metadata/">
+<span class="md-ellipsis">
+    Reference Metadata
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/5_Codelist/">
+<span class="md-ellipsis">
+    Codelist
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/6_Geospatial_information_support/">
+<span class="md-ellipsis">
+    Geospatial Information Support
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/7_Maintenance_Agencies_and_Metadata_Providers/">
+<span class="md-ellipsis">
+    Maintenance Agencies and Metadata Providers
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/8_Concept_Roles/">
+<span class="md-ellipsis">
+    Concept Roles
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/9_Constraints/">
+<span class="md-ellipsis">
+    Constraints
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/10_Transforming_between_versions_of_SDMX/">
+<span class="md-ellipsis">
+    Transforming Between Versions of SDMX
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/11_Validation_and_Transformation_Language__VTL_/">
+<span class="md-ellipsis">
+    Validation and Transformation Language
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/12_Structure_Mapping/">
+<span class="md-ellipsis">
+    Structure Mapping
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/13_ANNEX_Semantic_Versioning/">
+<span class="md-ellipsis">
+    ANNEX Semantic Versioning
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../rest_api/">
+<span class="md-ellipsis">
+    REST API (v2.2)
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            REST API (v2.2)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/data/">
+<span class="md-ellipsis">
+    Data queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/structures/">
+<span class="md-ellipsis">
+    Structure queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/metadata/">
+<span class="md-ellipsis">
+    Reference metadata queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/schema/">
+<span class="md-ellipsis">
+    Schema queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/availability/">
+<span class="md-ellipsis">
+    Availability queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/registration/">
+<span class="md-ellipsis">
+    Registration queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/querying_versions/">
+<span class="md-ellipsis">
+    Query syntax for versions
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/content_negotiation/">
+<span class="md-ellipsis">
+    Content-Negotiation
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/status/">
+<span class="md-ellipsis">
+    Status codes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/maintenance/">
+<span class="md-ellipsis">
+    Structure maintenance
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/tips/">
+<span class="md-ellipsis">
+    Tips for providers and consumers
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/extend/">
+<span class="md-ellipsis">
+    Extending the API
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+<span class="md-ellipsis">
+    Transmission Formats
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+            Transmission Formats
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_1" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../ml/">
+<span class="md-ellipsis">
+    SDMX-ML (v3.1)
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_1" id="__nav_7_1_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_1">
+<span class="md-nav__icon md-icon"></span>
+            SDMX-ML (v3.1)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/message/">
+<span class="md-ellipsis">
+    Message
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/common/">
+<span class="md-ellipsis">
+    Common
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/structure/">
+<span class="md-ellipsis">
+    Structure
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/data/">
+<span class="md-ellipsis">
+    Data
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/registry/">
+<span class="md-ellipsis">
+    Registry
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/samples/">
+<span class="md-ellipsis">
+    Samples
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../json/">
+<span class="md-ellipsis">
+    SDMX-JSON (v2.1)
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_2">
+<span class="md-nav__icon md-icon"></span>
+            SDMX-JSON (v2.1)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../json/structure_message/">
+<span class="md-ellipsis">
+    Structure Message
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2_2" id="__nav_7_2_2_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_2">
+<span class="md-nav__icon md-icon"></span>
+            Structure Message
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/1_field_guide/">
+<span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/2_linking_mechanism/">
+<span class="md-ellipsis">
+    Linking Mechanism
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/4_localised_text_elements/">
+<span class="md-ellipsis">
+    Localised Text Elements
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/5_security_considerations/">
+<span class="md-ellipsis">
+    Security Considerations
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/6_extending_sdmx_json/">
+<span class="md-ellipsis">
+    Extending SDMX-JSON
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/7_references/">
+<span class="md-ellipsis">
+    References
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../json/data_message/">
+<span class="md-ellipsis">
+    Data Message
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2_3" id="__nav_7_2_3_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_3">
+<span class="md-nav__icon md-icon"></span>
+            Data Message
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/1_field_guide/">
+<span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/1b_data_type_conversions/">
+<span class="md-ellipsis">
+    Data type conversions between SDMX and JSON
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/2_linking_mechanism/">
+<span class="md-ellipsis">
+    Linking Mechanism
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/3_handling_indexes/">
+<span class="md-ellipsis">
+    Handling Indexes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/4_localised_text_elements/">
+<span class="md-ellipsis">
+    Localised Text Elements
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/5_security_considerations/">
+<span class="md-ellipsis">
+    Security Considerations
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/6_extending_sdmx_json/">
+<span class="md-ellipsis">
+    Extending SDMX-JSON
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/7_references/">
+<span class="md-ellipsis">
+    References
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_4" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../json/metadata_message/">
+<span class="md-ellipsis">
+    Metadata Message
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2_4" id="__nav_7_2_4_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_4_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_4">
+<span class="md-nav__icon md-icon"></span>
+            Metadata Message
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/1_field_guide/">
+<span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/1b_data_type_conversions/">
+<span class="md-ellipsis">
+    Data type conversions between SDMX and JSON
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/2_linking_mechanism/">
+<span class="md-ellipsis">
+    Linking Mechanism
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/4_localised_text_elements/">
+<span class="md-ellipsis">
+    Localised Text Elements
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/5_security_considerations/">
+<span class="md-ellipsis">
+    Security Considerations
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/6_extending_sdmx_json/">
+<span class="md-ellipsis">
+    Extending SDMX-JSON
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/7_references/">
+<span class="md-ellipsis">
+    References
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../csv/">
+<span class="md-ellipsis">
+    SDMX-CSV (v2.1)
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_3">
+<span class="md-nav__icon md-icon"></span>
+            SDMX-CSV (v2.1)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../csv/data_message_field_guide/">
+<span class="md-ellipsis">
+    Data Message Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../csv/metadata_message_field_guide/">
+<span class="md-ellipsis">
+    Metadata Message Field Guide
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="https://sdmx.org/">
+<span class="md-ellipsis">
+    Go To sdmx.org
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="On this page" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+<span class="md-ellipsis">
+      Introduction
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#model-inheritance-view">
+<span class="md-ellipsis">
+      Model - Inheritance view
+    </span>
+</a>
+<nav aria-label="Model - Inheritance view" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#class-diagram">
+<span class="md-ellipsis">
+      Class Diagram
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#explanation-of-the-diagram">
+<span class="md-ellipsis">
+      Explanation of the Diagram
+    </span>
+</a>
+<nav aria-label="Explanation of the Diagram" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#narrative">
+<span class="md-ellipsis">
+      Narrative
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#model-relationship-view">
+<span class="md-ellipsis">
+      Model - Relationship View
+    </span>
+</a>
+<nav aria-label="Model - Relationship View" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#class-diagram_1">
+<span class="md-ellipsis">
+      Class Diagram
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#explanation-of-the-diagram_1">
+<span class="md-ellipsis">
+      Explanation of the Diagram
+    </span>
+</a>
+<nav aria-label="Explanation of the Diagram" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#narrative-overview">
+<span class="md-ellipsis">
+      Narrative - Overview
+    </span>
+</a>
+<nav aria-label="Narrative - Overview" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#transformation-scheme">
+<span class="md-ellipsis">
+      Transformation Scheme
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ruleset-scheme">
+<span class="md-ellipsis">
+      Ruleset Scheme
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#user-defined-operator-scheme">
+<span class="md-ellipsis">
+      User Defined Operator Scheme
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#name-personalisation-scheme">
+<span class="md-ellipsis">
+      Name Personalisation Scheme
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vtl-mapping">
+<span class="md-ellipsis">
+      VTL Mapping
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tovtlsubspace-tovtlspacekey-fromvtlsuperspace-fromvtlspacekey">
+<span class="md-ellipsis">
+      ToVtlSubspace, ToVtlSpaceKey, FromVtlSuperspace, FromVtlSpaceKey
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#custom-type-scheme">
+<span class="md-ellipsis">
+      Custom Type Scheme
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#definitions">
+<span class="md-ellipsis">
+      Definitions
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="validation-and-transformation-language">Validation and Transformation Language<a class="headerlink" href="#validation-and-transformation-language" title="Permanent link">¶</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
+<p>This SDMX model package supports the definition of Transformations,
+which are algorithms to calculate new data starting from already
+existing ones, written using the Validation and Transformation Language
+(VTL)<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
+<p>The purpose of this model package is to enable the:</p>
+<ul>
+<li>definition of validation and transformation algorithms by means of
+    VTL, in order to specify how to calculate new SDMX data from
+    existing ones;</li>
+<li>exchange of the definition of VTL algorithms, also together the
+    definition of the data structures of the involved data (for example,
+    exchange the data structures of a reporting framework together with
+    the validation rules to be applied, exchange the input and output
+    data structures of a calculation task together with the VTL
+    transformations describing the calculation algorithms);</li>
+<li>execution of VTL algorithms, either interpreting the VTL
+    transformations or translating them in whatever other computer
+    language is deemed as appropriate;</li>
+</ul>
+<p>This model package does not explain the VTL language or any of the
+content published in the VTL guides. Rather, this is an illustration of
+the SDMX classes and attributes that allow defining VTL transformations
+applied to SDMX artefacts.</p>
+<p>The SDMX model represented below is consistent with the VTL 2.0
+specification. However, the former uses the SDMX terminology and is a
+model at technical level (from which the SDMX implementation artefacts
+for defining VTL transformations are built), whereas the latter uses the
+VTL terminology and is at conceptual level. The guidelines for mapping
+these terminologies and using the VTL in the SDMX context can be found
+in a dedicated chapter 
+<a href="../../technical_notes/11_Validation_and_Transformation_Language__VTL_/">Validation and Transformation Language of the Section SDMX Technical Notes</a>, 
+often referenced below.</p>
+<h2 id="model-inheritance-view">Model - Inheritance view<a class="headerlink" href="#model-inheritance-view" title="Permanent link">¶</a></h2>
+<h3 id="class-diagram">Class Diagram<a class="headerlink" href="#class-diagram" title="Permanent link">¶</a></h3>
+<figure id="__figure-caption_47">
+<p><img alt="" src="../media/image73.png"/></p>
+<figcaption>
+<p><span class="caption-prefix">Figure 47.</span> Class inheritance diagram in the Transformations and
+Expressions Package</p>
+</figcaption>
+</figure>
+<h3 id="explanation-of-the-diagram">Explanation of the Diagram<a class="headerlink" href="#explanation-of-the-diagram" title="Permanent link">¶</a></h3>
+<h4 id="narrative">Narrative<a class="headerlink" href="#narrative" title="Permanent link">¶</a></h4>
+<p>The model artefacts <code>TransformationScheme</code>, <code>RulesetScheme</code>,
+<code>UserDefinedOperatorScheme</code>, <code>NamePersonalisationScheme</code>, <code>CustomTypeScheme</code>,
+and <code>VtlMappingScheme</code> inherit from <code>ItemScheme</code></p>
+<p>These schemes inherit from the <code>ItemScheme</code> and therefore have the
+following attributes:</p>
+<ul>
+<li><code>id</code></li>
+<li><code>uri</code></li>
+<li><code>urn</code></li>
+<li><code>version</code></li>
+<li><code>validFrom</code></li>
+<li><code>validTo</code></li>
+<li><code>isExternalReference</code></li>
+<li><code>registryURL</code></li>
+<li><code>structureURL</code></li>
+<li><code>repositoryURL</code></li>
+<li><code>isPartial</code></li>
+</ul>
+<p>The model artefacts <code>Transformation</code>, <code>Ruleset</code>, <code>UserDefinedOperator</code>,
+<code>NamePersonalisation</code>, <code>VtlMapping</code>, <code>CustomType</code> inherit the attributes and
+associations of <code>Item</code> which itself inherits from <code>NameableArtefact</code>. They
+have the following attributes:</p>
+<ul>
+<li><code>id</code></li>
+<li><code>uri</code></li>
+<li><code>urn</code></li>
+</ul>
+<p>The multi-lingual name and description are provided by the relationship
+to <code>InternationalString</code> from <code>NameableArtefact</code>.</p>
+<h2 id="model-relationship-view">Model - Relationship View<a class="headerlink" href="#model-relationship-view" title="Permanent link">¶</a></h2>
+<h3 id="class-diagram_1">Class Diagram<a class="headerlink" href="#class-diagram_1" title="Permanent link">¶</a></h3>
+<figure id="__figure-caption_48">
+<p><img alt="" src="../media/image74.png"/></p>
+<figcaption>
+<p><span class="caption-prefix">Figure 48.</span> Relationship diagram in the Transformations and Expressions
+Package</p>
+</figcaption>
+</figure>
+<h3 id="explanation-of-the-diagram_1">Explanation of the Diagram<a class="headerlink" href="#explanation-of-the-diagram_1" title="Permanent link">¶</a></h3>
+<h4 id="narrative-overview">Narrative - Overview<a class="headerlink" href="#narrative-overview" title="Permanent link">¶</a></h4>
+<h5 id="transformation-scheme">Transformation Scheme<a class="headerlink" href="#transformation-scheme" title="Permanent link">¶</a></h5>
+<p>A <code>TransformationScheme</code> is a set of <code>Transformation</code>s aimed at obtaining
+some meaningful results for the user (e.g. the validation of one or more
+Data Sets). This set of <code>Transformation</code>s is meant to be executed together
+(in the same run) and may contain any number of <code>Transformation</code>s in order
+to produce any number of results. Therefore, a <code>TransformationScheme</code> can
+be considered as a VTL program.</p>
+<p>The <code>TransformationScheme</code> must include the attribute <code>vtlVersion</code> expressed
+as a string (e.g. “2.0”), as the version of the VTL determines which
+syntax is used in defining the transformations of the scheme.</p>
+<p>A <code>Transformation</code> consists of a statement which assigns the outcome of
+the evaluation of a VTL expression to a result (an artefact of the VTL
+Information Model, which in the SDMX context can be a persistent or
+non-persistent Dataflow<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>).</p>
+<p>For example, assume that D1, D2 and D3 are SDMX Dataflows (called Data
+Sets in VTL) containing information on some goods, specifically: D3 the
+current stocks, D1 the stocks of the previous date, D2 the flows in the
+last period. A possible VTL <code>Transformation</code> aimed at checking the
+consistency between flows and stocks is the following:</p>
+<p><code>Dr := If ( (D1 + D2) = D3, then "true", else "false")</code></p>
+<p>In this <code>Transformation</code>:</p>
+<ul>
+<li><code>Dr</code> is the result (a new dataflow)</li>
+<li><code>:=</code> is an assignment operator</li>
+<li><code>If((D1+D2)=D3, then "true", else "false")</code> is the expression</li>
+<li><code>D1, D2, D3</code> are the operands</li>
+<li><code>If, ( ), +, =</code> are VTL operators</li>
+</ul>
+<p>The <code>Transformation</code> model artefact contains three attributes:</p>
+<ol>
+<li>
+<p><code>result</code></p>
+<p>The left-hand side of a VTL statement, which specifies the Artefact to
+which the outcome of the expression is assigned. An artefact cannot be
+result of more than one <code>Transformation</code>.</p>
+</li>
+<li>
+<p><code>isPersistent</code></p>
+<p>An assignment operator, which specifies also the persistency of the
+left-hand side. The assignment operators are two, namely <code>:=</code> for
+non-persistent assignment (the result is non-persistent) and <code>&lt;-</code>
+for persistent assignment (the result is persistent).</p>
+</li>
+<li>
+<p><code>expression</code></p>
+<p>The right-hand side of a VTL statement, which is the expression to be
+evaluated. An expression consists in the invocation of VTL operators
+in a certain order. When an operator is invoked, for each input
+parameter, an actual argument is passed to the operator, which returns
+an actual argument for the output parameter. An expression is simply a
+text string written according the VTL grammar.</p>
+</li>
+</ol>
+<p>Because an Artefact can be the result of just one <code>Transformation</code> and a
+Transformation belongs to just one <code>TransformationScheme</code>, it follows also
+that a derived Artefact (e.g., a new Dataflow) is produced in just one
+<code>TransformationScheme</code>.</p>
+<p>The result of a <code>Transformation</code> can be input of other <code>Transformation</code>s.
+The VTL assumes that non-persistent results are maintained only within
+the same <code>TransformationScheme</code> in which they are produced. Therefore, a
+non-persistent result of a <code>Transformation</code> can be the operand of other
+Transformations of the same <code>TransformationScheme</code>, whereas a persistent
+result can be operand of transformations of any <code>TransformationScheme</code><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>.</p>
+<p>The <code>TransformationScheme</code> has an association to zero of more
+<code>RulesetScheme</code>, zero or more <code>UserDefinedOperatorScheme</code>, zero or one
+<code>NamePersonalisationScheme</code>, zero or one <code>VtlMappingScheme</code>, and zero or one
+<code>CustomTypeScheme</code>.</p>
+<p>The <code>RulesetScheme</code>, <code>UserDefinedOperatorScheme</code>, <code>NamePersonalisationScheme</code>
+and <code>CustomTypeScheme</code> have the attribute <code>vtlVersion</code>. Thus, a
+<code>TransformationScheme</code> using a specific version of VTL can be linked to
+such schemes only if they are consistent with the same VTL version.</p>
+<p>The <code>VtlMappingScheme</code> associated to a <code>TransformationScheme</code> must contain
+the mappings between the references to the SDMX artefacts from the
+<code>TransformationScheme</code> and the structured identifiers of these SDMX
+artefacts.</p>
+<h5 id="ruleset-scheme">Ruleset Scheme<a class="headerlink" href="#ruleset-scheme" title="Permanent link">¶</a></h5>
+<p>Some VTL Operators can invoke rulesets, i.e., sets of previously defined
+rules to be applied by the Operator. Once defined, a Ruleset is
+persistent and can be invoked as many times as needed. The knowledge of
+the rulesets’ definitions (if any) is essential for understanding the
+actual behaviour of the <code>Transformation</code> that use them: this is achieved
+through the <code>RulesetScheme</code> model artefact. The <code>RulesetScheme</code> is the
+container for one or more Ruleset.</p>
+<p>The Ruleset model artefact contains the following attributes:</p>
+<ol>
+<li><code>rulesetType</code> – the type of the ruleset according to VTL (VTL 2.0
+    allows two types: “datapoint” and “hierarchical” ruleset);</li>
+<li><code>rulesetScope</code> – the VTL artefact on which the ruleset is defined; VTL
+    2.0 allows rulesets defined on Value Domains, which correspond to
+    SDMX Codelists and rulesets defined on Variables, which correspond
+    to SDMX Concepts for which a definite Representation is assumed;</li>
+<li><code>rulesetDefinition</code> – the VTL statement that defines the ruleset
+    according to the syntax of the VTL definition language.</li>
+</ol>
+<p>The <code>RulesetScheme</code> can have an association with zero or more
+<code>VtlMappingScheme</code>. These mappings define the correspondence between the
+references to the SDMX artefacts contained in the <code>rulesetDefinition</code> and
+the structured identifiers of these SDMX artefacts.</p>
+<p>The rulesets defined on Value Domains reference <code>Codelists</code>. The rulesets
+defined on Variables reference <code>Concepts</code> (for which a definite
+<code>Representation</code> is assumed). In conclusion, in the VTL rulesets there can
+exist mappings for: <code>Codelists</code> and <code>Concepts</code>.</p>
+<h5 id="user-defined-operator-scheme">User Defined Operator Scheme<a class="headerlink" href="#user-defined-operator-scheme" title="Permanent link">¶</a></h5>
+<p>The <code>UserDefinedOperatorScheme</code> is a container for zero of more
+<code>UserDefinedOperator</code>. The <code>UserDefinedOperator</code> is defined using VTL
+standard operators. This is essential for understanding the actual
+behaviour of the <code>Transformation</code>s that invoke them.</p>
+<p>The attribute <code>operatorDefinition</code> contains the VTL statement that defines
+the operator according to the syntax of the VTL definition language.</p>
+<p>Although the VTL user defined operators are conceived to be defined on
+generic operands, so that the specific artefacts to be manipulated are
+passed as parameters at the invocation, it is also possible that they
+reference specific SDMX artefacts like <code>Dataflows</code> and <code>Codelists</code>.
+Therefore, the <code>UserDefinedOperatorScheme</code> can link to zero or one
+<code>VtlMappingScheme</code>, which must contain the mappings between the VTL
+references and the structured URN of the corresponding SDMX artefacts
+(see also the <a href="../../technical_notes/11_Validation_and_Transformation_Language__VTL_/#mapping-from-vtl-to-sdmx-data-structures">VTL mapping section</a> below).</p>
+<p>The definition of a <code>UserDefinedOperator</code> can also make use of VTL
+rulesets; therefore, the <code>UserDefinedOperatorScheme</code> can link to zero, one
+or more <code>RulesetScheme</code>, <strong>which</strong> must contain the definition of these
+Rulesets (see also the <a href="#ruleset-scheme">Ruleset Scheme Section</a> above).</p>
+<h5 id="name-personalisation-scheme">Name Personalisation Scheme<a class="headerlink" href="#name-personalisation-scheme" title="Permanent link">¶</a></h5>
+<p>In some operations, the VTL assigns by default some standard names to
+some measures and/or attributes of the data structure of the result<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>.
+The VTL allows also to personalise the names to be assigned. The
+knowledge of the personalised names (if any) is essential for
+understanding the actual behaviour of the <code>Transformation</code>: this is
+achieved through the <code>NamePersonalisationScheme</code>. A <code>NamePersonalisation</code>
+specifies a personalised name that will be assigned in place of a VTL
+default name. The <code>NamePersonalisationScheme</code> is a container for zero or
+more <code>NamePersonalisation</code>.</p>
+<h5 id="vtl-mapping">VTL Mapping<a class="headerlink" href="#vtl-mapping" title="Permanent link">¶</a></h5>
+<p>The mappings between SDMX and VTL can be relevant to the names of the
+artefacts and to the methods for converting the data structures from
+SDMX to VTL and vice-versa. These features are achieved through the
+<code>VtlMappingScheme</code>, which is a container for zero or more <code>VtlMapping</code>.</p>
+<p>The VTL assumes that the operands are directly referenced through their
+actual names (unique identifiers). In the VTL transformations, rulesets,
+user defined operators, the SDMX artefacts are referenced through VTL
+aliases. The alias can be the complete URN of the artefact, an
+abbreviated URN, or another user-defined name, as described in the
+Section 6 of the SDMX Standards.<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup></p>
+<p>The VTLmapping defines the correspondence between the VTL alias and the
+structured identifier of the SDMX artefact, for each referenced SDMX
+artefact. This correspondence is needed for the following kinds of SDMX
+artefacts: <code>Dataflows</code>, <code>Codelists</code> and <code>Concepts</code>. Therefore, there are the
+following corresponding mapping subclasses: <code>VtlDataflowMapping</code>,
+<code>VtlCodelistMapping</code> and <code>VtlConceptMapping</code>.</p>
+<p>As for the <code>Dataflows</code>, it is also possible to specify the method to
+convert the Data Structure of the Dataflow. This kind of conversion can
+happen in two directions, from SDMX to VTL when a SDMX Dataflow is
+accessed by a VTL Transformation (<code>toVtlMappingMethod</code>), or from VTL to
+SDMX when a SDMX derived Dataflow is calculated through VTL
+(<code>fromVtlMappingMethod</code>).<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup></p>
+<p>The default mapping method from SDMX to VTL is called “Basic”. Three
+alternative mapping methods are possible, called “Pivot”, “Basic-A2M”,
+“Pivot-A2M” (“A2M” stands for “Attributes to Measures”, i.e. the SDMX
+<code>DataAttributes</code> become VTL measures).</p>
+<p>The default mapping method from VTL to SDMX is also called “Basic”, and
+the two alternative mapping methods are called “Unpivot” and “M2A”
+(“M2A” stands for “Measures to Attributes”, i.e. some VTL measures
+become SDMX <code>DataAttributes</code> according to what is declared in the DSD).</p>
+<p>In both the mapping directions, no specification is needed if the
+default mapping method (Basic) is used. When an alternative mapping
+method is applied for some Dataflow, this must be specified in
+<code>toVtlMappingMethod</code> or <code>fromVtlMappingMethod</code>.</p>
+<h5 id="tovtlsubspace-tovtlspacekey-fromvtlsuperspace-fromvtlspacekey"><code>ToVtlSubspace</code>, <code>ToVtlSpaceKey</code>, <code>FromVtlSuperspace</code>, <code>FromVtlSpaceKey</code><a class="headerlink" href="#tovtlsubspace-tovtlspacekey-fromvtlsuperspace-fromvtlspacekey" title="Permanent link">¶</a></h5>
+<p>Although in general one SDMX Dataflow is mapped to one VTL dataset and
+vice-versa, it is also allowed to map distinct parts of a single SDMX
+Dataflow to distinct VTL data sets according to the rules and
+conventions described in the Section 6 of the SDMX Standards.<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup></p>
+<p>In the direction from SDMX to VTL, this is achieved by fixing the values
+of some predefined Dimensions of the SDMX Data Structure: all the
+observations having such combination of values are mapped to one
+corresponding VTL dataset (the Dimensions having fixed values are not
+maintained in the Data Structure of the resulting VTL dataset). The
+<code>ToVtlSubspace</code> and <code>ToVtlSpaceKey</code> classes allow to define these
+Dimensions. When one SDMX Dataflow is mapped to just one VTL dataset
+these classes are not used.</p>
+<p>Analogously, in the direction from VTL to SDMX, it is possible to map
+more calculated VTL datasets to distinct parts of a single SDMX
+Dataflow, as long as these VTL datasets have the same Data Structure.
+This can be done by providing, for each VTL dataset, distinct values for
+some additional SDMX Dimensions that are not part of the VTL data
+structure. The <code>FromVtlSuperspace</code> and <code>FromVtlSpaceKey</code> classes allow to
+define these dimensions. When one VTL dataset is mapped to just one SDMX
+Dataflow these classes are not used.</p>
+<h5 id="custom-type-scheme">Custom Type Scheme<a class="headerlink" href="#custom-type-scheme" title="Permanent link">¶</a></h5>
+<p>As already said, a <code>Transformation</code> consists of a statement which assigns
+the outcome of the evaluation of a VTL expression to a result, i.e. an
+artefact of the VTL Information Model. which in the SDMX context can be
+a persistent or non-persistent <code>Dataflow</code><sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup>. Therefore, the VTL data
+type of the outcome of the VTL expression has to be converted into the
+SDMX data type of the resulting <code>Dataflow</code>. A default conversion table
+from VTL to SDMX data types is assumed<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup>. The <code>CustomTypeScheme</code> allows
+to specify custom conversions that override the default conversion
+table. The <code>CustomTypeScheme</code> is a container for zero or more <code>CustomType</code>.
+A <code>CustomType</code> specifies the custom conversion from a VTL scalar type that
+will override the default conversion. The overriding SDMX data type is
+specified by means of the <code>dataType</code> and <code>outputFormat</code> attributes (the SDMX
+data type assumes the role of external representation in respect to
+VTL<sup id="fnref:10"><a class="footnote-ref" href="#fn:10">10</a></sup>).</p>
+<p>Moreover, the <code>CustomType</code> allows to customize the default format of VTL
+literals and the (possible) SDMX value to be produced when a VTL measure
+or attribute is NULL.</p>
+<p>VTL expression can contain literals, i.e. specific values of a certain
+VTL data type written according to a certain format. For example,
+consider the following <code>Transformation</code> that extracts from the dataflow D1
+the observations for which the “reference_date” belongs to the years
+2018 and 2019:</p>
+<p><code>Dr := D1 [ filter between (reference_date, 2018-01-01, 2019-12-31)]</code></p>
+<p>In this expression, the two values <code>2018-01-01</code> and <code>2019-12-31</code> are
+literals of the VTL “date” scalar type expressed in the format
+<code>YYYY-MM-DD</code>.</p>
+<p>The VTL literals are assumed to be written in the same SDMX format
+specified in the default conversion table mentioned above, for the
+conversion from VTL to SDMX data types. If a different format is used
+for a certain VTL scalar type, it must be specified in the
+<code>vtlLiteralFormat</code> attribute of the <code>CustomType</code>.</p>
+<p>Regarding the management of NULLs, in the conversions between SDMX and
+VTL, by default a missing value in SDMX in converted in VTL NULL and
+vice-versa, for any VTL scalar type. If a different value is needed,
+after the conversion from SDMX to VTL, proper VTL operators can be used
+for obtaining it. In the conversion from VTL to SDMX the desired value
+can be declared in the <code>nullValue</code> attribute (separately for each VTL
+basic scalar type).</p>
+<h4 id="definitions">Definitions<a class="headerlink" href="#definitions" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Transformation Scheme</td>
+<td>Inherits from <code>ItemScheme</code></td>
+<td>Contains the definitions of transformations meant to produce some derived data and be executed together</td>
+</tr>
+<tr>
+<td></td>
+<td><code>vtlVersion</code></td>
+<td>The version of the VTL language used for defining transformations</td>
+</tr>
+<tr>
+<td>Transformation</td>
+<td>Inherits from <code>Item</code></td>
+<td>A VTL statement which assigns the outcome of an expression to a result.</td>
+</tr>
+<tr>
+<td></td>
+<td>result</td>
+<td>The left-hand side of the VTL statement, which identifies the result artefact.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>isPersistent</code></td>
+<td>A boolean that indicates whether the result is permanently stored or not, depending on the VTL assignment operator.</td>
+</tr>
+<tr>
+<td></td>
+<td>expression</td>
+<td>The right-hand side of the VTL statement that is the expression to be evaluated, which includes the references to the operands of the Transformation.</td>
+</tr>
+<tr>
+<td><code>RulesetScheme</code></td>
+<td>Inherits from <code>ItemScheme</code></td>
+<td>Container of rulesets.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>vtlVersion</code></td>
+<td>The version of the VTL language used for defining the rulesets</td>
+</tr>
+<tr>
+<td>Ruleset</td>
+<td>Inherits from <code>Item</code></td>
+<td>A persistent set of rules which can be invoked by means of appropriate VTL operators.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>rulesetDefinition</code></td>
+<td>A VTL statement for the definition of a ruleset (according to the syntax of the VTL definition language)</td>
+</tr>
+<tr>
+<td></td>
+<td><code>rulesetType</code></td>
+<td>The VTL type of the ruleset (e.g., in VTL 2.0, datapoint or hierarchical)</td>
+</tr>
+<tr>
+<td></td>
+<td><code>rulesetScope</code></td>
+<td>The model artefact on which the ruleset is defined (e.g., in VTL 2.0, valuedomain or variable)</td>
+</tr>
+<tr>
+<td><code>UserDefinedOperatorScheme</code></td>
+<td>Inherits from <code>ItemScheme</code></td>
+<td>Container of user defined operators</td>
+</tr>
+<tr>
+<td></td>
+<td><code>vtlVersion</code></td>
+<td>The version of the VTL language used for defining the user defined operators</td>
+</tr>
+<tr>
+<td><code>UserDefinedOperator</code></td>
+<td>Inherits from <code>Item</code></td>
+<td>Custom VTL operator (not existing in the standard library) that extends the VTL standard library for specific purposes.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>operatorDefinition</code></td>
+<td>A VTL statement for the definition of a new operator: it specifies the operator name, its parameters and their data types, the VTL expression that defines its behaviour.</td>
+</tr>
+<tr>
+<td><code>NamePersonalisationScheme</code></td>
+<td>Inherits from <code>ItemScheme</code></td>
+<td>Container of name personalisations.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>vtlVersion</code></td>
+<td>The VTL version which the VTL default names to be personalised belong to.</td>
+</tr>
+<tr>
+<td><code>NamePersonalisation</code></td>
+<td>Inherits from <code>Item</code></td>
+<td>Definition of personalised name to be used in place of a VTL default name.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>vtlArtefact</code></td>
+<td>VTL model artefact to which the VTL default name to be personalised refers, e.g. variable, value domain.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>vtlDefaultName</code></td>
+<td>The VTL default name to be personalised.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>personalisedName</code></td>
+<td>The personalised name to be used in place of the VTL default name.</td>
+</tr>
+<tr>
+<td><code>VtlMappingScheme</code></td>
+<td>Inherits from <code>ItemScheme</code></td>
+<td>Container of VTL mappings.</td>
+</tr>
+<tr>
+<td><code>VtlMapping</code></td>
+<td>Inherits from <code>Item</code> Sub classes are: <code>VtlDataflowMapping</code>, <code>VtlCodelistMapping</code>, <code>VtlConceptMapping</code></td>
+<td>Single mapping between the reference to a SDMX artefact made from VTL transformations, rulesets, user defined operators and the corresponding SDMX structure identifier.</td>
+</tr>
+<tr>
+<td><code>VtlDataflowMapping</code></td>
+<td>Inherits from <code>VtlMapping</code></td>
+<td>Single mapping between the reference to a SDMX dataflow and the corresponding SDMX structure identifier</td>
+</tr>
+<tr>
+<td></td>
+<td><code>dataflowAlias</code></td>
+<td>Alias used in VTL to reference a SDMX dataflow (it can be the URN, the abbreviated URN or a user defined alias). The alias must be univocal: different SDMX artefacts cannot have the same VTL alias.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>toVtlMappingMethod</code></td>
+<td>Custom specification of the mapping method from SDMX to VTL data structures for the dataflow (overriding the default “basic” method).</td>
+</tr>
+<tr>
+<td></td>
+<td><code>fromVtlMappingMethod</code></td>
+<td>Custom specification of the mapping method from VTL to SDMX data structures for the dataflow (overriding the default “basic” method).</td>
+</tr>
+<tr>
+<td><code>VtlCodelistMapping</code></td>
+<td>Inherits from <code>VtlMapping</code></td>
+<td>Single mapping between the VTL reference to a SDMX codelist and the SDMX structure identifier of the codelist.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>codelistAlias</code></td>
+<td>Name used in VTL to reference a SDMX codelist. The name/alias must be univocal: different SDMX artefacts cannot have the same VTL alias.</td>
+</tr>
+<tr>
+<td><code>VtlConceptMapping</code></td>
+<td>Inherits from <code>VtlMapping</code></td>
+<td>Single mapping between the VTL reference to a SDMX concept and the SDMX structure identifier of the concept.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>conceptAlias</code></td>
+<td>Name used in VTL to reference a SDMX concept. The name/alias must be univocal: different SDMX artefacts cannot have the same VTL alias.</td>
+</tr>
+<tr>
+<td><code>ToVtlSubspace</code></td>
+<td></td>
+<td>Subspace of the dimensions of the SDMX dataflow used to identify the parts of the dataflow to be mapped to distinct VTL datasets</td>
+</tr>
+<tr>
+<td><code>ToVtlSpaceKey</code></td>
+<td></td>
+<td>A dimension of the SDMX dataflow that contributes to identify the parts of the dataflow to be mapped to distinct VTL datasets.</td>
+</tr>
+<tr>
+<td></td>
+<td>Key</td>
+<td>The identity of the dimension in the data structure definition of the dataflow that contributes to identify the parts of the dataflow to be mapped to distinct VTL datasets</td>
+</tr>
+<tr>
+<td><code>FromVtlSuperspace</code></td>
+<td></td>
+<td>Superspace is composed of the dimensions to be added to the data structure of the VTL result dataset in order to obtain the data structure of the derived SDMX dataflow (in case the latter is a superset of distinct VTL datasets calculated independently).</td>
+</tr>
+<tr>
+<td><code>FromVtlSpaceKey</code></td>
+<td></td>
+<td>A SDMX dimension to be added to the data structure of the VTL result dataset in order to obtain the data structure of the derived SDMX dataflow</td>
+</tr>
+<tr>
+<td></td>
+<td>Key</td>
+<td>The identity of the dimension to be added to the data structure of the VTL result dataset in order to obtain the data structure of the derived SDMX dataflow.</td>
+</tr>
+<tr>
+<td><code>CustomTypeScheme</code></td>
+<td>Inherits from <code>ItemScheme</code></td>
+<td>Container of custom specifications for VTL basic scalar types.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>vtlVersion</code></td>
+<td>The VTL version, which the VTL scalar types belong to.</td>
+</tr>
+<tr>
+<td><code>CustomType</code></td>
+<td>Inherits from <code>Item</code></td>
+<td>Custom specification for a VTL basic scalar type.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>vtlScalarType</code></td>
+<td>VTL scalar type for which the custom specifications are given.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>outputFormat</code></td>
+<td>Custom specification of the VTL formatting mask needed to obtain to the desired representation, i.e. the desired SDMX format (e.g. YYYY-MM-DD, see also the VTL formatting mask in the VTL Reference Manual and the SDMX Technical Notes). If not specified, the “Default output format” of the default conversion table from VTL to SDMX is used. <sup id="fnref:11"><a class="footnote-ref" href="#fn:11">11</a></sup></td>
+</tr>
+<tr>
+<td></td>
+<td><code>datatype</code></td>
+<td>Custom specification of the external (SDMX) data type in which the VTL data type must be converted (e.g. the <code>GregorianDay</code>). If not specified, the “Default SDMX data type” of the default conversion table from VTL to SDMX is used. <sup id="fnref:12"><a class="footnote-ref" href="#fn:12">12</a></sup></td>
+</tr>
+<tr>
+<td></td>
+<td><code>nullValue</code></td>
+<td>Custom specification of the SDMX value to be produced for the VTL NULL values, with reference to the <code>vtlScalarType</code> specified above. If no value is specified, no value is produced.</td>
+</tr>
+<tr>
+<td></td>
+<td><code>vtlLiteralFormat</code></td>
+<td>Custom specification of the format of the VTL literals belonging to the <code>vtlScalarType</code> used in the VTL program (e.g. YYYY-MM-DD)<sup id="fnref:13"><a class="footnote-ref" href="#fn:13">13</a></sup>. If not specified, the “Default output format” of the default conversion table from VTL to SDMX is assumed.<sup id="fnref:14"><a class="footnote-ref" href="#fn:14">14</a></sup></td>
+</tr>
+</tbody>
+</table>
+<div class="footnote">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>The Validation and Transformation Language is a standard language
+designed and published under the SDMX initiative. VTL is described
+in the VTL User and Reference Guides available on the <a href="https://sdmx.org">SDMX website</a>. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>Or a part of a Dataflow, see also the Section <a href="../../technical_notes/11_Validation_and_Transformation_Language__VTL_/#mapping-dataflow-subsets-to-distinct-vtl-data-sets">“Mapping dataflow subsets to distinct VTL data sets” 
+of the SDMX Technical Notes</a>. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+<li id="fn:3">
+<p>Provided that the VTL consistency rules are accomplished (see the “Generic Model for Transformations” in the VTL User Manual and its sub-section “Transformation Consistency”) <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
+</li>
+<li id="fn:4">
+<p>For example, the <code>check</code> operator produces some new components in the
+result called by default <code>bool_var</code>, <code>errorcode</code>, <code>errorlevel</code>, <code>imbalance</code>.
+These names can be personalised if needed. <a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">↩</a></p>
+</li>
+<li id="fn:5">
+<p>See Section <a href="../../technical_notes/11_Validation_and_Transformation_Language__VTL_/#references-to-sdmx-artefacts-from-vtl-statements">“References to SDMX artefacts from VTL statements” in the SDMX Technical Notes</a>. <a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">↩</a></p>
+</li>
+<li id="fn:6">
+<p>For a more thorough description of these conversions, see the 
+Section <a href="../../technical_notes/11_Validation_and_Transformation_Language__VTL_/#mapping-between-sdmx-and-vtl-data-types">“Mapping between SDMX and VTL” in the SDMX Technical Notes</a>. <a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">↩</a></p>
+</li>
+<li id="fn:7">
+<p>See the Section <a href="../../technical_notes/11_Validation_and_Transformation_Language__VTL_/#mapping-dataflow-subsets-to-distinct-vtl-data-sets">“Mapping dataflow subsets to distinct VTL data sets” in the SDMX Technical Notes</a>. <a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">↩</a></p>
+</li>
+<li id="fn:8">
+<p>Or a part of a Dataflow, as described in the previous paragraph. <a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">↩</a></p>
+</li>
+<li id="fn:9">
+<p>The default conversion table from VTL to SDMX is described in the
+Section <a href="../../technical_notes/11_Validation_and_Transformation_Language__VTL_/#mapping-vtl-basic-scalar-types-to-sdmx-data-types">“Mapping VTL basic scalar types to  SDMX data types” in the SDMX Technical Notes</a>. <a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">↩</a></p>
+</li>
+<li id="fn:10">
+<p>About VTL internal and external representations, see also the 
+VTL User Manual, section “Basic scalar types”, p.53. <a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 10 in the text">↩</a></p>
+</li>
+<li id="fn:11">
+<p>See <a href="../../technical_notes/11_Validation_and_Transformation_Language__VTL_/#mapping-vtl-basic-scalar-types-to-sdmx-data-types">“Mapping VTL basic scalar types to SDMX data types”
+in the SDMX Technical Notes</a>. <a class="footnote-backref" href="#fnref:11" title="Jump back to footnote 11 in the text">↩</a></p>
+</li>
+<li id="fn:12">
+<p>See <a href="../../technical_notes/11_Validation_and_Transformation_Language__VTL_/#mapping-vtl-basic-scalar-types-to-sdmx-data-types">“Mapping VTL basic scalar types to SDMX data types”
+in the SDMX Technical Notes</a>. <a class="footnote-backref" href="#fnref:12" title="Jump back to footnote 12 in the text">↩</a></p>
+</li>
+<li id="fn:13">
+<p>See also the VTL formatting mask in the VTL Reference
+Manual and the <a href="../../technical_notes/11_Validation_and_Transformation_Language__VTL_/#mapping-sdmx-data-types-to-vtl-basic-scalar-types">SDMX Technical Notes</a>. <a class="footnote-backref" href="#fnref:13" title="Jump back to footnote 13 in the text">↩</a></p>
+</li>
+<li id="fn:14">
+<p>See <a href="../../technical_notes/11_Validation_and_Transformation_Language__VTL_/#mapping-vtl-basic-scalar-types-to-sdmx-data-types">“Mapping VTL basic scalar types to SDMX data types”
+in the SDMX Technical Notes</a>. <a class="footnote-backref" href="#fnref:14" title="Jump back to footnote 14 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+<a href="https://www.analytical-software.de/en/legal-disclosure/">HMS Analytical Software Imprint</a>
+</div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["content.tabs.link", "content.code.annotate", "content.code.copy", "navigation.tabs", "navigation.indexes", "navigation.path", "navigation.sections", "navigation.top", "navigation.tracking", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+<script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+<script src="../../../assets/anchors.js"></script>
+</body>
+</html>

@@ -1,0 +1,1706 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Statistical Data and Metadata eXchange" name="description"/>
+<link href="https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/technical_notes/6_Geospatial_information_support/" rel="canonical"/>
+<link href="../../../media/logos/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.12" name="generator"/>
+<title>Geospatial information support - SDMX Technical Documentation</title>
+<link href="../../../assets/stylesheets/main.2afb09e1.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../../assets/style.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="orange" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#geospatial-information-support">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<div data-md-color-scheme="default" data-md-component="outdated" hidden="">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="SDMX Technical Documentation" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="SDMX Technical Documentation">
+<img alt="logo" src="../../../media/logos/SDMX-logo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            SDMX Technical Documentation
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Geospatial information support
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="orange" data-md-color-media="(prefers-color-scheme)" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"></path></svg>
+</label>
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="orange" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"></path></svg>
+</label>
+<input aria-label="Switch to system preference" class="md-option" data-md-color-accent="orange" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to system preference">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 2c3.87 0 7 3.13 7 7 0 2.38-1.19 4.47-3 5.74V17c0 .55-.45 1-1 1H6c-.55 0-1-.45-1-1v-2.26C3.19 13.47 2 11.38 2 9c0-3.87 3.13-7 7-7M6 21v-1h6v1c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1M9 4C6.24 4 4 6.24 4 9c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58 0-2.76-2.24-5-5-5m10 9h-2l-3.2 9h1.9l.7-2h3.2l.7 2h1.9zm-2.15 5.65L18 15l1.15 3.65z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/HMS-Analytical-Software/sdmx-technical-documentation" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    HMS-Analytical-Software/sdmx-technical-documentation
+  </div>
+</a>
+</div>
+<a class="md-header-nav__button md-icon" href="../../../pdf/document.pdf" title="PDF">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,0c-17.6,0-32,14.4-32,32v448c0,17.6,14.4,32,32,32h320c17.6,0,32-14.4,32-32V128L352,0H128z" fill="#E2E5E7"></path>
+<path d="m384 128h96l-128-128v96c0 17.6 14.4 32 32 32z" fill="#B0B7BD"></path>
+<polygon fill="#CAD1D8" points="480 224 384 128 480 128"></polygon>
+<path d="M416,416c0,8.8-7.2,16-16,16H48c-8.8,0-16-7.2-16-16V256c0-8.8,7.2-16,16-16h352c8.8,0,16,7.2,16,16  V416z" fill="#F15642"></path>
+<g fill="#fff">
+<path d="m101.74 303.15c0-4.224 3.328-8.832 8.688-8.832h29.552c16.64 0 31.616 11.136 31.616 32.48 0 20.224-14.976 31.488-31.616 31.488h-21.36v16.896c0 5.632-3.584 8.816-8.192 8.816-4.224 0-8.688-3.184-8.688-8.816v-72.032zm16.88 7.28v31.872h21.36c8.576 0 15.36-7.568 15.36-15.504 0-8.944-6.784-16.368-15.36-16.368h-21.36z"></path>
+<path d="m196.66 384c-4.224 0-8.832-2.304-8.832-7.92v-72.672c0-4.592 4.608-7.936 8.832-7.936h29.296c58.464 0 57.184 88.528 1.152 88.528h-30.448zm8.064-72.912v57.312h21.232c34.544 0 36.08-57.312 0-57.312h-21.232z"></path>
+<path d="m303.87 312.11v20.336h32.624c4.608 0 9.216 4.608 9.216 9.072 0 4.224-4.608 7.68-9.216 7.68h-32.624v26.864c0 4.48-3.184 7.92-7.664 7.92-5.632 0-9.072-3.44-9.072-7.92v-72.672c0-4.592 3.456-7.936 9.072-7.936h44.912c5.632 0 8.96 3.344 8.96 7.936 0 4.096-3.328 8.704-8.96 8.704h-37.248v0.016z"></path>
+</g>
+<path d="m400 432h-304v16h304c8.8 0 16-7.2 16-16v-16c0 8.8-7.2 16-16 16z" fill="#CAD1D8"></path>
+</svg>
+</a></nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../..">
+          
+  
+  
+    
+  
+  Getting Started
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../framework/0_framework-introduction/">
+          
+  
+  
+    
+  
+  Framework
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../information_model/information_model/0_Introduction/">
+          
+  
+  
+    
+  
+  Information Model
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../registry_specification/1_Introduction/">
+          
+  
+  
+    
+  
+  Registry Specification and Logical Interfaces
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../technical_notes/technical_notes/0_Purpose_and_Structure/">
+          
+  
+  
+    
+  
+  Technical Notes
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../rest_api/">
+          
+  
+  
+    
+  
+  REST API (v2.2)
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../ml/">
+          
+  
+  
+    
+  
+  Transmission Formats
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="https://sdmx.org/">
+        
+  
+  
+    
+  
+  Go To sdmx.org
+
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="SDMX Technical Documentation" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="SDMX Technical Documentation">
+<img alt="logo" src="../../../media/logos/SDMX-logo.png"/>
+</a>
+    SDMX Technical Documentation
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/HMS-Analytical-Software/sdmx-technical-documentation" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    HMS-Analytical-Software/sdmx-technical-documentation
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_1" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+</a>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_1_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_1">
+<span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Framework
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            Framework
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../framework/0_framework-introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../framework/1_framework-change-history/">
+<span class="md-ellipsis">
+    Change History
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../framework/2_framework-processes-and-business-scope/">
+<span class="md-ellipsis">
+    Processes and Business Scope
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../framework/3_framework-the-sdmx-information-model/">
+<span class="md-ellipsis">
+    The SDMX Information Model
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../framework/4_framework-the-sdmx-transmission-formats/">
+<span class="md-ellipsis">
+    The SDMX Transmission Formats
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../framework/5_framework-dependencies-on-sdmx-content-oriented-guidelines/">
+<span class="md-ellipsis">
+    Dependencies on SDMX content-oriented guidelines
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../framework/6_framework-validation-and-transformation-language/">
+<span class="md-ellipsis">
+    Validation and Transformation Language
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Information Model
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Information Model
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/0_change_history/">
+<span class="md-ellipsis">
+    Change History
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/1_Actors_and_Use_Cases/">
+<span class="md-ellipsis">
+    Actors and Use Cases
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/2_SDMX_Base_Package/">
+<span class="md-ellipsis">
+    SDMX Base Package
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/3_Specific_Item_Schemes/">
+<span class="md-ellipsis">
+    Specific Item Schemes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/4_Data_Structure_Definition_and_Dataset/">
+<span class="md-ellipsis">
+    Data Structure Definition and Dataset
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/5_Cube/">
+<span class="md-ellipsis">
+    Cube
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/6_Metadata_Structure_Definition_and_Metadata_Set/">
+<span class="md-ellipsis">
+    Metadata Structure Definition and Metadata Set
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/7_Hierarchy/">
+<span class="md-ellipsis">
+    Hierarchy
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/8_Structure_Map/">
+<span class="md-ellipsis">
+    Structure Map
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/9_RepresentationMap/">
+<span class="md-ellipsis">
+    RepresentationMap
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/10_ItemSchemeMap/">
+<span class="md-ellipsis">
+    ItemSchemeMap
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/11_Constraints/">
+<span class="md-ellipsis">
+    Constraints
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/12_Data_Provisioning/">
+<span class="md-ellipsis">
+    Data Provisioning
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/13_Process/">
+<span class="md-ellipsis">
+    Process
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/14_Validation_and_Transformation_Language/">
+<span class="md-ellipsis">
+    Validation and Transformation Language
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../information_model/information_model/15_Appendix_1%3A_A_Short_Guide_to_UML_in_the_SDMX_Information_Model/">
+<span class="md-ellipsis">
+    Appendix 1 A Short Guide to UML in the SDMX Information Model
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Registry Specification and Logical Interfaces
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            Registry Specification and Logical Interfaces
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Registry Specification
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_1">
+<span class="md-nav__icon md-icon"></span>
+            Registry Specification
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../registry_specification/1_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../registry_specification/2_Scope_and_Normative_Status/">
+<span class="md-ellipsis">
+    Scope and Normative Status
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../registry_specification/3_Scope_of_the_SDMX_Registry_Repository/">
+<span class="md-ellipsis">
+    Scope of the SDMX Registry Repository
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../registry_specification/4_SDMX_Registry_Repository_Architecture/">
+<span class="md-ellipsis">
+    SDMX Registry Repository Architecture
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../registry_specification/5_Registry_Interfaces_and_Services/">
+<span class="md-ellipsis">
+    Registry Interfaces and Services
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Logical Interfaces
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+            Logical Interfaces
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../logical_interfaces/logical_interfaces/6_Identification_of_SDMX_Objects/">
+<span class="md-ellipsis">
+    Identification of SDMX Objects
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../logical_interfaces/logical_interfaces/7_Implementation_Notes/">
+<span class="md-ellipsis">
+    Implementation Notes
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Technical Notes
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            Technical Notes
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/0_Purpose_and_Structure/">
+<span class="md-ellipsis">
+    Purpose and Structure
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/1_General_Notes_on_This_Document/">
+<span class="md-ellipsis">
+    General Notes on This Document
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/2_Guide_for_SDMX_Format_Standards/">
+<span class="md-ellipsis">
+    Guide for SDMX Format Standards
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/3_General_Notes_for_Implementers/">
+<span class="md-ellipsis">
+    General Notes for Implementers
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/4_Reference_Metadata/">
+<span class="md-ellipsis">
+    Reference Metadata
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/5_Codelist/">
+<span class="md-ellipsis">
+    Codelist
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/6_Geospatial_information_support/">
+<span class="md-ellipsis">
+    Geospatial Information Support
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/7_Maintenance_Agencies_and_Metadata_Providers/">
+<span class="md-ellipsis">
+    Maintenance Agencies and Metadata Providers
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/8_Concept_Roles/">
+<span class="md-ellipsis">
+    Concept Roles
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/9_Constraints/">
+<span class="md-ellipsis">
+    Constraints
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/10_Transforming_between_versions_of_SDMX/">
+<span class="md-ellipsis">
+    Transforming Between Versions of SDMX
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/11_Validation_and_Transformation_Language__VTL_/">
+<span class="md-ellipsis">
+    Validation and Transformation Language
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/12_Structure_Mapping/">
+<span class="md-ellipsis">
+    Structure Mapping
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../technical_notes/technical_notes/13_ANNEX_Semantic_Versioning/">
+<span class="md-ellipsis">
+    ANNEX Semantic Versioning
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../rest_api/">
+<span class="md-ellipsis">
+    REST API (v2.2)
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            REST API (v2.2)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/data/">
+<span class="md-ellipsis">
+    Data queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/structures/">
+<span class="md-ellipsis">
+    Structure queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/metadata/">
+<span class="md-ellipsis">
+    Reference metadata queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/schema/">
+<span class="md-ellipsis">
+    Schema queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/availability/">
+<span class="md-ellipsis">
+    Availability queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/registration/">
+<span class="md-ellipsis">
+    Registration queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/querying_versions/">
+<span class="md-ellipsis">
+    Query syntax for versions
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/content_negotiation/">
+<span class="md-ellipsis">
+    Content-Negotiation
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/status/">
+<span class="md-ellipsis">
+    Status codes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/maintenance/">
+<span class="md-ellipsis">
+    Structure maintenance
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/tips/">
+<span class="md-ellipsis">
+    Tips for providers and consumers
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rest_api/extend/">
+<span class="md-ellipsis">
+    Extending the API
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+<span class="md-ellipsis">
+    Transmission Formats
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+            Transmission Formats
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_1" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../ml/">
+<span class="md-ellipsis">
+    SDMX-ML (v3.1)
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_1" id="__nav_7_1_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_1">
+<span class="md-nav__icon md-icon"></span>
+            SDMX-ML (v3.1)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/message/">
+<span class="md-ellipsis">
+    Message
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/common/">
+<span class="md-ellipsis">
+    Common
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/structure/">
+<span class="md-ellipsis">
+    Structure
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/data/">
+<span class="md-ellipsis">
+    Data
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/registry/">
+<span class="md-ellipsis">
+    Registry
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ml/samples/">
+<span class="md-ellipsis">
+    Samples
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../json/">
+<span class="md-ellipsis">
+    SDMX-JSON (v2.1)
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_2">
+<span class="md-nav__icon md-icon"></span>
+            SDMX-JSON (v2.1)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../json/structure_message/">
+<span class="md-ellipsis">
+    Structure Message
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2_2" id="__nav_7_2_2_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_2">
+<span class="md-nav__icon md-icon"></span>
+            Structure Message
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/1_field_guide/">
+<span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/2_linking_mechanism/">
+<span class="md-ellipsis">
+    Linking Mechanism
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/4_localised_text_elements/">
+<span class="md-ellipsis">
+    Localised Text Elements
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/5_security_considerations/">
+<span class="md-ellipsis">
+    Security Considerations
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/6_extending_sdmx_json/">
+<span class="md-ellipsis">
+    Extending SDMX-JSON
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/structure_message/7_references/">
+<span class="md-ellipsis">
+    References
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../json/data_message/">
+<span class="md-ellipsis">
+    Data Message
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2_3" id="__nav_7_2_3_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_3">
+<span class="md-nav__icon md-icon"></span>
+            Data Message
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/1_field_guide/">
+<span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/1b_data_type_conversions/">
+<span class="md-ellipsis">
+    Data type conversions between SDMX and JSON
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/2_linking_mechanism/">
+<span class="md-ellipsis">
+    Linking Mechanism
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/3_handling_indexes/">
+<span class="md-ellipsis">
+    Handling Indexes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/4_localised_text_elements/">
+<span class="md-ellipsis">
+    Localised Text Elements
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/5_security_considerations/">
+<span class="md-ellipsis">
+    Security Considerations
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/6_extending_sdmx_json/">
+<span class="md-ellipsis">
+    Extending SDMX-JSON
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/data_message/7_references/">
+<span class="md-ellipsis">
+    References
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_4" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../json/metadata_message/">
+<span class="md-ellipsis">
+    Metadata Message
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2_4" id="__nav_7_2_4_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_4_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_4">
+<span class="md-nav__icon md-icon"></span>
+            Metadata Message
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/1_field_guide/">
+<span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/1b_data_type_conversions/">
+<span class="md-ellipsis">
+    Data type conversions between SDMX and JSON
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/2_linking_mechanism/">
+<span class="md-ellipsis">
+    Linking Mechanism
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/4_localised_text_elements/">
+<span class="md-ellipsis">
+    Localised Text Elements
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/5_security_considerations/">
+<span class="md-ellipsis">
+    Security Considerations
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/6_extending_sdmx_json/">
+<span class="md-ellipsis">
+    Extending SDMX-JSON
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../json/metadata_message/7_references/">
+<span class="md-ellipsis">
+    References
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../csv/">
+<span class="md-ellipsis">
+    SDMX-CSV (v2.1)
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_3">
+<span class="md-nav__icon md-icon"></span>
+            SDMX-CSV (v2.1)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../csv/data_message_field_guide/">
+<span class="md-ellipsis">
+    Data Message Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../csv/metadata_message_field_guide/">
+<span class="md-ellipsis">
+    Metadata Message Field Guide
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="https://sdmx.org/">
+<span class="md-ellipsis">
+    Go To sdmx.org
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="On this page" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#indirect-reference-to-geospatial-information">
+<span class="md-ellipsis">
+      Indirect Reference to Geospatial Information
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#geographic-coordinates">
+<span class="md-ellipsis">
+      Geographic Coordinates
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#a-geographic-codelist">
+<span class="md-ellipsis">
+      A Geographic Codelist
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="geospatial-information-support">Geospatial information support<a class="headerlink" href="#geospatial-information-support" title="Permanent link">¶</a></h1>
+<p>SDMX recognizes that statistics refers to units or facts sited in places
+or areas that may be referenced to geodesic coordinates. This section
+presents the technical specifications to “geo-reference” those objects
+and facts in SDMX, by establishing ways to make relations to geographic
+features over the Earth using a defined coordinates system.</p>
+<p>SDMX can support three different ways for referencing geospatial data:</p>
+<ol>
+<li><strong>Indirect Reference to Geospatial Information.</strong> Including a
+    link to an external file containing the geospatial information. This
+    is the only backwards compatible approach. Since this representation
+    of geospatial information is not included inside the data message,
+    the main use case would be connecting dissemination systems for
+    making use of external tools, like GIS software.</li>
+<li><strong>Geographic Coordinates.</strong> Including the coordinates of a
+    specific geospatial feature as a set of coordinates. This is
+    suitable for any statistical information that needs to be
+    georeferenced especially for the exchange of microdata.</li>
+<li><strong>A Geographic Codelist.</strong> Includes a type of Codelist, listing
+    predefined geographies that are represented by geospatial
+    information. These geographies could be administrative (including
+    administrative boundaries or enumeration areas), lines, points, or
+    gridded geographies. Regardless, the geospatial information used to
+    represent the geography would contain both dimensions and/or
+    attributes; therefore, representing an advantage for the data
+    modellers as it provides a clear way to identify those dimensions
+    developing a “Geospatial” role.</li>
+</ol>
+<h2 id="indirect-reference-to-geospatial-information">Indirect Reference to Geospatial Information<a class="headerlink" href="#indirect-reference-to-geospatial-information" title="Permanent link">¶</a></h2>
+<p>This option provides a way to include external references to geospatial
+information through a file containing it. The external content may be
+geographical or thematic maps with different levels of precision. All
+the processing of geospatial data is made through external applications
+that can interpret the information in different formats.</p>
+<p>The reference to the external files containing geospatial information is
+made using some recommended SDMX Attributes, with the following content:</p>
+<ul>
+<li><code>GEO_INFO_TEXT</code>. A description of the kind of information being
+    referenced.</li>
+<li><code>GEO_INFO_URL</code>. A URL which points to the resource containing
+    the referred geospatial information. The resource might be a file
+    with static geodesic information or a web service providing dynamic
+    construction of geometries.</li>
+<li>
+<p><code>GEO_INFO_TYPE</code>. Coded information describing a standard format
+    of the file that contains the geospatial information. The format
+    types are taken from the list of 
+    <a href="https://www.loc.gov/preservation/digital/formats/fdd/gis_fdd.shtml">Format descriptions for Geospatial Data managed by the US Library of the Congress</a>.
+    Allowed types in SDMX are listed in the <strong>Geographical Formats</strong>
+    code list (<code>CL_GEO_FORMATS</code>). Examples of the codes contained in
+    the document are:</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GML</td>
+<td>Geography Markup Language</td>
+</tr>
+<tr>
+<td>GeoTIFF</td>
+<td>GeoTIFF</td>
+</tr>
+<tr>
+<td>KML_2_2</td>
+<td>KML Version 2.2</td>
+</tr>
+<tr>
+<td>GEOJSON_1_1</td>
+<td>GeoJSON Version 1.1</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<p>Depending on the intended use, these attributes may be attached at the
+dataflow level, the series level or the observation level.</p>
+<p>The indirect reference to geospatial information in SDMX is recommended
+to be used for dissemination purposes, where the statistical information
+is complemented by geographical representations of places or regions.</p>
+<h2 id="geographic-coordinates">Geographic Coordinates<a class="headerlink" href="#geographic-coordinates" title="Permanent link">¶</a></h2>
+<p>This option to represent geospatial information in SDMX provides an
+efficient way for including geographic information with different levels
+of granularity, due to its flexibility. Geospatial information is
+represented using the <code>GeospatialInformation</code> type, as defined in the data
+types of the SDMX Information Model. A <code>"GEO_FEATURE_SET"</code> role should
+be assigned to any Component of this type.</p>
+<p>The <code>GeospatialInformation</code> data type can be assigned to a <code>Dimension</code>,
+<code>DataAttribute</code>, <code>MetadataAttribute</code> or a <code>Measure</code> with the
+<code>"GEO_FEATURE_SET"</code> role assigned; it can be included in a dataset or
+metadataset.</p>
+<p>Any Component used for representing a Geographical Feature Set, i.e.,
+used to describe geographical characteristics, must have a
+<code>“GEO_FEATURE_SET”</code> role. Its Representation would be of
+<code>textType="GeospatialInformation"</code>. The <code>GeospatialInformation</code> type is not
+intended to replace standard geospatial information formats, but instead
+provide a simple way to describe precise geographical characteristics in
+SDMX data sets agnostic of any particular geospatial software product or
+use case.</p>
+<p>The <code>GeospatialInformation</code> type should be used to describe geographical
+features like points (e.g., locations of places, landmarks, buildings,
+etc.), lines (e.g., rivers, roads, streets, etc.), or areas (e.g.,
+geographical regions, countries, islands, land lots, etc.). A mix of
+different features is possible too, e.g., combining polygons and
+geographical points to describe a country and the location of its
+capital.</p>
+<p>The components that conform to the structure of the
+<code>GeospatialInformation</code> type are:</p>
+<ul>
+<li><code>X_COORDINATE</code>: The horizontal (longitude) value of a pair of
+    coordinates expressed in the Coordinate Reference System (CRS),
+    mandatory.</li>
+<li><code>Y_COORDINATE</code>: The vertical value (latitude) of a pair of
+    coordinates expressed in the CRS units, mandatory.</li>
+<li><code>ALT</code>: The height (altitude) from the reference surface is expressed
+    in meters, optional.</li>
+<li>
+<p><code>CRS</code>: The code of the Coordinate Reference System is used to
+    reference the coordinates in the flow, optional.</p>
+<p>The code of the CRS will be as it appears in the
+<a href="http://www.epsg-registry.org/">EPSG Geodetic Parameter Registry</a>
+maintained by the
+International Association of Oil and Gas Producers. If this element is
+omitted, by default, the CRS will be the World Geodetic System 1984
+(WGS 84, EPSG:4326).</p>
+</li>
+<li>
+<p><code>PRECISION</code>: Precision of the coordinates, expressing the possible
+    deviation in meters from the exact geodesic point, optional.</p>
+<p>This component is only allowed if the CRS is specified too. If
+omitted, it will be interpreted as limited it to the expected
+measurement accuracy (e. g. a standard GPS has an accuracy of ~ 10m).</p>
+</li>
+<li>
+<p><code>GEO_DESCRIPTION</code>: Text for additional information about the place,
+    geographical feature, or set of geographical features, optional.</p>
+</li>
+</ul>
+<p>Geographical features (<code>GEO_FEATURES</code>) are collections of geographical
+features intended to be used to represent geographical areas like
+countries, regions, etc., or objects, like water bodies (e. g. rivers,
+lakes, oceans, etc.), roads (streets, highways, etc.), hospitals,
+schools, and the like. They are represented in the following way:</p>
+<div class="language-text highlight"><pre><span></span><code>(GEO_FEATURE, GEO_FEATURE): GEO_DESCRIPTION
+</code></pre></div>
+<ul>
+<li>
+<p><code>GEO_FEATURE</code> represents a set of points defining a feature following
+    the ISO/IEC 13249-3:2016 standard to conform Well-known Text (WKT)
+    for the representation of geometries in a format defined in the
+    following way:</p>
+<div class="language-text highlight"><pre><span></span><code>GEOMETRY_TYPE (GEOMETRY_REP)
+</code></pre></div>
+</li>
+<li>
+<p><code>GEOMETRY_TYPE</code>: A string with a closed vocabulary defining the type
+    of the geometry that represents a geographical component of the
+    <code>GEO_FEATURES</code> collection, mandatory.</p>
+<p>Three types are allowed:</p>
+<ol>
+<li><code>Point</code>, a specific geodesic point, like the centroid of a city or
+    a hospital. It is represented with the string <code>“POINT”</code></li>
+<li><code>Line</code>, a feature defining a line like a road, a river, or
+    similar. It is represented with the string <code>“LINESTRING”</code></li>
+<li><code>Area</code>, a polygon defining a closed area. It is represented with
+    the string <code>“POLYGON”</code></li>
+</ol>
+<p>If the <code>GEOMETRY_REP</code> is going to be including the height (<code>ALT</code>)
+component, a <code>“Z”</code> must be added after the string qualifying the
+<code>GEOMETRY_TYPE</code>. In this way, we will have: <code>“POINT Z”</code>, <code>“LINESTRING Z”</code>
+and <code>“POLYGON Z”</code></p>
+<p>Other feature types (e.g. Triangular irregular networks, “TIN”) are
+not supported yet directly, except grids that are detailed in 7.3.</p>
+</li>
+<li>
+<p><code>GEOMETRY_REP</code>: Representation of each of the types The way to
+    represent each <code>GEO_FEATURE_TYPE</code> will be:</p>
+<ul>
+<li>A point (<code>POINT</code>): <code>“COORDINATES”</code></li>
+<li>A line (<code>LINESTRING</code>): <code>“COORDINATES, COORDINATES, …”</code></li>
+<li>An area (<code>POLYGON</code>): <code>“(COORDINATES, COORDINATES, …), (COORDINATES, COORDINATES, …)”</code></li>
+</ul>
+</li>
+</ul>
+<p>Where:</p>
+<ul>
+<li><code>COORDINATES</code>: Represents an individual set of coordinates composed by
+    the <code>X_COORDINATE</code> (<code>X</code>), <code>Y_COORDINATE</code> (<code>Y</code>), and <code>ALT</code> (<code>Z</code>) in the
+    following way <code>“X Y Z”</code> or <code>“X Y”</code> defining a single point of the
+    polygon. Altitude is to be reported in meters.</li>
+</ul>
+<p>In an expanded way, <code>GEO_FEATURE</code> may be represented in the following
+ways:</p>
+<div class="language-xml highlight"><pre><span></span><code>POINT<span class="w"> </span>(X_COORDINATE<span class="w"> </span>Y_COORDINATE):<span class="w"> </span>GEO_DESCRIPTION
+POINT<span class="w"> </span>Z<span class="w"> </span>(X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT):<span class="w"> </span>GEO_DESCRIPTION
+LINESTRING<span class="w"> </span>(X_COORDINATE<span class="w"> </span>Y_COORDINATE,<span class="w"> </span>X_COORDINATE<span class="w"> </span>Y_COORDINATE,<span class="w"> </span>…):<span class="w"> </span>GEO_DESCRIPTION
+LINESTRING<span class="w"> </span>Z<span class="w"> </span>(X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>…):<span class="w"> </span>GEO_DESCRIPTION
+POLYGON<span class="w">  </span>((X_COORDINATE<span class="w"> </span>Y_COORDINATE,<span class="w"> </span>X_COORDINATE<span class="w"> </span>Y_COORDINATE,<span class="w"> </span>…),<span class="w"> </span>(X_COORDINATE<span class="w"> </span>Y_COORDINATE,<span class="w"> </span>X_COORDINATE<span class="w"> </span>Y_COORDINATE,<span class="w"> </span>…),<span class="w"> </span>…):<span class="w"> </span>GEO_DESCRIPTION
+POLYGON<span class="w"> </span>Z<span class="w"> </span>((X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>…),<span class="w"> </span>(X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>…),<span class="w"> </span>…):<span class="w"> </span>GEO_DESCRIPTION
+</code></pre></div>
+<p>An example of how <code>GEO_FEATURES</code> may be represented in an expanded way
+would be:</p>
+<div class="language-xml highlight"><pre><span></span><code>(POLYGON<span class="w"> </span>Z<span class="w"> </span>(
+<span class="w">    </span>(X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>…),<span class="w"> </span>
+<span class="w">    </span>(X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>…),<span class="w"> </span>…),
+<span class="w"> </span>POLYGON<span class="w"> </span>Z<span class="w"> </span>(
+<span class="w">    </span>(X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>…),<span class="w"> </span>
+<span class="w">    </span>(X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>…),<span class="w"> </span>…),<span class="w"> </span>
+<span class="w"> </span>POLYGON<span class="w"> </span>Z<span class="w"> </span>(
+<span class="w">    </span>(X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>…),<span class="w"> </span>
+<span class="w">    </span>(X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>…),<span class="w"> </span>…),<span class="w"> </span>…):<span class="w"> </span>
+<span class="w">    </span>GEO_DESCRIPTION
+</code></pre></div>
+<p>Accordingly to this logic, an example of an expanded expression
+representing a value of the <code>GeospatialInformation</code> may be the following:</p>
+<div class="language-xml highlight"><pre><span></span><code>“CRS,<span class="w"> </span>PRECISION:<span class="w"> </span>{(POLYGON<span class="w"> </span>Z<span class="w"> </span>((X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,
+X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>…),<span class="w"> </span>(X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,
+X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>…),<span class="w"> </span>…),<span class="w"> </span>POLYGON<span class="w"> </span>Z<span class="w"> </span>((X_COORDINATE
+Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>…),<span class="w"> </span>(X_COORDINATE
+Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>…),<span class="w"> </span>…),<span class="w"> </span>POLYGON<span class="w"> </span>Z
+((X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>…),
+(X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>…),
+…),<span class="w"> </span>…):<span class="w"> </span>GEO<span class="w"> </span>_DESCRIPTION},<span class="w"> </span>{(POLYGON<span class="w"> </span>Z<span class="w"> </span>((X_COORDINATE<span class="w"> </span>Y_COORDINATE
+ALT,<span class="w"> </span>X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>…),<span class="w"> </span>(X_COORDINATE<span class="w"> </span>Y_COORDINATE
+ALT,<span class="w"> </span>X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>…),<span class="w"> </span>…),<span class="w"> </span>POLYGON<span class="w"> </span>Z<span class="w"> </span>((X_COORDINATE
+Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>…),<span class="w"> </span>(X_COORDINATE
+Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>…),<span class="w"> </span>…),<span class="w"> </span>POLYGON<span class="w"> </span>Z
+((X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>…),
+(X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>X_COORDINATE<span class="w"> </span>Y_COORDINATE<span class="w"> </span>ALT,<span class="w"> </span>…),
+…),<span class="w"> </span>…):<span class="w"> </span>GEO<span class="w"> </span>_DESCRIPTION},<span class="w"> </span>…:<span class="w"> </span>GEO_DESCRIPTION”
+</code></pre></div>
+<p>Validation rules must be added to the XML Schema to ensure the integrity
+of the specification according to the proposed syntax.</p>
+<h2 id="a-geographic-codelist">A Geographic Codelist<a class="headerlink" href="#a-geographic-codelist" title="Permanent link">¶</a></h2>
+<p>Geography is represented by geospatial information. Within SDMX,
+geospatial information is conceptually represented by the
+<code>"GEO_FEATURE_SET"</code> role/specification. This approach uses a specialized
+form of SDMX Codelist, named <code>"GeoCodelist"</code>, which is a Codelist
+containing the Geography used to demarcate the geographic extent. This
+is implemented in two ways:</p>
+<ol>
+<li><code>Geographic</code>. It is a regular codelist that has been extended to add a
+    geographical feature set to each of its items, typically, this would
+    include all types of administrative geographies;</li>
+<li><code>Grid</code>. As a codelist that has defined a geographical grid composed of
+    cells representing regular squared portions of the Earth.</li>
+</ol>
+<p>A <code>GeoCodelist</code> is a Codelist as defined in the SDMX Information Model
+that has the <code>GeoType</code> property added. <code>GeoType</code> can take one of two values
+<code>"Geographic"</code> or <code>"GeoGrid"</code>.</p>
+<p><code>"Geographic"</code> corresponds to the first way to implement a <code>GeoCodelist</code>.
+When the <code>GeoCodelist</code> includes a <code>GeoType="Geographic"</code> property, a
+<code>GeoFeatureSet</code> property is added to each of the items in the code list to
+implement a Geographic <code>GeoCodelist</code>.</p>
+<p>On the other hand, when <code>GeoType="GeoGrid"</code> it is defining a gridded
+<code>GeoCodelist</code>, and it is necessary to add a grid definition to the
+Codelist identifier using the <code>gridDefinition</code> property. The components
+needed to define a geographical grid are the following:</p>
+<ul>
+<li><code>CRS</code>: The code of the Coordinate Reference System is used to
+    reference the coordinates in the flow, optional. The code of the CRS
+    will be as it appears in the 
+    <a href="http://www.epsg-registry.org/">EPSG Geodetic Parameter Registry</a> 
+    maintained by the International
+    Association of Oil and Gas Producers. If this component is omitted,
+    by default the CRS will be the World Geodetic System 1984 (WGS 84,
+    EPSG:4326).</li>
+<li><code>REFERENCE_CORNER</code>: A code composed of two characters to define the
+    position of the coordinates that will be used as a starting
+    reference to locate the cells. The possible values of this code can
+    be <code>UL</code> (Upper Left), <code>UR</code> (Upper Right), <code>LL</code> (Lower Left), or <code>LR</code> (Lower
+    Right). If this component is omitted the value <code>LL</code> (Lower Left) will
+    be taken by default. This element is optional.</li>
+<li><code>REFERENCE_COORDINATES</code>: Represents the starting point to reference
+    the cells of the grid, accordingly to the <code>CRS</code> and the
+    <code>REFERENCE_CORNER</code>. It is represented by an individual set of
+    coordinates composed by the <code>X_COORDINATE</code> (<code>X</code>) and <code>Y_COORDINATE</code> (<code>Y</code>)
+    in the following way <code>"X,Y"</code>. This element is mandatory if <code>GEO_STD</code> is
+    omitted.</li>
+<li><code>CELL_WIDTH</code>: The size in meters of a horizontal side of the cells in
+    the grid. This element is mandatory if <code>GEO_STD</code> is omitted.</li>
+<li><code>CELL_HEIGHT</code>: The size in meters of a vertical side of the cells in
+    the grid. This element is mandatory if <code>GEO_STD</code> is omitted .</li>
+<li>
+<p><code>GEO_STD</code>: A restricted text value expressing that the cells in the
+    grid will provide information about matching codes existing in
+    another reference system that establishes a mechanism to define the
+    grid. This element is optional.</p>
+<p>Accepted values for this component are included in the Geographical
+Grids Codelist (<code>CL_GEO_GRIDS</code>). Examples contained in the mentioned
+document are:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>GEOHASH</code></td>
+<td style="text-align: left;">GeoHash</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>GEOREF</code></td>
+<td style="text-align: left;">World Geographic Reference System</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MGRS</code></td>
+<td style="text-align: left;">Military Grid Reference System</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>OLC</code></td>
+<td style="text-align: left;">Open Location Code / Plus Code</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>QTH</code></td>
+<td style="text-align: left;">Maidenhead Locator System /QTH Locator / IAURU Locator</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>W3W</code></td>
+<td style="text-align: left;">What3words™</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>WOEID</code></td>
+<td style="text-align: left;">Where On Earth Identifier</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<p>The <code>GRID_DEFINITION</code> element will contain a regular expression string
+corresponding to the following format:</p>
+<div class="language-text highlight"><pre><span></span><code>"CRS: REFERENCE_CORNER; REFERENCE_COORDINATES; CELL_WIDTH,
+CELL_HEIGHT: GEO_STD"
+</code></pre></div>
+<p>In an expanded way we would have:</p>
+<div class="language-text highlight"><pre><span></span><code>"CRS:REFERENCE_CORNER; X_COORDINATE, Y_COORDINATE; CELL_WIDTH,
+CELL_HEIGHT: GEO_STD"
+</code></pre></div>
+<p>If the grid will be fully adhering to a standard declared in the
+GEO_STD, the definition of each code in the code list will be optional.
+In other case, each item in the code list must be assigned to one cell
+in the grid, which is made by adding the GEO_CELL element to each item
+of the code list that will contain a regular expression string composed
+of the following components:</p>
+<ul>
+<li><code>GEO_COL</code>: The number of the column in the grid starting by zero.</li>
+<li><code>GEO_ROW</code>: The number of the row in the grid starting by zero.</li>
+<li><code>GEO_TAG</code>: An optional text to include additional information to
+    the cell.</li>
+<li><code>GEO_CELL</code> will have values with the following format: <code>"GEO_COL, GEO_ROW: GEO_TAG"</code></li>
+</ul>
+<p>When using a gridded <code>GeoCodelist</code> we may use the <code>GEO_TAG</code> to integrate
+the cells in the grid to the codes used by other standard defined grids.
+As an example, <code>GEO_TAG</code> can take the values of the Open Location Codes,
+GeoHash, etc. If this is done, the <code>GEO_STD</code> component must have been
+added to the definition of the grid. If the <code>GEO_STD</code> is omitted, the
+<code>GEO_TAG</code> contents will be taken just as free text.</p>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+<a href="https://www.analytical-software.de/en/legal-disclosure/">HMS Analytical Software Imprint</a>
+</div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["content.tabs.link", "content.code.annotate", "content.code.copy", "navigation.tabs", "navigation.indexes", "navigation.path", "navigation.sections", "navigation.top", "navigation.tracking", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+<script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+<script src="../../../assets/anchors.js"></script>
+</body>
+</html>

@@ -1,0 +1,4375 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Statistical Data and Metadata eXchange" name="description"/>
+<link href="https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/ml/data/" rel="canonical"/>
+<link href="../structure/" rel="prev"/>
+<link href="../registry/" rel="next"/>
+<link href="../../media/logos/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.12" name="generator"/>
+<title>Data - SDMX Technical Documentation</title>
+<link href="../../assets/stylesheets/main.2afb09e1.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../assets/style.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="orange" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#data-and-reference-metadata-namespaces">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<div data-md-color-scheme="default" data-md-component="outdated" hidden="">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="SDMX Technical Documentation" class="md-header__button md-logo" data-md-component="logo" href="../.." title="SDMX Technical Documentation">
+<img alt="logo" src="../../media/logos/SDMX-logo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            SDMX Technical Documentation
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Data
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="orange" data-md-color-media="(prefers-color-scheme)" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"></path></svg>
+</label>
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="orange" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"></path></svg>
+</label>
+<input aria-label="Switch to system preference" class="md-option" data-md-color-accent="orange" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to system preference">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 2c3.87 0 7 3.13 7 7 0 2.38-1.19 4.47-3 5.74V17c0 .55-.45 1-1 1H6c-.55 0-1-.45-1-1v-2.26C3.19 13.47 2 11.38 2 9c0-3.87 3.13-7 7-7M6 21v-1h6v1c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1M9 4C6.24 4 4 6.24 4 9c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58 0-2.76-2.24-5-5-5m10 9h-2l-3.2 9h1.9l.7-2h3.2l.7 2h1.9zm-2.15 5.65L18 15l1.15 3.65z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/HMS-Analytical-Software/sdmx-technical-documentation" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    HMS-Analytical-Software/sdmx-technical-documentation
+  </div>
+</a>
+</div>
+<a class="md-header-nav__button md-icon" href="../../pdf/document.pdf" title="PDF">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,0c-17.6,0-32,14.4-32,32v448c0,17.6,14.4,32,32,32h320c17.6,0,32-14.4,32-32V128L352,0H128z" fill="#E2E5E7"></path>
+<path d="m384 128h96l-128-128v96c0 17.6 14.4 32 32 32z" fill="#B0B7BD"></path>
+<polygon fill="#CAD1D8" points="480 224 384 128 480 128"></polygon>
+<path d="M416,416c0,8.8-7.2,16-16,16H48c-8.8,0-16-7.2-16-16V256c0-8.8,7.2-16,16-16h352c8.8,0,16,7.2,16,16  V416z" fill="#F15642"></path>
+<g fill="#fff">
+<path d="m101.74 303.15c0-4.224 3.328-8.832 8.688-8.832h29.552c16.64 0 31.616 11.136 31.616 32.48 0 20.224-14.976 31.488-31.616 31.488h-21.36v16.896c0 5.632-3.584 8.816-8.192 8.816-4.224 0-8.688-3.184-8.688-8.816v-72.032zm16.88 7.28v31.872h21.36c8.576 0 15.36-7.568 15.36-15.504 0-8.944-6.784-16.368-15.36-16.368h-21.36z"></path>
+<path d="m196.66 384c-4.224 0-8.832-2.304-8.832-7.92v-72.672c0-4.592 4.608-7.936 8.832-7.936h29.296c58.464 0 57.184 88.528 1.152 88.528h-30.448zm8.064-72.912v57.312h21.232c34.544 0 36.08-57.312 0-57.312h-21.232z"></path>
+<path d="m303.87 312.11v20.336h32.624c4.608 0 9.216 4.608 9.216 9.072 0 4.224-4.608 7.68-9.216 7.68h-32.624v26.864c0 4.48-3.184 7.92-7.664 7.92-5.632 0-9.072-3.44-9.072-7.92v-72.672c0-4.592 3.456-7.936 9.072-7.936h44.912c5.632 0 8.96 3.344 8.96 7.936 0 4.096-3.328 8.704-8.96 8.704h-37.248v0.016z"></path>
+</g>
+<path d="m400 432h-304v16h304c8.8 0 16-7.2 16-16v-16c0 8.8-7.2 16-16 16z" fill="#CAD1D8"></path>
+</svg>
+</a></nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+          
+  
+  
+    
+  
+  Getting Started
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../framework/framework/0_framework-introduction/">
+          
+  
+  
+    
+  
+  Framework
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../information_model/information_model/0_Introduction/">
+          
+  
+  
+    
+  
+  Information Model
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../registry_specification/1_Introduction/">
+          
+  
+  
+    
+  
+  Registry Specification and Logical Interfaces
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../technical_notes/technical_notes/0_Purpose_and_Structure/">
+          
+  
+  
+    
+  
+  Technical Notes
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../rest_api/">
+          
+  
+  
+    
+  
+  REST API (v2.2)
+
+        </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../">
+          
+  
+  
+    
+  
+  Transmission Formats
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="https://sdmx.org/">
+        
+  
+  
+    
+  
+  Go To sdmx.org
+
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="SDMX Technical Documentation" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="SDMX Technical Documentation">
+<img alt="logo" src="../../media/logos/SDMX-logo.png"/>
+</a>
+    SDMX Technical Documentation
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/HMS-Analytical-Software/sdmx-technical-documentation" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    HMS-Analytical-Software/sdmx-technical-documentation
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_1" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+</a>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_1_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_1">
+<span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Framework
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            Framework
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../framework/framework/0_framework-introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../framework/framework/1_framework-change-history/">
+<span class="md-ellipsis">
+    Change History
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../framework/framework/2_framework-processes-and-business-scope/">
+<span class="md-ellipsis">
+    Processes and Business Scope
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../framework/framework/3_framework-the-sdmx-information-model/">
+<span class="md-ellipsis">
+    The SDMX Information Model
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../framework/framework/4_framework-the-sdmx-transmission-formats/">
+<span class="md-ellipsis">
+    The SDMX Transmission Formats
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../framework/framework/5_framework-dependencies-on-sdmx-content-oriented-guidelines/">
+<span class="md-ellipsis">
+    Dependencies on SDMX content-oriented guidelines
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../framework/framework/6_framework-validation-and-transformation-language/">
+<span class="md-ellipsis">
+    Validation and Transformation Language
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Information Model
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Information Model
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/0_change_history/">
+<span class="md-ellipsis">
+    Change History
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/1_Actors_and_Use_Cases/">
+<span class="md-ellipsis">
+    Actors and Use Cases
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/2_SDMX_Base_Package/">
+<span class="md-ellipsis">
+    SDMX Base Package
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/3_Specific_Item_Schemes/">
+<span class="md-ellipsis">
+    Specific Item Schemes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/4_Data_Structure_Definition_and_Dataset/">
+<span class="md-ellipsis">
+    Data Structure Definition and Dataset
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/5_Cube/">
+<span class="md-ellipsis">
+    Cube
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/6_Metadata_Structure_Definition_and_Metadata_Set/">
+<span class="md-ellipsis">
+    Metadata Structure Definition and Metadata Set
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/7_Hierarchy/">
+<span class="md-ellipsis">
+    Hierarchy
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/8_Structure_Map/">
+<span class="md-ellipsis">
+    Structure Map
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/9_RepresentationMap/">
+<span class="md-ellipsis">
+    RepresentationMap
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/10_ItemSchemeMap/">
+<span class="md-ellipsis">
+    ItemSchemeMap
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/11_Constraints/">
+<span class="md-ellipsis">
+    Constraints
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/12_Data_Provisioning/">
+<span class="md-ellipsis">
+    Data Provisioning
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/13_Process/">
+<span class="md-ellipsis">
+    Process
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/14_Validation_and_Transformation_Language/">
+<span class="md-ellipsis">
+    Validation and Transformation Language
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../information_model/information_model/15_Appendix_1%3A_A_Short_Guide_to_UML_in_the_SDMX_Information_Model/">
+<span class="md-ellipsis">
+    Appendix 1 A Short Guide to UML in the SDMX Information Model
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Registry Specification and Logical Interfaces
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            Registry Specification and Logical Interfaces
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Registry Specification
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_1">
+<span class="md-nav__icon md-icon"></span>
+            Registry Specification
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../registry_specification/1_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../registry_specification/2_Scope_and_Normative_Status/">
+<span class="md-ellipsis">
+    Scope and Normative Status
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../registry_specification/3_Scope_of_the_SDMX_Registry_Repository/">
+<span class="md-ellipsis">
+    Scope of the SDMX Registry Repository
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../registry_specification/4_SDMX_Registry_Repository_Architecture/">
+<span class="md-ellipsis">
+    SDMX Registry Repository Architecture
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../registry_specification/5_Registry_Interfaces_and_Services/">
+<span class="md-ellipsis">
+    Registry Interfaces and Services
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Logical Interfaces
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+            Logical Interfaces
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../logical_interfaces/logical_interfaces/6_Identification_of_SDMX_Objects/">
+<span class="md-ellipsis">
+    Identification of SDMX Objects
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../logical_interfaces/logical_interfaces/7_Implementation_Notes/">
+<span class="md-ellipsis">
+    Implementation Notes
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Technical Notes
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            Technical Notes
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/0_Purpose_and_Structure/">
+<span class="md-ellipsis">
+    Purpose and Structure
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/1_General_Notes_on_This_Document/">
+<span class="md-ellipsis">
+    General Notes on This Document
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/2_Guide_for_SDMX_Format_Standards/">
+<span class="md-ellipsis">
+    Guide for SDMX Format Standards
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/3_General_Notes_for_Implementers/">
+<span class="md-ellipsis">
+    General Notes for Implementers
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/4_Reference_Metadata/">
+<span class="md-ellipsis">
+    Reference Metadata
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/5_Codelist/">
+<span class="md-ellipsis">
+    Codelist
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/6_Geospatial_information_support/">
+<span class="md-ellipsis">
+    Geospatial Information Support
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/7_Maintenance_Agencies_and_Metadata_Providers/">
+<span class="md-ellipsis">
+    Maintenance Agencies and Metadata Providers
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/8_Concept_Roles/">
+<span class="md-ellipsis">
+    Concept Roles
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/9_Constraints/">
+<span class="md-ellipsis">
+    Constraints
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/10_Transforming_between_versions_of_SDMX/">
+<span class="md-ellipsis">
+    Transforming Between Versions of SDMX
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/11_Validation_and_Transformation_Language__VTL_/">
+<span class="md-ellipsis">
+    Validation and Transformation Language
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/12_Structure_Mapping/">
+<span class="md-ellipsis">
+    Structure Mapping
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical_notes/technical_notes/13_ANNEX_Semantic_Versioning/">
+<span class="md-ellipsis">
+    ANNEX Semantic Versioning
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../rest_api/">
+<span class="md-ellipsis">
+    REST API (v2.2)
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            REST API (v2.2)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rest_api/data/">
+<span class="md-ellipsis">
+    Data queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rest_api/structures/">
+<span class="md-ellipsis">
+    Structure queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rest_api/metadata/">
+<span class="md-ellipsis">
+    Reference metadata queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rest_api/schema/">
+<span class="md-ellipsis">
+    Schema queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rest_api/availability/">
+<span class="md-ellipsis">
+    Availability queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rest_api/registration/">
+<span class="md-ellipsis">
+    Registration queries
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rest_api/querying_versions/">
+<span class="md-ellipsis">
+    Query syntax for versions
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rest_api/content_negotiation/">
+<span class="md-ellipsis">
+    Content-Negotiation
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rest_api/status/">
+<span class="md-ellipsis">
+    Status codes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rest_api/maintenance/">
+<span class="md-ellipsis">
+    Structure maintenance
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rest_api/tips/">
+<span class="md-ellipsis">
+    Tips for providers and consumers
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rest_api/extend/">
+<span class="md-ellipsis">
+    Extending the API
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+<span class="md-ellipsis">
+    Transmission Formats
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+            Transmission Formats
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_7_1" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../">
+<span class="md-ellipsis">
+    SDMX-ML (v3.1)
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_1" id="__nav_7_1_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_7_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_1">
+<span class="md-nav__icon md-icon"></span>
+            SDMX-ML (v3.1)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../message/">
+<span class="md-ellipsis">
+    Message
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../common/">
+<span class="md-ellipsis">
+    Common
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../structure/">
+<span class="md-ellipsis">
+    Structure
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Data
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Data
+    
+  </span>
+</a>
+<nav aria-label="On this page" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+<span class="md-ellipsis">
+      Introduction
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schema-documentation">
+<span class="md-ellipsis">
+      Schema Documentation
+    </span>
+</a>
+<nav aria-label="Schema Documentation" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#structure-specific-data-namespace">
+<span class="md-ellipsis">
+      Structure-Specific Data Namespace
+    </span>
+</a>
+<nav aria-label="Structure-Specific Data Namespace" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#summary">
+<span class="md-ellipsis">
+      Summary
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#complex-types">
+<span class="md-ellipsis">
+      Complex Types
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#generic-reference-metadata-namespace">
+<span class="md-ellipsis">
+      Generic Reference Metadata Namespace
+    </span>
+</a>
+<nav aria-label="Generic Reference Metadata Namespace" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#summary_1">
+<span class="md-ellipsis">
+      Summary
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#global-elements">
+<span class="md-ellipsis">
+      Global Elements
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#complex-types_1">
+<span class="md-ellipsis">
+      Complex Types
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mapping-to-structure-specific-schemas">
+<span class="md-ellipsis">
+      Mapping to Structure-Specific Schemas
+    </span>
+</a>
+<nav aria-label="Mapping to Structure-Specific Schemas" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#general">
+<span class="md-ellipsis">
+      General
+    </span>
+</a>
+<nav aria-label="General" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#basic-terminology">
+<span class="md-ellipsis">
+      Basic Terminology
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#namespace-rules">
+<span class="md-ellipsis">
+      Namespace Rules
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#general-rules">
+<span class="md-ellipsis">
+      General Rules
+    </span>
+</a>
+<nav aria-label="General Rules" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#component-name-determination">
+<span class="md-ellipsis">
+      Component Name Determination
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#representation-determination">
+<span class="md-ellipsis">
+      Representation Determination
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#simple-primitive-type-determination">
+<span class="md-ellipsis">
+      Simple / Primitive Type Determination
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#representation-with-codelist-enumeration">
+<span class="md-ellipsis">
+      Representation with Codelist Enumeration
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#representation-with-value-list-enumeration">
+<span class="md-ellipsis">
+      Representation with Value List Enumeration
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#representation-with-simple-text-format">
+<span class="md-ellipsis">
+      Representation with Simple Text Format
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#representation-for-not-applicable-dimensions">
+<span class="md-ellipsis">
+      Representation for Not Applicable Dimensions
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#representation-for-intentionally-missing-measure-and-attribute-values">
+<span class="md-ellipsis">
+      Representation for Intentionally Missing Measure and Attribute Values
+    </span>
+</a>
+<nav aria-label="Representation for Intentionally Missing Measure and Attribute Values" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#representation-with-complex-text-format">
+<span class="md-ellipsis">
+      Representation with Complex Text Format
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#type-names">
+<span class="md-ellipsis">
+      Type Names
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#type-reuse">
+<span class="md-ellipsis">
+      Type Reuse
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#data-structure-specific-schema">
+<span class="md-ellipsis">
+      Data-Structure-Specific Schema
+    </span>
+</a>
+<nav aria-label="Data-Structure-Specific Schema" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#datasettype">
+<span class="md-ellipsis">
+      DataSetType
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#grouptype">
+<span class="md-ellipsis">
+      GroupType
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#seriestype">
+<span class="md-ellipsis">
+      SeriesType
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#attstype">
+<span class="md-ellipsis">
+      AttsType
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#obstype">
+<span class="md-ellipsis">
+      ObsType
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#comptype">
+<span class="md-ellipsis">
+      CompType
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../registry/">
+<span class="md-ellipsis">
+    Registry
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../samples/">
+<span class="md-ellipsis">
+    Samples
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../json/">
+<span class="md-ellipsis">
+    SDMX-JSON (v2.1)
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_2">
+<span class="md-nav__icon md-icon"></span>
+            SDMX-JSON (v2.1)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../json/structure_message/">
+<span class="md-ellipsis">
+    Structure Message
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2_2" id="__nav_7_2_2_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_2">
+<span class="md-nav__icon md-icon"></span>
+            Structure Message
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/structure_message/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/structure_message/1_field_guide/">
+<span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/structure_message/2_linking_mechanism/">
+<span class="md-ellipsis">
+    Linking Mechanism
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/structure_message/4_localised_text_elements/">
+<span class="md-ellipsis">
+    Localised Text Elements
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/structure_message/5_security_considerations/">
+<span class="md-ellipsis">
+    Security Considerations
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/structure_message/6_extending_sdmx_json/">
+<span class="md-ellipsis">
+    Extending SDMX-JSON
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/structure_message/7_references/">
+<span class="md-ellipsis">
+    References
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../json/data_message/">
+<span class="md-ellipsis">
+    Data Message
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2_3" id="__nav_7_2_3_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_3">
+<span class="md-nav__icon md-icon"></span>
+            Data Message
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/data_message/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/data_message/1_field_guide/">
+<span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/data_message/1b_data_type_conversions/">
+<span class="md-ellipsis">
+    Data type conversions between SDMX and JSON
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/data_message/2_linking_mechanism/">
+<span class="md-ellipsis">
+    Linking Mechanism
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/data_message/3_handling_indexes/">
+<span class="md-ellipsis">
+    Handling Indexes
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/data_message/4_localised_text_elements/">
+<span class="md-ellipsis">
+    Localised Text Elements
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/data_message/5_security_considerations/">
+<span class="md-ellipsis">
+    Security Considerations
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/data_message/6_extending_sdmx_json/">
+<span class="md-ellipsis">
+    Extending SDMX-JSON
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/data_message/7_references/">
+<span class="md-ellipsis">
+    References
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_4" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../json/metadata_message/">
+<span class="md-ellipsis">
+    Metadata Message
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_2_4" id="__nav_7_2_4_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_4_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_4">
+<span class="md-nav__icon md-icon"></span>
+            Metadata Message
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/metadata_message/0_Introduction/">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/metadata_message/1_field_guide/">
+<span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/metadata_message/1b_data_type_conversions/">
+<span class="md-ellipsis">
+    Data type conversions between SDMX and JSON
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/metadata_message/2_linking_mechanism/">
+<span class="md-ellipsis">
+    Linking Mechanism
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/metadata_message/4_localised_text_elements/">
+<span class="md-ellipsis">
+    Localised Text Elements
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/metadata_message/5_security_considerations/">
+<span class="md-ellipsis">
+    Security Considerations
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/metadata_message/6_extending_sdmx_json/">
+<span class="md-ellipsis">
+    Extending SDMX-JSON
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../json/metadata_message/7_references/">
+<span class="md-ellipsis">
+    References
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../csv/">
+<span class="md-ellipsis">
+    SDMX-CSV (v2.1)
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_7_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_3">
+<span class="md-nav__icon md-icon"></span>
+            SDMX-CSV (v2.1)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../csv/data_message_field_guide/">
+<span class="md-ellipsis">
+    Data Message Field Guide
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../csv/metadata_message_field_guide/">
+<span class="md-ellipsis">
+    Metadata Message Field Guide
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="https://sdmx.org/">
+<span class="md-ellipsis">
+    Go To sdmx.org
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="On this page" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#introduction">
+<span class="md-ellipsis">
+      Introduction
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schema-documentation">
+<span class="md-ellipsis">
+      Schema Documentation
+    </span>
+</a>
+<nav aria-label="Schema Documentation" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#structure-specific-data-namespace">
+<span class="md-ellipsis">
+      Structure-Specific Data Namespace
+    </span>
+</a>
+<nav aria-label="Structure-Specific Data Namespace" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#summary">
+<span class="md-ellipsis">
+      Summary
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#complex-types">
+<span class="md-ellipsis">
+      Complex Types
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#generic-reference-metadata-namespace">
+<span class="md-ellipsis">
+      Generic Reference Metadata Namespace
+    </span>
+</a>
+<nav aria-label="Generic Reference Metadata Namespace" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#summary_1">
+<span class="md-ellipsis">
+      Summary
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#global-elements">
+<span class="md-ellipsis">
+      Global Elements
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#complex-types_1">
+<span class="md-ellipsis">
+      Complex Types
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mapping-to-structure-specific-schemas">
+<span class="md-ellipsis">
+      Mapping to Structure-Specific Schemas
+    </span>
+</a>
+<nav aria-label="Mapping to Structure-Specific Schemas" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#general">
+<span class="md-ellipsis">
+      General
+    </span>
+</a>
+<nav aria-label="General" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#basic-terminology">
+<span class="md-ellipsis">
+      Basic Terminology
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#namespace-rules">
+<span class="md-ellipsis">
+      Namespace Rules
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#general-rules">
+<span class="md-ellipsis">
+      General Rules
+    </span>
+</a>
+<nav aria-label="General Rules" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#component-name-determination">
+<span class="md-ellipsis">
+      Component Name Determination
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#representation-determination">
+<span class="md-ellipsis">
+      Representation Determination
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#simple-primitive-type-determination">
+<span class="md-ellipsis">
+      Simple / Primitive Type Determination
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#representation-with-codelist-enumeration">
+<span class="md-ellipsis">
+      Representation with Codelist Enumeration
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#representation-with-value-list-enumeration">
+<span class="md-ellipsis">
+      Representation with Value List Enumeration
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#representation-with-simple-text-format">
+<span class="md-ellipsis">
+      Representation with Simple Text Format
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#representation-for-not-applicable-dimensions">
+<span class="md-ellipsis">
+      Representation for Not Applicable Dimensions
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#representation-for-intentionally-missing-measure-and-attribute-values">
+<span class="md-ellipsis">
+      Representation for Intentionally Missing Measure and Attribute Values
+    </span>
+</a>
+<nav aria-label="Representation for Intentionally Missing Measure and Attribute Values" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#representation-with-complex-text-format">
+<span class="md-ellipsis">
+      Representation with Complex Text Format
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#type-names">
+<span class="md-ellipsis">
+      Type Names
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#type-reuse">
+<span class="md-ellipsis">
+      Type Reuse
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#data-structure-specific-schema">
+<span class="md-ellipsis">
+      Data-Structure-Specific Schema
+    </span>
+</a>
+<nav aria-label="Data-Structure-Specific Schema" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#datasettype">
+<span class="md-ellipsis">
+      DataSetType
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#grouptype">
+<span class="md-ellipsis">
+      GroupType
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#seriestype">
+<span class="md-ellipsis">
+      SeriesType
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#attstype">
+<span class="md-ellipsis">
+      AttsType
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#obstype">
+<span class="md-ellipsis">
+      ObsType
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#comptype">
+<span class="md-ellipsis">
+      CompType
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="data-and-reference-metadata-namespaces">Data and Reference Metadata Namespaces<a class="headerlink" href="#data-and-reference-metadata-namespaces" title="Permanent link">¶</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
+<p>The first change in the data and metadata message is one of terminology. In
+order to foster consistency in the standard, the names and namespaces of the
+data and metadata message have been changed. The namespaces now have a uniform
+format of /data/format and /metadata/format. This also applies to the message
+names as well, where the names follow the pattern of FormatData (e.g.
+StructuredData and GenericMetadata).</p>
+<p>For data messages, since version 3.0 only the (data-)structure-specific format
+is maintained, the generic format being deprecated. The structure-specific data
+message combines the principles of the former compact and cross-sectional formats
+into one more generalised format. All data can be exchanged as either an
+un-grouped collection of observations, each specifying a full key, or it can be
+exchanged as data grouped into series with any single dimension placed at the
+observation level.</p>
+<p>A base schema now imposes a strict format for the generated structure-specific
+schemas. This not only allows performing the required validations, but the
+messages will also be much simpler to process as the format will always use the
+same element names.</p>
+<p>For metadata messages, since version 3.0, in opposite, only the generic format
+is maintained, the (metadata-)structure-specific format being deprecated.</p>
+<h2 id="schema-documentation">Schema Documentation<a class="headerlink" href="#schema-documentation" title="Permanent link">¶</a></h2>
+<h3 id="structure-specific-data-namespace">Structure-Specific Data Namespace<a class="headerlink" href="#structure-specific-data-namespace" title="Permanent link">¶</a></h3>
+<p><strong><a href="http://www.sdmx.org/resources/sdmxml/schemas/v3_1/data/structurespecific">http://www.sdmx.org/resources/sdmxml/schemas/v3_1/data/structurespecific</a></strong></p>
+<h4 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h4>
+<p>Referenced Namespaces:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Namespace</strong></th>
+<th><strong>Prefix</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://www.sdmx.org/resources/sdmxml/schemas/v3_1/common">http://www.sdmx.org/resources/sdmxml/schemas/v3_1/common</a></td>
+<td>common</td>
+</tr>
+<tr>
+<td><a href="http://www.sdmx.org/resources/sdmxml/schemas/v3_1/metadata/generic">http://www.sdmx.org/resources/sdmxml/schemas/v3_1/metadata/generic</a></td>
+<td>metadata</td>
+</tr>
+<tr>
+<td><a href="http://www.w3.org/2001/XMLSchema">http://www.w3.org/2001/XMLSchema</a></td>
+<td>xs</td>
+</tr>
+</tbody>
+</table>
+<p>Contents:</p>
+<p>6 Complex Types</p>
+<h4 id="complex-types">Complex Types<a class="headerlink" href="#complex-types" title="Permanent link">¶</a></h4>
+<p><strong><em>DataSetType</em>:</strong> DataSetType is the abstract type which defines the
+base structure for any data structure definition specific data set. A
+derived data set type will be created that is specific to a data
+structure definition and the details of the organisation of the data
+(i.e. which dimension is the observation dimension). Data is organised
+into either a collection of series (grouped observations) or a
+collection of un-grouped observations. The derived data set type will
+restrict this choice to be either grouped or un-grouped observations. If
+this dimension is “AllDimensions” then the derived data set type must
+consist of a collection of un-grouped observations; otherwise, the data
+set will contain a collection of series with the observations in the
+series disambiguated by the specified dimension at the observation
+level. This data set is capable of containing data (observed values)
+and/or documentation (data and metadata attribute values) and can be
+used for incremental updates and deletions (i.e. only the relevant
+updates or deletes are exchanged). It is assumed that each series or
+un-grouped observation will be distinct in its purpose. For example, if
+series contains both data and documentation, it assumed that each series
+will have a unique key. If the series contains only data or only
+documentation, then it is possible that another series with the same key
+might exist, but with not with the same purpose (i.e. to provide data or
+documentation) as the first series. This base type is designed such that
+derived types can be processed in a generic manner; it assures that data
+structure definition specific data will have a consistent structure. The
+group, series, obs, and atts elements are unqualified, meaning that they
+are not qualified with a namespace in an instance. This means that in
+the derived data set types, the elements will always be the same,
+regardless of the target namespace of the schemas which defines these
+derived types. This allows for consistent processing of the structure
+without regard to what the namespace might be for the data structure
+definition specific schema.</p>
+<p>Derivation:</p>
+<div class="language-text highlight"><pre><span></span><code>AnnotableType (extension)  
+   DataSetType
+</code></pre></div>
+<p>Attributes:</p>
+<div class="language-text highlight"><pre><span></span><code>structureRef, setID?, action?, reportingBeginDate?, reportingEndDate?,
+validFromDate?, validToDate?, publicationYear?, publicationPeriod?
+</code></pre></div>
+<p>Content:</p>
+<div class="language-text highlight"><pre><span></span><code>Annotations?, DataProvider?, (Atts | Group | Series | Obs)\*,
+Metadata?
+</code></pre></div>
+<p>Attribute Documentation:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Documentation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>structureRef</td>
+<td>xs:IDREF</td>
+<td>The structureRef contains a reference to a structural specification in the header of a data or reference metadata message. The structural specification details which structure the data or reference metadata conforms to, as well as providing additional information such as how the data is structure (e.g. which dimension occurs at the observation level for a data set).</td>
+</tr>
+<tr>
+<td>setID</td>
+<td>IDType</td>
+<td>The setID provides an identification of the data or metadata set.</td>
+</tr>
+<tr>
+<td>action</td>
+<td>ActionType</td>
+<td>The action attribute indicates whether the file is merging, replacing, or deleting.</td>
+</tr>
+<tr>
+<td>reportingBeginDate</td>
+<td>BasicTimePeriodType</td>
+<td>The reportingBeginDate indicates the inclusive start time of the data reported in the data or metadata set.</td>
+</tr>
+<tr>
+<td>reportingEndDate</td>
+<td>BasicTimePeriodType</td>
+<td>The reportingEndDate indicates the inclusive end time of the data reported in the data or metadata set.</td>
+</tr>
+<tr>
+<td>validFromDate</td>
+<td>xs:dateTime</td>
+<td>The validFromDate indicates the inclusive start time indicating the validity of the information in the data or metadata set.</td>
+</tr>
+<tr>
+<td>validToDate</td>
+<td>xs:dateTime</td>
+<td>The validToDate indicates the inclusive end time indicating the validity of the information in the data or metadata set.</td>
+</tr>
+<tr>
+<td>publicationYear</td>
+<td>xs:gYear</td>
+<td>The publicationYear holds the ISO 8601 four-digit year.</td>
+</tr>
+<tr>
+<td>publicationPeriod</td>
+<td>ObservationalTimePer iodType</td>
+<td>The publicationPeriod specifies the period of publication of the data or metadata in terms of whatever provisioning agreements might be in force (i.e., “Q1 2005” if that is the time of publication for a data set published on a quarterly basis).</td>
+</tr>
+</tbody>
+</table>
+<p>Element Documentation:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Documentation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Annotations</td>
+<td>AnnotationsType</td>
+<td>Annotations is a reusable element the provides for a collection of annotations. It has been made global so that restrictions of types that extend AnnotatableType may reference it.</td>
+</tr>
+<tr>
+<td>DataProvider</td>
+<td>DataProviderReferenc eType</td>
+<td>DataProvider contains a reference to the provider for the data set.</td>
+</tr>
+<tr>
+<td>Atts</td>
+<td><em>AttsType</em></td>
+<td>Atts contains a set of data or metadata attribute values with an attachment level of none (i.e. data set level) or reported against a partial set of dimension values.</td>
+</tr>
+<tr>
+<td>Group</td>
+<td><em>GroupType</em></td>
+<td>Group contains a reference to a defined group in the data structure definition along with its key (if necessary) and values for the attributes which are associated with the group. An attribute is associated to a group by either an explicit group relationship or by a group attachment when the attribute has a relationship with a dimension which is a member of this group.</td>
+</tr>
+<tr>
+<td>Series</td>
+<td><em>SeriesType</em></td>
+<td>Series contains a collection of observations that share a common key (set of dimension values). The key of a series is every dimension defined in the data structure definition, save the dimension at the observation level. In addition to the key and observations, the series contains values for data and metadata attributes which have a relationship with any dimension that is part of the series key, so long as the attribute does not specify an attachment group or also has a relationship with the dimension declared to be at the observation level.</td>
+</tr>
+<tr>
+<td>Obs</td>
+<td><em>ObsType</em></td>
+<td>Obs is an un-grouped observation. This observation has a key which is a set of values for all dimensions declared in the data structure definition. In addition to the key, the value of the observation can be provided along with values for all data and metadata attributes which have an association with the observation or any dimension (so long as it does not specify a group attachment).</td>
+</tr>
+<tr>
+<td>Metadata</td>
+<td>MetadataSetType</td>
+<td>Allows for attachment of reference metadata against to the data set.</td>
+</tr>
+</tbody>
+</table>
+<p><strong><em>GroupType</em>:</strong> GroupType is the abstract type which defines a
+structure which is used to communicate attribute values for a group
+defined in a data structure definition. The group can consist of either
+a subset of the dimensions defined by the data structure definition, or
+an association to an attachment constraint, which in turn defines key
+sets to which attributes can be attached. In the case that the group is
+based on an attachment constraint, only the identification of group is
+provided. It is expected that a system which is processing this will
+relate that identifier to the key sets defined in the constraint and
+apply the values provided for the attributes appropriately. Data
+structure definition schemas will drive types based on this for each
+group defined in the data structure definition. Both the dimension
+values which make up the key (if applicable) and the attribute values
+associated with the group will be represented with XML attributes. This
+is specified in the content model with the declaration of anyAttributes
+in the “local” namespace. The derived group type will refine this
+structure so that the attributes are explicit. The XML attributes will
+be given a name based on the attribute’s identifier. These XML
+attributes will be unqualified (meaning they do not have a namespace
+associated with them). The dimension XML attributes will be required
+while the attribute XML attributes will be optional. To allow for
+generic processing, it is required that the only unqualified XML
+attributes in the derived group type be for the group dimensions and
+data or metadata attributes declared in the data structure definition.
+If additional attributes are required, these should be qualified with a
+namespace so that a generic application can easily distinguish them as
+not being meant to represent a data structure definition dimension or
+attribute.</p>
+<p>Derivation:</p>
+<div class="language-text highlight"><pre><span></span><code>AnnotableType (extension)  
+   GroupType
+</code></pre></div>
+<p>Attributes:</p>
+<div class="language-text highlight"><pre><span></span><code>type?
+</code></pre></div>
+<p>Content:</p>
+<div class="language-text highlight"><pre><span></span><code>Annotations?, Comp*, Metadata?
+</code></pre></div>
+<p>Attribute Documentation:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Documentation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>IDType</td>
+<td>The type attribute reference the identifier of the group as defined in the data structure definition. This is optional, but derived group types will provide a fixed value for this so that it always available in the post validation information set. This allows the group to be processed in a generic manner.</td>
+</tr>
+</tbody>
+</table>
+<p>Element Documentation:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Documentation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Annotations</td>
+<td>AnnotationsType</td>
+<td>Annotations is a reusable element the provides for a collection of annotations. It has been made global so that restrictions of types that extend AnnotatableType may reference it.</td>
+</tr>
+<tr>
+<td>Comp</td>
+<td><em>CompType</em></td>
+<td>Comp contains the details of group level attributes that have complex representation and cannot be expressed as XML attributes.</td>
+</tr>
+<tr>
+<td>Metadata</td>
+<td>MetadataSetType</td>
+<td>Allows for attachment of reference metadata against to the group.</td>
+</tr>
+</tbody>
+</table>
+<p><strong><em>SeriesType</em>:</strong> SeriesType is the abstract type which defines a
+structure which is used to group a collection of observations which have
+a key in common. The key for a series is every dimension defined in the
+data structure definition save the dimension declared to be at the
+observation level for this data set. Note, if the schema is generated
+against a dataflow with a dimension constraint, they key includes only the
+dimensions defined in the dimension constraint. In addition to observations, values
+can be provided for data and metadata attributes which are associated
+with the dimensions which make up this series key (so long as the
+attributes do not specify a group attachment or also have a
+relationship with the observation dimension). It is possible for the
+series to contain only observations or only attribute values, or both.
+Data structure definition schemas will derive a type based on this that
+is specific to the data structure definition and the variation of the
+format being expressed in the schema. Both the dimension values which
+make up the key and the attribute values associated with the key
+dimensions will be represented with XML attributes. This is specified in
+the content model with the declaration of anyAttributes in the “local”
+namespace. The derived series type will refine this structure so that
+the attributes are explicit. The XML attributes will be given a name
+based on the attribute’s identifier. These XML attributes will be
+unqualified (meaning they do not have a namespace associated with them).
+The dimension XML attributes will be required while the attribute XML
+attributes will be optional. To allow for generic processing, it is
+required that the only unqualified XML attributes in the derived group
+type be for the series dimensions and attributes declared in the data
+structure definition. If additional attributes are required, these
+should be qualified with a namespace so that a generic application can
+easily distinguish them as not being meant to represent a data structure
+definition dimension or attribute.</p>
+<p>Derivation:</p>
+<div class="language-text highlight"><pre><span></span><code>AnnotableType (extension)  
+   SeriesType
+</code></pre></div>
+<p>Attributes:</p>
+<div class="language-text highlight"><pre><span></span><code>TIME_PERIOD?
+</code></pre></div>
+<p>Content:</p>
+<div class="language-text highlight"><pre><span></span><code>Annotations?, Comp*, Obs*, Metadata?
+</code></pre></div>
+<p>Attribute Documentation:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Documentation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TIME_PERIOD</td>
+<td>ObservationalTimePer iodType</td>
+<td>The TIME_PERIOD attribute is an explict attribute for the time dimension. This is declared in the base schema since it has a fixed identifier and representation. The derived series type will either require or prohibit this attribute, depending on whether time is the observation dimension. If the time dimension specifies a more specific representation of time the derived type will restrict the type definition to the appropriate type.</td>
+</tr>
+</tbody>
+</table>
+<p>Element Documentation:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Documentation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Annotations</td>
+<td>AnnotationsType</td>
+<td>Annotations is a reusable element the provides for a collection of annotations. It has been made global so that restrictions of types that extend AnnotatableType may reference it.</td>
+</tr>
+<tr>
+<td>Comp</td>
+<td><em>CompType</em></td>
+<td>Comp contains the details of series level attributes that have complex representation and cannot be expressed as XML attributes.</td>
+</tr>
+<tr>
+<td>Obs</td>
+<td><em>ObsType</em></td>
+<td></td>
+</tr>
+<tr>
+<td>Metadata</td>
+<td>MetadataSetType</td>
+<td>Allows for attachment of reference metadata against to the series.</td>
+</tr>
+</tbody>
+</table>
+<p><strong><em>CompType</em>:</strong> CompType is the abstract base for any component value
+(e.g. a data or metadata attribute, or a measure) that cannot be
+represented as an XML attribute. For example, a repeated value, a text
+value in multiple languages, or a value with structured text (XHTML)
+cannot be expressed as an XML attribute. This type is meant to be
+restricted based on the component to restrict the cardinality and type
+of its Value element to conform to the component definition. The type of
+the value element should be restricted to common:SimpleValueType,
+common:TextValueType, or common:StructuredValueType. In addition, the id
+attribute should be restricted to be a fixed value with the component
+identifier. This restricted type based on the component can then be used
+on Comp elements by using the xsi:type to state the component being
+expressed and refine the contents of the element to the values allowed
+by the component.</p>
+<p>Derivation:</p>
+<div class="language-text highlight"><pre><span></span><code>AnnotableType (extension)  
+   CompType
+</code></pre></div>
+<p>Attributes:</p>
+<div class="language-text highlight"><pre><span></span><code>id
+</code></pre></div>
+<p>Content:</p>
+<div class="language-text highlight"><pre><span></span><code>Annotations?, Value*
+</code></pre></div>
+<p>Attribute Documentation:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Documentation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>NCNameIDType</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Element Documentation:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Documentation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Annotations</td>
+<td>AnnotationsType</td>
+<td>Annotations is a reusable element the provides for a collection of annotations. It has been made global so that restrictions of types that extend AnnotatableType may reference it.</td>
+</tr>
+<tr>
+<td>Value</td>
+<td><em>ValueType</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong><em>ObsType</em>:</strong> ObsType is the abstract type which defines the structure
+of a grouped or un-grouped observation. The observation must be provided
+a key, which is either a value for the dimension which is declared to be
+at the observation level if the observation is grouped, or a full set of
+values for all dimensions in the data structure definition if the
+observation is un-grouped. This key should disambiguate the observation
+within the context in which it is defined (e.g. there should not be
+another observation with the same dimension value in a series). The
+observation can contain an observed value and/or attribute values. Data
+structure definition schemas will derive a type or types based on this
+that is specific to the data structure definition and the variation of
+the format being expressed in the schema. The dimension value(s) which
+make up the key and the data and metadata attribute values associated
+with the key dimension(s) or the primary measure will be represented
+with XML attributes. This is specified in the content model with the
+declaration of anyAttributes in the “local” namespace. The derived
+observation type will refine this structure so that the attributes are
+explicit. The XML attributes will be given a name based on the
+attribute’s identifier. These XML attributes will be unqualified
+(meaning they do not have a namespace associated with them). The
+dimension XML attribute(s) will be required while the attribute XML
+attributes will be optional. To allow for generic processing, it is
+required that the only unqualified XML attributes in the derived
+observation type be for the observation dimension(s) and attributes
+declared in the data structure definition. If additional attributes are
+required, these should be qualified with a namespace so that a generic
+application can easily distinguish them as not being meant to represent
+a data structure definition dimension or attribute.</p>
+<p>Derivation:</p>
+<div class="language-text highlight"><pre><span></span><code>AnnotableType (extension)  
+   ObsType
+</code></pre></div>
+<p>Attributes:</p>
+<div class="language-text highlight"><pre><span></span><code>type?, TIME_PERIOD?
+</code></pre></div>
+<p>Content:</p>
+<div class="language-text highlight"><pre><span></span><code>Annotations?, Comp*, Metadata?
+</code></pre></div>
+<p>Attribute Documentation:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Documentation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>IDType</td>
+<td>The type attribute is used when the derived format requires that explicit measure be used. In this case, the derived type based on the measure will fix this value to be the identification of the measure concept. This will not be required, but since it is fixed it will be available in the post validation information set which will allow for generic processing of the data. If explicit measures are not used, then the derived type will prohibit the use of this attribute.</td>
+</tr>
+<tr>
+<td>TIME_PERIOD</td>
+<td>ObservationalTimePer iodType</td>
+<td>The TIME_PERIOD attribute is an explicit attribute for the time dimension. This is declared in the base schema since it has a fixed identifier and representation. The derived series type will either require or prohibit this attribute, depending on whether time is the observation dimension. If the time dimension specifies a more specific representation of time the derived type will restrict the type definition to the appropriate type.</td>
+</tr>
+</tbody>
+</table>
+<p>Element Documentation:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Documentation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Annotations</td>
+<td>AnnotationsType</td>
+<td>Annotations is a reusable element the provides for a collection of annotations. It has been made global so that restrictions of types that extend AnnotatableType may reference it.</td>
+</tr>
+<tr>
+<td>Comp</td>
+<td><em>CompType</em></td>
+<td>Comp contains the details of observation measures or attributes that have complex representation and cannot be expressed as XML attributes.</td>
+</tr>
+<tr>
+<td>Metadata</td>
+<td>MetadataSetType</td>
+<td>Allows for attachment of reference metadata against to the observation.</td>
+</tr>
+</tbody>
+</table>
+<p><strong><em>AttsType</em>:</strong> AttsType is the abstract type which defines a structure
+which is used to group a collection of data or metadata attributes which
+have a key in common. The key for a attribute collection is a subset of
+the dimension defined in the data structure definition. This is also
+used for data set level attributes (i.e. those with an attribute
+relationship of none). In this case, the subset of dimensions is empty.
+Data structure definition schemas will derive a type based on this that
+is specific to the data structure definition. The dimension values which
+make up the key will be represented with local (non-namespace qualified)
+XML attributes. The metadata attribute values associated with the key
+dimensions will be expressed as XML local (non-namespace qualified)
+attributes if they are simple values (e.g. enumerated, dates, numbers)
+and are not repeatable. Metadata attributes that are repeatable, or do
+not have simple values (e.g. text) will be expressed using the Comp
+element. These dimensions and simple attributes are specified in the
+content model with the declaration of anyAttributes in the “local”
+namespace. The derived series type will refine this structure so that
+the attributes are explicit. The XML attributes will be given a name
+based on the attribute’s identifier. These XML attributes will be
+unqualified (meaning they do not have a namespace associated with them).
+The dimension XML attributes will be required while the attribute XML
+attributes will be optional. To allow for generic processing, it is
+required that the only unqualified XML attributes in the derived group
+type be for the series dimensions and attributes declared in the data
+structure definition. If additional attributes are required, these
+should be qualified with a namespace so that a generic application can
+easily distinguish them as not being meant to represent a data structure
+definition dimension or attribute.</p>
+<p>Derivation:</p>
+<div class="language-text highlight"><pre><span></span><code>AnnotableType (extension)  
+   AttsType
+</code></pre></div>
+<p>Attributes:</p>
+<div class="language-text highlight"><pre><span></span><code>TIME_PERIOD?
+</code></pre></div>
+<p>Content:</p>
+<div class="language-text highlight"><pre><span></span><code>Annotations?, Comp*
+</code></pre></div>
+<p>Attribute Documentation:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Documentation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TIME_PERIOD</td>
+<td>ObservationalTimePer iodType</td>
+<td>The TIME_PERIOD attribute is an explict attribute for the time dimension. This is declared in the base schema since it has a fixed identifier and representation. The derived series type will either require or prohibit this attribute, depending on whether time is the observation dimension. If the time dimension specifies a more specific representation of time the derived type will restrict the type definition to the appropriate type.</td>
+</tr>
+</tbody>
+</table>
+<p>Element Documentation:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Documentation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Annotations</td>
+<td>AnnotationsType</td>
+<td>Annotations is a reusable element the provides for a collection of annotations. It has been made global so that restrictions of types that extend AnnotatableType may reference it.</td>
+</tr>
+<tr>
+<td>Comp</td>
+<td><em>CompType</em></td>
+<td>Comp contains the details of the data or metadata attributes that have complex representation and cannot be expressed as XML attributes.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="generic-reference-metadata-namespace">Generic Reference Metadata Namespace<a class="headerlink" href="#generic-reference-metadata-namespace" title="Permanent link">¶</a></h3>
+<p><strong><a href="http://www.sdmx.org/resources/sdmxml/schemas/v3_1/metadata/generic">http://www.sdmx.org/resources/sdmxml/schemas/v3_1/metadata/generic</a></strong></p>
+<h4 id="summary_1">Summary<a class="headerlink" href="#summary_1" title="Permanent link">¶</a></h4>
+<p>Referenced Namespaces:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Namespace</strong></th>
+<th><strong>Prefix</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://www.sdmx.org/resources/sdmxml/schemas/v3_1/common">http://www.sdmx.org/resources/sdmxml/schemas/v3_1/common</a></td>
+<td>common</td>
+</tr>
+<tr>
+<td><a href="http://www.w3.org/2001/XMLSchema">http://www.w3.org/2001/XMLSchema</a></td>
+<td>xs</td>
+</tr>
+</tbody>
+</table>
+<p>Contents:</p>
+<p>1 Global Element<br/>
+3 Complex Types</p>
+<h4 id="global-elements">Global Elements<a class="headerlink" href="#global-elements" title="Permanent link">¶</a></h4>
+<p><strong>Attribute (AttributeType):</strong> Att elements hold the reported values for
+a given metadata attribute. These values conform to the definition of
+the metadata attribute in the metadata structure definition.</p>
+<h4 id="complex-types_1">Complex Types<a class="headerlink" href="#complex-types_1" title="Permanent link">¶</a></h4>
+<p><strong><em>MetadataSetBaseType</em>:</strong> MetadataSetBaseType defines the base
+refinement of the MetadataSetType. Its purpose is to restrict the urn
+attribute.</p>
+<p>Derivation:</p>
+<div class="language-text highlight"><pre><span></span><code>AnnotableType (extension)  
+   IdentifiableType (extension)  
+         NameableType (extension)  
+               VersionableType (restriction)  
+                     MaintainableBaseType (extension)  
+                           MaintainableType (restriction)  
+                                 MetadataSetBaseType
+</code></pre></div>
+<p>Attributes:</p>
+<div class="language-text highlight"><pre><span></span><code>id, urn?, uri?, version?, validFrom?, validTo?, agencyID,
+isPartialLanguage?, isExternalReference?, serviceURL?, structureURL?
+</code></pre></div>
+<p>Content:</p>
+<div class="language-text highlight"><pre><span></span><code>Annotations?, Link*, Name+, Description*
+</code></pre></div>
+<p>Attribute Documentation:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Documentation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>IDType</td>
+<td>The id is the identifier for the object.</td>
+</tr>
+<tr>
+<td>urn</td>
+<td>MetadataSetUrnType</td>
+<td>The urn attribute holds a valid SDMX Registry URN (see SDMX Registry Specification for details).</td>
+</tr>
+<tr>
+<td>uri</td>
+<td>xs:anyURI</td>
+<td>The uri attribute holds a URI that contains a link to a resource with additional information about the object, such as a web page. This uri is not a SDMX message.</td>
+</tr>
+<tr>
+<td>version</td>
+<td>VersionType</td>
+<td>This version attribute holds a version number (see common:VersionType definition for details). If not supplied, artefact is considered to be un-versioned.</td>
+</tr>
+<tr>
+<td>validFrom</td>
+<td>xs:dateTime</td>
+<td>The validFrom attribute provides the inclusive start date for providing supplemental validity information about the version.</td>
+</tr>
+<tr>
+<td>validTo</td>
+<td>xs:dateTime</td>
+<td>The validTo attribute provides the inclusive end date for providing supplemental validity information about the version.</td>
+</tr>
+<tr>
+<td>agencyID</td>
+<td>NestedNCNameIDType</td>
+<td>The agencyID must be provided and identifies the maintenance agency of the object.</td>
+</tr>
+<tr>
+<td>isExternalReference (default: false)</td>
+<td>xs:boolean</td>
+<td>The isExternalReference attribute, if true, indicates that the actual object is not defined the corresponding element, rather its full details are defined elsewhere - indicated by either the registryURL, the repositoryURL, or the structureURL. The purpose of this is so that each structure message does not have to redefine object that are already defined elsewhere. If the isExternalReference attribute is not set, then it is assumed to be false, and the object should contain the full definition of its contents. If more than one of the registryURL, the repositoryURL, and the structureURL are supplied, then the application processing the object can choose the method it finds best suited to retrieve the details of the object.</td>
+</tr>
+<tr>
+<td>serviceURL</td>
+<td>xs:anyURI</td>
+<td>The serviceURL attribute indicates the URL of an SDMX SOAP web service from which the details of the object can be retrieved. Note that this can be a registry or and SDMX structural metadata repository, as they both implement that same web service interface.</td>
+</tr>
+<tr>
+<td>structureURL</td>
+<td>xs:anyURI</td>
+<td>The structureURL attribute indicates the URL of a SDMX-ML structure message (in the same version as the source document) in which the externally referenced object is contained. Note that this may be a URL of an SDMX RESTful web service which will return the referenced object.</td>
+</tr>
+<tr>
+<td>isPartialLanguage (default: false)</td>
+<td>xs:boolean</td>
+<td>The isPartialLanguage attribute, if true, indicates that the object doesn’t contain the complete set of all available languages, e.g., when obtained as a response to a GET query that requested specific languages through the HTTP header ‘Accept-Language’.</td>
+</tr>
+</tbody>
+</table>
+<p>Element Documentation:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Documentation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Annotations</td>
+<td>AnnotationsType</td>
+<td>Annotations is a reusable element the provides for a collection of annotations. It has been made global so that restrictions of types that extend AnnotatableType may reference it.</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>LinkType</td>
+<td>Allows for the linking of other resources to identifiable objects. For example, if there is reference metadata associated with a structure, a link to the metadata report can be dynamically inserted in the structure metadata.</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>TextType</td>
+<td>Name provides for a human-readable name for the object. This may be provided in multiple, parallel language-equivalent forms.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>TextType</td>
+<td>Description provides for a longer human-readable description of the object. This may be provided in multiple, parallel language-equivalent forms.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>MetadataSetType:</strong> MetadataSetType describes the structure for a
+metadata set, which contains a collection of reported metadata against a
+set of targets. The targets should conform to the restrictions described
+by the metadata provision or the metadataflow. Note that this is
+maintainable, and as such must specify in agency. In this case, the
+agency is the metadata provider. If a metadata provision agreement is
+referenced, it is assumed that the metadata provider described in the
+provision will be the same as the agency for this set.</p>
+<p>Derivation:</p>
+<div class="language-text highlight"><pre><span></span><code>AnnotableType (extension)  
+   IdentifiableType (extension)  
+         NameableType (extension)  
+               VersionableType (restriction)  
+                     MaintainableBaseType (extension)  
+                           MaintainableType (restriction)  
+                                 MetadataSetBaseType (extension)  
+                                       MetadataSetType
+</code></pre></div>
+<p>Attributes:</p>
+<div class="language-text highlight"><pre><span></span><code>id, urn?, uri?, version?, validFrom?, validTo?, agencyID,
+isPartialLanguage?, isExternalReference?, serviceURL?, structureURL?, 
+reportingBeginDate?, reportingEndDate?, publicationYear?,
+publicationPeriod?
+</code></pre></div>
+<p>Content:</p>
+<div class="language-text highlight"><pre><span></span><code>Annotations?, Link*, Name+, Description*, (
+(MetadataProvisionAgreement | Metadataflow), Target+, Attribute+)?
+</code></pre></div>
+<p>Attribute Documentation:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Documentation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>IDType</td>
+<td>The id is the identifier for the object.</td>
+</tr>
+<tr>
+<td>urn</td>
+<td>MetadataSetUrnType</td>
+<td>The urn attribute holds a valid SDMX Registry URN (see SDMX Registry Specification for details).</td>
+</tr>
+<tr>
+<td>uri</td>
+<td>xs:anyURI</td>
+<td>The uri attribute holds a URI that contains a link to a resource with additional information about the object, such as a web page. This uri is not a SDMX message.</td>
+</tr>
+<tr>
+<td>version</td>
+<td>VersionType</td>
+<td>This version attribute holds a version number (see common:VersionType definition for details). If not supplied, artefact is considered to be un-versioned.</td>
+</tr>
+<tr>
+<td>validFrom</td>
+<td>xs:dateTime</td>
+<td>The validFrom attribute provides the inclusive start date for providing supplemental validity information about the version.</td>
+</tr>
+<tr>
+<td>validTo</td>
+<td>xs:dateTime</td>
+<td>The validTo attribute provides the inclusive end date for providing supplemental validity information about the version.</td>
+</tr>
+<tr>
+<td>agencyID</td>
+<td>NestedNCNameIDType</td>
+<td>The agencyID must be provided and identifies the maintenance agency of the object.</td>
+</tr>
+<tr>
+<td>isExternalReference (default: false)</td>
+<td>xs:boolean</td>
+<td>The isExternalReference attribute, if true, indicates that the actual object is not defined the corresponding element, rather its full details are defined elsewhere - indicated by either the registryURL, the repositoryURL, or the structureURL. The purpose of this is so that each structure message does not have to redefine object that are already defined elsewhere. If the isExternalReference attribute is not set, then it is assumed to be false, and the object should contain the full definition of its contents. If more than one of the registryURL, the repositoryURL, and the structureURL are supplied, then the application processing the object can choose the method it finds best suited to retrieve the details of the object.</td>
+</tr>
+<tr>
+<td>serviceURL</td>
+<td>xs:anyURI</td>
+<td>The serviceURL attribute indicates the URL of an SDMX SOAP web service from which the details of the object can be retrieved. Note that this can be a registry or and SDMX structural metadata repository, as they both implement that same web service interface.</td>
+</tr>
+<tr>
+<td>structureURL</td>
+<td>xs:anyURI</td>
+<td>The structureURL attribute indicates the URL of a SDMX-ML structure message (in the same version as the source document) in which the externally referenced object is contained. Note that this may be a URL of an SDMX RESTful web service which will return the referenced object.</td>
+</tr>
+<tr>
+<td>isPartialLanguage (default: false)</td>
+<td>xs:boolean</td>
+<td>The isPartialLanguage attribute, if true, indicates that the object doesn’t contain the complete set of all available languages, e.g., when obtained as a response to a GET query that requested specific languages through the HTTP header ‘Accept-Language’.</td>
+</tr>
+<tr>
+<td>reportingBeginDate</td>
+<td>BasicTimePeriodType</td>
+<td>The reportingBeginDate indicates the inclusive start time of the data reported in the data or metadata set.</td>
+</tr>
+<tr>
+<td>reportingEndDate</td>
+<td>BasicTimePeriodType</td>
+<td>The reportingEndDate indicates the inclusive end time of the data reported in the data or metadata set.</td>
+</tr>
+<tr>
+<td>publicationYear</td>
+<td>xs:gYear</td>
+<td>The publicationYear holds the ISO 8601 four-digit year.</td>
+</tr>
+<tr>
+<td>publicationPeriod</td>
+<td>ObservationalTimePer iodType</td>
+<td>The publicationPeriod specifies the period of publication of the data or metadata in terms of whatever provisioning agreements might be in force (i.e., “Q1 2005” if that is the time of publication for a data set published on a quarterly basis).</td>
+</tr>
+</tbody>
+</table>
+<p>Element Documentation:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Documentation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Annotations</td>
+<td>AnnotationsType</td>
+<td>Annotations is a reusable element the provides for a collection of annotations. It has been made global so that restrictions of types that extend AnnotatableType may reference it.</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>LinkType</td>
+<td>Allows for the linking of other resources to identifiable objects. For example, if there is reference metadata associated with a structure, a link to the metadata report can be dynamically inserted in the structure metadata.</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>TextType</td>
+<td>Name provides for a human-readable name for the object. This may be provided in multiple, parallel language-equivalent forms.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>TextType</td>
+<td>Description provides for a longer human-readable description of the object. This may be provided in multiple, parallel language-equivalent forms.</td>
+</tr>
+<tr>
+<td>MetadataProvisionAgreement</td>
+<td>MetadataProvisionAgr eementReferenceType</td>
+<td>Metadataflow provides a reference to the metadata provision agreement the metadata set is being reported against.</td>
+</tr>
+<tr>
+<td>Metadataflow</td>
+<td>MetadataflowReferenc eType</td>
+<td>Metadataflow provides a reference to the metadataflow the metadata set is being reported against.</td>
+</tr>
+<tr>
+<td>Target</td>
+<td>WildcardUrnType</td>
+<td>Target references the target structures for which metadata is being reported. These must conform with the constraints defined by the metadata provision agreement and/or the metadataflow.</td>
+</tr>
+<tr>
+<td>Attribute</td>
+<td>AttributeType</td>
+<td>Att elements hold the reported metadata attribute values being reported in the metadata set. These conform to the metadata structure definition.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>AttributeType:</strong> AttributeType defines the structure for a reported
+metadata attribute. A value for the attribute can be supplied as either
+a single value (enumerated or non-enumerated single value), or
+multi-lingual text values (either structured or unstructured). Optional
+child attributes are also available if the metadata attribute definition
+defines nested metadata attributes.</p>
+<p>Derivation:</p>
+<div class="language-text highlight"><pre><span></span><code>AnnotableType (extension)  
+   AttributeType
+</code></pre></div>
+<p>Attributes:</p>
+<div class="language-text highlight"><pre><span></span><code>id
+</code></pre></div>
+<p>Content:</p>
+<div class="language-text highlight"><pre><span></span><code>Annotations?, (Value+ | Text+ | StructuredText+)?, Attribute*
+</code></pre></div>
+<p>Attribute Documentation:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Documentation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>IDType</td>
+<td>The id attribute identifies the metadata attribute that the value is being reported for.</td>
+</tr>
+</tbody>
+</table>
+<p>Element Documentation:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Documentation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Annotations</td>
+<td>AnnotationsType</td>
+<td>Annotations is a reusable element the provides for a collection of annotations. It has been made global so that restrictions of types that extend AnnotatableType may reference it.</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>xs:anySimpleType</td>
+<td>Value holds any simple value (enumerated or not) for the metadata attribute. It can be repeated if this metadata attribute allows for multiple values.</td>
+</tr>
+<tr>
+<td>Text</td>
+<td>TextType</td>
+<td>Text is used to supply parallel multi-lingual textual values for the reported metadata attribute. This will be used if the text format of the metadata attribute has a type of string, and the multi-lingual value is set to true.</td>
+</tr>
+<tr>
+<td>StructuredText</td>
+<td>XHTMLType</td>
+<td>StructuredText is used to supply parallel multi-lingual structured (as XHTML) textual values for the reported metadata attribute. This will be used if the text format of the metadata attribute has a type of XHTML, and the multi-lingual value is set to true.</td>
+</tr>
+<tr>
+<td>Attribute</td>
+<td>AttributeType</td>
+<td>Att contains the reported metadata attribute values for the child metadata attributes.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mapping-to-structure-specific-schemas">Mapping to Structure-Specific Schemas<a class="headerlink" href="#mapping-to-structure-specific-schemas" title="Permanent link">¶</a></h2>
+<h3 id="general">General<a class="headerlink" href="#general" title="Permanent link">¶</a></h3>
+<p>Data-structure-specific schemas are each based on one single core
+construct found in the structure-specific namespace:</p>
+<p>Data -
+<a href="http://www.SDMX.org/resources/SDMXML/schemas/v3_1/data/structurespecific">http://www.SDMX.org/resources/SDMXML/schemas/v3_1/data/structurespecific</a></p>
+<h4 id="basic-terminology">Basic Terminology<a class="headerlink" href="#basic-terminology" title="Permanent link">¶</a></h4>
+<p>In the subsequent sections, the following namespace prefixes are used:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Namespace</strong></th>
+<th><strong>Prefix</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://www.w3.org/2001/XMLSchema">http://www.w3.org/2001/XMLSchema</a></td>
+<td>xs</td>
+</tr>
+<tr>
+<td><a href="http://www.sdmx.org/resources/sdmxml/schemas/v3_1/common">http://www.sdmx.org/resources/sdmxml/schemas/v3_1/common</a></td>
+<td>common</td>
+</tr>
+<tr>
+<td><a href="http://www.sdmx.org/resources/sdmxml/schemas/v3_1/data/structurespecific">http://www.sdmx.org/resources/sdmxml/schemas/v3_1/data/structurespecific</a></td>
+<td>dsd</td>
+</tr>
+<tr>
+<td><a href="http://www.sdmx.org/resources/sdmxml/schemas/v3_1/metadata/generic">http://www.sdmx.org/resources/sdmxml/schemas/v3_1/metadata/generic</a></td>
+<td>metadata</td>
+</tr>
+</tbody>
+</table>
+<p>It is assumed that in order to use this guide, the reader is familiar
+with schema terminology. However, for convenience the following is list
+of the terminology used here:</p>
+<p><strong>Schema:</strong> Refers to the format specific schema in general, and in
+particular the root xs:schema element of that schema file.</p>
+<p><strong>Global Element:</strong> Refers to an element definition at the top level of
+the schema (i.e. an xs:element element in the root xs:schema element).
+It will define a name and type (name and type attributes) and possibly a
+substitution group (substitutionGroup attribute).</p>
+<p><strong>Local Element:</strong> Refers to an element definition within a complex type
+(i.e. an xs:element element contained within a xs:sequence element that
+is contained in a xs:complexType element). A local element must define a
+name and type (name and type attributes) and may also specify a minimum
+and maximum occurrence (minOccurs and maxOccurs attribute).</p>
+<p><strong>Qualified/Unqualified Element:</strong> A qualified element is an element
+that must be referred to by the namespace in which it was defined. An
+unqualified element does not have a namespace associated with it. The
+structure-specific schemas make use of unqualified elements to that the
+structure-specific schemas can restrict the base content to meet the
+specific needs of the structure, while maintaining as much of the
+original document structure as possible.</p>
+<p><strong>Element Reference:</strong> Refers to an element definition within a complex
+type that is a reference to a global element (i.e. an xs:element element
+contained within a xs:sequence element that is contained in a
+xs:complexType element). An element reference must reference a global
+element (via its ref attribute) and may also specify a minimum and
+maximum occurrence (minOccurs and maxOccurs attribute).</p>
+<p><strong>Complex Type:</strong> Refers to a complex type definition. In this context,
+all complex type definitions occur at the top level of the schema (i.e.
+an xs:complexType element in the root xs:schema element). A complex type
+must define a name (name attribute) and may be made abstract (via the
+abstract attribute’s boolean value).</p>
+<p><strong>Simple Type:</strong> Refers to a simple type definition. In this context,
+all simple type definitions occur at the top level of the schema (i.e.
+an xs:simpleType element in the root xs:schema element). In this
+context, a simple type will always be defined via a restriction (an
+xs:restriction element in the xs:simpleType element). The restriction
+will reference a base type.</p>
+<p><strong>Anonymous Type:</strong> A complex or simple type definition which occurs
+within an element definition. The method is sometimes referred to a the
+“Russian-doll” technique as it creates nested constructs. Anonymous
+types are not given names and cannot be abstract. The can however, be
+derived from other types.</p>
+<p><strong>Content Group:</strong> A group which defines a content model for reuse. This
+is contained in the xs:group element and is defined at the root of the
+schema. It allows for a common sequence or choice of elements to be
+reused across multiple types without having to redefine the sequence or
+choice in each type.</p>
+<p><strong>Uniqueness Constraint:</strong> A uniqueness constraint is defined within an
+element and is used to force descendent elements to be unique based on
+some criteria of it fields (elements or attributes). This is defined in
+an \&lt;xs:unique&gt; element and has content of an \&lt;xs:selector&gt; and
+multiple \&lt;xs:field&gt; elements. The selector designates the descendants
+that must be unique (with an xpath attribute) and the field specifies
+which property of the selected element must be unique (also with an
+xpath attribute)</p>
+<p><strong>Extension:</strong> Refers to the definition of a complex type that is an
+extension of another complex type. The extension will always make a
+reference to a base. In the schema, this is defined within the
+xs:complexType element as a child xs:complexContent element containing
+an xs:extension element (with a base attribute).</p>
+<p><strong>Restriction:</strong> Refers to the definition of a simple or complex type
+that is a restriction of another type of the same variety. The
+restriction will always make a reference to a base. In the schema, this
+is defined with an xs:restriction element (with a base attribute).</p>
+<p><strong>Sequence:</strong> Refers to a sequence of elements that may be defined as
+the root of a complex type content model, or as part of the content of a
+choice or another sequence. This is defined as an xs:sequence element.
+The sequence may specify a minimum and maximum occurrence (minOccurs and
+maxOccurs attribute).</p>
+<p><strong>Choice:</strong> Refers to a choice of elements that may be defined as the
+root of a complex type content model, or as part of the content of a
+sequence or another choice. This is defined as an xs:choice element. The
+sequence may specify a minimum and maximum occurrence (minOccurs and
+maxOccurs attribute).</p>
+<p><strong>Facet:</strong> Refers to a single detail of a simple type restriction. This
+is represented by elements such as xs:minInclusive, xs:totalDigits,
+xs:minLength, and is contained in the xs:restriction element of a simple
+type definition. The value of the facet is contained in a value
+attribute of the particular element.</p>
+<p><strong>Enumeration:</strong> Refers to an enumerated value of a simple type
+definition. It is represented by an xs:enumeration element contained
+within an xs:restriction element of a simple type definition. An
+enumeration defines a value (in the value attribute) and documentation
+(in xs:documentation elements contained in an xs:annotation element).</p>
+<p><strong>XML Attribute:</strong> Refers to the definition of an XML attribute for a
+complex type (i.e. and xs:attribute element in a xs:complexType
+element). An attribute must define a name and type (name and type
+attributes) and may also specify a usage (use attribute).</p>
+<h3 id="namespace-rules">Namespace Rules<a class="headerlink" href="#namespace-rules" title="Permanent link">¶</a></h3>
+<p>Each format specific schema will specify its namespace in the target
+namespace of the schema (the targetNamespace attribute of the schema).
+This document also assumes that the root namespace (that which is
+defined by the xmlns attribute) of the schema will be the same as the
+target namespace. Therefore any types or global elements referenced in
+these descriptions without a namespace prefix are assumed to be in the
+format specific namespace.</p>
+<p>The format specific schemas will incorporate the core format namespace
+and the common namespace by importing the schemas (via the xs:import
+element). If necessary, additional namespaces may be imported and
+referenced.</p>
+<p>For the purpose of the descriptions here, the default element form for
+the schema (as specified in the elementFormDefault attribute of the
+schema) is “qualified”, and the default attribute form (as specified in
+the attributeFormDefault attribute of the schema) is “unqualified”.</p>
+<h3 id="general-rules">General Rules<a class="headerlink" href="#general-rules" title="Permanent link">¶</a></h3>
+<p>The following section details the general rules which apply to all
+structure-specific schema creation.</p>
+<h4 id="component-name-determination">Component Name Determination<a class="headerlink" href="#component-name-determination" title="Permanent link">¶</a></h4>
+<p>When required to create an XML element or attribute, the name for a
+component is always its identifier. However, the identifier may be
+inherited. Therefore, the general rules are as follows:</p>
+<ol>
+<li>
+<p>If the component defines an identifier, the element or attribute
+    name is the value of that identifier</p>
+</li>
+<li>
+<p>Otherwise, the element or attribute name is the identifier of the
+    concept from which it takes its semantic (Note that this is
+    technically the component identifier).</p>
+</li>
+</ol>
+<h4 id="representation-determination">Representation Determination<a class="headerlink" href="#representation-determination" title="Permanent link">¶</a></h4>
+<p>Every component has a representation associated with it, whether it is
+defined as a local representation in the component definition, or it is
+inherited from the concept from which the component takes it semantic
+(as defined in the concept identity of the component).</p>
+<p>The representation of a component is determined by the following
+precedence:</p>
+<ol>
+<li>
+<p>The local representation defined by the component</p>
+</li>
+<li>
+<p>The core representation defined in the concept from which the
+    component takes its semantic</p>
+</li>
+<li>
+<p>A default representation of an un-faceted text format with a data
+    type of String.</p>
+</li>
+</ol>
+<p>The representation will either define a text format, an enumeration
+with an enumeration format, or a union of the former with the value
+of a irrelevant representation <code>~</code> (tilde).</p>
+<p>A text format consists of a data type and an optional collection of
+facets. It is the combination of these which determine the exact nature
+of the component representation. An enumeration consists of a reference
+to a codelist, hierarchy, or value list, for which an enumerated list of
+possible values can be created.</p>
+<h4 id="simple-primitive-type-determination">Simple / Primitive Type Determination<a class="headerlink" href="#simple-primitive-type-determination" title="Permanent link">¶</a></h4>
+<p>For any given representation, there exist rules for determining the
+simple or primitive type which should be used to validate the value.
+There are no specific requirements to how a simple type is named or if
+it is referenced or used as an anonymous type. This section simply
+serves to state the requirements of the type for a component based on
+its <a href="#general-rules">determined representation</a>.</p>
+<p>For example, a dimension may inherit its representation for a concept,
+and the data type of a representation data type may be a String. The
+simplest solution would be to use the xs:string primitive type. However,
+an implementer may have chosen to generate simple types for all concepts
+to avoid having to look up the concept core representation for very
+component. In this case, the type may be given a name based on the
+concept and be a simple derivation from the xs:string type that places
+no further restrictions. The result would be that the type that is
+actually used for the dimension, although named after the concept, is
+effectively the required xs:string. These rules are meant to allow such
+flexibility in how types are created. The only requirement is that the
+type meet the requirements stated here.</p>
+<h4 id="representation-with-codelist-enumeration">Representation with Codelist Enumeration<a class="headerlink" href="#representation-with-codelist-enumeration" title="Permanent link">¶</a></h4>
+<p>A representation which defines an enumeration from a codelist or
+hierarchy will result in a simple type that is a restriction of the
+common:IDType. The simple type will define enumerations for each code in
+the codelist or hierarchy, accounting for extensions. The value for
+these enumerations will be identifier of the item. If desired, the names
+of the item may be placed in the documentation of the enumeration, but
+this is not required. Example:</p>
+<p><span class="mark">\&lt;xs:simpleType name=”ESTAT.CL_COUNTRY.1.0”&gt;</span></p>
+<blockquote>
+<p><span class="mark">\&lt;xs:restriction base=”common:IDType”&gt;</span></p>
+<p><span class="mark">\&lt;xs:enumeration value=”BE”&gt;</span></p>
+<p><span class="mark">\&lt;xs:annotation&gt;</span></p>
+<p><span class="mark">\&lt;xs:documentation
+xml:lang=”en”&gt;Belgium\&lt;/xs:documentation&gt;</span></p>
+<p><span class="mark">\&lt;/xs:annotation&gt;</span></p>
+<p><span class="mark">\&lt;/xs:enumeration&gt;</span></p>
+</blockquote>
+<h4 id="representation-with-value-list-enumeration">Representation with Value List Enumeration<a class="headerlink" href="#representation-with-value-list-enumeration" title="Permanent link">¶</a></h4>
+<p>A representation which defines an enumeration from a value list will
+result in a simple type that is a restriction of the xs:string data
+type. The simple type will define enumerations for each value item in
+the value list. The value for these enumerations will be identifier of
+the item. If desired, the names of the item may be placed in the
+documentation of the enumeration, but this is not required.</p>
+<h4 id="representation-with-simple-text-format">Representation with Simple Text Format<a class="headerlink" href="#representation-with-simple-text-format" title="Permanent link">¶</a></h4>
+<p>A representation which defines a simple text format will result in a
+simple type or primitive type. The representation is simple if none of
+the following conditions are true:</p>
+<ul>
+<li>
+<p>representation max occurs is greater than 1</p>
+</li>
+<li>
+<p>text format data type is XHMTL</p>
+</li>
+<li>
+<p>text format is multi-lingual</p>
+</li>
+</ul>
+<p>If the representation is not simple, see the rules in the following
+section for complex text formats. If the representation is simple, the
+first step is to determine the base type from the text format data type:</p>
+<table>
+<thead>
+<tr>
+<th><strong>SDMX Data Type</strong></th>
+<th><strong>XML Schema Data Type</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>String</td>
+<td>xs:string</td>
+</tr>
+<tr>
+<td>AlphaNumeric</td>
+<td>common:AlphaNumericType</td>
+</tr>
+<tr>
+<td>Alpha</td>
+<td>common:AlphaType</td>
+</tr>
+<tr>
+<td>Numeric</td>
+<td>common:NumericType</td>
+</tr>
+<tr>
+<td>BigInteger</td>
+<td>xs:integer</td>
+</tr>
+<tr>
+<td>Integer</td>
+<td>xs:int</td>
+</tr>
+<tr>
+<td>Long</td>
+<td>xs:long</td>
+</tr>
+<tr>
+<td>Short</td>
+<td>xs:short</td>
+</tr>
+<tr>
+<td>Decimal</td>
+<td>xs:decimal</td>
+</tr>
+<tr>
+<td>Float</td>
+<td>xs:float</td>
+</tr>
+<tr>
+<td>Double</td>
+<td>xs:double</td>
+</tr>
+<tr>
+<td>Boolean</td>
+<td>xs:Boolean</td>
+</tr>
+<tr>
+<td>URI</td>
+<td>xs:anyURI</td>
+</tr>
+<tr>
+<td>Count</td>
+<td>xs:integer</td>
+</tr>
+<tr>
+<td>InclusiveValueRange</td>
+<td>xs:decimal</td>
+</tr>
+<tr>
+<td>ExclusiveValueRange</td>
+<td>xs:decimal</td>
+</tr>
+<tr>
+<td>Incremental</td>
+<td>xs:decimal</td>
+</tr>
+<tr>
+<td>ObservationalTimePeriod</td>
+<td>common:ObservationalTimePeriodType</td>
+</tr>
+<tr>
+<td>StandardTimePeriod</td>
+<td>common:StandardTimePeriodType</td>
+</tr>
+<tr>
+<td>BasicTimePeriod</td>
+<td>common:BasicTimePeriodType</td>
+</tr>
+<tr>
+<td>GregorianTimePeriod</td>
+<td>common:GregorianTimePeriodType</td>
+</tr>
+<tr>
+<td>GregorianYear</td>
+<td>xs:gYear</td>
+</tr>
+<tr>
+<td>GregorianYearMonth</td>
+<td>xs:gYearMonth</td>
+</tr>
+<tr>
+<td>GregorianDay</td>
+<td>xs:date</td>
+</tr>
+<tr>
+<td>ReportingTimePeriod</td>
+<td>common:ReportingTimePeriodType</td>
+</tr>
+<tr>
+<td>ReportingYear</td>
+<td>common:ReportingYearType</td>
+</tr>
+<tr>
+<td>ReportingSemester</td>
+<td>common:ReportingSemesterType</td>
+</tr>
+<tr>
+<td>ReportingTrimester</td>
+<td>common:ReportingTrimesterType</td>
+</tr>
+<tr>
+<td>ReportingQuarter</td>
+<td>common:ReportingQuarterType</td>
+</tr>
+<tr>
+<td>ReportingMonth</td>
+<td>common:ReportingMonthType</td>
+</tr>
+<tr>
+<td>ReportingWeek</td>
+<td>common:ReportingWeekType</td>
+</tr>
+<tr>
+<td>ReportingDay</td>
+<td>common:ReportingDayType</td>
+</tr>
+<tr>
+<td>DateTime</td>
+<td>xs:dateTime</td>
+</tr>
+<tr>
+<td>TimeRange</td>
+<td>common:TimeRangeType</td>
+</tr>
+<tr>
+<td>Month</td>
+<td>xs:gMonth</td>
+</tr>
+<tr>
+<td>MonthDay</td>
+<td>xs:gMonthDay</td>
+</tr>
+<tr>
+<td>Day</td>
+<td>xs:gDay</td>
+</tr>
+<tr>
+<td>Time</td>
+<td>xs:time</td>
+</tr>
+<tr>
+<td>Duration</td>
+<td>xs:duration</td>
+</tr>
+<tr>
+<td>GeospatialInformation</td>
+<td>xs:string</td>
+</tr>
+<tr>
+<td>XHTML</td>
+<td>See the following section for complex representations</td>
+</tr>
+</tbody>
+</table>
+<p>If the text format does not specify any further facets, then the
+determined type is the listed type or a type which derives from the
+listed type without placing any addition restrictions on it. However, if
+one or more facets are specified, then a simple type based on the listed
+type is necessary. The simple type derives via restriction from the
+listed type and adds facets according to the following table (the values
+are mapped as is):</p>
+<table>
+<thead>
+<tr>
+<th><strong>SDMX Facet</strong></th>
+<th><strong>XML Schema Facet</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>minLength</td>
+<td>xs:minLength</td>
+</tr>
+<tr>
+<td>maxLength</td>
+<td>xs:maxLength</td>
+</tr>
+<tr>
+<td>minValue<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">2</a></sup></td>
+<td>if ExclusiveValueRange: xs:minExclusives, else: xs:minInclusive</td>
+</tr>
+<tr>
+<td>maxValue<sup>2</sup></td>
+<td>if ExclusiveValueRange: xs:maxExclusives, else: xs:maxInclusive</td>
+</tr>
+<tr>
+<td>decimals<sup>2</sup></td>
+<td>xs:fractionDigits</td>
+</tr>
+<tr>
+<td>pattern</td>
+<td>xs:pattern</td>
+</tr>
+</tbody>
+</table>
+<p>Any other facets are informational only and will not affect the
+determined type.</p>
+<h3 id="representation-for-not-applicable-dimensions">Representation for Not Applicable Dimensions<a class="headerlink" href="#representation-for-not-applicable-dimensions" title="Permanent link">¶</a></h3>
+<p>Not applicable dimensions, i.e., when reported measures or attributes are not
+attached to those dimensions, take as value the tilde ‘<code>~</code>’ character. This is
+required for datasets defined by a DSD that has the ‘evolving structure’ property
+set to true and that includes data from dataflows, which only use a subset of
+dimensions as defined by a dimension constraint. This is also required for
+data-related higher-level (i.e., attached to dataflow or partial list of
+Dimensions) reference metadata attributes that don’t have a fixed pre-defined attachment.</p>
+<p>To support a specific type and allow for a not applicable dimension value, the
+structure-specific schema must union the type with the common:NotApplicableType,
+which enumerates the tilde ‘<code>~</code>’ character. This is as shown in the following example:</p>
+<div class="language-xml highlight"><pre><span></span><code><span class="w">   </span><span class="nt">&lt;xs:simpleType</span><span class="w"> </span><span class="na">name=</span><span class="s">"DecimalOrNotApplicableType"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;xs:union</span><span class="w"> </span><span class="na">memberTypes=</span><span class="s">"xs:decimal common:NotApplicableType"</span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;/xs:simpleType&gt;</span>
+</code></pre></div>
+<p>For enumerated types, the generated structure-specific schema can include the
+special value in the enumeration or create a union between the enumerated type
+and the common:NotApplicableType.</p>
+<p>Option 1: Augmenting the enumeration with the special value</p>
+<div class="language-xml highlight"><pre><span></span><code><span class="w">   </span><span class="nt">&lt;xs:simpleType</span><span class="w"> </span><span class="na">name=</span><span class="s">"CL\_SUBINDICATOR\_OR\_NOT\_APPLICABLE"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;xs:union</span><span class="w"> </span><span class="na">memberTypes=</span><span class="s">"CL\_SUBINDICATOR common:NotApplicableType"</span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;/xs:simpleType&gt;</span>
+</code></pre></div>
+<p>Option 2: Extending the enumeration with the special value</p>
+<div class="language-xml highlight"><pre><span></span><code><span class="w">   </span><span class="nt">&lt;xs:simpleType</span><span class="w"> </span><span class="na">name=</span><span class="s">"CL\_ SUBINDICATOR "</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;xs:restriction</span><span class="w"> </span><span class="na">base=</span><span class="s">"xs:string"</span><span class="nt">&gt;</span>
+<span class="w">         </span><span class="nt">&lt;xs:enumeration</span><span class="w"> </span><span class="na">value=</span><span class="s">"A"</span><span class="nt">/&gt;</span>
+<span class="w">         </span><span class="nt">&lt;xs:enumeration</span><span class="w"> </span><span class="na">value=</span><span class="s">"~"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;xs:restriction&gt;</span>
+<span class="w">   </span><span class="nt">&lt;/xs:simpleType&gt;</span>
+</code></pre></div>
+<p>For convenience the common schema provides the union types for the following
+data types.</p>
+<table>
+<thead>
+<tr>
+<th><strong>SDMX Data Type</strong></th>
+<th><strong>XML Schema Data Type</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AlphaNumeric</td>
+<td>common:AlphaNumericOrNotApplicableType</td>
+</tr>
+<tr>
+<td>Alpha</td>
+<td>common:AlphaOrNotApplicableType</td>
+</tr>
+<tr>
+<td>Numeric</td>
+<td>common:NumericOrNotApplicableType</td>
+</tr>
+<tr>
+<td>BigInteger</td>
+<td>common:IntegerOrNotApplicableType</td>
+</tr>
+<tr>
+<td>Integer</td>
+<td>common:IntOrNotApplicableType</td>
+</tr>
+<tr>
+<td>Long</td>
+<td>common:LongOrNotApplicableType</td>
+</tr>
+<tr>
+<td>Short</td>
+<td>common:ShortOrNotApplicableType</td>
+</tr>
+<tr>
+<td>Decimal</td>
+<td>common:DecimalOrNotApplicableType</td>
+</tr>
+<tr>
+<td>Float</td>
+<td>common:FloatOrNotApplicableType</td>
+</tr>
+<tr>
+<td>Double</td>
+<td>common:DoubleOrNotApplicableType</td>
+</tr>
+<tr>
+<td>Boolean</td>
+<td>common:BooleanOrNotApplicableType</td>
+</tr>
+<tr>
+<td>Count</td>
+<td>common:IntegerOrNotApplicableType</td>
+</tr>
+<tr>
+<td>InclusiveValueRange</td>
+<td>common:DecimalOrNotApplicableType</td>
+</tr>
+<tr>
+<td>ExclusiveValueRange</td>
+<td>common:DecimalOrNotApplicableType</td>
+</tr>
+<tr>
+<td>Incremental</td>
+<td>common:DecimalOrNotApplicableType</td>
+</tr>
+<tr>
+<td>ObservationalTimePeriod</td>
+<td>common:ObservationalTimePeriodOrNotApplicableType</td>
+</tr>
+<tr>
+<td>StandardTimePeriod</td>
+<td>common:StandardTimePeriodOrNotApplicableType</td>
+</tr>
+<tr>
+<td>BasicTimePeriod</td>
+<td>common:BasicTimePeriodType</td>
+</tr>
+<tr>
+<td>GregorianTimePeriod</td>
+<td>common:GregorianTimePeriodOrNotApplicableType</td>
+</tr>
+<tr>
+<td>ReportingTimePeriod</td>
+<td>common:ReportingTimePeriodOrNotApplicableType</td>
+</tr>
+<tr>
+<td>ReportingYear</td>
+<td>common:ReportingYearOrNotApplicableType</td>
+</tr>
+<tr>
+<td>ReportingSemester</td>
+<td>common:ReportingSemesterOrNotApplicableType</td>
+</tr>
+<tr>
+<td>ReportingTrimester</td>
+<td>common:ReportingTrimesterOrNotApplicableType</td>
+</tr>
+<tr>
+<td>ReportingQuarter</td>
+<td>common:ReportingQuarterOrNotApplicableType</td>
+</tr>
+<tr>
+<td>ReportingMonth</td>
+<td>common:ReportingMonthOrNotApplicableType</td>
+</tr>
+<tr>
+<td>ReportingWeek</td>
+<td>common:ReportingWeekOrNotApplicableType</td>
+</tr>
+<tr>
+<td>ReportingDay</td>
+<td>common:ReportingDayOrNotApplicableType</td>
+</tr>
+<tr>
+<td>TimeRange</td>
+<td>common:TimeRangeOrNotApplicableType</td>
+</tr>
+</tbody>
+</table>
+<h3 id="representation-for-intentionally-missing-measure-and-attribute-values">Representation for Intentionally Missing Measure and Attribute Values<a class="headerlink" href="#representation-for-intentionally-missing-measure-and-attribute-values" title="Permanent link">¶</a></h3>
+<p>For intentionally missing measure and attribute values, even if mandatory, the
+following special values can be used:</p>
+<ul>
+<li><code>NaN</code> for all numeric types (float, double)</li>
+<li><code>#N/A</code> for all other types</li>
+</ul>
+<p>To support a specific type and allow for an intentionally missing measure or
+attribute value, the structure-specific schema must union the type with the
+common:MissingType, which enumerates the <code>#N/A</code> string. Note that XML natively
+already supports <code>NaN</code> for float and double values.</p>
+<p>This union is as shown in the following example:</p>
+<div class="language-xml highlight"><pre><span></span><code><span class="w">   </span><span class="nt">&lt;xs:simpleType</span><span class="w"> </span><span class="na">name=</span><span class="s">"DecimalOrMissingType"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;xs:union</span><span class="w"> </span><span class="na">memberTypes=</span><span class="s">"xs:decimal common:MissingType"</span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;/xs:simpleType&gt;</span>
+</code></pre></div>
+<p>For enumerated types, the generated structure-specific schema can include the
+special value in the enumeration or create a union between the enumerated type
+and the common:MissingType.</p>
+<p>Option 1: Augmenting the enumeration with the special value</p>
+<div class="language-xml highlight"><pre><span></span><code><span class="w">   </span><span class="nt">&lt;xs:simpleType</span><span class="w"> </span><span class="na">name=</span><span class="s">"CL\_SUBINDICATOR\_OR\_NOT\_APPLICABLE"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;xs:union</span><span class="w"> </span><span class="na">memberTypes=</span><span class="s">"CL\_SUBINDICATOR common:MissingType"</span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;/xs:simpleType&gt;</span>
+</code></pre></div>
+<p>Option 2: Extending the enumeration with the special value</p>
+<div class="language-xml highlight"><pre><span></span><code><span class="w">   </span><span class="nt">&lt;xs:simpleType</span><span class="w"> </span><span class="na">name=</span><span class="s">"CL\_ SUBINDICATOR "</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;xs:restriction</span><span class="w"> </span><span class="na">base=</span><span class="s">"xs:string"</span><span class="nt">&gt;</span>
+<span class="w">         </span><span class="nt">&lt;xs:enumeration</span><span class="w"> </span><span class="na">value=</span><span class="s">"A"</span><span class="nt">/&gt;</span>
+<span class="w">         </span><span class="nt">&lt;xs:enumeration</span><span class="w"> </span><span class="na">value=</span><span class="s">"#N/A"</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;xs:restriction&gt;</span>
+<span class="w">   </span><span class="nt">&lt;/xs:simpleType&gt;</span>
+</code></pre></div>
+<p>For convenience the common schema provides the union types for the following
+data types.</p>
+<table>
+<thead>
+<tr>
+<th><strong>SDMX Data Type</strong></th>
+<th><strong>XML Schema Data Type</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AlphaNumeric</td>
+<td>common:AlphaNumericOrMissingType</td>
+</tr>
+<tr>
+<td>Alpha</td>
+<td>common:AlphaOrMissingType</td>
+</tr>
+<tr>
+<td>Numeric</td>
+<td>common:NumericOrMissingType</td>
+</tr>
+<tr>
+<td>BigInteger</td>
+<td>common:IntegerOrMissingType</td>
+</tr>
+<tr>
+<td>Integer</td>
+<td>common:IntOrMissingType</td>
+</tr>
+<tr>
+<td>Long</td>
+<td>common:LongOrMissingType</td>
+</tr>
+<tr>
+<td>Short</td>
+<td>common:ShortOrMissingType</td>
+</tr>
+<tr>
+<td>Decimal</td>
+<td>common:DecimalOrMissingType</td>
+</tr>
+<tr>
+<td>Float</td>
+<td>common:FloatOrMissingType</td>
+</tr>
+<tr>
+<td>Double</td>
+<td>common:DoubleOrMissingType</td>
+</tr>
+<tr>
+<td>Boolean</td>
+<td>common:BooleanOrMissingType</td>
+</tr>
+<tr>
+<td>Count</td>
+<td>common:IntegerOrMissingType</td>
+</tr>
+<tr>
+<td>InclusiveValueRange</td>
+<td>common:DecimalOrMissingType</td>
+</tr>
+<tr>
+<td>ExclusiveValueRange</td>
+<td>common:DecimalOrMissingType</td>
+</tr>
+<tr>
+<td>Incremental</td>
+<td>common:DecimalOrMissingType</td>
+</tr>
+<tr>
+<td>ObservationalTimePeriod</td>
+<td>common:ObservationalTimePeriodOrMissingType</td>
+</tr>
+<tr>
+<td>StandardTimePeriod</td>
+<td>common:StandardTimePeriodOrMissingType</td>
+</tr>
+<tr>
+<td>BasicTimePeriod</td>
+<td>common:BasicTimePeriodType</td>
+</tr>
+<tr>
+<td>GregorianTimePeriod</td>
+<td>common:GregorianTimePeriodOrMissingType</td>
+</tr>
+<tr>
+<td>ReportingTimePeriod</td>
+<td>common:ReportingTimePeriodOrMissingType</td>
+</tr>
+<tr>
+<td>ReportingYear</td>
+<td>common:ReportingYearOrMissingType</td>
+</tr>
+<tr>
+<td>ReportingSemester</td>
+<td>common:ReportingSemesterOrMissingType</td>
+</tr>
+<tr>
+<td>ReportingTrimester</td>
+<td>common:ReportingTrimesterOrMissingType</td>
+</tr>
+<tr>
+<td>ReportingQuarter</td>
+<td>common:ReportingQuarterOrMissingType</td>
+</tr>
+<tr>
+<td>ReportingMonth</td>
+<td>common:ReportingMonthOrMissingType</td>
+</tr>
+<tr>
+<td>ReportingWeek</td>
+<td>common:ReportingWeekOrMissingType</td>
+</tr>
+<tr>
+<td>ReportingDay</td>
+<td>common:ReportingDayOrMissingType</td>
+</tr>
+<tr>
+<td>TimeRange</td>
+<td>common:TimeRangeOrMissingType</td>
+</tr>
+</tbody>
+</table>
+<h4 id="representation-with-complex-text-format">Representation with Complex Text Format<a class="headerlink" href="#representation-with-complex-text-format" title="Permanent link">¶</a></h4>
+<p>A representation which defines a complex text format will result in a
+complex type. The representation is complex if any of the following
+conditions are true:</p>
+<ul>
+<li>
+<p>representation max occurs is greater than 1</p>
+</li>
+<li>
+<p>text format data type is XHMTL</p>
+</li>
+<li>
+<p>text format is multi-lingual</p>
+</li>
+</ul>
+<p>The resulting complex type will be derived via restriction of the
+common:ValueType. In simple cases, there are pre-defined types that can
+be used:</p>
+<ul>
+<li>if the text format data type is XHTML, common:StructuredTextValueType
+  can be used; note that this type cannot be further restricted – all
+  other facets are ignored</li>
+</ul>
+<!-- -->
+<ul>
+<li>if the text format is multi-lingual, common:TextValueType can be used;
+  note that this type cannot be further restricted – all other facets
+  are ignored</li>
+</ul>
+<!-- -->
+<ul>
+<li>
+<p>if the text format has no additional facets and the data type is:</p>
+<ul>
+<li>
+<p>Boolean, common:BooleanValueType can be used</p>
+</li>
+<li>
+<p>String, common:StringValueType can be used</p>
+</li>
+<li>
+<p>Integer, common:IntValueType can be used</p>
+</li>
+<li>
+<p>Double, common:DoubleValueType can be used</p>
+</li>
+<li>
+<p>ObservationalTimePeriod, common:ObservationalTimePeriodValueType can
+be used</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>If a pre-defined type cannot be used, one will have to be created. The
+complex type must define a simple content restriction of the
+common:ValueType. The restriction should define an anonymous simple type
+based on the text format data type and facets as described in the
+previous section.</p>
+<h4 id="type-names"><strong>Type Names</strong><a class="headerlink" href="#type-names" title="Permanent link">¶</a></h4>
+<p>These rules will only dictate type names where absolutely necessary. In
+all other cases, it is the decision of the implementer as to how to name
+or use the type. It is also the implementer’s requirement to ensure that
+any type name is properly unique within its scope. To assist in this,
+the following recommendations are offered for naming types such that
+they are unique.</p>
+<ul>
+<li>
+<p>It the type is an enumeration from an item scheme, the recommended
+  name is [Item Scheme Class].[Maintenance Agency].[Item Scheme
+  ID].[Item Scheme Version]</p>
+</li>
+<li>
+<p>If the type is based on a text format of a concept core
+  representation, the recommended name is Concept.[Maintenance
+  Agency].[Concept Scheme ID].[Concept Scheme Version].[Concept
+  ID]</p>
+</li>
+<li>
+<p>If the type is based on a text format of a component local
+  representation, and;</p>
+<ul>
+<li>
+<p>The component id is required to be unique for all components within
+the scope of the structure which defines it (e.g. a dimension), the
+recommended name is [Component ID]</p>
+</li>
+<li>
+<p>The component id is only required to be unique within the component
+list and which defines it (e.g. a metadata attribute), the recommend
+name is [Component List ID].[Parent Component ID]*.[Component
+ID]</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="type-reuse">Type Reuse<a class="headerlink" href="#type-reuse" title="Permanent link">¶</a></h4>
+<p>It is possible that organisations that manage a large number of
+structure-specific schemas my wish to take advantage of the reuse of
+previously defined type in order to simply the structure-specific schema
+creation and lessen the number of schema elements which are created. The
+structure-specific formats are designed in such a way that this would be
+allowed without any adverse affects.</p>
+<p>For example, an organisation my create predefined types for all of
+codelists and concept schemes which their structures utilize. These
+could be contained in a common schema with any namespace deemed
+appropriate. This would allow the structure-specific schemas generation
+process to recognize the reused components and not be concerned with
+regenerating types. The logical flow for setting the representation of a
+component might be as follows:</p>
+<blockquote>
+<p>Does the component define a local type?</p>
+<p>Yes: Is that type enumerated?</p>
+<p>Yes: Type is the qualified type name for the item scheme</p>
+<p>No: Generate simple type for text format</p>
+<p>No: Type is the qualified name for the concept from which the
+component takes its semantic.</p>
+</blockquote>
+<p>Only the constructs that will be detailed in the data and metadata
+structure-specific rules below are required to be in the specified
+target namespace of the structure-specific schema. So long as any other
+generated type conforms to the rules specified, it may exist in any
+namespace.</p>
+<h3 id="data-structure-specific-schema">Data-Structure-Specific Schema<a class="headerlink" href="#data-structure-specific-schema" title="Permanent link">¶</a></h3>
+<p>Separate schemas will be created for the data structure depending on
+which dimension occurs at the observation level. The recommended target
+namespace of the data structured specific schema is: [Data Structure
+URN]:ObsLevelDim:[Observation Dimensions].</p>
+<p>The rules for generating the data-structure-specific schema are broken
+into sections based on the level within the structure (i.e. data set,
+group, series, attributes, observation). Each section will state the
+rules for each variation of the structure-specific format.</p>
+<h4 id="datasettype">DataSetType<a class="headerlink" href="#datasettype" title="Permanent link">¶</a></h4>
+<p>A complex type named DataSetType must be created. Its content model will
+be derived via restriction. The base type of the restriction is
+dsd:DataSetType. The complex type content model will be as follows:</p>
+<ol>
+<li>
+<p>A sequence consisting of:</p>
+<ol>
+<li>
+<p>An element reference to common:Annotations, with a minimum
+    occurrence of 0</p>
+</li>
+<li>
+<p>A local element named DataProvider with the type
+    common:DataProviderReferenceType, a form of unqualified and a
+    minimum occurrence of 0</p>
+</li>
+<li>
+<p>A choice with a minimum occurrence of 0 and a maximum occurrence
+    of unbounded consisting of:</p>
+<ol>
+<li>
+<p>A local element named Atts with a form of unqualified and a
+    type of AttsType (as defined in the AttsType section which
+    follows)</p>
+</li>
+<li>
+<p>If the data structure defines groups, a local element named
+    Group with a form of unqualified. The type of this element
+    should be the type that is described in the GroupType
+    section which follows.</p>
+</li>
+<li>
+<p>If the dimension at the observation level is not
+    AllDimensions, a local element named Series with a form of
+    unqualified and a type of SeriesType (as defined in the
+    SeriesType section which follows)</p>
+</li>
+<li>
+<p>If the dimension at the observation level is AllDimensions,
+    a local element named Obs with a form of unqualified and a
+    type of ObsType (as defined in the ObsType section which
+    follows)</p>
+</li>
+</ol>
+</li>
+<li>
+<p>If any metadata attribute usages defined in the data structure
+    that declares an attribute relationship of dataflow, a local
+    element named Metadata with the type metadata:MetadataSetType a
+    form of unqualified, and a minimum occurrence of 0</p>
+</li>
+</ol>
+</li>
+</ol>
+<h4 id="grouptype">GroupType<a class="headerlink" href="#grouptype" title="Permanent link">¶</a></h4>
+<p>If the data structure definition defines only one group, a complex type
+with its name taken from the identifier of the lone group must be
+defined. This type is used for the Group element in the DataSetType. Its
+content model will be derived via restriction of the dsd:GroupType. The
+complex type content model will be as follows:</p>
+<ol>
+<li>
+<p>A sequence consisting of:</p>
+<ol>
+<li>
+<p>An element reference to common:Annotations, with a minimum
+    occurrence of 0</p>
+</li>
+<li>
+<p>If any attributes defined in the data structure that declares an
+    attribute relationship with the group, a Comp element with a
+    form of unqualified, a minimum occurrence of 0, a maximum
+    occurrence of unbounded, and a type of dsd:CompType</p>
+</li>
+<li>
+<p>If any metadata attribute usages defined in the data structure
+    that declares an attribute relationship with the group, a local
+    element named Metadata with the type metadata:MetadataSetType a
+    form of unqualified, and a minimum occurence of 0</p>
+</li>
+</ol>
+</li>
+<li>
+<p>An attribute for each dimension referenced by the group. The XML
+    attribute <a href="#component-name-determination">name</a> and
+    <a href="#simple-primitive-type-determination">type</a> are defined according
+    to the general rules defined in the previous section, and the usage
+    is required</p>
+</li>
+<li>
+<p>An attribute for each data attribute with simple representation
+    defined in the data structure that declares an attribute
+    relationship with the group or specifies the group as an attachment
+    group. The XML attribute <a href="#component-name-determination">name</a> and
+    <a href="#simple-primitive-type-determination">type</a> are defined according
+    to the general rules defined in the previous section, and the usage
+    is optional</p>
+</li>
+<li>
+<p>An attribute named type with a type of common:IDType, usage of
+    optional, and a fixed value of the identifier of the group</p>
+</li>
+</ol>
+<p>If the data structure definition defines more than one group, an
+abstract complex type with name GroupType must be created. This type is
+used for the Group element in the DataSetType. Its content model will be
+derived via restriction of the dsd:GroupType. The complex type content
+model will be as follows:</p>
+<ol>
+<li>
+<p>A sequence consisting of:</p>
+<ol>
+<li>
+<p>An element reference to common:Annotations, with a minimum
+    occurrence of 0</p>
+</li>
+<li>
+<p>If any attributes defined in the data structure that declares an
+    attribute relationship with a group, a Comp element with a form
+    of unqualified, a minimum occurrence of 0, a maximum occurrence
+    of unbounded, and a type of dsd:CompType</p>
+</li>
+<li>
+<p>If any metadata attribute usages defined in the data structure
+    that declares an attribute relationship with any group, a local
+    element named Metadata with the type metadata:MetadataSetType a
+    form of unqualified, and a minimum occurence of 0</p>
+</li>
+</ol>
+</li>
+<li>
+<p>An attribute named type with a type of Group.ID, and a usage of
+    optional</p>
+</li>
+<li>
+<p>An anyAttribute declaration with a namespace of ##local</p>
+</li>
+</ol>
+<p>A simple type named Group.ID must be created. This should restrict the
+common:IDType. For each group defined by the data structure definition,
+an enumeration will be created within the restriction with a value of
+the group identifier.</p>
+<p>For each group defined in the data structure definition, a complex type
+with its name taken from the group identifier is defined. Its content
+model will be derived via restriction of the previously defined
+GroupType. The complex type content model will be as follows:</p>
+<ol>
+<li>
+<p>A sequence consisting of:</p>
+<ol>
+<li>
+<p>An element reference to common:Annotations, with a minimum
+    occurrence of 0</p>
+</li>
+<li>
+<p>If any attributes with complex representation defined in the
+    data structure declares an attribute relationship with the
+    group, a Comp element with a form of unqualified, a minimum
+    occurrence of 0, a maximum occurrence of unbounded, and a type
+    of dsd:CompType</p>
+</li>
+<li>
+<p>If any metadata attribute usages defined in the data structure
+    that declares an attribute relationship with the group, a local
+    element named Metadata with the type metadata:MetadataSetType a
+    form of unqualified, and a minimum occurence of 0</p>
+</li>
+</ol>
+</li>
+<li>
+<p>An attribute for each dimension referenced by the group. The XML
+    attribute <a href="#component-name-determination">name</a> and
+    <a href="#simple-primitive-type-determination">type</a> are defined according
+    to the general rules defined in the previous section, and the usage
+    is required</p>
+</li>
+<li>
+<p>An attribute for each data attribute with simple representation
+    defined in the data structure that declares an attribute
+    relationship with the group or specifies the group as an attachment
+    group. The XML attribute <a href="#component-name-determination">name</a> and
+    <a href="#simple-primitive-type-determination">type</a> are defined according
+    to the general rules defined in the previous section, and the usage
+    is optional</p>
+</li>
+<li>
+<p>An attribute named type with a type of Group.ID, usage of optional,
+    and a fixed value of the identifier of the group</p>
+</li>
+</ol>
+<h4 id="seriestype">SeriesType<a class="headerlink" href="#seriestype" title="Permanent link">¶</a></h4>
+<p>If the dimension at the observation is not AllDimensions, a complex type
+name SeriesType must be created. Its content model will be derived via
+restriction of dsd:SeriesType. The complex type content model will be as
+follows:</p>
+<ol>
+<li>
+<p>A sequence consisting of:</p>
+<ol>
+<li>
+<p>An element reference to common:Annotations, with a minimum
+    occurrence of 0</p>
+</li>
+<li>
+<p>If any attributes with complex representation defined in the
+    data structure declares an attribute relationship with a
+    dimension that is not at the observation level, a Comp element
+    with a form of unqualified, a minimum occurrence of 0, a maximum
+    occurrence of unbounded, and a type of dsd:CompType</p>
+</li>
+<li>
+<p>A local element named Obs with a form of unqualified, a minimum
+    occurrence of 0, a maximum occurrence of unbounded, and a type
+    of ObsType (as defined in the ObsType section which follows)</p>
+</li>
+<li>
+<p>If any metadata attribute usages defined in the data structure
+    that declares an attribute relationship with the series, a local
+    element named Metadata with the type metadata:MetadataSetType a
+    form of unqualified, and a minimum occurence of 0</p>
+</li>
+</ol>
+</li>
+<li>
+<p>An attribute named TIME_PERIOD with a type of
+    common:ObservationalTimePeriod. If the dimension at the observation
+    level is the time dimension (TIME_PERIOD) or there is no time
+    dimension defined by the data structure, a usage of prohibited;
+    otherwise, a usage of required</p>
+</li>
+<li>
+<p>An attribute for each dimension defined by the data structure
+    definition, except for the dimension at the observation level and
+    the time dimension (TIME_PERIOD). The XML attribute
+    <a href="#component-name-determination">name</a> and
+    <a href="#simple-primitive-type-determination">type</a> are defined according
+    to the general rules defined in the previous section, and the usage
+    is required</p>
+</li>
+<li>
+<p>An attribute for each data attribute defined with simple
+    representation in the data structure that declares an attribute
+    relationship with any dimension outside of the dimension at the
+    observation level (so long as it does not also declare an attachment
+    group). The XML attribute <a href="#component-name-determination">name</a> and
+    <a href="#simple-primitive-type-determination">type</a> are defined according
+    to the general rules defined in the previous section, and the usage
+    is optional</p>
+</li>
+</ol>
+<h4 id="attstype">AttsType<a class="headerlink" href="#attstype" title="Permanent link">¶</a></h4>
+<p>A a complex type named AttsType must be created. Its content model will
+be derived via restriction of dsd:AttsType. The complex type content
+model will be as follows:</p>
+<ol>
+<li>
+<p>A sequence consisting of:</p>
+<ol>
+<li>
+<p>An element reference to common:Annotations, with a minimum
+    occurrence of 0</p>
+</li>
+<li>
+<p>If any attributes with complex representation are defined in the
+    data structure, a Comp element with a form of unqualified, a
+    minimum occurrence of 0, a maximum occurrence of unbounded, and
+    a type of dsd:CompType</p>
+</li>
+</ol>
+</li>
+<li>
+<p>If there is no dimension (TIME_PERIOD) defined by the data
+    structure, an attribute named TIME_PERIOD with a type of
+    common:ObservationalTimePeriod, and a usage of prohibited</p>
+</li>
+<li>
+<p>An attribute for all dimension defined by the data structure
+    definition. The XML attribute <a href="#component-name-determination">name</a>
+    and <a href="#simple-primitive-type-determination">type</a> are defined
+    according to the general rules defined in the previous section, and
+    the usage is optional</p>
+</li>
+<li>
+<p>An attribute for each data attribute defined with simple
+    representation in the data structure. The XML attribute
+    <a href="#component-name-determination">name</a> and
+    <a href="#simple-primitive-type-determination">type</a> are defined according
+    to the general rules defined in the previous section, and the usage
+    is optional</p>
+</li>
+</ol>
+<h4 id="obstype">ObsType<a class="headerlink" href="#obstype" title="Permanent link">¶</a></h4>
+<p>A complex type name ObsType must be created. Its content model will be
+derived via restriction of the base type dsd:ObsType. The complex type
+content model will be as follows:</p>
+<ol>
+<li>
+<p>A sequence consisting of:</p>
+<ol>
+<li>
+<p>An element reference to common:Annotations, with a minimum
+    occurrence of 0</p>
+</li>
+<li>
+<p>If any measures with complex representations are defined in the
+    data structure, any attributes with complex representation that
+    declare an attribute relationship with the observation, a Comp
+    element with a form of unqualified, a minimum occurrence of 0, a
+    maximum occurrence of unbounded, and a type of dsd:CompType</p>
+</li>
+<li>
+<p>If any metadata attribute usages defined in the data structure
+    that declares an attribute relationship with the observation, a
+    local element named Metadata with the type
+    metadata:MetadataSetType a form of unqualified, and a minimum
+    occurences of 0</p>
+</li>
+</ol>
+</li>
+<li>
+<p>An attribute named TIME_PERIOD with a type of common:ObservationalTimePeriodValueType.
+    If the dimension at the observation level is the time dimension
+    (TIME_PERIOD) or all dimensions and the time dimension is defined by
+    the data structure, a usage of required; otherwise, a usage of
+    prohibited</p>
+</li>
+<li>
+<p>If the dimension at the observation level is not all dimensions or
+    the time dimension (TIME_PERIOD), an attribute for the dimension at
+    the observation level. The XML attribute
+    <a href="#component-name-determination">name</a> and
+    <a href="#simple-primitive-type-determination">type</a> are defined according
+    to the general rules defined in the previous section, and the usage
+    is required</p>
+</li>
+</ol>
+<!-- -->
+<ol>
+<li>If the dimension at the observation level is all dimensions, an
+    attribute for each dimension defined by the data structure
+    definition, except for the time dimension (TIME_PERIOD). The XML
+    attribute <a href="#component-name-determination">name</a> and
+    <a href="#simple-primitive-type-determination">type</a> are defined according
+    to the general rules defined in the previous section, and the usage
+    is required</li>
+</ol>
+<!-- -->
+<ol>
+<li>
+<p>An attribute for each measure with simple representation defined by
+    the data structure definition. The XML attribute
+    <a href="#component-name-determination">name</a> and
+    <a href="#simple-primitive-type-determination">type</a> is defined according to
+    the general rules defined in the previous section, and the usage is
+    optional</p>
+</li>
+<li>
+<p>An attribute for each data attribute with simple representation
+    defined in the data structure that declares an attribute
+    relationship with the observation. The XML attribute
+    <a href="#component-name-determination">name</a> and
+    <a href="#simple-primitive-type-determination">type</a> are defined according
+    to the general rules defined in the previous section, and the usage
+    is optional</p>
+</li>
+</ol>
+<h4 id="comptype">CompType<a class="headerlink" href="#comptype" title="Permanent link">¶</a></h4>
+<p>For every measure and data attribute with complex representation defined
+by the data structure definition, a complex type must be derived from
+the restriction of the dsd:CompType. The complex type content model will
+be as follows:</p>
+<ol>
+<li>
+<p>A sequence consisting of:</p>
+<ol>
+<li>
+<p>An element reference to common:Annotations, with a minimum
+    occurrence of 0</p>
+</li>
+<li>
+<p>A Value element with a form of unqualified, with a minimum
+    occurrence of 0, a maximum occurrence defined by the
+    representation, and a type based on the <a href="#representation-with-complex-text-format">complex representation
+    type</a> defined
+    according to the general rules defined in the previous section</p>
+</li>
+</ol>
+</li>
+<li>
+<p>An attribute named id with a type of common: NCNameIDType, usage of
+    required, and a fixed value of the identifier of the measure or
+    attribute</p>
+</li>
+</ol>
+<h1 id="data-and-reference-metadata-actions">Data and Reference Metadata Actions<a class="headerlink" href="#data-and-reference-metadata-actions" title="Permanent link">¶</a></h1>
+<h2 id="data-actions">Data Actions<a class="headerlink" href="#data-actions" title="Permanent link">¶</a></h2>
+<p>Data messages allow indicating intended actions when used to update an SDMX
+storage system. This purpose is noted in the action of the data set, which is
+either inherited from the header of the data message or explicitly stated at the
+data set level.</p>
+<p>Note that the former <em>Append</em> and <em>Information</em> actions are deprecated. When
+used to update an SDMX storage system, the <em>Merge</em> action is assumed.</p>
+<h3 id="merge-action">Merge Action<a class="headerlink" href="#merge-action" title="Permanent link">¶</a></h3>
+<p>Data or data-related reference metadata is to be merged, through either update
+or insertion depending on already existing information. This operation does not
+allow deleting any component values. Updating individual values in multi-valued
+measure, attribute or data-related reference metadata values is not supported
+either. The complete multi-valued value is to be provided.</p>
+<p>Only non-dimensional components (measure, attribute or data-related reference
+metadata values) can be <strong>omitted</strong> (<code>null</code> or absent) as long as at least one
+of those components is present. Bulk merges are thus not supported. Only the
+provided values are merged.</p>
+<p>Dimension values for higher-level (data-related reference metadata) attributes
+can be <strong>switched-off</strong> (using <code>~</code>) when those are not attached to these dimensions.</p>
+<p>All observations as well as the sets of data-related reference metadata
+attributes at specific dimension combinations impacted by the <em>Merge</em> action
+change their time stamp when used to update an SDMX storage system.</p>
+<h3 id="replace-action">Replace Action<a class="headerlink" href="#replace-action" title="Permanent link">¶</a></h3>
+<p>Data or data-related reference metadata is to be replaced, through either update,
+insert or delete depending on already existing information. A full replacement
+is hereby assumed to take place at specific “replacement levels”: for entire
+observations and for any specific dimension combination for data-related
+reference metadata attributes. Within these “replacement levels” the provided
+values are inserted or updated, and omitted values are deleted. Values provided
+for the other attributes (those above the observation level) are merged
+(see <em>Merge</em> action).</p>
+<p>Only non-dimensional components (measure, attribute or reference metadata values)
+can be <strong>omitted</strong> (<code>null</code> or absent). Bulk replacing is thus not supported.</p>
+<p>Dimension values for higher-level (data-related reference metadata) attributes
+can be <strong>switched-off</strong> (using <code>~</code>) when those are not attached to these dimensions.</p>
+<p>Replacing non-existing elements is not resulting in an error.</p>
+<p>All observations as well as the sets of data-related reference metadata
+attributes at specific dimension combinations impacted by the <em>Replace</em> action
+change their time stamp when used to update an SDMX storage system.</p>
+<p>Because the <em>replace</em> action always takes place at specific levels, it cannot
+be used to replace a whole dataset or a whole series. However, a “<em>replace all</em>”
+effect can be achieved by combining a <em>Delete</em> dataset containing a completely
+wildcarded key (where all dimension values are omitted) with a <em>Merge</em> or
+<em>Replace</em> dataset within the same data message. Similarly, to replace a whole
+series, a message can combine a <em>delete</em> dataset containing only the partial
+key of the series (where the not used dimension values are omitted) with a
+<em>Merge</em> or <em>Replace</em> dataset for that series.</p>
+<h3 id="delete-action">Delete Action<a class="headerlink" href="#delete-action" title="Permanent link">¶</a></h3>
+<p>Data or data-related reference metadata is to be deleted. Deletion is hereby
+assumed to take place at the lowest level of detail provided in the message.</p>
+<p>Any component (including dimensions) can be <strong>omitted</strong> (dimensions: empty,
+others: <code>null</code> or absent). Omitting dimension values allows for bulk deletions.
+Partially omitting non-dimension component values allows restricting the
+deletion of measure, attribute or data-related reference metadata values to the
+ones being present. Instead of real values for non-dimensional components, it is
+sufficient to use any valid value.</p>
+<p>With this, whole datasets, any slices of observations for dimension groups such
+as time series, observations or individual measure, attribute and data-related
+reference metadata attributes values can be deleted.</p>
+<p>Dimension values for higher-level (data-related reference metadata) attributes
+can be <strong>switched-off</strong> (using <code>~</code>) when those are not attached to these dimensions.</p>
+<p>Deleting non-existing elements or values is not resulting in an error.</p>
+<p>All observations as well as the sets of attributes and data-related reference
+metadata at higher partial keys impacted by the <em>Delete</em> action change their
+time stamp when used to update an SDMX storage system.</p>
+<h3 id="further-details">Further Details<a class="headerlink" href="#further-details" title="Permanent link">¶</a></h3>
+<p>The following convention is used to indicate the state of components in data messages:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th><strong>Dimension value is</strong></th>
+<th></th>
+<th><strong>Measure, attribute or reference metadata value is</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td><strong>Omitted</strong></td>
+<td><strong>switched off</strong></td>
+<td><strong>Omitted</strong></td>
+<td><strong>Present</strong></td>
+</tr>
+<tr>
+<td>Action</td>
+<td>Delete</td>
+<td>bulk deletion: dimension value doesn’t matter</td>
+<td>only for irrelevant dimensions:1) higher-level (reference metadata) attributes not attached to this dimension(incl. TIME_PERIOD)2) measures and attributes not attached to this dimension if the DSD allows for an ‘evolving structure’ (excl. TIME_PERIOD)</td>
+<td>to be deleted only if <strong>all</strong> non-dimension components are omitted</td>
+<td>to be deleted</td>
+</tr>
+<tr>
+<td></td>
+<td>Merge</td>
+<td><em>bulk merge is not permitted</em></td>
+<td>(see above)</td>
+<td>not to be changed</td>
+<td>to be updated/inserted</td>
+</tr>
+<tr>
+<td></td>
+<td>Replace</td>
+<td><em>bulk replace is not permitted</em></td>
+<td>(see above)</td>
+<td>at permitted replacement levels: to be deleted, otherwise not to be changed</td>
+<td>to be updated/inserted</td>
+</tr>
+<tr>
+<td>Format</td>
+<td>XML</td>
+<td>xml element/attribute is absent</td>
+<td>~</td>
+<td>xml element/attribute is absent</td>
+<td>any valid or intentionally missing value</td>
+</tr>
+<tr>
+<td></td>
+<td>JSON</td>
+<td>\&lt;empty&gt;</td>
+<td>“~“</td>
+<td>NULL or absent</td>
+<td>(see above)</td>
+</tr>
+<tr>
+<td></td>
+<td>CSV</td>
+<td>\&lt;empty&gt; cell or column is absent</td>
+<td>~</td>
+<td><empty> cell or column is absent</empty></td>
+<td>(see above)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important notes:</strong></p>
+<p>The terms “<em>delete</em>”, “<em>merge</em>” and “<em>replace</em>” do <strong>not</strong> imply a physical
+replacement or deletion of values in the underlying database. To minimize the
+physical resource requirements, SDMX web service implementations that do not
+support the <em>includeHistory</em> and <em>asOf</em> URL parameters might physically replace
+the existing values in the database. SDMX web services that neither support the
+<em>updatedAfter</em> URL parameter might also implement physical deletions. However,
+SDMX web services that support these parameters (or other time-machine features),
+would not overwrite or delete the physical values.</p>
+<p>SDMX web services that support the <em>includeHistory</em> or <em>asOf</em> URL parameters
+should never allow deleting their <strong>historic</strong> data content because this would
+interfere with the interests of data consumers, such as data aggregators.
+Therefore, a specific feature to physically delete previous (outdated) content
+is intentionally not added to the SDMX standard syntax. If such a feature is
+required by an organisation, then it needs to be implemented as a custom feature
+outside the SDMX standard.</p>
+<p>Likewise, all SDMX-compliant systems that do (or are configured to) support the
+<em>updatedAfter</em> URL parameter need to systematically retain the information about
+deleted data (or data-related reference metadata).</p>
+<p>All datasets – even with varying actions – within a single data message have
+always to be treated as <strong>ACID transaction</strong> to guarantee “transactional safety”
+(full data consistency and validity despite errors, power failures, and other
+mishaps). These datasets are to be processed in the order of appearance in the
+message. The advantage of such data messages is thus the ability to bundle
+separate <em>delete</em> and <em>replace</em> or <em>merge</em> actions into one transactional data message.</p>
+<p><strong>Recommended<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">1</a></sup> dataset actions in SDMX web service responses to GET data queries:</strong></p>
+<ol>
+<li>Without the <em>updatedAfter</em>, <em>includeHistory</em>, <em>detail</em>, <em>attributes</em> or</li>
+<li><em>measures</em> URL parameters:  </li>
+</ol>
+<p>The response message should contain the retrieved data in a <em>Replace</em> dataset
+   (instead of the previous <em>information</em> dataset).</p>
+<ol>
+<li>Without the <em>updatedAfter</em> and <em>includeHistory</em>, but with <em>detail</em>,</li>
+<li><em>attributes</em> or <em>measures</em> URL parameters:  </li>
+</ol>
+<p>The response message should contain the retrieved data in a <em>Merge</em> dataset
+   (instead of the previous <em>Information</em> dataset).</p>
+<ol>
+<li>With the <em>updatedAfter</em> URL parameter:  </li>
+</ol>
+<p>The response must include the information of all previously updated, inserted
+   and deleted data or data-related reference metadata, even if bulk deletions
+   have been used. One of the two approaches are possible:</p>
+<ul>
+<li>a <em>Delete</em> dataset for entirely deleted observations and for entirely
+     deleted sets of (data-related reference metadata) attribute values attached
+     to specific dimension combinations and  </li>
+<li>a <em>Replace</em> dataset for all other changed observations and changed
+     attribute and data-related reference metadata values attached to specific
+     dimension combinations, or  </li>
+<li>a <em>Delete</em> dataset for entirely deleted observations, for entirely deleted
+     sets of (data-related reference metadata) attribute values attached to
+     specific dimension combinations and for individually deleted mesure,
+     attribute and reference metadata values and  </li>
+<li>a <em>Merge</em> dataset for all other updated or inserted observation, attribute
+     and data-related reference metadata values.</li>
+</ul>
+<p>The DB synchronization use case requires that the generated response must
+always allow achieving to replicate the exact same punctual data content as
+currently stored in the queried data source.</p>
+<ol>
+<li>With the <em>includeHistory</em> URL parameter:  </li>
+</ol>
+<p>Using a number of datasets with <em>Delete</em>, <em>Replace</em> or <em>Merge</em> actions and
+   limited in their validity time span that allow achieving to replicate the
+   exact same punctual data contents as previously stored in the queried data source.</p>
+<ol>
+<li>With the <em>asOf</em> URL parameter:  </li>
+</ol>
+<p>The recommendations of 1 and 2 apply depending on the other parameters. In
+   addition, the returned dataset should have its validity time span limited to
+   the point in time requested in the <em>asOf</em> parameter.</p>
+<h2 id="reference-metadata-actions">Reference Metadata Actions<a class="headerlink" href="#reference-metadata-actions" title="Permanent link">¶</a></h2>
+<p>Reference metadata defined by a Metadataflow or a MetadataProvisionAgreement are
+exchanged within reference metadatasets, which are maintainable and thus for
+actions behave like structural metadata (artefacts): When interacting with SDMX
+Rest web services, the HTTP action verbs GET, PUT and POST are used to indicate
+the intended action per web request. Consequently, different actions cannot be
+bundled and executed with “transactional ACIDity”. Note that metadatasets
+retrieved using the HTTP header “Accept-Language” may contain only partial
+languages, and thus should be marked with its <em>isPartialLanguage</em> property
+set to true. Submitting such a partial metadataset to update an SDMX storage
+system will only add or update the included languages but not change other languages.</p>
+<p>The former message header or metadataset property <em>DataSetAction</em> is deprecated.
+To avoid conflicts, it is now ignored if still present.</p>
+<div class="footnote">
+<hr/>
+<ol>
+<li id="fn:2">
+<p>So far this is recommended for systems that do not require backward-compatibility.
+Later, with SDMX 4.0, this may generally be made mandatory. <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:1">
+<p>Note that these options only apply to numeric representations and
+should be ignored if the data type is non-numeric <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+<a href="https://www.analytical-software.de/en/legal-disclosure/">HMS Analytical Software Imprint</a>
+</div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "content.code.annotate", "content.code.copy", "navigation.tabs", "navigation.indexes", "navigation.path", "navigation.sections", "navigation.top", "navigation.tracking", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+<script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+<script src="../../assets/anchors.js"></script>
+</body>
+</html>
