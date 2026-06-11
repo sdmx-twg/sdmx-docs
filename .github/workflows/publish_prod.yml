@@ -18,7 +18,12 @@ on:
       - dev
       # Release branches have names like docs_v2.1, docs_v3.0, ...
       - "docs_v*.*"
-  create:
+  pull_request:
+    branches:
+      - main
+      - dev
+      # Release branches have names like docs_v2.1, docs_v3.0, ...
+      - "docs_v*.*"
 
 concurrency:
   group: gh-pages-deploy
@@ -33,8 +38,7 @@ jobs:
       - name: Determine if documentation should be published on this workflow run
         id: determination
         run: |
-          RELEASE_BRANCH_REGEX="^refs/heads/docs_v[0-9]+\.[0-9]+$"
-          if [[ "${{ github.event_name }}" == "push" || ( "${{ github.event_name }}" == "create" && "${{ github.ref }}" =~ $RELEASE_BRANCH_REGEX ) ]]; then
+          if [[ "${{ github.event_name }}" == "push" || "${{ github.event_name }}" == "pull_request" ]]; then
             RESULT="true"
           else
             RESULT="false"
@@ -92,13 +96,20 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git fetch --no-tags --prune origin gh-pages
+
           DEPLOY_ARGS="${{ env.PH_DOCS_VERSION }}"
           if [[ -n "${{ env.PH_DOCS_ALIAS }}" ]]; then
             DEPLOY_ARGS="$DEPLOY_ARGS ${{ env.PH_DOCS_ALIAS }}"
           fi
-          uv run mike set-default --push latest --allow-undefined
+
+          PUSH_FLAG=""
+          if [[ "${{ github.event_name }}" == "push" ]]; then
+            PUSH_FLAG="--push"
+          fi
+
+          uv run mike set-default $PUSH_FLAG latest
           uv run mike deploy \
             --update-aliases \
             --branch gh-pages \
-            --push \
+            $PUSH_FLAG \
             $DEPLOY_ARGS
