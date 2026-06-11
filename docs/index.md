@@ -41,7 +41,7 @@ which are all available in this documentation site.
 
 ### Registries and Technical Notes
 
-- [Section 5 – SDMX Registry Specification](./registry_specification/registry_specification/1_Introduction.md)
+- [Section 5 – SDMX Registry Specification](./registry_specification/1_Introduction.md)
   Specification of the SDMX
   Registry, a repository for structural metadata and provisioning information.
 - [Section 6 – SDMX Technical Notes](./technical_notes/technical_notes/0_Purpose_and_Structure.md)
@@ -50,7 +50,7 @@ which are all available in this documentation site.
 
 ### Transmission Formats and APIs
 
-- [REST API](./rest_api/rest_api/index.md)
+- [REST API](./rest_api/index.md)
   Technical specifications for the SDMX RESTful web services API.
 - [SDMX-ML](./ml/index.md)
   Technical specifications for the XML transmission format,
