@@ -1,7 +1,28 @@
-# SDMX Technical Documentation llms.txt (root)
-# Source file: llms_top.txt
-# Published target: /llms.txt
-# Publication rule: only from main branch deployments
-#
-# Maintain this file for global, top-level agent discovery metadata.
-# Update via pull request in this repository.
+# SDMX Technical Documentation
+
+> Curated entry point for SDMX technical specifications across versions and component repositories. Use this file to discover where to read normative and implementation-oriented documentation quickly.
+
+## Start Here
+
+- [Latest documentation landing page](https://sdmx-twg.github.io/sdmx-docs/latest/): Recommended default entry point.
+- [SDMX 3.1 landing page](https://sdmx-twg.github.io/sdmx-docs/3.1/): Stable versioned documentation. The respective sitemap is available from [Sitemap SDMX 3.1](https://sdmx-twg.github.io/sdmx-docs/3.1/sitemap.xml).
+- [SDMX 3.0 landing page](https://sdmx-twg.github.io/sdmx-docs/3.0/): Previous major version. The respective sitemap is available from [Sitemap SDMX 3.0](https://sdmx-twg.github.io/sdmx-docs/3.0/sitemap.xml).
+
+## SDMX Official Source
+
+- [SDMX home](https://sdmx.org/): Official SDMX website.
+- [SDMX standards](https://sdmx.org/standards/): Official standards overview and references.
+
+## GitHub Repositories
+
+- [sdmx-docs (overall documentation)](https://github.com/sdmx-twg/sdmx-docs)
+- [sdmx-im (information model)](https://github.com/sdmx-twg/sdmx-im)
+- [sdmx-registry (registry specification)](https://github.com/sdmx-twg/sdmx-registry)
+- [sdmx-rest (REST API)](https://github.com/sdmx-twg/sdmx-rest)
+- [sdmx-ml (SDMX-ML format)](https://github.com/sdmx-twg/sdmx-ml)
+- [sdmx-json (SDMX-JSON format)](https://github.com/sdmx-twg/sdmx-json)
+- [sdmx-csv (SDMX-CSV format)](https://github.com/sdmx-twg/sdmx-csv)
+
+## Optional
+
+- [Version matrix and context (documentation home page)](https://sdmx-twg.github.io/sdmx-docs/latest/): Helps map SDMX versions to REST and transmission format versions.
