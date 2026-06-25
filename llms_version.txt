@@ -15,16 +15,14 @@ source repositories.
 
 ## Information Model
 
-- [Information
-	Model](https://sdmx-twg.github.io/sdmx-docs/3.1/information_model/):
+- [Information Model](https://sdmx-twg.github.io/sdmx-docs/3.1/information_model/):
 	Core SDMX information structures, artefacts, and relationships.
 
 ## Registry and Logical Interfaces
 
 - [Registry](https://sdmx-twg.github.io/sdmx-docs/3.1/registry_specification/):
 	Registry repository model, architecture, and service behavior.
-- [Logical
-	Interfaces](https://sdmx-twg.github.io/sdmx-docs/3.1/logical_interfaces/):
+- [Logical Interfaces](https://sdmx-twg.github.io/sdmx-docs/3.1/logical_interfaces/):
 	Interface semantics and interaction patterns across SDMX services.
 
 ## Technical Notes
