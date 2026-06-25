@@ -1,0 +1,7 @@
+# SDMX Technical Documentation llms.txt (version-scoped)
+# Source file: llms_version.txt
+# Published target: /<version>/llms.txt
+# Publication rule: on push deployments for each deployed version
+#
+# Maintain this file for metadata that should appear in every version path.
+# Update via pull request in this repository.
