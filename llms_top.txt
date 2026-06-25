@@ -1,0 +1,7 @@
+# SDMX Technical Documentation llms.txt (root)
+# Source file: llms_top.txt
+# Published target: /llms.txt
+# Publication rule: only from main branch deployments
+#
+# Maintain this file for global, top-level agent discovery metadata.
+# Update via pull request in this repository.
