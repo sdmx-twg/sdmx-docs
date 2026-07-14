@@ -140,23 +140,34 @@ automatically.
 
 ## CI/CD Pipeline
 
-### PR Preview (`publish_dev.yml`)
-
--   **Trigger:** every pull request.
--   **Result:** the documentation site is built and deployed to the
-    `gh-pages-preview` branch under the version label `v.PR-<pr-number>`.
--   **Note:** contributors never run this manually; the workflow fires
-    automatically on every opened or updated pull request.
-
 ### Production Deployment (`publish_prod.yml`)
 
--   **Trigger:** push to `master` or any branch matching `X.Y.x`.
--   **Result:** site deployed to the `gh-pages` branch using `mike deploy`.
+-   **Workflow file:** `.github/workflows/publish_prod.yml` (`docs-publish`).
+-   **Triggers:** push and pull request on `main`, `dev`, and `docs_v*.*`.
+-   **Push result:** site deployed to the `gh-pages` branch using
+    `mike deploy --push`.
+-   **Pull request result:** build and deploy steps run for validation, but no
+    deployment branch is pushed.
 -   **Version label:** read from the `VERSION` file. The format is
     `<version>[|<alias>]` — for example, `3.0|latest`. The version is required;
     the alias is optional. When cutting a release, update `VERSION` to set the
     deployed version label and alias.
 -   **Note:** contributors never deploy manually; CI handles all deployments.
+
+### LLM Discovery Files (`llms*.txt`)
+
+-   Source files live at repository root:
+    -   `llms_top.txt`
+    -   `llms_version.txt`
+-   Publish behavior:
+    -   `llms_version.txt` is published to `/<version>/llms.txt` on push
+        deployments.
+    -   `llms_top.txt` is published to `/llms.txt` only for pushes to `main`.
+    -   Non-`main` branches MUST NOT modify root `/llms.txt`.
+-   Ownership/update process:
+    -   Update these files through normal pull requests.
+    -   Keep root content stable and current for primary discovery.
+    -   Keep version file content valid for every deployed version path.
 
 ## Contributing
 

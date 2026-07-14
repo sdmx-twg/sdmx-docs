@@ -175,3 +175,4 @@ cython_debug/
 .github/instructions/
 
 node_modules/
+.vscode/settings.json
