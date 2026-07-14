@@ -87,19 +87,19 @@ jobs:
           echo "Version: $VERSION"
           echo "Alias: $ALIAS"
 
-          echo "PH_DOCS_VERSION=$VERSION" >> $GITHUB_ENV
-          echo "PH_DOCS_ALIAS=$ALIAS" >> $GITHUB_ENV
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "alias=$ALIAS" >> $GITHUB_OUTPUT
 
       - name: Deploy
-        if: ${{ env.PH_DOCS_VERSION != '' }}
+        if: ${{ steps.determine-versioning.outputs.version != '' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git fetch --no-tags --prune origin gh-pages
 
-          DEPLOY_ARGS="${{ env.PH_DOCS_VERSION }}"
-          if [[ -n "${{ env.PH_DOCS_ALIAS }}" ]]; then
-            DEPLOY_ARGS="$DEPLOY_ARGS ${{ env.PH_DOCS_ALIAS }}"
+          DEPLOY_ARGS="${{ steps.determine-versioning.outputs.version }}"
+          if [[ -n "${{ steps.determine-versioning.outputs.alias }}" ]]; then
+            DEPLOY_ARGS="$DEPLOY_ARGS ${{ steps.determine-versioning.outputs.alias }}"
           fi
 
           PUSH_FLAG=""
@@ -113,3 +113,79 @@ jobs:
             --branch gh-pages \
             $PUSH_FLAG \
             $DEPLOY_ARGS
+
+      - name: Publish llms.txt files to gh-pages
+        if: ${{ github.event_name == 'push' && steps.determine-versioning.outputs.version != '' }}
+        run: |
+          set -euo pipefail
+
+          if [[ ! -f "llms_top.txt" ]]; then
+            echo "Missing source file: llms_top.txt"
+            exit 1
+          fi
+
+          if [[ ! -f "llms_version.txt" ]]; then
+            echo "Missing source file: llms_version.txt"
+            exit 1
+          fi
+
+          git fetch --no-tags --prune origin gh-pages
+
+          WORKTREE_DIR="$(mktemp -d)"
+          git worktree add -B gh-pages-llms "$WORKTREE_DIR" origin/gh-pages
+
+          VERSION_DIR="$WORKTREE_DIR/${{ steps.determine-versioning.outputs.version }}"
+          if [[ ! -d "$VERSION_DIR" ]]; then
+            echo "Expected version directory not found: $VERSION_DIR"
+            git worktree remove "$WORKTREE_DIR" --force
+            exit 1
+          fi
+
+          ROOT_BEFORE=""
+          if [[ -f "$WORKTREE_DIR/llms.txt" ]]; then
+            ROOT_BEFORE="$(sha256sum "$WORKTREE_DIR/llms.txt" | awk '{print $1}')"
+          fi
+
+          cp "llms_version.txt" "$VERSION_DIR/llms.txt"
+          if ! cmp -s "llms_version.txt" "$VERSION_DIR/llms.txt"; then
+            echo "Version llms.txt verification failed"
+            git worktree remove "$WORKTREE_DIR" --force
+            exit 1
+          fi
+
+          if [[ "${{ github.ref_name }}" == "main" ]]; then
+            cp "llms_top.txt" "$WORKTREE_DIR/llms.txt"
+            if ! cmp -s "llms_top.txt" "$WORKTREE_DIR/llms.txt"; then
+              echo "Root llms.txt verification failed"
+              git worktree remove "$WORKTREE_DIR" --force
+              exit 1
+            fi
+          fi
+
+          if [[ "${{ github.ref_name }}" != "main" ]]; then
+            ROOT_AFTER=""
+            if [[ -f "$WORKTREE_DIR/llms.txt" ]]; then
+              ROOT_AFTER="$(sha256sum "$WORKTREE_DIR/llms.txt" | awk '{print $1}')"
+            fi
+            if [[ "$ROOT_BEFORE" != "$ROOT_AFTER" ]]; then
+              echo "Non-main branch must not change root llms.txt"
+              git worktree remove "$WORKTREE_DIR" --force
+              exit 1
+            fi
+          fi
+
+          git -C "$WORKTREE_DIR" config user.name "github-actions[bot]"
+          git -C "$WORKTREE_DIR" config user.email "github-actions[bot]@users.noreply.github.com"
+          git -C "$WORKTREE_DIR" add "${{ steps.determine-versioning.outputs.version }}/llms.txt"
+          if [[ "${{ github.ref_name }}" == "main" ]]; then
+            git -C "$WORKTREE_DIR" add llms.txt
+          fi
+
+          if [[ -n "$(git -C "$WORKTREE_DIR" status --porcelain)" ]]; then
+            git -C "$WORKTREE_DIR" commit -m "ci: publish llms.txt artifacts"
+            git -C "$WORKTREE_DIR" push origin HEAD:gh-pages
+          else
+            echo "No llms.txt changes to publish"
+          fi
+
+          git worktree remove "$WORKTREE_DIR" --force
