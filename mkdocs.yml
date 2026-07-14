@@ -1,33 +1,29 @@
-site_name: SDMX Technical Documentation
-site_description: Statistical Data and Metadata eXchange
-site_url: https://HMS-Analytical-Software.github.io/sdmx-technical-documentation
+site_name: SDMx Technical Documentation
+site_description: Technical Documentation of SDMx - The standard for Statistical Data and Metadata
+site_url: https://github.com/sdmx-twg/sdmx-docs
 strict: true
-copyright: '<a href="https://www.analytical-software.de/en/legal-disclosure/">HMS Analytical Software Imprint</a>'
+copyright: SDMx Technical Standards Working Group 2026
 
 theme:
   name: 'material'
+  font:
+    text: Lato
+    code: Roboto Mono
   palette:
-  - media: "(prefers-color-scheme)"
-    scheme: default
-    primary: indigo
-    accent: orange
-    toggle:
-      icon: material/lightbulb
-      name: "Switch to light mode"
   - media: "(prefers-color-scheme: light)"
     scheme: default
-    primary: indigo
-    accent: orange
+    primary: blue
+    accent: light blue
     toggle:
-      icon: material/lightbulb-outline
+      icon: material/weather-night
       name: "Switch to dark mode"
   - media: "(prefers-color-scheme: dark)"
     scheme: slate
-    primary: indigo
-    accent: orange
+    primary: blue grey
+    accent: light blue
     toggle:
-      icon: material/lightbulb-auto-outline
-      name: "Switch to system preference"
+      icon: material/weather-sunny
+      name: "Switch to light mode"
   features:
     - content.tabs.link
     - content.code.annotate
@@ -39,17 +35,18 @@ theme:
     # - navigation.instant.preview
     # - navigation.instant.progress
     - navigation.indexes
+    - navigation.tabs.sticky
     - navigation.path
     - navigation.sections
     - navigation.top
     - navigation.tracking
     - search.suggest
     - toc.follow
-  logo: 'media/logos/SDMX-logo.png'
+  logo: 'media/logos/SDMx_Logo_2026.png'
   favicon: 'media/logos/favicon.png'
 
-repo_name: HMS-Analytical-Software/sdmx-technical-documentation
-repo_url: https://github.com/HMS-Analytical-Software/sdmx-technical-documentation
+repo_name: SDMx-TWG/sdmx-docs
+repo_url: https://github.com/sdmx-twg/sdmx-docs
 edit_uri: edit/main/docs/
 
 extra:
