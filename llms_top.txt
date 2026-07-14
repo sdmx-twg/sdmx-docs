@@ -5,8 +5,8 @@
 ## Start Here
 
 - [Latest documentation landing page](https://sdmx-twg.github.io/sdmx-docs/latest/): Recommended default entry point.
-- [SDMX 3.1 landing page](https://sdmx-twg.github.io/sdmx-docs/3.1/): Stable versioned documentation. The respective sitemap is available from [Sitemap SDMX 3.1](https://sdmx-twg.github.io/sdmx-docs/3.1/sitemap.xml).
-- [SDMX 3.0 landing page](https://sdmx-twg.github.io/sdmx-docs/3.0/): Previous major version. The respective sitemap is available from [Sitemap SDMX 3.0](https://sdmx-twg.github.io/sdmx-docs/3.0/sitemap.xml).
+- [SDMX 3.1 landing page](https://sdmx-twg.github.io/sdmx-docs/3.1/): Stable versioned documentation. The respective sitemap is available from [Sitemap SDMX 3.1](https://sdmx-twg.github.io/sdmx-docs/3.1/sitemap.xml). Version-specific LLM discovery map: [llms.txt SDMX 3.1](https://sdmx-twg.github.io/sdmx-docs/3.1/llms.txt).
+- [SDMX 3.0 landing page](https://sdmx-twg.github.io/sdmx-docs/3.0/): Previous major version. The respective sitemap is available from [Sitemap SDMX 3.0](https://sdmx-twg.github.io/sdmx-docs/3.0/sitemap.xml). Version-specific LLM discovery map: [llms.txt SDMX 3.0](https://sdmx-twg.github.io/sdmx-docs/3.0/llms.txt).
 
 ## SDMX Official Source
 
