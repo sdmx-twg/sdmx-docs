@@ -2,7 +2,7 @@ site_name: SDMx Technical Documentation
 site_description: Technical Documentation of SDMx - The standard for Statistical Data and Metadata
 site_url: https://github.com/sdmx-twg/sdmx-docs
 strict: true
-copyright: SDMx Technical Standards Working Group 2026
+copyright: '<a href="https://www.analytical-software.de/en/legal-disclosure/">HMS Analytical Software Imprint</a>'
 
 theme:
   name: material
