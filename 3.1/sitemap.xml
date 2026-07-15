@@ -1,875 +1,875 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/csv/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/csv/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/csv/data_message_field_guide/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/csv/data_message_field_guide/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/csv/metadata_message_field_guide/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/csv/metadata_message_field_guide/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/framework/0_framework-introduction/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/framework/0_framework-introduction/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/framework/1_framework-change-history/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/framework/1_framework-change-history/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/framework/2_framework-processes-and-business-scope/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/framework/2_framework-processes-and-business-scope/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/framework/3_framework-the-sdmx-information-model/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/framework/3_framework-the-sdmx-information-model/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/framework/4_framework-the-sdmx-transmission-formats/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/framework/4_framework-the-sdmx-transmission-formats/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/framework/5_framework-dependencies-on-sdmx-content-oriented-guidelines/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/framework/5_framework-dependencies-on-sdmx-content-oriented-guidelines/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/framework/6_framework-validation-and-transformation-language/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/framework/6_framework-validation-and-transformation-language/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/information_model/0_Introduction/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/information_model/0_Introduction/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/information_model/0_change_history/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/information_model/0_change_history/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/information_model/10_ItemSchemeMap/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/information_model/10_ItemSchemeMap/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/information_model/11_Constraints/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/information_model/11_Constraints/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/information_model/12_Data_Provisioning/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/information_model/12_Data_Provisioning/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/information_model/13_Process/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/information_model/13_Process/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/information_model/14_Validation_and_Transformation_Language/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/information_model/14_Validation_and_Transformation_Language/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/information_model/15_Appendix_1%3A_A_Short_Guide_to_UML_in_the_SDMX_Information_Model/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/information_model/15_Appendix_1%3A_A_Short_Guide_to_UML_in_the_SDMX_Information_Model/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/information_model/1_Actors_and_Use_Cases/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/information_model/1_Actors_and_Use_Cases/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/information_model/2_SDMX_Base_Package/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/information_model/2_SDMX_Base_Package/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/information_model/3_Specific_Item_Schemes/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/information_model/3_Specific_Item_Schemes/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/information_model/4_Data_Structure_Definition_and_Dataset/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/information_model/4_Data_Structure_Definition_and_Dataset/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/information_model/5_Cube/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/information_model/5_Cube/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/information_model/6_Metadata_Structure_Definition_and_Metadata_Set/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/information_model/6_Metadata_Structure_Definition_and_Metadata_Set/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/information_model/7_Hierarchy/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/information_model/7_Hierarchy/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/information_model/8_Structure_Map/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/information_model/8_Structure_Map/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/information_model/9_RepresentationMap/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/information_model/9_RepresentationMap/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/logical_interfaces/6_Identification_of_SDMX_Objects/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/logical_interfaces/6_Identification_of_SDMX_Objects/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/logical_interfaces/7_Implementation_Notes/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/logical_interfaces/7_Implementation_Notes/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/technical_notes/0_Purpose_and_Structure/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/technical_notes/0_Purpose_and_Structure/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/technical_notes/10_Transforming_between_versions_of_SDMX/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/technical_notes/10_Transforming_between_versions_of_SDMX/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/technical_notes/11_Validation_and_Transformation_Language__VTL_/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/technical_notes/11_Validation_and_Transformation_Language__VTL_/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/technical_notes/12_Structure_Mapping/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/technical_notes/12_Structure_Mapping/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/technical_notes/13_ANNEX_Semantic_Versioning/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/technical_notes/13_ANNEX_Semantic_Versioning/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/technical_notes/1_General_Notes_on_This_Document/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/technical_notes/1_General_Notes_on_This_Document/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/technical_notes/2_Guide_for_SDMX_Format_Standards/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/technical_notes/2_Guide_for_SDMX_Format_Standards/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/technical_notes/3_General_Notes_for_Implementers/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/technical_notes/3_General_Notes_for_Implementers/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/technical_notes/4_Reference_Metadata/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/technical_notes/4_Reference_Metadata/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/technical_notes/5_Codelist/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/technical_notes/5_Codelist/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/technical_notes/6_Geospatial_information_support/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/technical_notes/6_Geospatial_information_support/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/technical_notes/7_Maintenance_Agencies_and_Metadata_Providers/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/technical_notes/7_Maintenance_Agencies_and_Metadata_Providers/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/technical_notes/8_Concept_Roles/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/technical_notes/8_Concept_Roles/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/framework/technical_notes/9_Constraints/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/framework/technical_notes/9_Constraints/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/framework/0_framework-introduction/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/framework/0_framework-introduction/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/framework/1_framework-change-history/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/framework/1_framework-change-history/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/framework/2_framework-processes-and-business-scope/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/framework/2_framework-processes-and-business-scope/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/framework/3_framework-the-sdmx-information-model/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/framework/3_framework-the-sdmx-information-model/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/framework/4_framework-the-sdmx-transmission-formats/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/framework/4_framework-the-sdmx-transmission-formats/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/framework/5_framework-dependencies-on-sdmx-content-oriented-guidelines/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/framework/5_framework-dependencies-on-sdmx-content-oriented-guidelines/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/framework/6_framework-validation-and-transformation-language/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/framework/6_framework-validation-and-transformation-language/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/information_model/0_Introduction/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/information_model/0_Introduction/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/information_model/0_change_history/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/information_model/0_change_history/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/information_model/10_ItemSchemeMap/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/information_model/10_ItemSchemeMap/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/information_model/11_Constraints/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/information_model/11_Constraints/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/information_model/12_Data_Provisioning/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/information_model/12_Data_Provisioning/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/information_model/13_Process/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/information_model/13_Process/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/information_model/14_Validation_and_Transformation_Language/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/information_model/14_Validation_and_Transformation_Language/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/information_model/15_Appendix_1%3A_A_Short_Guide_to_UML_in_the_SDMX_Information_Model/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/information_model/15_Appendix_1%3A_A_Short_Guide_to_UML_in_the_SDMX_Information_Model/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/information_model/1_Actors_and_Use_Cases/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/information_model/1_Actors_and_Use_Cases/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/information_model/2_SDMX_Base_Package/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/information_model/2_SDMX_Base_Package/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/information_model/3_Specific_Item_Schemes/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/information_model/3_Specific_Item_Schemes/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/information_model/4_Data_Structure_Definition_and_Dataset/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/information_model/4_Data_Structure_Definition_and_Dataset/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/information_model/5_Cube/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/information_model/5_Cube/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/information_model/6_Metadata_Structure_Definition_and_Metadata_Set/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/information_model/6_Metadata_Structure_Definition_and_Metadata_Set/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/information_model/7_Hierarchy/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/information_model/7_Hierarchy/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/information_model/8_Structure_Map/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/information_model/8_Structure_Map/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/information_model/9_RepresentationMap/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/information_model/9_RepresentationMap/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/logical_interfaces/6_Identification_of_SDMX_Objects/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/logical_interfaces/6_Identification_of_SDMX_Objects/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/logical_interfaces/7_Implementation_Notes/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/logical_interfaces/7_Implementation_Notes/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/technical_notes/0_Purpose_and_Structure/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/technical_notes/0_Purpose_and_Structure/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/technical_notes/10_Transforming_between_versions_of_SDMX/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/technical_notes/10_Transforming_between_versions_of_SDMX/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/technical_notes/11_Validation_and_Transformation_Language__VTL_/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/technical_notes/11_Validation_and_Transformation_Language__VTL_/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/technical_notes/12_Structure_Mapping/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/technical_notes/12_Structure_Mapping/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/technical_notes/13_ANNEX_Semantic_Versioning/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/technical_notes/13_ANNEX_Semantic_Versioning/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/technical_notes/1_General_Notes_on_This_Document/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/technical_notes/1_General_Notes_on_This_Document/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/technical_notes/2_Guide_for_SDMX_Format_Standards/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/technical_notes/2_Guide_for_SDMX_Format_Standards/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/technical_notes/3_General_Notes_for_Implementers/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/technical_notes/3_General_Notes_for_Implementers/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/technical_notes/4_Reference_Metadata/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/technical_notes/4_Reference_Metadata/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/technical_notes/5_Codelist/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/technical_notes/5_Codelist/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/technical_notes/6_Geospatial_information_support/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/technical_notes/6_Geospatial_information_support/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/technical_notes/7_Maintenance_Agencies_and_Metadata_Providers/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/technical_notes/7_Maintenance_Agencies_and_Metadata_Providers/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/technical_notes/8_Concept_Roles/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/technical_notes/8_Concept_Roles/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/information_model/technical_notes/9_Constraints/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/information_model/technical_notes/9_Constraints/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/data_message/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/data_message/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/data_message/0_Introduction/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/data_message/0_Introduction/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/data_message/1_field_guide/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/data_message/1_field_guide/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/data_message/1b_data_type_conversions/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/data_message/1b_data_type_conversions/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/data_message/2_linking_mechanism/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/data_message/2_linking_mechanism/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/data_message/3_handling_indexes/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/data_message/3_handling_indexes/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/data_message/4_localised_text_elements/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/data_message/4_localised_text_elements/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/data_message/5_security_considerations/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/data_message/5_security_considerations/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/data_message/6_extending_sdmx_json/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/data_message/6_extending_sdmx_json/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/data_message/7_references/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/data_message/7_references/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/metadata_message/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/metadata_message/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/metadata_message/0_Introduction/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/metadata_message/0_Introduction/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/metadata_message/1_field_guide/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/metadata_message/1_field_guide/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/metadata_message/1b_data_type_conversions/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/metadata_message/1b_data_type_conversions/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/metadata_message/2_linking_mechanism/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/metadata_message/2_linking_mechanism/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/metadata_message/4_localised_text_elements/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/metadata_message/4_localised_text_elements/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/metadata_message/5_security_considerations/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/metadata_message/5_security_considerations/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/metadata_message/6_extending_sdmx_json/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/metadata_message/6_extending_sdmx_json/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/metadata_message/7_references/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/metadata_message/7_references/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/structure_message/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/structure_message/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/structure_message/0_Introduction/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/structure_message/0_Introduction/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/structure_message/1_field_guide/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/structure_message/1_field_guide/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/structure_message/2_linking_mechanism/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/structure_message/2_linking_mechanism/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/structure_message/4_localised_text_elements/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/structure_message/4_localised_text_elements/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/structure_message/5_security_considerations/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/structure_message/5_security_considerations/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/structure_message/6_extending_sdmx_json/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/structure_message/6_extending_sdmx_json/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/structure_message/7_references/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/structure_message/7_references/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/json/structure_message/requirements/browse-by-topic/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/json/structure_message/requirements/browse-by-topic/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/framework/0_framework-introduction/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/framework/0_framework-introduction/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/framework/1_framework-change-history/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/framework/1_framework-change-history/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/framework/2_framework-processes-and-business-scope/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/framework/2_framework-processes-and-business-scope/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/framework/3_framework-the-sdmx-information-model/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/framework/3_framework-the-sdmx-information-model/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/framework/4_framework-the-sdmx-transmission-formats/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/framework/4_framework-the-sdmx-transmission-formats/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/framework/5_framework-dependencies-on-sdmx-content-oriented-guidelines/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/framework/5_framework-dependencies-on-sdmx-content-oriented-guidelines/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/framework/6_framework-validation-and-transformation-language/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/framework/6_framework-validation-and-transformation-language/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/information_model/0_Introduction/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/information_model/0_Introduction/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/information_model/0_change_history/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/information_model/0_change_history/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/information_model/10_ItemSchemeMap/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/information_model/10_ItemSchemeMap/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/information_model/11_Constraints/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/information_model/11_Constraints/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/information_model/12_Data_Provisioning/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/information_model/12_Data_Provisioning/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/information_model/13_Process/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/information_model/13_Process/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/information_model/14_Validation_and_Transformation_Language/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/information_model/14_Validation_and_Transformation_Language/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/information_model/15_Appendix_1%3A_A_Short_Guide_to_UML_in_the_SDMX_Information_Model/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/information_model/15_Appendix_1%3A_A_Short_Guide_to_UML_in_the_SDMX_Information_Model/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/information_model/1_Actors_and_Use_Cases/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/information_model/1_Actors_and_Use_Cases/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/information_model/2_SDMX_Base_Package/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/information_model/2_SDMX_Base_Package/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/information_model/3_Specific_Item_Schemes/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/information_model/3_Specific_Item_Schemes/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/information_model/4_Data_Structure_Definition_and_Dataset/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/information_model/4_Data_Structure_Definition_and_Dataset/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/information_model/5_Cube/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/information_model/5_Cube/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/information_model/6_Metadata_Structure_Definition_and_Metadata_Set/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/information_model/6_Metadata_Structure_Definition_and_Metadata_Set/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/information_model/7_Hierarchy/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/information_model/7_Hierarchy/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/information_model/8_Structure_Map/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/information_model/8_Structure_Map/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/information_model/9_RepresentationMap/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/information_model/9_RepresentationMap/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/logical_interfaces/6_Identification_of_SDMX_Objects/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/logical_interfaces/6_Identification_of_SDMX_Objects/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/logical_interfaces/7_Implementation_Notes/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/logical_interfaces/7_Implementation_Notes/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/technical_notes/0_Purpose_and_Structure/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/technical_notes/0_Purpose_and_Structure/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/technical_notes/10_Transforming_between_versions_of_SDMX/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/technical_notes/10_Transforming_between_versions_of_SDMX/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/technical_notes/11_Validation_and_Transformation_Language__VTL_/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/technical_notes/11_Validation_and_Transformation_Language__VTL_/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/technical_notes/12_Structure_Mapping/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/technical_notes/12_Structure_Mapping/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/technical_notes/13_ANNEX_Semantic_Versioning/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/technical_notes/13_ANNEX_Semantic_Versioning/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/technical_notes/1_General_Notes_on_This_Document/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/technical_notes/1_General_Notes_on_This_Document/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/technical_notes/2_Guide_for_SDMX_Format_Standards/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/technical_notes/2_Guide_for_SDMX_Format_Standards/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/technical_notes/3_General_Notes_for_Implementers/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/technical_notes/3_General_Notes_for_Implementers/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/technical_notes/4_Reference_Metadata/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/technical_notes/4_Reference_Metadata/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/technical_notes/5_Codelist/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/technical_notes/5_Codelist/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/technical_notes/6_Geospatial_information_support/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/technical_notes/6_Geospatial_information_support/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/technical_notes/7_Maintenance_Agencies_and_Metadata_Providers/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/technical_notes/7_Maintenance_Agencies_and_Metadata_Providers/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/technical_notes/8_Concept_Roles/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/technical_notes/8_Concept_Roles/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/logical_interfaces/technical_notes/9_Constraints/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/logical_interfaces/technical_notes/9_Constraints/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/ml/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/ml/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/ml/common/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/ml/common/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/ml/data/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/ml/data/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/ml/message/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/ml/message/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/ml/registry/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/ml/registry/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/ml/samples/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/ml/samples/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/ml/structure/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/ml/structure/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/registry_specification/1_Introduction/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/registry_specification/1_Introduction/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/registry_specification/2_Scope_and_Normative_Status/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/registry_specification/2_Scope_and_Normative_Status/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/registry_specification/3_Scope_of_the_SDMX_Registry_Repository/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/registry_specification/3_Scope_of_the_SDMX_Registry_Repository/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/registry_specification/4_SDMX_Registry_Repository_Architecture/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/registry_specification/4_SDMX_Registry_Repository_Architecture/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/registry_specification/5_Registry_Interfaces_and_Services/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/registry_specification/5_Registry_Interfaces_and_Services/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/rest_api/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/rest_api/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/rest_api/availability/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/rest_api/availability/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/rest_api/content_negotiation/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/rest_api/content_negotiation/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/rest_api/data/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/rest_api/data/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/rest_api/extend/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/rest_api/extend/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/rest_api/maintenance/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/rest_api/maintenance/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/rest_api/metadata/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/rest_api/metadata/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/rest_api/querying_versions/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/rest_api/querying_versions/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/rest_api/registration/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/rest_api/registration/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/rest_api/schema/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/rest_api/schema/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/rest_api/status/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/rest_api/status/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/rest_api/structures/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/rest_api/structures/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/rest_api/tips/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/rest_api/tips/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/framework/0_framework-introduction/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/framework/0_framework-introduction/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/framework/1_framework-change-history/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/framework/1_framework-change-history/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/framework/2_framework-processes-and-business-scope/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/framework/2_framework-processes-and-business-scope/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/framework/3_framework-the-sdmx-information-model/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/framework/3_framework-the-sdmx-information-model/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/framework/4_framework-the-sdmx-transmission-formats/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/framework/4_framework-the-sdmx-transmission-formats/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/framework/5_framework-dependencies-on-sdmx-content-oriented-guidelines/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/framework/5_framework-dependencies-on-sdmx-content-oriented-guidelines/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/framework/6_framework-validation-and-transformation-language/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/framework/6_framework-validation-and-transformation-language/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/information_model/0_Introduction/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/information_model/0_Introduction/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/information_model/0_change_history/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/information_model/0_change_history/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/information_model/10_ItemSchemeMap/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/information_model/10_ItemSchemeMap/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/information_model/11_Constraints/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/information_model/11_Constraints/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/information_model/12_Data_Provisioning/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/information_model/12_Data_Provisioning/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/information_model/13_Process/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/information_model/13_Process/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/information_model/14_Validation_and_Transformation_Language/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/information_model/14_Validation_and_Transformation_Language/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/information_model/15_Appendix_1%3A_A_Short_Guide_to_UML_in_the_SDMX_Information_Model/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/information_model/15_Appendix_1%3A_A_Short_Guide_to_UML_in_the_SDMX_Information_Model/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/information_model/1_Actors_and_Use_Cases/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/information_model/1_Actors_and_Use_Cases/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/information_model/2_SDMX_Base_Package/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/information_model/2_SDMX_Base_Package/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/information_model/3_Specific_Item_Schemes/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/information_model/3_Specific_Item_Schemes/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/information_model/4_Data_Structure_Definition_and_Dataset/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/information_model/4_Data_Structure_Definition_and_Dataset/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/information_model/5_Cube/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/information_model/5_Cube/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/information_model/6_Metadata_Structure_Definition_and_Metadata_Set/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/information_model/6_Metadata_Structure_Definition_and_Metadata_Set/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/information_model/7_Hierarchy/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/information_model/7_Hierarchy/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/information_model/8_Structure_Map/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/information_model/8_Structure_Map/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/information_model/9_RepresentationMap/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/information_model/9_RepresentationMap/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/logical_interfaces/6_Identification_of_SDMX_Objects/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/logical_interfaces/6_Identification_of_SDMX_Objects/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/logical_interfaces/7_Implementation_Notes/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/logical_interfaces/7_Implementation_Notes/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/technical_notes/0_Purpose_and_Structure/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/0_Purpose_and_Structure/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/technical_notes/10_Transforming_between_versions_of_SDMX/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/10_Transforming_between_versions_of_SDMX/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/technical_notes/11_Validation_and_Transformation_Language__VTL_/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/11_Validation_and_Transformation_Language__VTL_/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/technical_notes/12_Structure_Mapping/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/12_Structure_Mapping/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/technical_notes/13_ANNEX_Semantic_Versioning/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/13_ANNEX_Semantic_Versioning/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/technical_notes/1_General_Notes_on_This_Document/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/1_General_Notes_on_This_Document/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/technical_notes/2_Guide_for_SDMX_Format_Standards/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/2_Guide_for_SDMX_Format_Standards/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/technical_notes/3_General_Notes_for_Implementers/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/3_General_Notes_for_Implementers/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/technical_notes/4_Reference_Metadata/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/4_Reference_Metadata/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/technical_notes/5_Codelist/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/5_Codelist/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/technical_notes/6_Geospatial_information_support/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/6_Geospatial_information_support/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/technical_notes/7_Maintenance_Agencies_and_Metadata_Providers/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/7_Maintenance_Agencies_and_Metadata_Providers/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/technical_notes/8_Concept_Roles/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/8_Concept_Roles/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
-         <loc>https://HMS-Analytical-Software.github.io/sdmx-technical-documentation/latest/technical_notes/technical_notes/9_Constraints/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <loc>https://github.com/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/9_Constraints/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
 </urlset>
