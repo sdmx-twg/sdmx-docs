@@ -5,7 +5,7 @@ strict: true
 copyright: SDMx Technical Standards Working Group 2026
 
 theme:
-  name: 'material'
+  name: material
   font:
     text: Lato
     code: Roboto Mono
@@ -28,12 +28,7 @@ theme:
     - content.tabs.link
     - content.code.annotate
     - content.code.copy
-    # - announce.dismiss
     - navigation.tabs
-    # - navigation.instant
-    # - navigation.instant.prefetch
-    # - navigation.instant.preview
-    # - navigation.instant.progress
     - navigation.indexes
     - navigation.tabs.sticky
     - navigation.path
@@ -42,8 +37,8 @@ theme:
     - navigation.tracking
     - search.suggest
     - toc.follow
-  logo: 'media/logos/SDMx_Logo_2026.png'
-  favicon: 'media/logos/favicon.png'
+  logo: media/logos/SDMx_Logo_2026.png
+  favicon: media/logos/favicon.png
 
 repo_name: SDMx-TWG/sdmx-docs
 repo_url: https://github.com/sdmx-twg/sdmx-docs
@@ -53,7 +48,6 @@ extra:
   version:
     provider: mike
 
-# https://www.mkdocs.org/user-guide/configuration/#validation
 validation:
   omitted_files: ignore
   absolute_links: info
@@ -63,17 +57,17 @@ validation:
 nav:
 - Getting Started:
   - Welcome to SDMX: index.md
-- Framework: '!include ./components/information_model/mkdocs_framework.yml'
-- Information Model: '!include ./components/information_model/mkdocs_information_model.yml'
+- Framework: "!include ./components/information_model/mkdocs_framework.yml"
+- Information Model: "!include ./components/information_model/mkdocs_information_model.yml"
 - Registry Specification and Logical Interfaces:
-  - Registry Specification: '!include ./components/sdmx_registry/mkdocs_registry_specification.yml'
-  - Logical Interfaces: '!include ./components/information_model/mkdocs_logical_interfaces.yml'
-- Technical Notes: '!include ./components/information_model/mkdocs_technical_notes.yml'
-- REST API (v2.2): '!include ./components/rest_api/mkdocs_rest_api.yml'
+  - Registry Specification: "!include ./components/sdmx_registry/mkdocs_registry_specification.yml"
+  - Logical Interfaces: "!include ./components/information_model/mkdocs_logical_interfaces.yml"
+- Technical Notes: "!include ./components/information_model/mkdocs_technical_notes.yml"
+- REST API (v2.2): "!include ./components/rest_api/mkdocs_rest_api.yml"
 - Transmission Formats:
-  - SDMX-ML (v3.1): '!include ./components/sdmx_ml/mkdocs.yml'
-  - SDMX-JSON (v2.1): '!include ./components/sdmx_json/mkdocs.yml'
-  - SDMX-CSV (v2.1): '!include ./components/sdmx_csv/mkdocs.yml'
+  - SDMX-ML (v3.1): "!include ./components/sdmx_ml/mkdocs.yml"
+  - SDMX-JSON (v2.1): "!include ./components/sdmx_json/mkdocs.yml"
+  - SDMX-CSV (v2.1): "!include ./components/sdmx_csv/mkdocs.yml"
 - Go To sdmx.org: "https://sdmx.org/"
 
 markdown_extensions:
@@ -97,7 +91,6 @@ markdown_extensions:
 - footnotes
 - smarty
 
-
 plugins:
 - to-pdf:
     download_link: header
@@ -115,11 +108,6 @@ plugins:
     alias_type: symlink
     canonical_version: latest
 - search
-- exclude:
-    glob:
-    - theme/announce.html
-    - plugins/*
-    - __pycache__/*
 
 extra_javascript:
   - assets/anchors.js
