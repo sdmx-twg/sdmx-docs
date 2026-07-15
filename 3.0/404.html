@@ -6,26 +6,26 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Statistical Data and Metadata eXchange">
+        <meta name="description" content="Technical Documentation of SDMx - The standard for Statistical Data and Metadata">
       
       
       
       
       
       
-      <link rel="icon" href="/sdmx-technical-documentation/latest/media/logos/favicon.png">
+      <link rel="icon" href="/sdmx-twg/sdmx-docs/latest/media/logos/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>SDMX Technical Documentation</title>
+        <title>SDMx Technical Documentation</title>
       
     
     
-      <link rel="stylesheet" href="/sdmx-technical-documentation/latest/assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="/sdmx-twg/sdmx-docs/latest/assets/stylesheets/main.2afb09e1.min.css">
       
         
-        <link rel="stylesheet" href="/sdmx-technical-documentation/latest/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="/sdmx-twg/sdmx-docs/latest/assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -39,14 +39,14 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lato";--md-code-font:"Roboto Mono"}</style>
       
     
     
-      <link rel="stylesheet" href="/sdmx-technical-documentation/latest/assets/style.css">
+      <link rel="stylesheet" href="/sdmx-twg/sdmx-docs/latest/assets/style.css">
     
-    <script>__md_scope=new URL("/sdmx-technical-documentation/latest",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("/sdmx-twg/sdmx-docs/latest",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -63,7 +63,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -83,11 +83,13 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/sdmx-technical-documentation/latest/." title="SDMX Technical Documentation" class="md-header__button md-logo" aria-label="SDMX Technical Documentation" data-md-component="logo">
+    <a href="/sdmx-twg/sdmx-docs/latest/." title="SDMx Technical Documentation" class="md-header__button md-logo" aria-label="SDMx Technical Documentation" data-md-component="logo">
       
-  <img src="/sdmx-technical-documentation/latest/media/logos/SDMX-logo.png" alt="logo">
+  <img src="/sdmx-twg/sdmx-docs/latest/media/logos/SDMx_Logo_2026.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -98,7 +100,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            SDMX Technical Documentation
+            SDMx Technical Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -117,30 +119,20 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
       </label>
     
   
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="orange"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
-    
-      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 2c3.87 0 7 3.13 7 7 0 2.38-1.19 4.47-3 5.74V17c0 .55-.45 1-1 1H6c-.55 0-1-.45-1-1v-2.26C3.19 13.47 2 11.38 2 9c0-3.87 3.13-7 7-7M6 21v-1h6v1c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1M9 4C6.24 4 4 6.24 4 9c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58 0-2.76-2.24-5-5-5m10 9h-2l-3.2 9h1.9l.7-2h3.2l.7 2h1.9zm-2.15 5.65L18 15l1.15 3.65z"/></svg>
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
       </label>
     
   
@@ -196,27 +188,21 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/HMS-Analytical-Software/sdmx-technical-documentation" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/sdmx-twg/sdmx-docs" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
   </div>
   <div class="md-source__repository">
-    HMS-Analytical-Software/sdmx-technical-documentation
+    SDMx-TWG/sdmx-docs
   </div>
 </a>
       </div>
     
   </nav>
   
-</header>
     
-    <div class="md-container" data-md-component="container">
       
-      
-        
-          
-            
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
@@ -229,7 +215,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/sdmx-technical-documentation/latest/." class="md-tabs__link">
+        <a href="/sdmx-twg/sdmx-docs/latest/." class="md-tabs__link">
           
   
   
@@ -251,7 +237,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/sdmx-technical-documentation/latest/framework/framework/0_framework-introduction/" class="md-tabs__link">
+        <a href="/sdmx-twg/sdmx-docs/latest/framework/framework/0_framework-introduction/" class="md-tabs__link">
           
   
   
@@ -273,7 +259,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/sdmx-technical-documentation/latest/information_model/information_model/0_Introduction/" class="md-tabs__link">
+        <a href="/sdmx-twg/sdmx-docs/latest/information_model/information_model/0_Introduction/" class="md-tabs__link">
           
   
   
@@ -302,7 +288,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/sdmx-technical-documentation/latest/registry_specification/1_Introduction/" class="md-tabs__link">
+        <a href="/sdmx-twg/sdmx-docs/latest/registry_specification/1_Introduction/" class="md-tabs__link">
           
   
   
@@ -327,7 +313,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/sdmx-technical-documentation/latest/technical_notes/technical_notes/0_Purpose_and_Structure/" class="md-tabs__link">
+        <a href="/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/0_Purpose_and_Structure/" class="md-tabs__link">
           
   
   
@@ -356,13 +342,13 @@
     
     
       <li class="md-tabs__item">
-        <a href="/sdmx-technical-documentation/latest/rest_api/" class="md-tabs__link">
+        <a href="/sdmx-twg/sdmx-docs/latest/rest_api/" class="md-tabs__link">
           
   
   
     
   
-  REST API (v2.0)
+  REST API (v2.2)
 
         </a>
       </li>
@@ -388,7 +374,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/sdmx-technical-documentation/latest/ml/" class="md-tabs__link">
+        <a href="/sdmx-twg/sdmx-docs/latest/ml/" class="md-tabs__link">
           
   
   
@@ -427,7 +413,13 @@
     </ul>
   </div>
 </nav>
-          
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
         
       
       <main class="md-main" data-md-component="main">
@@ -446,22 +438,22 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/sdmx-technical-documentation/latest/." title="SDMX Technical Documentation" class="md-nav__button md-logo" aria-label="SDMX Technical Documentation" data-md-component="logo">
+    <a href="/sdmx-twg/sdmx-docs/latest/." title="SDMx Technical Documentation" class="md-nav__button md-logo" aria-label="SDMx Technical Documentation" data-md-component="logo">
       
-  <img src="/sdmx-technical-documentation/latest/media/logos/SDMX-logo.png" alt="logo">
+  <img src="/sdmx-twg/sdmx-docs/latest/media/logos/SDMx_Logo_2026.png" alt="logo">
 
     </a>
-    SDMX Technical Documentation
+    SDMx Technical Documentation
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/HMS-Analytical-Software/sdmx-technical-documentation" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/sdmx-twg/sdmx-docs" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
   </div>
   <div class="md-source__repository">
-    HMS-Analytical-Software/sdmx-technical-documentation
+    SDMx-TWG/sdmx-docs
   </div>
 </a>
     </div>
@@ -498,7 +490,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/sdmx-technical-documentation/latest/." class="md-nav__link ">
+            <a href="/sdmx-twg/sdmx-docs/latest/." class="md-nav__link ">
               
   
   
@@ -594,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/framework/framework/0_framework-introduction/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/framework/framework/0_framework-introduction/" class="md-nav__link">
         
   
   
@@ -617,7 +609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/framework/framework/1_framework-change-history/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/framework/framework/1_framework-change-history/" class="md-nav__link">
         
   
   
@@ -640,7 +632,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/framework/framework/2_framework-processes-and-business-scope/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/framework/framework/2_framework-processes-and-business-scope/" class="md-nav__link">
         
   
   
@@ -663,7 +655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/framework/framework/3_framework-the-sdmx-information-model/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/framework/framework/3_framework-the-sdmx-information-model/" class="md-nav__link">
         
   
   
@@ -686,7 +678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/framework/framework/4_framework-the-sdmx-transmission-formats/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/framework/framework/4_framework-the-sdmx-transmission-formats/" class="md-nav__link">
         
   
   
@@ -709,7 +701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/framework/framework/5_framework-dependencies-on-sdmx-content-oriented-guidelines/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/framework/framework/5_framework-dependencies-on-sdmx-content-oriented-guidelines/" class="md-nav__link">
         
   
   
@@ -732,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/framework/framework/6_framework-validation-and-transformation-language/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/framework/framework/6_framework-validation-and-transformation-language/" class="md-nav__link">
         
   
   
@@ -841,7 +833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/information_model/information_model/0_Introduction/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/information_model/information_model/0_Introduction/" class="md-nav__link">
         
   
   
@@ -864,7 +856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/information_model/information_model/0_change_history/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/information_model/information_model/0_change_history/" class="md-nav__link">
         
   
   
@@ -887,7 +879,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/information_model/information_model/1_Actors_and_Use_Cases/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/information_model/information_model/1_Actors_and_Use_Cases/" class="md-nav__link">
         
   
   
@@ -910,7 +902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/information_model/information_model/2_SDMX_Base_Package/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/information_model/information_model/2_SDMX_Base_Package/" class="md-nav__link">
         
   
   
@@ -933,7 +925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/information_model/information_model/3_Specific_Item_Schemes/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/information_model/information_model/3_Specific_Item_Schemes/" class="md-nav__link">
         
   
   
@@ -956,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/information_model/information_model/4_Data_Structure_Definition_and_Dataset/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/information_model/information_model/4_Data_Structure_Definition_and_Dataset/" class="md-nav__link">
         
   
   
@@ -979,7 +971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/information_model/information_model/5_Cube/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/information_model/information_model/5_Cube/" class="md-nav__link">
         
   
   
@@ -1002,7 +994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/information_model/information_model/6_Metadata_Structure_Definition_and_Metadata_Set/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/information_model/information_model/6_Metadata_Structure_Definition_and_Metadata_Set/" class="md-nav__link">
         
   
   
@@ -1025,7 +1017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/information_model/information_model/7_Hierarchy/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/information_model/information_model/7_Hierarchy/" class="md-nav__link">
         
   
   
@@ -1048,7 +1040,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/information_model/information_model/8_Structure_Map/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/information_model/information_model/8_Structure_Map/" class="md-nav__link">
         
   
   
@@ -1071,7 +1063,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/information_model/information_model/9_RepresentationMap/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/information_model/information_model/9_RepresentationMap/" class="md-nav__link">
         
   
   
@@ -1094,7 +1086,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/information_model/information_model/10_ItemSchemeMap/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/information_model/information_model/10_ItemSchemeMap/" class="md-nav__link">
         
   
   
@@ -1117,7 +1109,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/information_model/information_model/11_Constraints/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/information_model/information_model/11_Constraints/" class="md-nav__link">
         
   
   
@@ -1140,7 +1132,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/information_model/information_model/12_Data_Provisioning/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/information_model/information_model/12_Data_Provisioning/" class="md-nav__link">
         
   
   
@@ -1163,7 +1155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/information_model/information_model/13_Process/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/information_model/information_model/13_Process/" class="md-nav__link">
         
   
   
@@ -1186,7 +1178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/information_model/information_model/14_Validation_and_Transformation_Language/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/information_model/information_model/14_Validation_and_Transformation_Language/" class="md-nav__link">
         
   
   
@@ -1209,7 +1201,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/information_model/information_model/15_Appendix_1%3A_A_Short_Guide_to_UML_in_the_SDMX_Information_Model/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/information_model/information_model/15_Appendix_1%3A_A_Short_Guide_to_UML_in_the_SDMX_Information_Model/" class="md-nav__link">
         
   
   
@@ -1343,7 +1335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/registry_specification/1_Introduction/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/registry_specification/1_Introduction/" class="md-nav__link">
         
   
   
@@ -1366,7 +1358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/registry_specification/2_Scope_and_Normative_Status/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/registry_specification/2_Scope_and_Normative_Status/" class="md-nav__link">
         
   
   
@@ -1389,7 +1381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/registry_specification/3_Scope_of_the_SDMX_Registry_Repository/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/registry_specification/3_Scope_of_the_SDMX_Registry_Repository/" class="md-nav__link">
         
   
   
@@ -1412,7 +1404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/registry_specification/4_SDMX_Registry_Repository_Architecture/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/registry_specification/4_SDMX_Registry_Repository_Architecture/" class="md-nav__link">
         
   
   
@@ -1435,7 +1427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/registry_specification/5_Registry_Interfaces_and_Services/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/registry_specification/5_Registry_Interfaces_and_Services/" class="md-nav__link">
         
   
   
@@ -1515,7 +1507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/logical_interfaces/logical_interfaces/6_Identification_of_SDMX_Objects/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/logical_interfaces/logical_interfaces/6_Identification_of_SDMX_Objects/" class="md-nav__link">
         
   
   
@@ -1538,7 +1530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/logical_interfaces/logical_interfaces/7_Implementation_Notes/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/logical_interfaces/logical_interfaces/7_Implementation_Notes/" class="md-nav__link">
         
   
   
@@ -1649,7 +1641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/technical_notes/technical_notes/0_Purpose_and_Structure/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/0_Purpose_and_Structure/" class="md-nav__link">
         
   
   
@@ -1672,7 +1664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/technical_notes/technical_notes/1_General_Notes_on_This_Document/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/1_General_Notes_on_This_Document/" class="md-nav__link">
         
   
   
@@ -1695,7 +1687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/technical_notes/technical_notes/2_Guide_for_SDMX_Format_Standards/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/2_Guide_for_SDMX_Format_Standards/" class="md-nav__link">
         
   
   
@@ -1718,7 +1710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/technical_notes/technical_notes/3_General_Notes_for_Implementers/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/3_General_Notes_for_Implementers/" class="md-nav__link">
         
   
   
@@ -1741,7 +1733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/technical_notes/technical_notes/4_Reference_Metadata/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/4_Reference_Metadata/" class="md-nav__link">
         
   
   
@@ -1764,7 +1756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/technical_notes/technical_notes/5_Codelist/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/5_Codelist/" class="md-nav__link">
         
   
   
@@ -1787,7 +1779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/technical_notes/technical_notes/6_Geospatial_information_support/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/6_Geospatial_information_support/" class="md-nav__link">
         
   
   
@@ -1810,7 +1802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/technical_notes/technical_notes/7_Maintenance_Agencies_and_Metadata_Providers/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/7_Maintenance_Agencies_and_Metadata_Providers/" class="md-nav__link">
         
   
   
@@ -1833,7 +1825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/technical_notes/technical_notes/8_Concept_Roles/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/8_Concept_Roles/" class="md-nav__link">
         
   
   
@@ -1856,7 +1848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/technical_notes/technical_notes/9_Constraints/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/9_Constraints/" class="md-nav__link">
         
   
   
@@ -1879,7 +1871,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/technical_notes/technical_notes/10_Transforming_between_versions_of_SDMX/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/10_Transforming_between_versions_of_SDMX/" class="md-nav__link">
         
   
   
@@ -1902,7 +1894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/technical_notes/technical_notes/11_Validation_and_Transformation_Language__VTL_/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/11_Validation_and_Transformation_Language__VTL_/" class="md-nav__link">
         
   
   
@@ -1925,7 +1917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/technical_notes/technical_notes/12_Structure_Mapping/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/12_Structure_Mapping/" class="md-nav__link">
         
   
   
@@ -1948,7 +1940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/technical_notes/technical_notes/13_ANNEX_Semantic_Versioning/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/technical_notes/technical_notes/13_ANNEX_Semantic_Versioning/" class="md-nav__link">
         
   
   
@@ -2003,7 +1995,7 @@
   
   
   <span class="md-ellipsis">
-    REST API (v2.0)
+    REST API (v2.2)
     
   </span>
   
@@ -2014,7 +2006,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            REST API (v2.0)
+            REST API (v2.2)
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2070,7 +2062,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/sdmx-technical-documentation/latest/rest_api/" class="md-nav__link ">
+            <a href="/sdmx-twg/sdmx-docs/latest/rest_api/" class="md-nav__link ">
               
   
   
@@ -2105,7 +2097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/rest_api/data/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/rest_api/data/" class="md-nav__link">
         
   
   
@@ -2128,7 +2120,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/rest_api/structures/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/rest_api/structures/" class="md-nav__link">
         
   
   
@@ -2151,7 +2143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/rest_api/metadata/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/rest_api/metadata/" class="md-nav__link">
         
   
   
@@ -2174,7 +2166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/rest_api/schema/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/rest_api/schema/" class="md-nav__link">
         
   
   
@@ -2197,7 +2189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/rest_api/availability/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/rest_api/availability/" class="md-nav__link">
         
   
   
@@ -2220,7 +2212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/rest_api/querying_versions/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/rest_api/querying_versions/" class="md-nav__link">
         
   
   
@@ -2243,7 +2235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/rest_api/content_negotiation/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/rest_api/content_negotiation/" class="md-nav__link">
         
   
   
@@ -2266,7 +2258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/rest_api/status/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/rest_api/status/" class="md-nav__link">
         
   
   
@@ -2289,7 +2281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/rest_api/maintenance/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/rest_api/maintenance/" class="md-nav__link">
         
   
   
@@ -2312,7 +2304,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/rest_api/tips/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/rest_api/tips/" class="md-nav__link">
         
   
   
@@ -2335,7 +2327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/rest_api/extend/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/rest_api/extend/" class="md-nav__link">
         
   
   
@@ -2459,12 +2451,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/sdmx-technical-documentation/latest/ml/" class="md-nav__link ">
+            <a href="/sdmx-twg/sdmx-docs/latest/ml/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    SDMX-ML (v3.0)
+    SDMX-ML (v3.1)
     
   </span>
   
@@ -2481,7 +2473,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7_1">
             <span class="md-nav__icon md-icon"></span>
-            SDMX-ML (v3.0)
+            SDMX-ML (v3.1)
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2494,7 +2486,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/ml/message/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/ml/message/" class="md-nav__link">
         
   
   
@@ -2517,7 +2509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/ml/common/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/ml/common/" class="md-nav__link">
         
   
   
@@ -2540,7 +2532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/ml/structure/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/ml/structure/" class="md-nav__link">
         
   
   
@@ -2563,7 +2555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/ml/data/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/ml/data/" class="md-nav__link">
         
   
   
@@ -2586,7 +2578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/ml/registry/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/ml/registry/" class="md-nav__link">
         
   
   
@@ -2609,7 +2601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/ml/samples/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/ml/samples/" class="md-nav__link">
         
   
   
@@ -2669,12 +2661,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/sdmx-technical-documentation/latest/json/" class="md-nav__link ">
+            <a href="/sdmx-twg/sdmx-docs/latest/json/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    SDMX-JSON (v2.0)
+    SDMX-JSON (v2.1)
     
   </span>
   
@@ -2691,7 +2683,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7_2">
             <span class="md-nav__icon md-icon"></span>
-            SDMX-JSON (v2.0)
+            SDMX-JSON (v2.1)
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2741,7 +2733,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/sdmx-technical-documentation/latest/json/structure_message/" class="md-nav__link ">
+            <a href="/sdmx-twg/sdmx-docs/latest/json/structure_message/" class="md-nav__link ">
               
   
   
@@ -2776,7 +2768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/json/structure_message/0_Introduction/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/json/structure_message/0_Introduction/" class="md-nav__link">
         
   
   
@@ -2799,7 +2791,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/json/structure_message/1_field_guide/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/json/structure_message/1_field_guide/" class="md-nav__link">
         
   
   
@@ -2822,7 +2814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/json/structure_message/2_linking_mechanism/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/json/structure_message/2_linking_mechanism/" class="md-nav__link">
         
   
   
@@ -2845,7 +2837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/json/structure_message/4_localised_text_elements/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/json/structure_message/4_localised_text_elements/" class="md-nav__link">
         
   
   
@@ -2868,7 +2860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/json/structure_message/5_security_considerations/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/json/structure_message/5_security_considerations/" class="md-nav__link">
         
   
   
@@ -2891,7 +2883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/json/structure_message/6_extending_sdmx_json/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/json/structure_message/6_extending_sdmx_json/" class="md-nav__link">
         
   
   
@@ -2914,7 +2906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/json/structure_message/7_references/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/json/structure_message/7_references/" class="md-nav__link">
         
   
   
@@ -2984,7 +2976,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/sdmx-technical-documentation/latest/json/data_message/" class="md-nav__link ">
+            <a href="/sdmx-twg/sdmx-docs/latest/json/data_message/" class="md-nav__link ">
               
   
   
@@ -3019,7 +3011,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/json/data_message/0_Introduction/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/json/data_message/0_Introduction/" class="md-nav__link">
         
   
   
@@ -3042,7 +3034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/json/data_message/1_field_guide/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/json/data_message/1_field_guide/" class="md-nav__link">
         
   
   
@@ -3065,7 +3057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/json/data_message/2_linking_mechanism/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/json/data_message/2_linking_mechanism/" class="md-nav__link">
         
   
   
@@ -3088,7 +3080,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/json/data_message/3_handling_indexes/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/json/data_message/3_handling_indexes/" class="md-nav__link">
         
   
   
@@ -3111,7 +3103,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/json/data_message/4_localised_text_elements/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/json/data_message/4_localised_text_elements/" class="md-nav__link">
         
   
   
@@ -3134,7 +3126,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/json/data_message/5_security_considerations/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/json/data_message/5_security_considerations/" class="md-nav__link">
         
   
   
@@ -3157,7 +3149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/json/data_message/6_extending_sdmx_json/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/json/data_message/6_extending_sdmx_json/" class="md-nav__link">
         
   
   
@@ -3180,7 +3172,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/json/data_message/7_references/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/json/data_message/7_references/" class="md-nav__link">
         
   
   
@@ -3246,7 +3238,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/sdmx-technical-documentation/latest/json/metadata_message/" class="md-nav__link ">
+            <a href="/sdmx-twg/sdmx-docs/latest/json/metadata_message/" class="md-nav__link ">
               
   
   
@@ -3281,7 +3273,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/json/metadata_message/0_Introduction/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/json/metadata_message/0_Introduction/" class="md-nav__link">
         
   
   
@@ -3304,7 +3296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/json/metadata_message/1_field_guide/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/json/metadata_message/1_field_guide/" class="md-nav__link">
         
   
   
@@ -3327,7 +3319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/json/metadata_message/2_linking_mechanism/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/json/metadata_message/2_linking_mechanism/" class="md-nav__link">
         
   
   
@@ -3350,7 +3342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/json/metadata_message/4_localised_text_elements/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/json/metadata_message/4_localised_text_elements/" class="md-nav__link">
         
   
   
@@ -3373,7 +3365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/json/metadata_message/5_security_considerations/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/json/metadata_message/5_security_considerations/" class="md-nav__link">
         
   
   
@@ -3396,7 +3388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/json/metadata_message/6_extending_sdmx_json/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/json/metadata_message/6_extending_sdmx_json/" class="md-nav__link">
         
   
   
@@ -3462,12 +3454,12 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/sdmx-technical-documentation/latest/csv/" class="md-nav__link ">
+            <a href="/sdmx-twg/sdmx-docs/latest/csv/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    SDMX-CSV (v2.0)
+    SDMX-CSV (v2.1)
     
   </span>
   
@@ -3484,7 +3476,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7_3">
             <span class="md-nav__icon md-icon"></span>
-            SDMX-CSV (v2.0)
+            SDMX-CSV (v2.1)
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -3497,7 +3489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/csv/data_message_field_guide/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/csv/data_message_field_guide/" class="md-nav__link">
         
   
   
@@ -3520,7 +3512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sdmx-technical-documentation/latest/csv/metadata_message_field_guide/" class="md-nav__link">
+      <a href="/sdmx-twg/sdmx-docs/latest/csv/metadata_message_field_guide/" class="md-nav__link">
         
   
   
@@ -3652,12 +3644,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/sdmx-technical-documentation/latest", "features": ["content.tabs.link", "content.code.annotate", "content.code.copy", "navigation.tabs", "navigation.indexes", "navigation.path", "navigation.sections", "navigation.top", "navigation.tracking", "search.suggest", "toc.follow"], "search": "/sdmx-technical-documentation/latest/assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "/sdmx-twg/sdmx-docs/latest", "features": ["content.tabs.link", "content.code.annotate", "content.code.copy", "navigation.tabs", "navigation.indexes", "navigation.tabs.sticky", "navigation.path", "navigation.sections", "navigation.top", "navigation.tracking", "search.suggest", "toc.follow"], "search": "/sdmx-twg/sdmx-docs/latest/assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="/sdmx-technical-documentation/latest/assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="/sdmx-twg/sdmx-docs/latest/assets/javascripts/bundle.c8b220af.min.js"></script>
       
-        <script src="/sdmx-technical-documentation/latest/assets/anchors.js"></script>
+        <script src="/sdmx-twg/sdmx-docs/latest/assets/anchors.js"></script>
       
     
   </body>
