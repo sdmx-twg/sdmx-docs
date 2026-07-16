@@ -97,7 +97,7 @@ plugins:
     verbose: false
     debug_html: false
     cover_title: SDMx Technical Specifications
-    cover_subtitle: Version 3.1
+    cover_subtitle: Version 3.0
     cover_logo: media/logos/SDMx_Logo_2026.png
     enabled_if_env: ENABLE_PDF_EXPORT
     author: SDMx Technical Standards Working Group (TWG)
