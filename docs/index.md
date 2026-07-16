@@ -11,7 +11,6 @@ Technical Documentation. It brings together all active specifications from the
 official SDMx website and the GitHub repositories maintained by the
 SDMx Technical Standards Working Group (TWG), now shown centrally here.
 
-
 ## Documentation Layout
 
 - **Top-level navigation**: available through the horizontal bar at the top.
@@ -53,13 +52,13 @@ which are all available in this documentation site.
 
 - [REST API](./rest_api/index.md)
   Technical specifications for the SDMx RESTful web services API.
-- [SDMX-ML](./ml/index.md)
+- [SDMx-ML](./ml/index.md)
   Technical specifications for the XML transmission format,
   including schemas, documentation, and samples.
-- [SDMX-JSON](./json/index.md)
+- [SDMx-JSON](./json/index.md)
   Technical specifications for the JSON transmission format,
   including documentation, schemas, and samples.
-- [SDMX-CSV](./csv/index.md)
+- [SDMx-CSV](./csv/index.md)
   Technical specifications for the CSV transmission format for data
   and reference metadata.
 
@@ -79,8 +78,8 @@ Semantic Versioning.
 
 ### Obsolete Sections (not included here)
 
-- **Section 3 – SDMX-ML** (replaced by SDMX-ML repository)
-- **Section 4 – SDMX-EDI**
+- **Section 3 – SDMx-ML** (replaced by SDMx-ML repository)
+- **Section 4 – SDMx-EDI**
 - **Section 7 – API** (replaced by SDMx REST API)
 
 ## Feedback
@@ -95,10 +94,10 @@ via:
 
 The SDMx versions do not coincide with the versions of all sections of the
 standard. This page includes for each SDMx version the documentation of
-REST-API, SDMX-ML, SDMX-JSON, and SDMX-CSV that were released together with the
+REST-API, SDMx-ML, SDMx-JSON, and SDMx-CSV that were released together with the
 standard:
 
-| SDMx version | REST-API version | SDMX-ML version | SDMX-JSON version | SDMX-CSV version |
+| SDMx version | REST-API version | SDMx-ML version | SDMx-JSON version | SDMx-CSV version |
 | ------------ | ---------------- | --------------- | ----------------- | ---------------- |
 | 3.1          | 2.2              | 3.1             | 2.1               | 2.1              |
 | 3.0          | 2.0              | 3.0             | 2.0               | 2.0              |
@@ -107,6 +106,6 @@ standard:
 Please refer to the individual repositories for other versions of the packages:
 
 - [REST-API](https://github.com/sdmx-twg/sdmx-rest),
-- [SDMX-ML](https://github.com/sdmx-twg/sdmx-ml),
-- [SDMX-JSON](https://github.com/sdmx-twg/sdmx-json), and
-- [SDMX-CSV](https://github.com/sdmx-twg/sdmx-csv).
+- [SDMx-ML](https://github.com/sdmx-twg/sdmx-ml),
+- [SDMx-JSON](https://github.com/sdmx-twg/sdmx-json), and
+- [SDMx-CSV](https://github.com/sdmx-twg/sdmx-csv).

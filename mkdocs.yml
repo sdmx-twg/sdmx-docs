@@ -65,9 +65,9 @@ nav:
 - Technical Notes: "!include ./components/information_model/mkdocs_technical_notes.yml"
 - REST API (v2.2): "!include ./components/rest_api/mkdocs_rest_api.yml"
 - Transmission Formats:
-  - SDMX-ML (v3.1): "!include ./components/sdmx_ml/mkdocs.yml"
-  - SDMX-JSON (v2.1): "!include ./components/sdmx_json/mkdocs.yml"
-  - SDMX-CSV (v2.1): "!include ./components/sdmx_csv/mkdocs.yml"
+  - SDMx-ML (v3.1): "!include ./components/sdmx_ml/mkdocs.yml"
+  - SDMx-JSON (v2.1): "!include ./components/sdmx_json/mkdocs.yml"
+  - SDMx-CSV (v2.1): "!include ./components/sdmx_csv/mkdocs.yml"
 - Go To sdmx.org: "https://sdmx.org/"
 
 markdown_extensions:
@@ -96,12 +96,12 @@ plugins:
     download_link: header
     verbose: false
     debug_html: false
-    cover_title: SDMX Technical Specifications
-    cover_subtitle: Version 3.0
-    cover_logo: media/logos/SDMX-logo.png
+    cover_title: SDMx Technical Specifications
+    cover_subtitle: Version 3.1
+    cover_logo: media/logos/SDMx_Logo_2026.png
     enabled_if_env: ENABLE_PDF_EXPORT
-    author: SDMX Technical Working Group
-    copyright: Copyright © SDMX TWG 2020
+    author: SDMx Technical Standards Working Group (TWG)
+    copyright: Copyright © SDMx TWG 2020
     toc_level: 3
 - monorepo
 - mike:
