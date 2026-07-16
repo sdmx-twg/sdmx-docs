@@ -8,10 +8,9 @@
 
 This project provides a new, easier-to-browse and searchable version of the SDMx
 Technical Documentation. It brings together all active specifications from the
-official SDMx website and the GitHub repositories maintained by the SDMx
-Technical Working Group (TWG), now shown centrally here.
+official SDMx website and the GitHub repositories maintained by the
+SDMx Technical Standards Working Group (TWG), now shown centrally here.
 
-**SDMx - The standard for Statistical Data and Metadata**
 
 ## Documentation Layout
 
@@ -24,7 +23,7 @@ and in-page anchors.
 
 ## Contents of the Documentation
 
-The **Statistical Data and Metadata (SDMx)** initiative
+The SDMx initiative
 ([https://www.sdmx.org](https://www.sdmx.org)) sets standards for statistical
 data and metadata using modern information technology.
 
@@ -83,14 +82,6 @@ Semantic Versioning.
 - **Section 3 – SDMX-ML** (replaced by SDMX-ML repository)
 - **Section 4 – SDMX-EDI**
 - **Section 7 – API** (replaced by SDMx REST API)
-
-## Known Limitations
-
-- Formatting improvements are ongoing.
-- Some footnotes are missing.
-- Review is in progress.
-- Any remarks are welcome.
-- Current focus is mainly on **SDMx 3.0**.
 
 ## Feedback
 

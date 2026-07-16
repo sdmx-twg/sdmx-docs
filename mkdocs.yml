@@ -56,7 +56,7 @@ validation:
 
 nav:
 - Getting Started:
-  - Welcome to SDMX: index.md
+  - Welcome to SDMx: index.md
 - Framework: "!include ./components/information_model/mkdocs_framework.yml"
 - Information Model: "!include ./components/information_model/mkdocs_information_model.yml"
 - Registry Specification and Logical Interfaces:
