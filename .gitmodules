@@ -9,7 +9,7 @@
 [submodule "components/sdmx-json"]
 	path = components/sdmx_json
 	url = https://github.com/sdmx-twg/sdmx-json.git
-	branch = 2.0.x
+	branch = docs_v2.0
 [submodule "components/sdmx_ml"]
 	path = components/sdmx_ml
 	url = https://github.com/sdmx-twg/sdmx-ml.git
