@@ -4,6 +4,9 @@ This repository contains the source files for the SDMX Technical Documentation.
 The documentation is built using [MkDocs](https://www.mkdocs.org/), a static
 site generator designed for project documentation.
 
+Maintainers can find the operating procedures in the
+[TWG handover manual](TWG_HANDOVER_MANUAL.md).
+
 ## Getting Started
 
 ### Prerequisites
