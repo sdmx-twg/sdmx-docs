@@ -73,7 +73,7 @@ example, updated submodule URLs or tracked branches), before running
 > automatically trigger a site rebuild. The parent repository stores a pointer
 > to a specific commit in each submodule. To publish updated submodule content,
 > the updated pointer must be committed explicitly in a version branch (e.g.,
-> `master` or `X.Y.x`) so that the build pipeline picks it up.
+> `master` or `docs_vMAJOR.MINOR`) so that the build pipeline picks it up.
 
 > **Never** push directly to `gh-pages` or `gh-pages-preview` — these branches
 > are managed by CI.
@@ -180,7 +180,7 @@ When contributing, follow these conventions:
     `feat`, `fix`, `docs`, `chore`, `ci`, or `refactor` followed by an
     imperative description (e.g., `fix(ml): correct broken cross-link`).
 -   **Branch naming:** `feature/kebab-case-description` for new content
-    branches, `X.Y.x` for release branches.
+    branches, `docs_vMAJOR.MINOR` for documentation release branches.
 
 A `CONTRIBUTING.md` with full contribution guidelines is planned for a future
 update.
