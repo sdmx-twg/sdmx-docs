@@ -99,11 +99,11 @@ JSON, ML, information model, and registry versions may differ.
    commit. This snapshot is necessary: its commit must contain the old component
    branch metadata, matching old gitlinks, visible old version labels, and a
    `VERSION` without `latest`.
-5. Return to the parent main line, retarget components for their new-version
-   work, synchronise and update their gitlinks, set `VERSION` to
-   `<new-aggregate-version>|latest`, and update each component navigation label
-   and the PDF cover subtitle using its actual version. Validate and merge by
-   pull request.
+5. Return to the parent main line, retarget every `.gitmodules` entry to its
+   appropriate active/new-version branch, synchronise and update the gitlinks,
+   set `VERSION` to `<new-aggregate-version>|latest`, and update each component
+   navigation label and the PDF cover subtitle using its actual version.
+   Validate and merge by pull request.
 
 Use the [Git submodule documentation](https://git-scm.com/docs/git-submodule)
 for the routine `git config`, branch, and remote-update syntax. Do not create
