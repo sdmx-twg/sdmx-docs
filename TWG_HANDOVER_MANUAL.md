@@ -66,7 +66,8 @@ branch if necessary), and create a feature branch; inspect it with
 `git -C <component-path> status --short --branch`.
 
 Commit, validate, review, and publish the component in its own repository.
-After it is merged to the branch named in `.gitmodules`, run from the parent:
+After it is merged to the branch named in `.gitmodules`, clear or update any
+local branch override, then run from the parent:
 
 ```bash
 git submodule sync --recursive
@@ -128,8 +129,9 @@ workflow control. Never push directly to `gh-pages` or `gh-pages-preview`.
 
 - **Detached component:** normal for a pinned checkout, unsafe for edits; switch
   to a working branch first.
-- **Changed `.gitmodules`:** run `git submodule sync --recursive` before an
-  update, or local configuration can retain an old remote or branch.
+- **Changed `.gitmodules` URL or branch:** `git submodule sync --recursive`
+  refreshes changed URLs. A local `submodule.<name>.branch` override takes
+  precedence; remove or update it before `git submodule update --remote`.
 - **Unchanged site after a component push:** the parent gitlink still pins the
   old commit; update and commit that pointer.
 - **Unexpected component updates:** inspect `git status --short` and
