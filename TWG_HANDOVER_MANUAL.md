@@ -1,7 +1,7 @@
 # TWG documentation handover manual
 
 This manual is for Technical Standards Working Group (TWG) maintainers of the
-aggregated SDMX technical documentation. It covers routine edits, validation,
+aggregated SDMx technical documentation. It covers routine edits, validation,
 versioning, and publication in this parent repository and its six component
 repositories; it does not replace release approval or component specifications.
 
