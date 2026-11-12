@@ -122,6 +122,9 @@ plugins:
     canonical_version: latest
 - search
 
+hooks:
+  - hooks/search_breadcrumbs.py
+
 extra_javascript:
   - assets/anchors.js
 
