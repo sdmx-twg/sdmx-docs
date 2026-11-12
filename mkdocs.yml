@@ -54,6 +54,19 @@ validation:
   unrecognized_links: warn
   anchors: info
 
+# The four information_model includes copy the same docs directory under different
+# prefixes. Build only each prefix's own Markdown pages to avoid duplicate search results.
+# Keep shared images and other assets available under all prefixes.
+exclude_docs: |
+  /framework/**/*.md
+  !/framework/framework/**/*.md
+  /information_model/**/*.md
+  !/information_model/information_model/**/*.md
+  /logical_interfaces/**/*.md
+  !/logical_interfaces/logical_interfaces/**/*.md
+  /technical_notes/**/*.md
+  !/technical_notes/technical_notes/**/*.md
+
 nav:
 - Getting Started:
   - Welcome to SDMx: index.md
