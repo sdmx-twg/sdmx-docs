@@ -1,111 +1,108 @@
-# SDMx Technical Documentation
+# The Standard for Data and Metadata
 
-!!! note "This page is work in progress"
+Welcome to the official technical documentation for **SDMx** - the **S**tandard
+for **D**ata and **M**etadata
 
-    The official documentation is available on [https://www.sdmx.org](https://sdmx.org/standards-2/)
+SDMx provides an internationally agreed framework for modelling, exchanging and
+sharing data and metadata across organisations and systems.
 
-## Project Description
+This site brings together the SDMx technical specifications in a single,
+searchable and easy-to-navigate resource. It provides the information needed to
+understand the standard, develop SDMx-compatible software and implement
+interoperable data and metadata services.
 
-This project provides a new, easier-to-browse and searchable version of the SDMx
-Technical Documentation. It brings together all active specifications from the
-official SDMx website and the GitHub repositories maintained by the
-SDMx Technical Standards Working Group (TWG), now shown centrally here.
+The documentation is maintained by the SDMx Technical Working Group (TWG).
 
-## Documentation Layout
+## SDMx 3.2 Core Information Model
 
-- **Top-level navigation**: available through the horizontal bar at the top.
-- **Second-level navigation**: available in the left sidebar.
-- **Within-page navigation**: available in the right sidebar.
+The SDMx Core Information Model defines the fundamental building blocks for
+describing, structuring and exchanging data and metadata. The version of SDMx
+corresponds to the version of its Information Model, while the REST API and
+transmission formats are versioned independently.
 
-This structure allows quick access to high-level sections, detailed subsections,
-and in-page anchors.
+The diagram below provides a high-level overview of the SDMx 3.2 Information
+Model, illustrating its principal components and relationships. It is intended
+as an introduction rather than a comprehensive representation of the model.
 
-## Contents of the Documentation
+![ Core Information Model](media/SDMx_IM-Core information model.drawio.svg)
 
-The SDMx initiative
-([https://www.sdmx.org](https://www.sdmx.org)) sets standards for statistical
-data and metadata using modern information technology.
+## Explore the Specifications
 
-The SDMx Technical Specifications are organised into several discrete sections,
-which are all available in this documentation site.
+The SDMx technical specifications are organised into several complementary
+parts, covering the Information Model, APIs, transmission formats and
+implementation guidance. Explore the sections below to learn more about each
+component of the standard.
 
 ### Framework and Information Model
 
-- [Section 1 – Framework for SDMx Technical Standards](./framework/framework/0_framework-introduction.md)
-  Provides an introduction to the technical standards.
-- [Section 2 – SDMx Information Model](./information_model/information_model/0_Introduction.md)
-  A standardised object model for
-  modelling statistical domains, covering the structure of data and metadata
-  sets, coding schemes, and exchange rules. Includes UML specifications and
-  narrative.
+Understand the foundations of SDMx and how data, metadata and their
+relationships are modelled.
 
-### Registries and Technical Notes
+- **Framework** — An introduction to the SDMx technical standards, their scope
+  and underlying principles.
+- **Information Model** — The core objects, structures and relationships used to
+  describe, organise and exchange data and metadata.
 
-- [Section 5 – SDMx Registry Specification](./registry_specification/1_Introduction.md)
-  Specification of the SDMx
-  Registry, a repository for structural metadata and provisioning information.
-- [Section 6 – SDMx Technical Notes](./technical_notes/technical_notes/0_Purpose_and_Structure.md)
-  Detailed technical guidance for
-  implementors of the SDMx standard.
+### Registries and Technical Guidance
 
-### Transmission Formats and APIs
+Explore how SDMx metadata is managed, discovered, shared and reused.
 
-- [REST API](./rest_api/index.md)
-  Technical specifications for the SDMx RESTful web services API.
-- [SDMx-ML](./ml/index.md)
-  Technical specifications for the XML transmission format,
-  including schemas, documentation, and samples.
-- [SDMx-JSON](./json/index.md)
-  Technical specifications for the JSON transmission format,
-  including documentation, schemas, and samples.
-- [SDMx-CSV](./csv/index.md)
-  Technical specifications for the CSV transmission format for data
-  and reference metadata.
+- **Registry Specification and Logical Interfaces** — Architecture and
+  interfaces for managing and sharing SDMx structural metadata.
+- **Technical Notes** — Additional guidance and recommendations for implementing
+  the standard.
 
-### VTL (Validation and Transformation Language)
+### REST API
 
-Since 2020, the SDMx specifications include support for the **Validation and
-Transformation Language (VTL)**. For SDMx 3.0, the VTL specification has been
-updated to align with changes to the Information Model and the introduction of
-Semantic Versioning.
+Learn how to access and exchange SDMx data and metadata through standardised web
+services.
 
-- [Information Model](./information_model/information_model/14_Validation_and_Transformation_Language.md)
-  covers the "Transformation and Expressions"
-  package for defining and managing VTL 2.0 programs.
-- [Technical Notes](./technical_notes/technical_notes/11_Validation_and_Transformation_Language__VTL_.md)
-  provides detailed guidance on implementing
-  and using VTL with SDMx.
+- **REST API** — Specifications for querying, retrieving and maintaining SDMx
+  resources, including data, metadata, structures and schemas.
 
-### Obsolete Sections (not included here)
+### Transmission Formats
 
-- **Section 3 – SDMx-ML** (replaced by SDMx-ML repository)
-- **Section 4 – SDMx-EDI**
-- **Section 7 – API** (replaced by SDMx REST API)
+Explore the standard formats for exchanging SDMx data and metadata between
+systems.
 
-## Feedback
+- **SDMx-ML** — XML-based formats for exchanging data, metadata and structures.
+- **SDMx-JSON** — JSON-based formats for exchanging data, metadata and
+  structures.
+- **SDMx-CSV** — CSV-based formats for exchanging data and reference metadata.
 
-We welcome feedback to improve this documentation. Please provide your input
-via:
+## Specification Versions
 
-- [GitHub Issues](https://github.com/sdmx-twg)
-- E-Mail: [twg@sdmx.org](mailto:twg@sdmx.org)
+The SDMx version number corresponds to the version of the Information Model. The
+REST API and transmission formats (SDMx-ML, SDMx-JSON and SDMx-CSV) are
+versioned independently and may evolve separately from the Information Model.
+The table below shows the versions of each specification associated with each
+SDMx release.
 
-## Matrix of SDMx and REST / Transmission Format Versions
+| SDMx | REST API | SDMx-ML | SDMx-JSON | SDMx-CSV |
+| ---- | -------- | ------- | --------- | -------- |
+| 3.1  | 2.2      | 3.1     | 2.1       | 2.1      |
+| 3.0  | 2.0      | 3.0     | 2.0       | 2.0      |
+| 2.1  | 1.5      | 2.1     | 1.0       | 1.0      |
 
-The SDMx versions do not coincide with the versions of all sections of the
-standard. This page includes for each SDMx version the documentation of
-REST-API, SDMx-ML, SDMx-JSON, and SDMx-CSV that were released together with the
-standard:
+Earlier versions and additional release information are available through the
+individual specification repositories.
 
-| SDMx version | REST-API version | SDMx-ML version | SDMx-JSON version | SDMx-CSV version |
-| ------------ | ---------------- | --------------- | ----------------- | ---------------- |
-| 3.1          | 2.2              | 3.1             | 2.1               | 2.1              |
-| 3.0          | 2.0              | 3.0             | 2.0               | 2.0              |
-| 2.1          | 1.5              | 2.1             | 1.0               | 1.0              |
+## Feedback and Contributions
 
-Please refer to the individual repositories for other versions of the packages:
+The SDMx technical specifications are maintained by the SDMx Technical Working
+Group (TWG).
 
-- [REST-API](https://github.com/sdmx-twg/sdmx-rest),
-- [SDMx-ML](https://github.com/sdmx-twg/sdmx-ml),
-- [SDMx-JSON](https://github.com/sdmx-twg/sdmx-json), and
-- [SDMx-CSV](https://github.com/sdmx-twg/sdmx-csv).
+We welcome feedback from the community, including reports of errors, requests
+for clarification and proposals for improvement.
+
+Each part of the standard has a dedicated GitHub repository where issues can be
+raised and discussed.
+
+| Specification          | GitHub Issues                                                                          |
+| ---------------------- | -------------------------------------------------------------------------------------- |
+| Information Model      | [View issues](https://github.com/sdmx-twg/sdmx-im/issues?utm_source=chatgpt.com)       |
+| REST API               | [View issues](https://github.com/sdmx-twg/sdmx-rest/issues?utm_source=chatgpt.com)     |
+| SDMx-ML (XML)          | [View issues](https://github.com/sdmx-twg/sdmx-ml/issues?utm_source=chatgpt.com)       |
+| SDMx-JSON              | [View issues](https://github.com/sdmx-twg/sdmx-json/issues?utm_source=chatgpt.com)     |
+| SDMx-CSV               | [View issues](https://github.com/sdmx-twg/sdmx-csv/issues?utm_source=chatgpt.com)      |
+| Registry Specification | [View issues](https://github.com/sdmx-twg/sdmx-registry/issues?utm_source=chatgpt.com) |

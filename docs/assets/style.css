@@ -11,7 +11,7 @@ li:hover .copy-link {
 }
 
 .highlighted-anchor {
-  background-color: #FF8C00;
+  background-color: #ff8c00;
   transition: background-color 1s ease;
 }
 
@@ -79,7 +79,7 @@ figure .highlight pre {
   display: block;
   margin-top: 0.7rem;
   margin-bottom: 0.65rem;
-  font-size: 0.82rem;
+  font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.01em;
   line-height: 1.2;
@@ -90,6 +90,16 @@ figure .highlight pre {
 
 .md-tabs__item {
   height: auto;
+}
+
+.md-version {
+  font-size: 0.65rem;
+}
+
+@media screen and (min-width: 60em) {
+  .md-search__input {
+    font-size: 0.7rem;
+  }
 }
 
 .md-tabs__link:hover,
@@ -151,5 +161,71 @@ figure .highlight pre {
   [data-md-color-scheme="slate"] .md-header__button.md-logo img,
   [data-md-color-scheme="slate"] .md-header__button.md-logo svg {
     height: 1.95rem;
+  }
+}
+
+/* Keep the site name in the header when scrolling. Material otherwise swaps it
+   for the page title once the page heading scrolls out of view. */
+.md-header__title--active .md-header__topic:first-child {
+  opacity: 1;
+  pointer-events: auto;
+  transform: none;
+  z-index: 0;
+}
+
+.md-header__title--active .md-header__topic + .md-header__topic {
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Smaller body text. Headings and inline code are sized in em, so they scale
+   with it. Screen only, so printing and PDF export keep their own size. */
+@media screen {
+  .md-typeset {
+    font-size: 0.65rem;
+  }
+}
+
+/* Make the footer "Contact us" link visible without hovering */
+.md-copyright__highlight a {
+  text-decoration: underline;
+}
+
+/* When a tab holds a single nested section, hide the tab name Material pins at
+   the top of the sidebar, so it isn't repeated above the section name. Desktop
+   only: the mobile drawer uses this label for navigation. */
+@media screen and (min-width: 76.25em) {
+  .md-nav--lifted
+    > .md-nav__list
+    > .md-nav__item--active
+    > .md-nav__link:has(
+      ~ .md-nav > .md-nav__list > .md-nav__item--section:only-child
+    ) {
+    display: none;
+  }
+
+  .md-nav--lifted
+    > .md-nav__list
+    > .md-nav__item--active
+    > .md-nav
+    > .md-nav__list
+    > .md-nav__item--section:only-child {
+    margin-top: 0;
+  }
+}
+
+/* Smaller text in the left and right sidebars. Material's default is 0.7rem.
+   Only where each sidebar is shown beside the page, so the mobile drawer keeps
+   its larger tap targets. */
+@media screen and (min-width: 60em) {
+  .md-sidebar--secondary .md-nav {
+    font-size: 0.62rem;
+  }
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary .md-nav {
+    font-size: 0.62rem;
   }
 }
