@@ -2,7 +2,7 @@ site_name: SDMx Technical Documentation
 site_description: Technical Documentation of SDMx - The standard for Statistical Data and Metadata
 site_url: https://github.com/sdmx-twg/sdmx-docs
 strict: true
-copyright: SDMx Technical Standards Working Group 2026. 
+copyright: '2026 SDMx. All rights reserved. <br/><a href="https://sdmx.org/contact/">Contact us</a>'
 
 theme:
   name: material
@@ -68,20 +68,19 @@ exclude_docs: |
   !/technical_notes/technical_notes/**/*.md
 
 nav:
-- Getting Started:
-  - Welcome to SDMx: index.md
 - Framework: "!include ./components/information_model/mkdocs_framework.yml"
 - Information Model: "!include ./components/information_model/mkdocs_information_model.yml"
 - Registry Specification and Logical Interfaces:
   - Registry Specification: "!include ./components/sdmx_registry/mkdocs_registry_specification.yml"
   - Logical Interfaces: "!include ./components/information_model/mkdocs_logical_interfaces.yml"
 - Technical Notes: "!include ./components/information_model/mkdocs_technical_notes.yml"
-- REST API (v2.2): "!include ./components/rest_api/mkdocs_rest_api.yml"
+- REST API:
+  - REST API (2.2): "!include ./components/rest_api/mkdocs_rest_api.yml"
 - Transmission Formats:
   - SDMx-ML (v3.1): "!include ./components/sdmx_ml/mkdocs.yml"
   - SDMx-JSON (v2.1): "!include ./components/sdmx_json/mkdocs.yml"
   - SDMx-CSV (v2.1): "!include ./components/sdmx_csv/mkdocs.yml"
-- Go To sdmx.org: "https://sdmx.org/"
+- sdmx.org: "https://sdmx.org/"
 
 markdown_extensions:
 - tables
