@@ -13,14 +13,14 @@ interoperable data and metadata services.
 
 The documentation is maintained by the SDMx Technical Working Group (TWG).
 
-## SDMx 3.2 Core Information Model
+## SDMx 3.1 Core Information Model
 
 The SDMx Core Information Model defines the fundamental building blocks for
 describing, structuring and exchanging data and metadata. The version of SDMx
 corresponds to the version of its Information Model, while the REST API and
 transmission formats are versioned independently.
 
-The diagram below provides a high-level overview of the SDMx 3.2 Information
+The diagram below provides a high-level overview of the SDMx 3.1 Information
 Model, illustrating its principal components and relationships. It is intended
 as an introduction rather than a comprehensive representation of the model.
 
