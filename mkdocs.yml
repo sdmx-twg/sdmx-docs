@@ -68,6 +68,7 @@ exclude_docs: |
   !/technical_notes/technical_notes/**/*.md
 
 nav:
+- Home: index.md
 - Framework: "!include ./components/information_model/mkdocs_framework.yml"
 - Information Model: "!include ./components/information_model/mkdocs_information_model.yml"
 - Registry Specification and Logical Interfaces:
@@ -80,7 +81,6 @@ nav:
   - SDMx-ML (v3.1): "!include ./components/sdmx_ml/mkdocs.yml"
   - SDMx-JSON (v2.1): "!include ./components/sdmx_json/mkdocs.yml"
   - SDMx-CSV (v2.1): "!include ./components/sdmx_csv/mkdocs.yml"
-- sdmx.org: "https://sdmx.org/"
 
 markdown_extensions:
 - tables
