@@ -97,7 +97,8 @@ figure .highlight pre {
 }
 
 @media screen and (min-width: 60em) {
-  .md-search__input {
+  .md-search__input,
+  .md-search__suggest {
     font-size: 0.7rem;
   }
 }
