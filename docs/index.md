@@ -1,7 +1,7 @@
-# The Standard for Data and Metadata
+# The Standard for Statistical Data and Metadata
 
-Welcome to the official technical documentation for **SDMx** - the **S**tandard
-for **D**ata and **M**etadata
+Welcome to the official technical documentation for **SDMx** - the standard for
+**S**tatistical **D**ata and **M**etadata
 
 SDMx provides an internationally agreed framework for modelling, exchanging and
 sharing data and metadata across organisations and systems.
