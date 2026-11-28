@@ -1,4 +1,4 @@
-# The Standard for Statistical Data and Metadata
+# The standard for Statistical Data and Metadata
 
 Welcome to the official technical documentation for **SDMx** - the standard for
 **S**tatistical **D**ata and **M**etadata
